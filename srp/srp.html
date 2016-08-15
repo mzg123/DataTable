@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+
+    <title></title>
+    <style>
+        iframe{
+            float:left;
+            width:65%;
+            height:900px;
+        }
+        #btnCon{
+            width:30%;
+            float:left;
+        }
+        .lab ,.btn{
+            display: inline-block;
+            padding:10px;
+        }
+        .survey-brief{
+            line-height: 27px;
+             display: none;
+            border:4px solid transparent;
+            color: #848484;
+            font-size: 14px;
+            margin: 15px 0 0;
+            height: 137px;
+            word-break:break-all;
+            width:30px;
+            text-overflow: ellipsis;
+            white-space:nowrap;
+            overflow:hidden;
+
+        }
+        .bc{
+            width: 209px;
+            height: 34px;
+            background: url(./image/common.png) -107px -214px no-repeat;
+            margin: 0 auto;
+            cursor: pointer;
+            margin: 23px auto;
+            display: block;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div id="btnCon">
+
+</div>
+<div class=" bc">3333333333333333333333333333</div>
+<div  class="dataFr">
+    <iframe id="myfr" src=""></iframe>
+</div>
+</body>
+<script>
+    var config={
+        btn1:{url:"1.html",tag:"按钮1",text:"第一月"},
+        btn2:{url:"http://www.cnblogs.com/yexiaochai/p/3868133.html",tag:"按钮2",text:"第一月"},
+        btn3:{url:"2.html",tag:"按钮3",text:"第一月"},
+        btn4:{url:"http://www.w3school.com.cn/jsref/prop_node_nodetype.asp",tag:"按钮4",text:"第一月"}
+    };
+    var myfr=document.getElementById("myfr");
+    myfr.src="http://www.baidu.com";
+    for(key in  config){
+        var subCon = document.createElement('div');
+        subCon.className="subCon";
+        var label = document.createElement('div');
+        label.innerHTML = config[key].text;
+        label.className="lab";
+        var btn = document.createElement('div');
+        btn.innerHTML = config[key].tag;
+        btn.id=key;
+        btn.className="btn";
+        btn.addEventListener("click", function(e){
+            myfr.src=config[e.target.id].url;
+        });
+        subCon.appendChild(label);
+        subCon.appendChild(btn)
+        document.getElementById("btnCon").appendChild(subCon);
+
+    }
+</script>
+</html>
