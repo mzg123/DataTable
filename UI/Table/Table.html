@@ -3,10 +3,214 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
-    <script src="lib.js"></script>
-    <script src="Table.js"></script>
+    <link rel="stylesheet" type="text/css" href="table.css"/>
 </head>
 <body>
+<div class="table" id="table"  >
+    <div class="header" id="header"></div>
+     <div class="tbody" id="tbody">
+         <div class="fields" id="fields"></div>
+         <div class="dataSource" id="dataSource"></div>
+         </div>
+      <div class="tfooter" id="tfooter"></div>
+     </div>
 
+
+<div style="width:300px; overflow-x:scroll">
+    <div style="width: 640px;">
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    <div style="width:50px;display: inline-block">姓名</div>
+    </div>
+</div>
+
+<div style="width:300px;overflow-x:auto;overflow-y: hidden">
+    <div style="width:640px;">
+        <div style="width:128px;height:64px;background:pink;display: inline-block">1</div>
+        <div style="width:128px;height:64px;background:yellow;display: inline-block">2</div>
+        <div style="width:128px;height:64px;background:#234566;display: inline-block">3</div>
+        <div style="width:128px;height:64px;background:#453782;display: inline-block">4</div>
+        <div style="width:128px;height:64px;background:#997788;display: inline-block">5</div>
+    </div>
+</div>
 </body>
+<script src="lib.js"></script>
+<script src="Table.js"></script>
+<script>
+    return;
+    function click(){
+        console.log(this.value);
+    }
+    function delet(){
+        console.log(this.value);
+    }
+    function detail(){
+        console.log(this.value);
+    }
+ function getDataSource(fn){
+
+ }
+
+
+    var dt =new DTable({
+        tableId:".table",
+        scrollX:false,
+        header:{text:"123"},
+        fields:[
+            {
+                name:"name",
+                text:"姓名",
+                click:{c:"click",fn:click},
+                width:300,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            },
+            {
+                name:"name",
+                text:"性别",
+                click:{c:"delete",fn:null},
+                width:300,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            },
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:30,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:30,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:30,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:30,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:30,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:30,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:30,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:30,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:30,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业33",
+                click:{c:"detail",fn:detail},
+                width:30,
+                backgroud:"white",
+                color:"",
+                fontsize:"16px"
+            }
+        ],
+        dataSource2:getDataSource,
+        dataSource:[{name:"1231"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"}
+            ,{name:"123"},{name:"123"},{name:"123"},{name:"12322"},{name:"123"},{name:"1232"},{name:"123"},{name:"123"},{name:"123"}],
+        headerShow:true,
+        footerShow:true,
+        currentPage:1,
+        totalPages:3,
+        totalRecoreds:0,
+        prePage:0,
+        nextPage:0,
+        width:"600",
+        pageCount:10,
+        table:{},
+        cache:{}
+    }).init();
+</script>
 </html>

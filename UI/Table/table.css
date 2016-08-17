@@ -1,0 +1,28 @@
+.header,.tbody,.tfooter,.row{
+    display:block;
+}
+.header{
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+}
+.tfooter{
+margin-top: 30px;
+    float: right;
+}
+.fields div,.row div{
+  word-break: break-all;
+}
+.fields div,.row div,.tfooter div,.row a{
+    display: inline-block;
+    text-align: center;
+}
+.click{
+    text-decoration-line: underline;
+    color:dodgerblue;
+}
+
+.a{
+    border: solid red 1px;
+}
+
