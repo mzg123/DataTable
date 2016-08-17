@@ -59,6 +59,16 @@ var templates='<div class="table">'+
                 +'</div>'+
                 ' <div class="tfooter"></div>'+
                 '</div>';
+/*<div class="table" id="table"  >
+<div class="header" id="header"></div>
+<div class="tbody" id="tbody">
+<div id="container" class="container">
+<div class="fields" id="fields"></div>
+<div class="dataSource" id="dataSource"></div>
+</div>
+</div>
+<div class="tfooter" id="tfooter"></div>
+</div>*/
 var DTable=function(options){
     var self=this;
     self.options=$.extend({},tmpConfig,options);
@@ -91,12 +101,17 @@ function SetFieldWidth(self) {
 function SetFields(t){
     var self=t;
     var fields="";
-    self.options.scroll=SetFieldWidth(self).fieldWidth;
+    self.options.scroll=SetFieldWidth(self).scroll;
+    self.options.fieldWidth=SetFieldWidth(self).fieldWidth;
     $(self.options.fields).each(function(i){
         fields=fields+ "<div style='width:"+self.options.fields[i].width+"px'>"+ self.options.fields[i].text+"</div>";
     });
     self.options.table.find(".tbody").css("height", self.options.pageCount*self.options.rowHeight+"px").find(".fields").html(fields);
+    self.options.table.find(".tbody").find(".container").css("width",self.options.fieldWidth);
     self.options.table.css("width",self.options.width);
+    self.options.table.find(".tbody").css("width",self.options.width);
+    console.log(self.options.scroll);
+    self.options.scroll?self.options.table.find(".tbody").css({"overflow-x":"scroll","overflow-y":"hidden"}):"";
 }
 function FillDataFromAjax(dataSource){
     $(dataSource).each(function(i,v){
