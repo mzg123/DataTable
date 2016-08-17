@@ -25,24 +25,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Table.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Table.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI/Table/Table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.107143" vertical-offset="65" max-vertical-offset="3743">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.7819225" vertical-offset="4091" max-vertical-offset="5206">
+              <caret line="244" column="45" selection-start-line="244" selection-start-column="45" selection-end-line="244" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Table.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Table.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/Table/Table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.36095506" vertical-offset="731" max-vertical-offset="4522">
-              <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+            <state vertical-scroll-proportion="-15.5" vertical-offset="1625" max-vertical-offset="4674">
+              <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
               <folding>
                 <element signature="e#0#48#0" expanded="false" />
-                <marker date="1471422613238" expanded="true" signature="2822:2860" placeholder="..." />
+                <marker date="1471426831566" expanded="true" signature="3023:3061" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -51,8 +51,8 @@
       <file leaf-file-name="table.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/Table/table.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="190" max-vertical-offset="646">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -68,8 +68,8 @@
         <option value="$PROJECT_DIR$/srp/srp.html" />
         <option value="$PROJECT_DIR$/UI/Table.html" />
         <option value="$PROJECT_DIR$/UI/Table/table.css" />
-        <option value="$PROJECT_DIR$/UI/Table/Table.html" />
         <option value="$PROJECT_DIR$/UI/Table/Table.js" />
+        <option value="$PROJECT_DIR$/UI/Table/Table.html" />
       </list>
     </option>
   </component>
@@ -434,12 +434,12 @@
       <workItem from="1471250338084" duration="4061000" />
       <workItem from="1471307822639" duration="21686000" />
       <workItem from="1471394570272" duration="2643000" />
-      <workItem from="1471411606182" duration="3892000" />
+      <workItem from="1471411606182" duration="7323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49820000" />
+    <option name="totallyTimeSpent" value="53251000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -508,7 +508,7 @@
           <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
-            <marker date="1471422613238" expanded="true" signature="2822:2860" placeholder="..." />
+            <marker date="1471426831566" expanded="true" signature="3023:3061" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -535,7 +535,7 @@
           <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
-            <marker date="1471422613238" expanded="true" signature="2822:2860" placeholder="..." />
+            <marker date="1471426831566" expanded="true" signature="3023:3061" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -569,7 +569,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
-            <marker date="1471422613238" expanded="true" signature="2822:2860" placeholder="..." />
+            <marker date="1471426831566" expanded="true" signature="3023:3061" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -616,7 +616,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
-            <marker date="1471422613238" expanded="true" signature="2822:2860" placeholder="..." />
+            <marker date="1471426831566" expanded="true" signature="3023:3061" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -663,7 +663,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
-            <marker date="1471422613238" expanded="true" signature="2822:2860" placeholder="..." />
+            <marker date="1471426831566" expanded="true" signature="3023:3061" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -782,28 +782,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Table/table.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI/Table/Table.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.107143" vertical-offset="65" max-vertical-offset="3743">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="17" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="722">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Table/Table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36095506" vertical-offset="731" max-vertical-offset="4522">
-          <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+        <state vertical-scroll-proportion="-15.5" vertical-offset="1625" max-vertical-offset="4674">
+          <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
           <folding>
             <element signature="e#0#48#0" expanded="false" />
-            <marker date="1471422613238" expanded="true" signature="2822:2860" placeholder="..." />
+            <marker date="1471426831566" expanded="true" signature="3023:3061" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/Table/Table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7819225" vertical-offset="4091" max-vertical-offset="5206">
+          <caret line="244" column="45" selection-start-line="244" selection-start-column="45" selection-end-line="244" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>

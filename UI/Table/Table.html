@@ -9,10 +9,9 @@
 <div class="table" id="table"  >
     <div class="header" id="header"></div>
      <div class="tbody" id="tbody">
-         <div id="container" class="container">
+
              <div class="fields" id="fields"></div>
              <div class="dataSource" id="dataSource"></div>
-         </div>
      </div>
       <div class="tfooter" id="tfooter"></div>
      </div>
@@ -53,33 +52,36 @@
     var dt =new DTable({
         tableId:".table",
         scrollX:false,
-        header:{text:"123"},
+        header:{text:"123",height:40},
         fields:[
             {
                 name:"name",
                 text:"姓名",
                 click:{c:"click",fn:click},
-                width:300,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             },
             {
                 name:"name",
                 text:"性别",
                 click:{c:"delete",fn:null},
-                width:300,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             },
             {
                 name:"name",
                 text:"职业",
                 click:{c:"detail",fn:detail},
-                width:30,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             }
             ,
@@ -87,9 +89,10 @@
                 name:"name",
                 text:"职业",
                 click:{c:"detail",fn:detail},
-                width:30,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             }
             ,
@@ -97,9 +100,10 @@
                 name:"name",
                 text:"职业",
                 click:{c:"detail",fn:detail},
-                width:30,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             }
             ,
@@ -107,9 +111,10 @@
                 name:"name",
                 text:"职业",
                 click:{c:"detail",fn:detail},
-                width:30,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             }
             ,
@@ -117,9 +122,10 @@
                 name:"name",
                 text:"职业",
                 click:{c:"detail",fn:detail},
-                width:30,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             }
             ,
@@ -127,9 +133,10 @@
                 name:"name",
                 text:"职业",
                 click:{c:"detail",fn:detail},
-                width:30,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             }
             ,
@@ -137,9 +144,10 @@
                 name:"name",
                 text:"职业",
                 click:{c:"detail",fn:detail},
-                width:30,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             }
             ,
@@ -147,9 +155,10 @@
                 name:"name",
                 text:"职业",
                 click:{c:"detail",fn:detail},
-                width:30,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             }
             ,
@@ -157,25 +166,93 @@
                 name:"name",
                 text:"职业",
                 click:{c:"detail",fn:detail},
-                width:30,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
                 fontsize:"16px"
             }
             ,
             {
                 name:"name",
-                text:"职业33",
+                text:"职业",
                 click:{c:"detail",fn:detail},
-                width:30,
+                width:60,
                 backgroud:"white",
                 color:"",
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:60,
+                backgroud:"white",
+                color:"",
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:60,
+                backgroud:"white",
+                color:"",
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:60,
+                backgroud:"white",
+                color:"",
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:60,
+                backgroud:"white",
+                color:"",
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:60,
+                backgroud:"white",
+                color:"",
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"name",
+                text:"职业",
+                click:{c:"detail",fn:detail},
+                width:60,
+                backgroud:"white",
+                color:"",
+                type:"tag",
                 fontsize:"16px"
             }
         ],
         dataSource2:getDataSource,
-        dataSource:[{name:"1231"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"}
-            ,{name:"123"},{name:"123"},{name:"123"},{name:"12322"},{name:"123"},{name:"1232"},{name:"123"},{name:"123"},{name:"123"}],
+        dataSource:[{name:"121"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"}
+            ,{name:"123"},{name:"123"},{name:"123"},{name:"122"},{name:"123"},{name:"122"},{name:"123"},{name:"123"},{name:"123"}],
         headerShow:true,
         footerShow:true,
         currentPage:1,

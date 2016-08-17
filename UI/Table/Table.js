@@ -9,6 +9,7 @@ var tempFields=[
         width:"auto",
         backgroud:"white",
         color:"",
+        type:"tag",
         fontsize:"16px"
     },
     {
@@ -18,6 +19,7 @@ var tempFields=[
         width:"auto",
         backgroud:"white",
         color:"",
+        type:"tag",
         fontsize:"16px"
     },
     {
@@ -27,6 +29,7 @@ var tempFields=[
         width:"auto",
         backgroud:"white",
         color:"",
+        type:"tag",
         fontsize:"16px"
     }
 
@@ -36,6 +39,8 @@ var tempFields=[
     scrollX:false,
     header:{},
     fields:null,
+        fieldsHeight:60,
+        isDivide:true,
     dataSource:[],
     headerShow:true,
     footerShow:true,
@@ -45,10 +50,11 @@ var tempFields=[
     prePage:0,
     nextPage:0,
     width:"600",
-        rowHeight:30,
-        coloumWidth:200,
+     rowHeight:30,
+        scroll:false,
+        fieldWidth:0,
     pageCount:10,
-         table:{},
+        table:{},
     cache:{}
 };
 var templates='<div class="table">'+
@@ -93,9 +99,9 @@ function SetFieldWidth(self) {
         self.options.fields[i].width == "auto" ? "" : fieldsWidth = fieldsWidth + self.options.fields[i].width;
     });
 
-    fieldsWidth>0?fieldsWidth > self.options.width ? realWidth = fieldsWidth : realWidth = self.options.width / $(self.options.fields).length:"";
+    fieldsWidth>0?fieldsWidth > self.options.width ? realWidth = fieldsWidth : realWidth = self.options.width :"";
     fieldsWidth > self.options.width ? scroll=true:"";
-    alert(fieldsWidth);
+
     return {fieldWidth:realWidth=="auto"? self.options.width / $(self.options.fields).length:realWidth,scroll:scroll};
 }
 function SetFields(t){
@@ -104,13 +110,15 @@ function SetFields(t){
     self.options.scroll=SetFieldWidth(self).scroll;
     self.options.fieldWidth=SetFieldWidth(self).fieldWidth;
     $(self.options.fields).each(function(i){
-        fields=fields+ "<div style='width:"+self.options.fields[i].width+"px'>"+ self.options.fields[i].text+"</div>";
+        self.options.scroll?"":self.options.isDivide?self.options.fields[i].width=self.options.width/self.options.fields.length:"";
+        fields=fields+ "<div style='width:"+self.options.fields[i].width+"px';height:"+self.options.fieldsHeight+"px>"+ self.options.fields[i].text+"</div>";
     });
-    self.options.table.find(".tbody").css("height", self.options.pageCount*self.options.rowHeight+"px").find(".fields").html(fields);
-    self.options.table.find(".tbody").find(".container").css("width",self.options.fieldWidth);
+    self.options.table.find(".tbody").css("height", self.options.pageCount*self.options.rowHeight+self.options.fieldsHeight+"px").find(".fields").html(fields);
+    //self.options.table.find(".tbody").find(".container").css("width",self.options.fieldWidth);
     self.options.table.css("width",self.options.width);
     self.options.table.find(".tbody").css("width",self.options.width);
-    console.log(self.options.scroll);
+    self.options.table.find(".fields").css("width",self.options.fieldWidth);
+    self.options.table.find(".dataSource").css("width",self.options.fieldWidth);
     self.options.scroll?self.options.table.find(".tbody").css({"overflow-x":"scroll","overflow-y":"hidden"}):"";
 }
 function FillDataFromAjax(dataSource){
@@ -118,9 +126,9 @@ function FillDataFromAjax(dataSource){
             var dataS="<div class='row'>";
             $(self.options.fields).each(function(fi,fv){
                 if(fv.click.fn){
-                    dataS=dataS+ "<div value='' class='click "+fv.click.c+"' style='height:"+self.options.rowHeight+"px; width:"+self.options.coloumWidth+"px'>"+ v[fv.name]+"</div>";
+                    dataS=dataS+ "<div value='' class='click "+fv.click.c+"' style='height:"+self.options.rowHeight+"px; width:"+fv.width+"px'>"+ v[fv.name]+"</div>";
                 }else{
-                    dataS=dataS+ "<div style='height:"+self.options.rowHeight+"px;width:"+self.options.coloumWidth+"px'>"+ v[fv.name]+"</div>";
+                    dataS=dataS+ "<div style='height:"+self.options.rowHeight+"px;width:"+fv.width+"px'>"+ v[fv.name]+"</div>";
                 }
             })
             dataS=dataS+"</div>";
@@ -141,12 +149,12 @@ function FillData(t,page){
    }else{
        $(self.options.dataSource).each(function(i,v){
            if(i>=from && i<=to){
-               var dataS="<div class='row'>";
+               var dataS="<div class='row' style='width:"+self.options.fieldWidth+"'>";
                $(self.options.fields).each(function(fi,fv){
                    if(fv.click.fn){
-                       dataS=dataS+ "<div value='' class='click "+fv.click.c+"' style='height:"+self.options.rowHeight+"px;width:"+self.options.coloumWidth+"px'>"+ v[fv.name]+"</div>";
+                       dataS=dataS+ "<div value='' class='click "+fv.click.c+"' style='height:"+self.options.rowHeight+"px;width:"+fv.width+"px'>"+ v[fv.name]+"</div>";
                    }else{
-                       dataS=dataS+ "<div style='height:"+self.options.rowHeight+"px;width:"+self.options.coloumWidth+"px'>"+ v[fv.name]+"</div>";
+                       dataS=dataS+ "<div style='height:"+self.options.rowHeight+"px;width:"+fv.width+"px'>"+ v[fv.name]+"</div>";
                    }
                })
                dataS=dataS+"</div>";
