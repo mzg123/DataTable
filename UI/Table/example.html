@@ -36,18 +36,24 @@
 <script>
 
     function click(){
-        console.log(this.value);
+
     }
     function delet(){
-        console.log(this.value);
+
     }
     function detail(){
-        console.log(this.value);
+
     }
- function getDataSource(fn){
+ function getDataSource(from,to,f,t){
+     console.log(from);
+     console.log(to);
+     //console.log(f);
+         $.getJSON("http://mzg.com/UI/Table/userinfo.json",function(data) {
+             f(data,t);
+         });
+     }
 
- }
-
+   // getDataSource();
 
     var dt =new DTable({
         tableId:".table",
@@ -65,7 +71,7 @@
                 fontsize:"16px"
             },
             {
-                name:"name",
+                name:"sex",
                 text:"性别",
                 click:{c:"delete",fn:null},
                 width:60,
@@ -75,10 +81,10 @@
                 fontsize:"16px"
             },
             {
-                name:"name",
+                name:"email",
                 text:"职业",
                 click:{c:"detail",fn:detail},
-                width:60,
+                width:160,
                 backgroud:"white",
                 color:"",
                 type:"tag",
@@ -250,8 +256,8 @@
                 fontsize:"16px"
             }
         ],
-        dataSource2:getDataSource,
-        dataSource:[{name:"121"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"}
+        dataSource:getDataSource,
+        dataSource1:[{name:"121"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"}
             ,{name:"123"},{name:"123"},{name:"123"},{name:"122"},{name:"123"},{name:"122"},{name:"123"},{name:"123"},{name:"123"}],
         headerShow:true,
         footerShow:true,

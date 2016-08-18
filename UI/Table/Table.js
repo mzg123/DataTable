@@ -121,7 +121,8 @@ function SetFields(t){
     self.options.table.find(".dataSource").css("width",self.options.fieldWidth);
     self.options.scroll?self.options.table.find(".tbody").css({"overflow-x":"scroll","overflow-y":"hidden"}):"";
 }
-function FillDataFromAjax(dataSource){
+function FillDataFromAjax(dataSource,t){
+    var self=t;var dataSA="";
     $(dataSource).each(function(i,v){
             var dataS="<div class='row'>";
             $(self.options.fields).each(function(fi,fv){
@@ -144,6 +145,7 @@ function FillData(t,page){
     from=(page-1)*self.options.pageCount;
     self.options.currentPage=page;
     to=page*self.options.pageCount-1;
+
    if(typeof self.options.dataSource == 'function'){
        self.options.dataSource(from,to,FillDataFromAjax,t);
    }else{
