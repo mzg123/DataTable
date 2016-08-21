@@ -45,16 +45,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clock.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UI/clock/clock.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="228">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="sea.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/clock/sea.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -78,12 +68,16 @@
       <file leaf-file-name="Table.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UI/Table/Table.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43960676" vertical-offset="1492" max-vertical-offset="3914">
-              <caret line="127" column="76" selection-start-line="127" selection-start-column="76" selection-end-line="127" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.502809" vertical-offset="858" max-vertical-offset="2299">
+              <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
               <folding>
                 <element signature="e#64#666#0" expanded="false" />
+                <element signature="n#!!block;n#SetFieldWidth#0" expanded="false" />
+                <element signature="n#!!block;n#SetFields#0" expanded="false" />
+                <element signature="n#!!block;n#FillDataFromAjax#0" expanded="false" />
+                <element signature="n#!!block;n#FillData#0" expanded="false" />
                 <element signature="n#!!block;n#RefreshFooter#0" expanded="false" />
-                <marker date="1471760524785" expanded="true" signature="3586:3624" placeholder="..." />
+                <marker date="1471761860310" expanded="true" signature="3649:3687" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -92,8 +86,8 @@
       <file leaf-file-name="table.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/Table/table.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="950">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1197">
+              <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -102,9 +96,11 @@
       <file leaf-file-name="example.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UI/Table/example.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.178571" vertical-offset="1038" max-vertical-offset="5320">
-              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-              <folding />
+            <state vertical-scroll-proportion="-10.357142" vertical-offset="869" max-vertical-offset="1615">
+              <caret line="61" column="68" selection-start-line="61" selection-start-column="68" selection-end-line="61" selection-end-column="68" />
+              <folding>
+                <element signature="e#1940#7146#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,8 +120,8 @@
         <option value="$PROJECT_DIR$/UI/clock/clock.css" />
         <option value="$PROJECT_DIR$/UI/clock/clock.html" />
         <option value="$PROJECT_DIR$/cssshow/css形状/example.html" />
-        <option value="$PROJECT_DIR$/UI/Table/example.html" />
         <option value="$PROJECT_DIR$/UI/Table/table.css" />
+        <option value="$PROJECT_DIR$/UI/Table/example.html" />
         <option value="$PROJECT_DIR$/UI/Table/Table.js" />
       </list>
     </option>
@@ -531,12 +527,12 @@
       <workItem from="1471411606182" duration="8535000" />
       <workItem from="1471481291475" duration="7225000" />
       <workItem from="1471566709326" duration="594000" />
-      <workItem from="1471740792567" duration="11238000" />
+      <workItem from="1471740792567" duration="12566000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73520000" />
+    <option name="totallyTimeSpent" value="74848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
@@ -587,7 +583,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -603,7 +601,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="5206">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1940#7146#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -613,8 +613,12 @@
           <caret line="112" column="5" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
           <folding>
             <element signature="e#64#666#0" expanded="false" />
+            <element signature="n#!!block;n#SetFieldWidth#0" expanded="false" />
+            <element signature="n#!!block;n#SetFields#0" expanded="false" />
+            <element signature="n#!!block;n#FillDataFromAjax#0" expanded="false" />
+            <element signature="n#!!block;n#FillData#0" expanded="false" />
             <element signature="n#!!block;n#RefreshFooter#0" expanded="false" />
-            <marker date="1471760524785" expanded="true" signature="3586:3624" placeholder="..." />
+            <marker date="1471761860310" expanded="true" signature="3649:3687" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -631,7 +635,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4199">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1940#7146#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -641,8 +647,12 @@
           <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
           <folding>
             <element signature="e#64#666#0" expanded="false" />
+            <element signature="n#!!block;n#SetFieldWidth#0" expanded="false" />
+            <element signature="n#!!block;n#SetFields#0" expanded="false" />
+            <element signature="n#!!block;n#FillDataFromAjax#0" expanded="false" />
+            <element signature="n#!!block;n#FillData#0" expanded="false" />
             <element signature="n#!!block;n#RefreshFooter#0" expanded="false" />
-            <marker date="1471760524785" expanded="true" signature="3586:3624" placeholder="..." />
+            <marker date="1471761860310" expanded="true" signature="3649:3687" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -659,7 +669,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3971">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1940#7146#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -669,8 +681,12 @@
           <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
           <folding>
             <element signature="e#64#666#0" expanded="false" />
+            <element signature="n#!!block;n#SetFieldWidth#0" expanded="false" />
+            <element signature="n#!!block;n#SetFields#0" expanded="false" />
+            <element signature="n#!!block;n#FillDataFromAjax#0" expanded="false" />
+            <element signature="n#!!block;n#FillData#0" expanded="false" />
             <element signature="n#!!block;n#RefreshFooter#0" expanded="false" />
-            <marker date="1471760524785" expanded="true" signature="3586:3624" placeholder="..." />
+            <marker date="1471761860310" expanded="true" signature="3649:3687" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -694,7 +710,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="323">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1940#7146#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -704,8 +722,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#64#666#0" expanded="false" />
+            <element signature="n#!!block;n#SetFieldWidth#0" expanded="false" />
+            <element signature="n#!!block;n#SetFields#0" expanded="false" />
+            <element signature="n#!!block;n#FillDataFromAjax#0" expanded="false" />
+            <element signature="n#!!block;n#FillData#0" expanded="false" />
             <element signature="n#!!block;n#RefreshFooter#0" expanded="false" />
-            <marker date="1471760524785" expanded="true" signature="3586:3624" placeholder="..." />
+            <marker date="1471761860310" expanded="true" signature="3649:3687" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -742,7 +764,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="323">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1940#7146#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -752,8 +776,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#64#666#0" expanded="false" />
+            <element signature="n#!!block;n#SetFieldWidth#0" expanded="false" />
+            <element signature="n#!!block;n#SetFields#0" expanded="false" />
+            <element signature="n#!!block;n#FillDataFromAjax#0" expanded="false" />
+            <element signature="n#!!block;n#FillData#0" expanded="false" />
             <element signature="n#!!block;n#RefreshFooter#0" expanded="false" />
-            <marker date="1471760524785" expanded="true" signature="3586:3624" placeholder="..." />
+            <marker date="1471761860310" expanded="true" signature="3649:3687" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -790,7 +818,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="323">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1940#7146#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -800,8 +830,12 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#64#666#0" expanded="false" />
+            <element signature="n#!!block;n#SetFieldWidth#0" expanded="false" />
+            <element signature="n#!!block;n#SetFields#0" expanded="false" />
+            <element signature="n#!!block;n#FillDataFromAjax#0" expanded="false" />
+            <element signature="n#!!block;n#FillData#0" expanded="false" />
             <element signature="n#!!block;n#RefreshFooter#0" expanded="false" />
-            <marker date="1471760524785" expanded="true" signature="3586:3624" placeholder="..." />
+            <marker date="1471761860310" expanded="true" signature="3649:3687" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -926,14 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UI/clock/clock.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UI/clock/sea.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="742">
@@ -951,14 +977,6 @@
             <marker date="1469776206081" expanded="true" signature="-1:-1" placeholder="..." />
             <marker date="1469776206081" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI/clock/clock.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3496">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,30 +998,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/UI/clock/clock.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="755">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UI/clock/clock.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3496">
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UI/Table/table.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="24" max-vertical-offset="950">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1197">
+          <caret line="15" column="32" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Table/example.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.178571" vertical-offset="1038" max-vertical-offset="5320">
-          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
-          <folding />
+        <state vertical-scroll-proportion="-10.357142" vertical-offset="869" max-vertical-offset="1615">
+          <caret line="61" column="68" selection-start-line="61" selection-start-column="68" selection-end-line="61" selection-end-column="68" />
+          <folding>
+            <element signature="e#1940#7146#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UI/Table/Table.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43960676" vertical-offset="1492" max-vertical-offset="3914">
-          <caret line="127" column="76" selection-start-line="127" selection-start-column="76" selection-end-line="127" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.502809" vertical-offset="858" max-vertical-offset="2299">
+          <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
           <folding>
             <element signature="e#64#666#0" expanded="false" />
+            <element signature="n#!!block;n#SetFieldWidth#0" expanded="false" />
+            <element signature="n#!!block;n#SetFields#0" expanded="false" />
+            <element signature="n#!!block;n#FillDataFromAjax#0" expanded="false" />
+            <element signature="n#!!block;n#FillData#0" expanded="false" />
             <element signature="n#!!block;n#RefreshFooter#0" expanded="false" />
-            <marker date="1471760524785" expanded="true" signature="3586:3624" placeholder="..." />
+            <marker date="1471761860310" expanded="true" signature="3649:3687" placeholder="..." />
           </folding>
         </state>
       </provider>

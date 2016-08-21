@@ -4,7 +4,20 @@
 .table
 {
     border:gray 1px solid;
+    margin: 10px;
 }
+.row{
+    border-bottom: solid gray 1px;
+}
+.row div:not(:first-child){
+      border-left: solid gray 1px;
+  }
+.fields{
+    border-bottom: solid black 1px;
+}
+.fields div:not(:first-child){
+     border-left: white solid 1px;
+ }
 *{
     margin: 0;
     padding: 0;

@@ -94,9 +94,9 @@ var DTable=function(options){
 function SetHeader(t){
     var self=t;
 
-    var header="<div>"+self.options.header.text+"</div>";
+    var header="<div style='"+self.options.header.css+"'>"+self.options.header.text+"</div>";
 
-    self.options.table.find(".header").html(header);
+    self.options.headerShow&&self.options.table.find(".header").html(header);
 }
 function SetFieldWidth(self) {
 
@@ -104,7 +104,7 @@ function SetFieldWidth(self) {
     var realWidth = "auto";
     var scroll=false;
     $(self.options.fields).each(function (i) {
-        self.options.fields[i].width == "auto" ? "" : fieldsWidth = fieldsWidth + self.options.fields[i].width;
+        self.options.fields[i].width == "auto" ? "" : fieldsWidth = fieldsWidth + self.options.fields[i].width+1;
     });
 
     fieldsWidth>0?fieldsWidth > self.options.width ? realWidth = fieldsWidth : realWidth = self.options.width :"";
@@ -211,7 +211,7 @@ function RefreshFooter(){
 function SetFooter(t){
     var self=t;
     var footer="<div class='footer'>"+"<button id='firstPage'    >首页</button>"+"<button id='prePage'>上一页</button>"+"<button id='nextPage'>下一页</button>"+"<button id='lastPage'>尾页</button>"+"<div id='pageInfo'>4/9页</div>"+"<div >转到</div>"+"<input type='text' id='tP'  />"+"<div>页</div>"+"<button id='toPage'>GO</button>"+"</div>";
-    self.options.table.find(".tfooter").html(footer);
+    self.options.footerShow&& self.options.table.find(".tfooter").html(footer);
 }
 function IniEvents(){
     var self=this;
