@@ -35,27 +35,27 @@ var tempFields=[
 
 ];
     var tmpConfig={
-    tableId:"",
-    scrollX:false,
-    header:{},
-    fields:null,
+    tableId:null,//容器id
+
+    header:{},//表头的相关内容
+    fields:null,//列信息
         fieldsHeight:60,
-        isDivide:true,
-    dataSource:[],
-    headerShow:true,
-    footerShow:true,
-    currentPage:1,
-    totalPages:3,
-    totalRecoreds:0,
-    prePage:0,
-    nextPage:0,
-    width:"600",
-     rowHeight:30,
-        scroll:false,
+        isDivide:true,//档字段少时 是否平均分配列宽
+    dataSource:[],//数据源
+    headerShow:true,//是否显示表头
+    footerShow:true,//是否显示footer
+    currentPage:1,//当前页码
+    totalPages:3,//总页数
+    totalRecoreds:0,//总记录数
+    prePage:0,//上一页
+    nextPage:0,//下一页
+    width:"600",//容器的宽度
+     rowHeight:30,//行高
+        scroll:false,//是否有滚动条
         fieldWidth:0,
-    pageCount:10,
-        table:{},
-    cache:{}
+    pageCount:10,//每页多少记录
+        table:{},//表对象
+    cache:{}//缓存对象
 };
 var templates='<div class="table">'+
                ' <div class="header"></div>'+
@@ -65,6 +65,14 @@ var templates='<div class="table">'+
                 +'</div>'+
                 ' <div class="tfooter"></div>'+
                 '</div>';
+templates='<div class="table" id="table"  >'+
+            '<div class="header" id="header"></div>'+
+            '<div class="tbody" id="tbody">'+
+            '<div class="fields" id="fields"></div>'+
+            '<div class="dataSource" id="dataSource"></div>'+
+            '</div>'+
+            '<div class="tfooter" id="tfooter"></div>'+
+            '</div>';
 /*<div class="table" id="table"  >
 <div class="header" id="header"></div>
 <div class="tbody" id="tbody">
@@ -80,8 +88,8 @@ var DTable=function(options){
     self.options=$.extend({},tmpConfig,options);
 
     //self.options.fields=tempFields;
-    self.options.tableId?self.options.table=$(self.options.tableId):$(templates);
-
+    self.options.tableId?self.options.table=$(self.options.tableId):(self.options.table=$(templates));
+    self.options.tableId||$(document.body).append(self.options.table);
 }
 function SetHeader(t){
     var self=t;

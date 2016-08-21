@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .button{
+            width:200px;
+            height:100px;
+            position:relative;
+            left:100px;
+            line-height: 100px;
+            text-align: center;
+            font-weight: bolder;
+            border: red solid 1px;
+        }
+        .button::before{
+            content: "";    width:200px;
+            height:100px;
+            position: absolute;
+            top:0;right: 0;left: 0;right:0;z-index: -1;background: #8bc34a;
+            transform: skew(45deg);
+        }
+        .example2{
+            word-break: break-all;
+            width:70px;
+            height:70px;
+            background: #8bc34a;
+            background:
+                          radial-gradient(circle at top right,transparent 15px,#8bc34a 0) top right
+                          /*,linear-gradient(135deg,transparent 15px,#8bc34a 0) top left*/
+        }
+        .pie2{
+            width:140px;
+            height:140px;
+            background: #8bc34a;
+            border-radius: 50%;
+            background-image: linear-gradient(to right,transparent 50%,red 0);
+            color:#655;
+        }
+        .pie2::before{
+            content: "";
+            display: block;
+            margin-left: 50%;
+            height: 100%;
+
+            border-radius: 0 100% 100% 0/50%;
+            background-color: inherit;
+            transform-origin: left;
+            -webkit-animation: spin 3s linear infinite,bg 6s step-end infinite;
+        }
+        @-webkit-keyframes spin {
+            to{transform: rotate(0.5turn)}
+        }
+        @-webkit-keyframes bg {
+            50%{background: red}
+        }
+    </style>
+</head>
+<body>
+<!--<div class="button">transform:skew()</div>-->
+
+<!--<div class="example2">hey,foucu,osfljlsdfjmsdlfjsldfjl</div>-->
+
+<div class="pie2"></div>
+</body>
+</html>
