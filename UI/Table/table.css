@@ -1,18 +1,28 @@
 .header,.tbody,.tfooter,.row{
     display:block;
 }
+.table
+{
+    border:gray 1px solid;
+}
 *{
     margin: 0;
     padding: 0;
+
 }
 .header{
-
     text-align: center;
     line-height: 40px;
 }
 .tfooter{
-margin-top: 30px;
-    float: right;
+/*margin-top: 30px;*/
+    /*float: right;*/
+    position: relative;
+}
+.footer{
+    position: absolute;
+    right:0px;
+    margin-top: 30px;
 }
 .fields div,.row div{
   word-break: break-all;
@@ -29,4 +39,6 @@ margin-top: 30px;
 .a{
     border: solid red 1px;
 }
-
+.fields{
+    background-color: cornflowerblue;
+}

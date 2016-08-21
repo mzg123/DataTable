@@ -119,7 +119,7 @@ function SetFields(t){
     self.options.fieldWidth=SetFieldWidth(self).fieldWidth;
     $(self.options.fields).each(function(i){
         self.options.scroll?"":self.options.isDivide?self.options.fields[i].width=self.options.width/self.options.fields.length:"";
-        fields=fields+ "<div style='width:"+self.options.fields[i].width+"px';height:"+self.options.fieldsHeight+"px>"+ self.options.fields[i].text+"</div>";
+        fields=fields+ "<div style='width:"+self.options.fields[i].width+"px;line-height:"+self.options.fieldsHeight+"px;height:"+self.options.fieldsHeight+"px'>"+ self.options.fields[i].text+"</div>";
     });
     self.options.table.find(".tbody").css("height", self.options.pageCount*self.options.rowHeight+self.options.fieldsHeight+"px").find(".fields").html(fields);
     //self.options.table.find(".tbody").find(".container").css("width",self.options.fieldWidth);
