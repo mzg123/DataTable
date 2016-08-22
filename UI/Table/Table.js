@@ -65,7 +65,7 @@ var templates='<div class="table">'+
                 +'</div>'+
                 ' <div class="tfooter"></div>'+
                 '</div>';
-templates='<div class="table" id="table"  >'+
+templates='<div class="table common" id="table"  >'+
             '<div class="header" id="header"></div>'+
             '<div class="tbody" id="tbody">'+
             '<div class="fields" id="fields"></div>'+

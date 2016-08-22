@@ -1,21 +1,21 @@
-.header,.tbody,.tfooter,.row{
+.common .header,.common .tbody,.common .tfooter,.common .row{
     display:block;
 }
-.table
+.common .table
 {
     border:gray 1px solid;
     margin: 10px;
 }
-.row{
+.common .row{
     border-bottom: solid gray 1px;
 }
-.row div:not(:first-child){
+.common .row div:not(:first-child){
       border-left: solid gray 1px;
   }
-.fields{
+.common .fields{
     border-bottom: solid black 1px;
 }
-.fields div:not(:first-child){
+.common .fields div:not(:first-child){
      border-left: white solid 1px;
  }
 *{
@@ -23,16 +23,16 @@
     padding: 0;
 
 }
-.header{
+.common .header{
     text-align: center;
     line-height: 40px;
 }
-.tfooter{
+.common .tfooter{
 /*margin-top: 30px;*/
     /*float: right;*/
     position: relative;
 }
-.footer{
+.common .footer{
     position: absolute;
     right:0px;
     margin-top: 30px;
@@ -40,18 +40,18 @@
 .fields div,.row div{
   word-break: break-all;
 }
-.fields div,.row div,.tfooter div,.row a{
+.common .fields div,.common .row div,.common .tfooter div,.common .row a{
     display: inline-block;
     text-align: center;
 }
-.click{
+.common .click{
     text-decoration-line: underline;
     color:dodgerblue;
 }
 
-.a{
+.common .a{
     border: solid red 1px;
 }
-.fields{
+.common .fields{
     background-color: cornflowerblue;
 }
