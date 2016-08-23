@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="select.css"/>
+    <script src="lib.js"></script>
+    <script src="select.js"></script>
+    <style>
+        .menu>li{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<!--<select id="select">-->
+    <!--<option>1</option>-->
+    <!--<option>2</option>-->
+    <!--<option>3</option>-->
+    <!--<option>4</option>-->
+<!--</select>-->
+<!--<div id="select">-->
+    <!--<ul class="menu">-->
+        <!--<li ><a >1</a></li>-->
+        <!--<li>-->
+           <!--<a>11</a>-->
+            <!--<i></i>-->
+            <!--<ul style="display: none">-->
+                <!--<li><a>11-1</a></li>-->
+                <!--<li><a>11-2</a></li>-->
+                <!--<li><a>11-3</a></li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <!--<li><a >1</a></li>-->
+    <!--</ul>-->
+<!--</div>-->
+
+
+</body>
+<script>
+    function select(){
+
+        alert($("#select").val());
+    }
+    $(document).ready(function(){
+         var t=new Select({OnChange:select});
+    });
+
+</script>
+</html>
