@@ -38,12 +38,23 @@
 
 </body>
 <script>
+    $(function() {
+        $(document).keypress(function (e) {
+            alert(3);
+        });
+    });
+    function getDataSource(f,t){
+
+        $.getJSON("http://mzg.com/UI/select/selectitem.json",function(data) {
+            f(t,data);
+        });
+    }
     function select(){
 
         alert($("#select").val());
     }
     $(document).ready(function(){
-         var t=new Select({OnChange:select});
+         var t=new Select({OnChange:select,DataSource:getDataSource});
     });
 
 </script>

@@ -34,15 +34,20 @@ var Select=function(options){
 }
 
 function CreateSelect(self){
-
     var temp="",self=self;
     $(self.options.DataSource).each(function(i,v){
-
         (typeof v.text == 'string') ? temp=temp+'<option value="'+ v.value+'">'+ v.text+'</option>':"";
     });
     $(self.options.Ele).html(temp);
 }
 
+function CreateSelectFromAjax(self,data){
+    var temp="",self=self;
+    $(data).each(function(i,v){
+        (typeof v.text == 'string') ? temp=temp+'<option value="'+ v.value+'">'+ v.text+'</option>':"";
+    });
+    $(self.options.Ele).html(temp);
+}
 
 $.extend(Select.prototype,{
      init:function(){
@@ -51,8 +56,14 @@ $.extend(Select.prototype,{
 
            self.options.OnChange();
        });
-
-         CreateSelect.call(this,this);
-     }
+       if(self.options.DataSource instanceof Array)
+          CreateSelect.call(this,this);
+       else if(typeof self.options.DataSource == 'function')
+           self.options.DataSource.call(this, CreateSelectFromAjax,self);
+     },
+    setDataSource:function(value){
+        var self=this;
+        self.options.DataSource=value;
+    }
 
 });

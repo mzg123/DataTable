@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src="lib/vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <p>{{ message.split('').reverse().join('')  }}</p>
+    <input v-model="message">
+</div>
+<div id="app1">
+    <ul>
+        <li v-for="todo in todos">
+            {{ todo.text }}
+        </li>
+    </ul>
+</div>
+
+<p><b>Model 层</b> - JavaScript 代码如下(需放在指定的HTML元素之后)：</p>
+
+
+<div id="app3">
+    <ul id="example-2">
+        <li v-for="item in items">
+            {{ parentMessage }} - {{ $index }} - {{ item.message |reverse }}
+        </li>
+    </ul>
+</div>
+    <script>
+        Vue.filter('reverse', function (value) {
+            return value.split('').reverse().join('')
+        })
+        var example2 = new Vue({
+            el: '#app3',
+            data: {
+                parentMessage: '菜鸟教程官网',
+                items: [
+                    { message: 'www.runoob.com' },
+                    { message: 'www.w3cschool.cc' }
+                ]
+            }
+        })
+    </script>
+<div id="mount-point"></div>
+<div id="app4">
+    <h1 v-if="ok">Yes</h1>
+    <h1 v-else>No</h1>
+    <h1 v-show="ok">Hello!</h1>
+</div>
+<script>
+    // 创建可复用的构造器
+    var Profile = Vue.extend({
+        template: '<p>{{firstName}} {{lastName}} aka {{alias}}</p>'
+    })
+    // 创建一个 Profile 实例
+    var profile = new Profile({
+        data: {
+            firstName: 'M',
+            lastName: '11',
+            alias: '33'
+        }
+    })
+    // 挂载到元素上
+    profile.$mount('#mount-point')
+    var example2 = new Vue({
+        el: '#app4',
+        data: {
+            ok: true,
+
+        }
+    })
+</script>
+</body>
+<script type="text/javascript">
+    new Vue({
+        el:'#app',
+        data: {
+            message:'Hello World!'
+        }
+    });
+
+    new Vue({
+        el: '#app1',
+        data: {
+            todos: [
+                { text: 'Learn JavaScript' },
+                { text: 'Learn Vue.js' },
+                { text: 'Build Something Awesome' }
+            ]
+        }
+    })
+</script>
+</html>
