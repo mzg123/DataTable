@@ -14,3 +14,32 @@ html {overflow-y: scroll;}
 /* css common */
 .clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
 .clearfix { *zoom:1; }
+
+
+.redborder{
+    border:red solid 1px;
+}
+html,body{
+    height: 100%;
+}
+
+
+
+.mcontainer
+{
+    min-height:100%;
+    height: auto !important;
+    height: 100%;
+    /*IE6不识别min-height*/
+    position: relative;
+}
+.mpage{
+    padding-bottom: 70px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;/*脚部的高度*/
+    clear:both;
+}
