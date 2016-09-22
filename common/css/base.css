@@ -22,8 +22,12 @@ html {overflow-y: scroll;}
 html,body{
     height: 100%;
 }
-
-
+.none,.mpage>.col-md-2{
+    display: none;
+}
+.my_class{
+   font-size:14px;
+}
 
 .mcontainer
 {

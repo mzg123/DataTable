@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zero Clipboard Test</title>
+    <meta charset="utf-8">
+</head>
+<body>
+<!-- 
+	说明：
+	1.data-clipboard-target 输入要复制的对象的ID
+-->
+<button id="d_clip_button" class="my_clip_button" data-clipboard-target="fe_text"><b>复制到剪贴板</b></button>
+<br/>
+<textarea id="fe_text" cols="50" rows="3">输入需要复制的内容</textarea>
+<input type="text" value="www.baidu.com" id="link">
+<button id="copyBtn">复制链接</button>
+<button id="d_clip_button1" class="my_clip_button" data-clipboard-target="fe_text"><b>复制到剪贴板</b></button>
+</body>
+</html>
+<script type="text/javascript" src="ZeroClipboard.js"></script>
+<script type="text/javascript" src="lib.js"></script>
+<!--<script type="text/javascript" src="http://www.daimajiayuan.com/templets/skins/js/jquery-1.8.1.min.js"></script>-->
+<script src="http://www.daimajiayuan.com/member/templets/js/jquery.zclip.min.js"></script>
+
+<script type="text/javascript">
+
+
+    $('#d_clip_button1').on('click',function(){
+        alert(3);
+    });
+    $('#d_clip_button1').zclip({
+        path: "ZeroClipboard.swf",
+        copy: function(){alert(33);
+            return "";//$('#link').val();
+             }
+    });
+//    定义一个新的复制对象
+//    var clip = new ZeroClipboard( document.getElementById("d_clip_button"), {
+//      moviePath: "ZeroClipboard.swf"
+//    } );
+//
+//    console.log(clip);
+//    // 复制内容到剪贴板成功后的操作
+//    clip.on( 'complete', function(client, args) {
+//       alert("复制成功，复制内容为："+ args.text);
+//    } );
+
+   $("#d_clip_button").click(function(){alert(66);copyToClipboard("hao")});
+    function copyToClipboard(txt) {
+        if (window.clipboardData) {
+            window.clipboardData.clearData();
+            window.clipboardData.setData("Text", txt);
+            alert("已经成功复制到剪帖板上！");
+        }
+// else if (navigator.userAgent.indexOf("Opera") != -1) {
+//            window.location = txt;
+//        } else if (window.netscape) {
+//            try {
+//                netscape.security.PrivilegeManager.enablePrivilege("UniversalXPConnect");
+//            } catch (e) {
+//                alert("被浏览器拒绝！\n请在浏览器地址栏输入'about:config'并回车\n然后将'signed.applets.codebase_principal_support'设置为'true'");
+//            }
+//            var clip = Components.classes['@mozilla.org/widget/clipboard;1'].createInstance(Components.interfaces.nsIClipboard);
+//            if (!clip) return;
+//            var trans = Components.classes['@mozilla.org/widget/transferable;1'].createInstance(Components.interfaces.nsITransferable);
+//            if (!trans) return;
+//            trans.addDataFlavor('text/unicode');
+//            var str = new Object();
+//            var len = new Object();
+//            var str = Components.classes["@mozilla.org/supports-string;1"].createInstance(Components.interfaces.nsISupportsString);
+//            var copytext = txt;
+//            str.data = copytext;
+//            trans.setTransferData("text/unicode", str, copytext.length * 2);
+//            var clipid = Components.interfaces.nsIClipboard;
+//            if (!clip) return false;
+//            clip.setData(trans, null, clipid.kGlobalClipboard);
+//            alert("已经成功复制到剪帖板上！");
+//        }
+//        else{
+//                var clip = new ZeroClipboard( document.getElementById("d_clip_button"), {
+//      moviePath: "ZeroClipboard.swf"
+//    } );
+//
+//    console.log(clip);
+//    // 复制内容到剪贴板成功后的操作
+//    clip.on( 'complete', function(client, args) {
+//       alert("复制成功，复制内容为："+ args.text);
+//    } );
+//        }
+    }
+</script>

@@ -40,7 +40,7 @@
 </div>
 <div class="container-fluid mcontainer">
     <div class="row mpage">
-        <div class="col-md-2 ">
+        <div class="col-md-2  " >
             <ul id="main-nav" class="nav nav-tabs nav-stacked" style="">
                 <li class="active">
                     <a href="../index.html">
@@ -831,21 +831,48 @@
 
         table = $('#example').DataTable({ //datatable init
             data: data,
+//            ajax: "jquerydatatable.json",
 //            scrollY: 900,
 //            paging: false,
 //            "lengthChange": false,
 //            "paging": true,
 //            "stateSave": true,
             "lengthMenu": [ 10, 25, 50, 75, 100,299 ],
+            scrollCollapse: true,
+            scrollY: 300,
+//            "search": {
+//                "search": "111"
+//            },
+//            "searchCols": [
+//                null,
+//                { "search": "H" },
+//                null,
+//                { "search": "^[0-9]", "escapeRegex": false }
+//            ],
+            "stripeClasses": [ 'strip1 ss s1s s2s', 'strip2', 'strip3' ],
 //            "orderCellsTop": true,
             "orderClasses": true,
             "orderFixed":[ 0, 'desc' ],
-            "pagingType": "full",
+            "pagingType": "simple_numbers",//"numbers",simple simple_numbers
 //            "pageLength": 50,
 //            "dom": 'trilp',
 //            "displayStart": 0,
-            "searching": false,
+//            "columnDefs": [ {
+//                "targets": [ 0, 2 ],
+//                "orderable": false
+//            } ],
+            columnDefs: [
+                { targets: [0, 1], className: "my_class",visible: true, "cellType": "td"},
+                { targets: [2, 3], visible: true, "cellType": "th"},
+                { targets: '_all', visible: false }
+            ],
+
+            "searching": true,
             "info": false,
+//            renderer: {
+//                "header": "jqueryui",
+//                "pageButton": "bootstrap"
+//            },
 //            "autoWidth": true,
             columns: [
                 {"data": "first_name"},
@@ -857,6 +884,8 @@
                 {"data": "extn"}
             ]
         });
+//        table.clear().draw();
+//        console.log(table.data());
     };
 
 </script>
