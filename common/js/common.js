@@ -4,7 +4,10 @@
 var Config={
     "SeajsBaseUrl":"http://localhost:63342/mzg/DataTable/common/js/", //admin/user/user_index.js
     "api":{
-        "user_edit":"user_edit"
+        "user_edit":"user_edit",
+        "jqueryDataTableConfig":{
+
+        }
     }
 }
 
