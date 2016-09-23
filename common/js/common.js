@@ -2,7 +2,10 @@
  * Created by Administrator on 2016/9/23.
  */
 var Config={
-    "SeajsBaseUrl":"http://localhost:63342/mzg/DataTable/common/js/" //admin/user/user_index.js
+    "SeajsBaseUrl":"http://localhost:63342/mzg/DataTable/common/js/", //admin/user/user_index.js
+    "api":{
+        "user_edit":"user_edit"
+    }
 }
 
 seajs.config({
@@ -37,5 +40,75 @@ seajs.config({
         return data ? fn( data ) : fn;
 
     });
+
+})(jQuery);
+
+
+(function($){
+    var ajaxStatusMap = {
+        100: "参数非法"
+    }
+
+    function ajaxException(res) {
+        console.log(res);
+        if (!res) return;
+        var msg = res.message || ajaxStatusMap[res.code] || "错误";
+        if (res.code == 301 || res.redirect) {
+            location.href = res.redirect;
+        } else if (res.code == -1) {
+            location.href = res.data.url;
+        }
+        else {
+            alert(msg);
+        }
+    }
+
+    function ajaxError(xhr, error, textStatus) {
+        console.error('ajax',xhr.responseURL,xhr.status,xhr.statusText);
+    }
+
+    $._ajax = $.ajax;
+
+    $.ajax = function (options) {
+        if (typeof options == 'object') {
+            var data = options.data || {};
+            if (typeof __globalData != "undefined" && __globalData._csrf) {
+                data._csrf = __globalData._csrf;
+            }
+            var _succ = options.success || $.noop;
+            var _exception = options.exception || $.noop;
+            var dataType = options.dataType || (options.dataType = 'json');
+            options.success = function (res) {
+
+                if(options.showLoading){
+                    $.utils.hideLoading();
+                }
+
+                if (dataType == 'json') {
+                    if (res.code == 0) {
+                        _succ.apply(this, arguments);
+                    }
+                    else {
+                        var tmp = _exception.apply(this, arguments);
+                        if (tmp !== false) {
+                            ajaxException.apply(this, arguments);
+                        }
+                    }
+                }
+                else {
+                    _succ.apply(this, arguments);
+                }
+
+            }
+
+            options.error = ajaxError;
+
+            //if(options.showLoading){
+            //    $.utils.showLoading();
+            //}
+        }
+        $._ajax.apply($, arguments);
+    }
+
 
 })(jQuery);

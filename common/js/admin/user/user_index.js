@@ -685,7 +685,7 @@ define("admin/user/user_index",  function (require, exports, module) {
             "start_date": "2011-01-25"
         }
     ];
-    var table;
+    var table,currentRow;
     var editFlag = false;
     var user_index={
 
@@ -746,27 +746,48 @@ define("admin/user/user_index",  function (require, exports, module) {
                  ]
              });
 
-            this._initEvent();
+            this._initEvent(table);
          },
-         _initEvent:function(){
+         _initEvent:function(table){
              table.on( 'click', 'td a', function () {
                  var row =$(this).parents('td');
-
                  $(this).hasClass("delete")&&deleteRow.call(this,table, $(row).parents('tr'));
-                 $(this).hasClass("edit")&&edit.call(this, table.row($(row).parents('tr')).data());
+                 $(this).hasClass("edit")&&edit.call(this,currentRow= table.row($(row).parents('tr')).data());
                  // alert( table.cell(row).data() );
                  //console.log(table.row( $(this).parents('tr')).data());
              } );
+             $("#editSave").on("click",function(){
+                 submit();
+             });
          }
     }
     function deleteRow(table,row){
         table.row( row).remove().draw();
     }
     function edit(rowdata){
-        var templateStr= $('#user_edit .modal-body form').html();
+        var templateStr= $('#user_edit .modal-body ').html();
         $('#user_edit .modal-body').html( $.MT('user_add',templateStr ,rowdata));
         $('#user_edit').modal({
             keyboard: false
+        })
+    }
+    function submit(){
+        $.ajax({
+            url:Config.api.user_edit,
+            type:'post',
+            dataType:"json",
+            async:true,
+            data:{
+                name:"0"
+            },
+            success:function(data){
+                $('#user_edit').modal('hide');
+                table.row( currentRow).draw();
+            },
+            exception:function(err){
+                console.log(err);
+                return false;
+            }
         })
     }
     $(function(){
