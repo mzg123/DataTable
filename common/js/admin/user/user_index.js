@@ -749,16 +749,25 @@ define("admin/user/user_index",  function (require, exports, module) {
             this._initEvent();
          },
          _initEvent:function(){
-             table.on( 'click', 'td', function () {
-                 $(this).hasClass("delete")&&alert(1);
-                 alert( table.cell( this ).data() );
-                 console.log(table.row( $(this).parents('tr')).data());
+             table.on( 'click', 'td a', function () {
+                 var row =$(this).parents('td');
+
+                 $(this).hasClass("delete")&&deleteRow.call(this,table, $(row).parents('tr'));
+                 $(this).hasClass("edit")&&edit.call(this, table.row($(row).parents('tr')).data());
+                 // alert( table.cell(row).data() );
+                 //console.log(table.row( $(this).parents('tr')).data());
              } );
          }
-
     }
     function deleteRow(table,row){
         table.row( row).remove().draw();
+    }
+    function edit(rowdata){
+        var templateStr= $('#user_edit .modal-body form').html();
+        $('#user_edit .modal-body').html( $.MT('user_add',templateStr ,rowdata));
+        $('#user_edit').modal({
+            keyboard: false
+        })
     }
     $(function(){
         user_index.init();
