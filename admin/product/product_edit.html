@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head  >
+
+    <title>产品管理</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="zh-CN" />
+    <meta name="Author" content="网页作者" />
+
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">-->
+
+    <meta name="Copyright" content="网站版权" />
+    <meta name="keywords" content="网站关键字" />
+    <meta name="description" content="网站描述" />
+    <link rel="Shortcut Icon" href="http://img3.yingu.com/image/common/logo_icon.png" />
+    <link rel="stylesheet" type="text/css" href="../../common/css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../common/css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="../../common/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../../common/css/dataTable.jquery.min.css"/>
+    <!--<link href="http://cdn.bootcss.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">-->
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="../../common/js/bootstrap.js"></script>
+    <script src="../../common/js/sea.js"></script>
+    <script src="../../common/js/common.js"></script>
+    <script src="../../common/js/datatable.jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../common/js/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../../common/js/ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="../../common/js/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+    <!--<script src="http://cdn.bootcss.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+</head>
+<body>
+<header>
+
+</header>
+
+<div class="navbar navbar-duomi navbar-static-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/Admin/index.html" id="logo">配置管理系统
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mcontainer">
+    <div class="row mpage">
+        <div class="col-md-2  " >
+            <ul id="main-nav" class="nav nav-tabs nav-stacked" style="">
+                <li class="active">
+                    <a href="../index.html">
+                        <i class="glyphicon glyphicon-th-large"></i>
+                        首页
+                    </a>
+                </li>
+                <li>
+                    <a href="#systemSetting" class="nav-header" data-toggle="collapse">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        系统管理
+                        <span class="pull-right glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul id="systemSetting" class="nav nav-list secondmenu collapse"  >
+                        <li><a href="#"><i class="glyphicon glyphicon-user"></i>用户管理</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-th-list"></i>菜单管理</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-asterisk"></i>角色管理</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-edit"></i>修改密码</a></li>
+                        <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>日志查看</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#productSetting" class="nav-header collapsed" data-toggle="collapse">
+                        <i class="glyphicon glyphicon-credit-card"></i>
+                        产品管理
+                    </a>
+                    <ul id="productSetting" class="nav nav-list secondmenu collapse in">
+                        <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>产品编辑</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./grid.html">
+                        <i class="glyphicon glyphicon-globe"></i>
+                        分发配置
+                        <span class="label label-warning pull-right">5</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./charts.html">
+                        <i class="glyphicon glyphicon-calendar"></i>
+                        图表统计
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="glyphicon glyphicon-fire"></i>
+                        关于系统
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+       <!--右侧工作区-->
+        <div class="col-md-10" >
+                <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+        </div>
+    </div>
+    <div class="row footer">
+        <div class="col-md-12 text-center">版权所有@2015-2016</div>
+    </div>
+</div>
+
+<footer>
+</footer>
+<!-- Modal -->
+<script>
+    seajs.use("admin/product/product_index");
+</script>
+</body>
+</html>
