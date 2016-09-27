@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>投资活动</title>
+    <style>
+        /* ============================================================
+        样式重置
+        ============================================================ */
+        body,p{margin:0;padding:0;}
+
+        body{-webkit-user-select:none;-webkit-text-size-adjust:none!important;font-family:Helvetica;}
+
+        a,button,input,img{-webkit-touch-callout:none;}/* 1.ios 长按时不触发系统的菜单 2.禁止长按时下载图片 */
+
+        /*框架*/
+        html{-ms-touch-action: none;}/* 阻止windows Phone 的默认触摸事件 */
+        body{overflow-x: hidden;}
+        .page-wrap{overflow-x:hidden}
+        .page{display:none;width:100%;height:100%;overflow-x:hidden;position:absolute;top:0;left:0}
+        .content{width:100%;height:100%;display:none;position:relative;z-index:0}
+        .current .content,.slide .content{display:block}
+        .current{display:block;z-index:1}
+        .slide{display:block;z-index:2}
+        .swipe{display:block;z-index:3;transition-duration:0ms!important;-webkit-transition-duration:0ms!important}
+
+        body{
+            background: #333333;
+            height:500px;
+        }
+        .header,.active_body,.footer{
+            width:750px;
+            text-align: center;
+        }
+        .header{
+            height:344px;background: url('bg_2.png')
+        }
+        .active_body_part1,.active_body_part1_title,.active_body_part1_body,.table,.listrow1,.listrow2,.code,.code_t{
+            margin: 0 auto;position: relative;
+        }
+        .active_body_part1{
+            top: -100px;
+        }
+        .active_body_part1_title{
+            width:226px;
+            height:85px;
+            padding-top: 13px;
+            z-index: 2;
+            top: 39px;
+            background: #3a79ba;
+            border-radius: 9px;
+            -webkit-border-radius: 9px;
+            -o-border-radius: 9px;
+            -ms-border-radius: 9px;
+            -moz-border-radius:9px ;
+        }
+        .active_body_part1_body{
+            height:927px;
+            background: #3a79ba;
+
+        }
+
+        .active_body_part1_body .left,.active_body_part1_body .right{
+            width:279px;
+            border-bottom:dashed 3px #7ecef4;
+            position: relative;
+        }
+        .active_body_part1_body .left{
+            left: -4px;
+            top: 16px;
+            z-index: 3;
+        }
+        .active_body_part1_body .right{
+            left: 475px;
+            top: 11px;
+            z-index: 3;
+            margin-bottom: 42px;
+        }
+        .active_body_part1_title .title{
+            margin-left: 10px;
+            margin-right: 10px;
+            height:63px;
+            line-height: 63px;
+            border-top:dashed 3px #7ecef4;
+            border-left:dashed 3px #7ecef4;
+            border-right:dashed 3px #7ecef4;
+            font-size: 36px;
+            color:#ffffff;
+            border-radius: 9px  9px 0 0;
+            -webkit-border-radius: 9px  9px 0 0;
+            -o-border-radius: 9px  9px 0 0;
+            -ms-border-radius: 9px  9px 0 0;
+            -moz-border-radius:9px  9px 0 0;
+        }
+        .grayline{
+            border-top:dashed 3px #a0a0a0 !important;
+            border-left:dashed 3px #a0a0a0  !important;
+            border-right:dashed 3px #a0a0a0  !important;
+
+        }
+        .grayline-bottom{
+            border-bottom:dashed 3px #a0a0a0 !important;
+        }
+        .table{
+            width:690px;
+            margin-bottom: 50px;
+            background: #024d99;
+        }
+        .table_title{
+            border-top:1px solid #cccccc;
+            height:62px;
+            line-height: 62px;
+            color:#ffffff;
+            font-size: 28px;
+        }
+        .table_head,.table_title,.table_row{
+            border-left:1px solid #cccccc;
+            border-bottom:1px solid #cccccc;
+            border-right:1px solid #cccccc;
+        }
+        .column1,.column2{
+            display:inline-block;
+            height:62px;
+            line-height: 62px;
+        }
+        .column1{
+            width: 285px;
+            border-right:1px solid #cccccc;
+        }
+        .column2{
+            width: 395px;
+
+        }
+        .table_head{
+            color:#b1d6fb;
+            font-size: 25px;
+        }
+        .table_row{
+            color:#ffffff;
+            font-size: 25px;
+        }
+        .active_body_part1_body .ttitle{
+            font-size: 30px;
+            color:#ffffff;
+            margin-bottom: 30px;
+        }
+        .listrow1,.listrow2{
+            background: #ffffff;
+            width:693px;
+        }
+        .p2_row1_left,.p2_row2_left{
+
+            width:164px;
+            background: red;
+            display: inline-block;
+            margin-left: -190px;
+        }
+        .p2_row2_left{
+            margin-left: -90px;
+        }
+        .p2_row1_right{
+
+            height:215px;
+            position:relative;
+            bottom: 35px;
+            left:40px;
+            display: inline-block;
+        }
+        .p2_row1_left{
+            height:215px;
+        }
+        .p2_row2_left{
+            height:259px;
+        }
+        .listrow1{
+            height:215px;
+            margin-bottom: 30px;
+        }
+        .listrow2{
+            height:259px;
+        }
+        .p2_row1_right_row1 span:first-child{
+            font-size: 30px;
+            color:#d20000;
+        }
+        .p2_row1_right_row2 span:first-child{
+            font-size: 30px;
+            color:#d20000;
+        }
+        .p2_row1_right_row3 span:first-child{
+            font-size: 30px;
+            color:#d20000;
+        }
+        .p2_row1_right_row1 span:last-child,.p2_row1_right_row2 span:last-child,.p2_row1_right_row3 span:last-child{
+            color:#666666;
+            font-size: 22px;
+        }
+        .p2_row2_right_row3 span:first-child,.p2_row2_right_row3 span:nth-child(3){
+            text-align: start !important;
+            color:#d20000;
+            font-size: 30px;
+            display: inline-block;
+        }
+        .double{
+            margin-bottom: 15px;
+        }
+        .p2_row2_right_row3 span:nth-child(2){
+            display: inline-block;
+            width:18px;
+            height:54px;
+            border-bottom: 2px solid #d20000;
+            border-top: 2px solid #d20000;
+            border-right: 2px solid #d20000;
+            margin-bottom: 15px;
+        }
+        .p2_row2_right_row3 span:nth-child(3){
+            display: inline-block;
+            margin-bottom: 35px;
+            vertical-align: bottom;
+
+        }
+        .p2_row2_right_row3 span:nth-child(3):before{
+            content: "";
+            display: inline-block;
+            width:13px;
+            border-bottom: 2px solid #d20000;
+            bottom: 10px;
+            position: relative;
+        }
+        .p2_row2_right_row3 span:nth-child(4){
+            display: inline-block;
+            margin-bottom: 38px;
+            vertical-align: bottom;
+            font-size: 22px;
+            color:#666666;
+        }
+
+        .p2_row1_right_row1,.p2_row1_right_row2,.p2_row1_right_row3,.p2_row2_right_row3{
+            margin-top:26px;
+        }
+        .p2_row1_right_row2,.note{
+            text-align: start !important;
+        }
+        .regular_commtent{
+            color:#3a0101;
+            font-size: 28px;
+            margin-top: 30px;
+            margin-bottom: 55px;
+        }
+        .regular_commtent p{
+            margin-left: 30px;
+            text-align: left;
+            line-height: 60px;
+        }
+        .pindent{
+            margin-left: 60px !important;
+        }
+
+        .code{
+            position: relative;
+            top:30px;
+        }
+        .code_t,.code{
+            position: relative;
+            width:668px;
+            height:260px;
+            background-color: #ffffff;
+
+        }
+        .code_t span{
+            position: relative;
+            top:220px;
+            color:#5e3d1d;
+            font-size: 18px;
+        }
+        .code_t span:first-child{
+            left:-80px;
+        }
+        .code_t span:last-child{
+            left:100px;
+        }
+        .code_t{
+            background: url('onlycode.jpg') no-repeat 42px 32px;
+
+        }
+        .p2_row1_left{
+            background: url('ydl.jpg') no-repeat top center;
+        }
+        .p2_row2_left{
+            background: url('yyl.jpg') no-repeat top center;
+        }
+    </style>
+</head>
+<body>
+<!-- 框架[[ -->
+<div id="pageContain" class="page-wrap">
+    <div class="page current">
+        <div class="content1">
+            <div class="header" ></div>
+            <div class="active_body">
+                <div class="active_body_part1">
+                    <div class="active_body_part1_title">
+                        <div class="title">活动规则</div>
+                    </div>
+                    <div class="active_body_part1_body"  >
+                        <div class="left"></div> <div  class="right"></div>
+                        <p class="ttitle">活动期间内完成以下任务即可获得相对应的奖励</p>
+                        <div class="table">
+                            <div class="table_title">出借6个月（银多利、月盈利）产品</div>
+                            <div class="table_head">
+                                <span class="column1">累计成功出借金额</span>
+                                <span class="column2">奖品设定</span>
+                            </div>
+                            <div class="table_row">
+                                <span class="column1">5万≤X＜20万</span>
+                                <span class="column2">300元京东卡</span>
+                            </div>
+                            <div class="table_row">
+                                <span class="column1">20万≤X＜50万</span>
+                                <span class="column2">1200元京东卡</span>
+                            </div>
+                            <div class="table_row"> <span class="column1">50万≤X＜100万</span>
+                                <span class="column2">3000元京东卡</span></div>
+                            <div class="table_row">
+                                <span class="column1">≥100万</span>
+                                <span class="column2">Apple iPhone 7</span>
+                            </div>
+                        </div>
+                        <div class="table">
+                            <div class="table_title">出借12-24个月（银多利、月盈利）产品</div>
+                            <div class="table_head">
+                                <span class="column1">累计成功出借金额</span>
+                                <span class="column2">奖品设定</span>
+                            </div>
+                            <div class="table_row">
+                                <span class="column1">5万≤X＜20万</span>
+                                <span class="column2">600元京东卡</span>
+                            </div>
+                            <div class="table_row">
+                                <span class="column1">20万≤X＜50万</span>
+                                <span class="column2">2500元京东卡</span>
+                            </div>
+                            <div class="table_row"> <span class="column1">50万≤X＜100万</span>
+                                <span class="column2">Apple iPhone 7</span></div>
+                            <div class="table_row">
+                                <span class="column1">≥100万</span>
+                                <span class="column2">Apple MacBook Pro 13.3英寸</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="active_body_part1"  style="top:-103px">
+                    <div style="background: #3a79ba">
+                        <div class="active_body_part1_title" style="background: #333333;width:280px">
+                            <div class="title grayline">专项高息项目</div>
+                        </div>
+                    </div>
+
+                    <div class="active_body_part1_body" style="background: #333333;height: 550px" >
+                        <div class="left grayline-bottom" style="left:-31px" ></div> <div  class="right grayline-bottom" style="left:502px" ></div>
+                        <div class="listrow1">
+                                <span class="p2_row1_left">
+                                </span>
+                                <span class="p2_row1_right">
+                                    <div class="p2_row1_right_row1">
+                                        <span>7%-12.88%</span>
+                                        <span>预期年化收益</span>
+                                    </div>
+                                     <div  class="p2_row1_right_row2">
+                                         <span>1-24个月</span>
+                                         <span>借款期限</span>
+                                     </div>
+                                     <div  class="p2_row1_right_row3">
+                                         <span>一次性还本付息</span>
+                                         <span>还款方式</span>
+                                     </div>
+                                </span>
+                        </div>
+                        <div class="listrow2">
+                             <span class="p2_row2_left">
+                                </span>
+                            <span class="p2_row1_right">
+                                    <div class="p2_row1_right_row1" style=" text-align: start !important;">
+                                        <span >11%-11.5%</span>
+                                        <span>预期年化收益</span>
+                                    </div>
+                                     <div  class="p2_row1_right_row2">
+                                         <span>12-24个月</span>
+                                         <span>借款期限</span>
+                                     </div>
+                                     <div  class="p2_row2_right_row3">
+                                         <span >
+                                             <div class="double">按月返息</div>
+                                             <div >按双月返息</div>
+                                         </span>
+                                         <span></span>
+                                         <span>到期返本</span>
+                                         <span>还款方式</span>
+                                     </div>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="active_body_part1" >
+                    <div style="background: #333333">
+                        <div class="active_body_part1_title" >
+                            <div class="title ">活动说明</div>
+                        </div>
+                    </div>
+
+                    <div class="active_body_part1_body" style="height: 711px" >
+                        <div class="left " ></div> <div  class="right "></div>
+                        <div class="regular_commtent">
+                            <p >1、新老用户均可参与此项活动。</p>
+                            <p>2、奖励发放：实物奖励将于<strong class="red">11月30日</strong>前送到您的手中，</p>
+                            <p  class="pindent">发放前会有客服人员与您电话确认，请您保持注册的</p>
+                            <p  class="pindent">手机号接通状态，奖励发放期间若因电话无法接通导</p>
+                            <p  class="pindent">致无法发放，发奖结束后不予以补发。</p>
+                            <p>3、成功投资定义是：活动期间内，您所投标的进入“回</p>
+                            <p  class="pindent">款中”状态，没有出现流标情况。</p>
+
+                            <p>4、每个身份证仅限参加一次，刷奖及冒用他人身份证者</p>
+                            <p  class="pindent">一经核实，取消活动资格，所得奖励不予承兑。</p>
+
+                            <p>5、本活动最终解释权归银谷在线所有，如有疑问请咨</p>
+                            <p  class="pindent">询客服，客服电话400-8908-299。</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="active_body_part1" style="top:-103px">
+                    <div style="background: #3a79ba">
+                        <div class="active_body_part1_title" style="background: #333333">
+                            <div class="title grayline">专属锦囊</div>
+                        </div>
+                    </div>
+
+                    <div class="active_body_part1_body" style="background: #333333;height: 285px" >
+                        <div class="left grayline-bottom" ></div> <div  class="right grayline-bottom"></div>
+                        <div class="code">
+                            <div class="code_t"><span>扫一扫<i style="color: transparent">下</i>下载APP</span><span>关注微信服务号</span><span>关注微信订阅号</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- 框架]] -->
+<script type="text/javascript">
+    window.onload = window.onresize = function(){
+        pageResponse({
+            selectors : '.content1',     //模块选择器，使用querySelectorAll的方法
+            mode : 'auto',     // auto || contain || cover ，默认模式为auto
+            width : '750'      //输入页面的宽度，只支持输入数值，默认宽度为320px
+//            height : '150'      //输入页面的高度，只支持输入数值，默认高度为504px
+        })
+    }
+    function pageResponse(d){var c=navigator.userAgent,o=c.match(/Windows Phone ([\d.]+)/),e=c.match(/(Android);?[\s\/]+([\d.]+)?/),b=document.documentElement.clientWidth,n=document.documentElement.clientHeight,g=b/n,q=d.width||320,l=d.height||504,a=q/l,m=document.querySelectorAll(d.selectors),k=m.length,h=d.mode||"auto",j=d.origin||"left top 0",f=(h=="contain")?(g>a?n/l:b/q):(h=="cover")?(g<a?n/l:b/q):b/q;function p(t,s,r){var i=s.style;i.width=q+"px";i.height=l+"px";i.webkitTransformOrigin=j;i.transformOrigin=j;i.webkitTransform="scale("+r+")";i.transform="scale("+r+")";if(t=="auto"&&e){document.body.style.height=l*r+"px"}else{if(t=="contain"||t=="cover"){i.position="absolute";i.left=(b-q)/2+"px";i.top=(n-l)/2+"px";i.webkitTransformOrigin="center center 0";i.transformOrigin="center center 0";if(o){document.body.style.msTouchAction="none"}else{document.ontouchmove=function(u){u.preventDefault()}}}}}while(--k>=0){p(h,m[k],f)}};
+</script>
+</body>
+</html>

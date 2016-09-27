@@ -1,0 +1,285 @@
+/* ============================================================
+        样式重置
+        ============================================================ */
+body,p{margin:0;padding:0;}
+
+body{-webkit-user-select:none;-webkit-text-size-adjust:none!important;font-family:Helvetica;}
+
+a,button,input,img{-webkit-touch-callout:none;}/* 1.ios 长按时不触发系统的菜单 2.禁止长按时下载图片 */
+
+/*框架*/
+html{-ms-touch-action: none;}/* 阻止windows Phone 的默认触摸事件 */
+body{overflow-x: hidden;}
+.page-wrap{overflow-x:hidden}
+.page{display:none;width:100%;height:100%;overflow-x:hidden;position:absolute;top:0;left:0}
+.content{width:100%;height:100%;display:none;position:relative;z-index:0}
+.current .content,.slide .content{display:block}
+.current{display:block;z-index:1}
+.slide{display:block;z-index:2}
+.swipe{display:block;z-index:3;transition-duration:0ms!important;-webkit-transition-duration:0ms!important}
+
+body{
+    background: #333333;
+    height:500px;
+}
+.header,.active_body,.footer{
+    width:750px;
+    text-align: center;
+}
+.header{
+    height:344px;background: url('http://img5.yingu.com/image/active/investActiv/bg_2.png')
+}
+.active_body_part1,.active_body_part1_title,.active_body_part1_body,.table,.listrow1,.listrow2,.code,.code_t{
+    margin: 0 auto;position: relative;
+}
+.active_body_part1{
+    top: -100px;
+}
+.active_body_part1_title{
+    width:226px;
+    height:85px;
+    padding-top: 13px;
+    z-index: 2;
+    top: 39px;
+    background: #3a79ba;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -o-border-radius: 9px;
+    -ms-border-radius: 9px;
+    -moz-border-radius:9px ;
+}
+.active_body_part1_body{
+    height:927px;
+    background: #3a79ba;
+
+}
+
+.active_body_part1_body .left,.active_body_part1_body .right{
+    width:279px;
+    border-bottom:dashed 3px #7ecef4;
+    position: relative;
+}
+.active_body_part1_body .left{
+    left: -4px;
+    top: 16px;
+    z-index: 3;
+}
+.active_body_part1_body .right{
+    left: 475px;
+    top: 11px;
+    z-index: 3;
+    margin-bottom: 42px;
+}
+.active_body_part1_title .title{
+    margin-left: 10px;
+    margin-right: 10px;
+    height:63px;
+    line-height: 63px;
+    border-top:dashed 3px #7ecef4;
+    border-left:dashed 3px #7ecef4;
+    border-right:dashed 3px #7ecef4;
+    font-size: 36px;
+    color:#ffffff;
+    border-radius: 9px  9px 0 0;
+    -webkit-border-radius: 9px  9px 0 0;
+    -o-border-radius: 9px  9px 0 0;
+    -ms-border-radius: 9px  9px 0 0;
+    -moz-border-radius:9px  9px 0 0;
+}
+.grayline{
+    border-top:dashed 3px #a0a0a0 !important;
+    border-left:dashed 3px #a0a0a0  !important;
+    border-right:dashed 3px #a0a0a0  !important;
+
+}
+.grayline-bottom{
+    border-bottom:dashed 3px #a0a0a0 !important;
+}
+.table{
+    width:690px;
+margin-bottom: 50px;
+    background: #024d99;
+}
+.table_title{
+    border-top:1px solid #cccccc;
+    height:62px;
+    line-height: 62px;
+    color:#ffffff;
+    font-size: 28px;
+}
+.table_head,.table_title,.table_row{
+    border-left:1px solid #cccccc;
+    border-bottom:1px solid #cccccc;
+    border-right:1px solid #cccccc;
+}
+.column1,.column2{
+    display:inline-block;
+    height:62px;
+    line-height: 62px;
+}
+.column1{
+    width: 285px;
+    border-right:1px solid #cccccc;
+}
+.column2{
+    width: 395px;
+
+}
+.table_head{
+    color:#b1d6fb;
+    font-size: 25px;
+}
+.table_row{
+     color:#ffffff;
+     font-size: 25px;
+ }
+.active_body_part1_body .ttitle{
+    font-size: 30px;
+    color:#ffffff;
+    margin-bottom: 30px;
+}
+.listrow1,.listrow2{
+    background: #ffffff;
+    width:693px;
+}
+.p2_row1_left,.p2_row2_left{
+
+    width:164px;
+    background: red;
+    display: inline-block;
+    margin-left: -190px;
+}
+.p2_row2_left{
+    margin-left: -90px;
+}
+.p2_row1_right{
+
+    height:215px;
+    position:relative;
+    bottom: 35px;
+    left:40px;
+    display: inline-block;
+}
+.p2_row1_left{
+    height:215px;
+}
+.p2_row2_left{
+    height:259px;
+}
+.listrow1{
+    height:215px;
+    margin-bottom: 30px;
+}
+.listrow2{
+    height:259px;
+}
+.p2_row1_right_row1 span:first-child{
+    font-size: 30px;
+    color:#d20000;
+ }
+.p2_row1_right_row2 span:first-child{
+    font-size: 30px;
+    color:#d20000;
+}
+.p2_row1_right_row3 span:first-child{
+    font-size: 30px;
+    color:#d20000;
+}
+.p2_row1_right_row1 span:last-child,.p2_row1_right_row2 span:last-child,.p2_row1_right_row3 span:last-child{
+    color:#666666;
+    font-size: 22px;
+}
+.p2_row2_right_row3 span:first-child,.p2_row2_right_row3 span:nth-child(3){
+    text-align: start !important;
+    color:#d20000;
+    font-size: 30px;
+    display: inline-block;
+}
+.double{
+    margin-bottom: 15px;
+}
+.p2_row2_right_row3 span:nth-child(2){
+    display: inline-block;
+    width:18px;
+    height:54px;
+    border-bottom: 2px solid #d20000;
+    border-top: 2px solid #d20000;
+    border-right: 2px solid #d20000;
+    margin-bottom: 15px;
+ }
+.p2_row2_right_row3 span:nth-child(3){
+    display: inline-block;
+    margin-bottom: 35px;
+    vertical-align: bottom;
+
+}
+.p2_row2_right_row3 span:nth-child(3):before{
+    content: "";
+    display: inline-block;
+    width:13px;
+    border-bottom: 2px solid #d20000;
+    bottom: 10px;
+    position: relative;
+}
+.p2_row2_right_row3 span:nth-child(4){
+     display: inline-block;
+     margin-bottom: 38px;
+     vertical-align: bottom;
+    font-size: 22px;
+color:#666666;
+ }
+
+.p2_row1_right_row1,.p2_row1_right_row2,.p2_row1_right_row3,.p2_row2_right_row3{
+    margin-top:26px;
+}
+.p2_row1_right_row2,.note{
+    text-align: start !important;
+}
+.regular_commtent{
+    color:#3a0101;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 55px;
+}
+.regular_commtent p{
+    margin-left: 30px;
+    text-align: left;
+    line-height: 60px;
+}
+.pindent{
+    margin-left: 60px !important;
+}
+
+.code{
+    position: relative;
+    top:30px;
+}
+.code_t,.code{
+    position: relative;
+    width:668px;
+    height:260px;
+    background-color: #ffffff;
+
+}
+.code_t span{
+    position: relative;
+    top:220px;
+    color:#5e3d1d;
+    font-size: 18px;
+}
+.code_t span:first-child{
+    left:-80px;
+}
+.code_t span:last-child{
+    left:100px;
+}
+.code_t{
+     background: url('http://img5.yingu.com/image/active/investActiv/onlycode.jpg') no-repeat 42px 32px;
+
+}
+.p2_row1_left{
+    background: url('http://img5.yingu.com/image/active/investActiv/ydl.jpg') no-repeat top center;
+}
+.p2_row2_left{
+    background: url('http://img5.yingu.com/image/active/investActiv/yyl.jpg') no-repeat top center;
+ }
