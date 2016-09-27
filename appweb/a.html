@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <title>fullPage</title>
+    <style type="text/css">
+        /* ============================================================
+           样式重置
+           ============================================================ */
+        body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,fieldset,legend,input,select,textarea,button,th,td{margin:0;padding:0;}
+        h1,h2,h3,h4,h5,h6{font-size:100%;}
+        ul,dl,ol{list-style:none;}
+        img,fieldset,input[type="submit"]{border:0 none;}
+        img{display:inline-block;overflow-x:hidden;vertical-align:top;}
+        em{font-style:normal;}
+        strong{font-weight:normal;}
+        table{border-collapse:collapse;border-spacing:0;}
+        button,input[type="button"]{cursor:pointer;border:0 none;}
+        textarea{word-wrap:break-word;resize:none;}  /* word-wrap for opera, resize for webkit */
+        menu{margin:0;padding:0;}
+        body{-webkit-user-select:none;-webkit-text-size-adjust:none!important;font-family:Helvetica;}
+        input[type="number"]{-webkit-user-select:text;}
+        a,button,input,img{-webkit-touch-callout:none;}/* 1.ios 长按时不触发系统的菜单 2.禁止长按时下载图片 */
+        input,select,textarea{outline:none;}
+        /*框架*/
+        html{-ms-touch-action: none;}/* 阻止windows Phone 的默认触摸事件 */
+        body{overflow-x: hidden;}
+        .page-wrap{overflow-x:hidden}
+        .page{display:none;width:100%;height:100%;overflow-x:hidden;position:absolute;top:0;left:0}
+        .content{width:100%;height:100%;display:none;position:relative;z-index:0}
+        .current .content,.slide .content{display:block}
+        .current{display:block;z-index:1}
+        .slide{display:block;z-index:2}
+        .swipe{display:block;z-index:3;transition-duration:0ms!important;-webkit-transition-duration:0ms!important}
+
+        body{
+            background: #fffcd1;
+        }
+        .header,.regular,.footer{
+            width:750px;
+            text-align: center;
+        }
+        .regular_title,.regular_commtent,.regular_body,.regular_body_b,.regular_body_bb,.regular_body_arrow,.regular_body_h1,.regular_body_note,.code_t,.footer_content,.footer_title{
+            margin: 0 auto;
+        }
+        .regular{
+            height:802px;
+        }
+        .header{
+            height:320px;background: url('num.jpg')
+        }
+        .regular_commtent{
+           color:#3a0101;
+            font-size: 30px;
+            margin-top: 30px;
+            margin-bottom: 55px;
+        }
+        .regular_title{
+            line-height: 74px;
+            background-color: #f96855;
+            font-size: 36px;
+            color: #ffffff;
+            width:280px;
+            height:74px;
+            border-radius: 37px;
+            -webkit-border-radius: 37px;
+            -o-border-radius: 37px;
+            -ms-border-radius: 37px;
+            -moz-border-radius:37px ;
+        }
+        .regular_body_p span{
+            display: inline-block;
+        }
+        .p1{
+            width:183px;
+            height: 216px;
+            line-height: 216px;
+            font-size: 28px;
+            color:#ffffff;
+            background-color: #f96855;
+            border-radius: 17px;
+            -webkit-border-radius: 17px;
+            -o-border-radius: 17px;
+            -ms-border-radius: 17px;
+            -moz-border-radius:17px ;
+
+        }
+        .p1 div{
+            line-height: 30px;
+            margin-bottom: 12px;
+        }
+        .p1 div:first-child{
+            margin-top: 47px;
+        }
+        .addsymble{
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+        .addsymble div:first-child{
+            width:40px;
+            border-bottom: solid #f96855 10px;
+        }
+        .addsymble div:last-child{
+            height:40px;
+            border-left: solid #f96855 10px;
+            position: relative;
+            left:15px;
+            top:-25px;
+        }
+        .regular_body_bb{
+          margin-top: -3px;
+            width:570px;
+            border-bottom: solid #f96855 10px;
+        }
+        .regular_body_b{
+            margin-top: -3px;
+        }
+        .regular_body_b span{
+
+            height:23px;
+            border-left: solid #f96855 10px;
+        }
+        .regular_body_b span:first-child{
+            position: relative;
+            left:-270px;
+        }
+        .regular_body_b span:last-child{
+            position: relative;
+            left:270px;
+        }
+        .regular_body_h1 span{
+            font-size: 34px;
+            color:#3a0101;
+            font-weight: bold;
+        }
+        .mobfee{
+            font-size: 38px;
+            color:#de3923 !important;
+        }
+        .regular_body_note{
+          background-color: #fedd83;
+            width:688px;
+            height:190px;
+            border-radius: 17px;
+            -webkit-border-radius: 17px;
+            -o-border-radius: 17px;
+            -ms-border-radius: 17px;
+            -moz-border-radius:17px ;
+        }
+        .regular_body_note{
+            margin-top: 45px;
+            padding-top: 30px;
+        }
+        .notetitle{
+
+            margin-bottom: 15px;
+            color:#3a0101;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .notecontent{
+            padding: 0;
+            margin-left: 12px;
+            margin-right: 12px;
+            font-weight: bold;
+            color:#130d04;
+            font-size: 28px;
+           line-height: 50px;
+        }
+        .regular_body_code{
+            height: 480px;
+            position: relative;
+        }
+        .code_b {
+            position: absolute;
+        }
+
+        .code_b{
+            bottom: 0;
+            height:64px;
+            width: 750px;
+            background-color: #289b66;
+            border-radius: 27px 27px 0 0;
+            -webkit-border-radius:  27px 27px 0 0;
+            -o-border-radius:  27px 27px 0 0;
+            -ms-border-radius:  27px 27px 0 0;
+            -moz-border-radius: 27px 27px 0 0;
+        }
+        .code_t{
+            position: relative;
+            top: 160px;
+            width:668px;
+            height:260px;
+            background-color: #ffffff;
+            border: solid 11px #ad845c;
+        }
+        .code_t span{
+            position: relative;
+            top:220px;
+            color:#5e3d1d;
+            font-size: 18px;
+        }
+        .code_t span:first-child{
+            left:-80px;
+        }
+        .code_t span:last-child{
+            left:100px;
+        }
+        .code_p{
+            position: absolute;
+            left:50%;
+            margin-left: -319px;
+            margin-top: 30px;
+            height:337px;width:638px;background: url('code.png') no-repeat top center;
+            z-index: 9;
+        }
+        .footer_title{
+            line-height: 74px;
+            background-color: #381e0d;
+            font-size: 34px;
+            font-weight: bold;
+            color: #ffffff;
+            width:280px;
+            height:74px;
+            border-radius: 37px;
+            -webkit-border-radius: 37px;
+            -o-border-radius: 37px;
+            -ms-border-radius: 37px;
+            -moz-border-radius:37px ;
+        }
+        .footer{
+            margin-top: 30px;
+        }
+        .regular_commtent p{
+            margin-left: 30px;
+            text-align: left;
+            line-height: 70px;
+        }
+        .pindent{
+            margin-left: 60px !important;
+        }
+        .regular_body_arrow{
+            margin-top: 10px;
+            margin-bottom: 19px;
+            padding-right: 29px;
+        }
+        .arrowl,.arrowr{
+            z-index: 2;
+            position: relative;
+            width:50px;
+            border-bottom: solid 12px #f96855;
+        }
+       .maskl,.maskr{
+           position: absolute;
+           z-index: 3;
+           width: 11px;
+           height: 22px;
+           background-color: #fffcd1;
+          transform:rotate(-35deg);
+
+       }
+        .maskl{
+            left: -1px;
+            top: 10px;
+        }
+        .maskr{
+            left: 55px;
+            top: -34px;
+        }
+        .arrowl{
+            left:28px;
+            top:-8px;
+            transform:rotate(110deg);
+            -ms-transform:rotate(110deg); 	/* IE 9 */
+            -moz-transform:rotate(110deg); 	/* Firefox */
+            -webkit-transform:rotate(110deg); /* Safari 和 Chrome */
+            -o-transform:rotate(110deg);
+        }
+        .arrowtop,.arrowbottom{
+            margin: 0 auto;
+            text-align: center;
+            width:50px;
+            transform:rotate(35deg);
+            -ms-transform:rotate(35deg);
+            -moz-transform:rotate(35deg);
+            -webkit-transform:rotate(35deg);
+            -o-transform:rotate(35deg);
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- 框架[[ -->
+<div id="pageContain" class="page-wrap">
+
+    <div class="page current">
+        <div class="content1">
+            <div class="header" ></div>
+            <div class="regular">
+                <div class="regular_title">活动规则</div>
+                <div class="regular_commtent">活动期间内完成以下任务即可获得奖励</div>
+                <div class="regular_body">
+                    <div class="regular_body_p">
+                        <span class="p1"><div style="color:#f96855">填写</div><div>注册</div><div style="color:#f96855">填写</div></span>
+                        <span class="addsymble"><div></div><div></div></span>
+                        <span class="p1"><div>填写</div><div>客户经理</div><div>邀请码</div></span>
+                        <span  class="addsymble"><div></div><div></div></span>
+                        <span class="p1"><div>首次</div><div>借满</div><div>10000元</div></span>
+                    </div>
+                    <div class="regular_body_b"><span></span><span></span><span></span></div>
+                    <div class="regular_body_bb"></div>
+                    <div class="regular_body_arrow">
+                        <div class="arrowtop"><div class="maskl"></div> <div class="arrowl"></div><div  class="arrowr"></div> <div class="maskr"></div></div>
+                        <div class="arrowbottom"><div class="maskl"></div> <div class="arrowl"></div><div  class="arrowr"></div> <div class="maskr"></div></div>
+                    </div>
+                    <div class="regular_body_h1"><span >即可获得<span class="mobfee">100手机话费</span>奖励</span></div>
+                    <div class="regular_body_note"><div class="notetitle">注意事项</div><div class="notecontent">用户通过客户经理注册一定要填写邀请码，“漏填”<br/>“错填”请联系客户经理解决</div></div>
+                    <div class="regular_body_code">
+                        <div class="  code_p"></div>
+                      <div class="code_b"></div>
+                      <div class="code_t"><span>扫一扫<i style="color: transparent">下</i>下载APP</span><span>关注微信服务号</span><span>关注微信订阅号</span></div>
+                    </div>
+                    <div class="footer">
+                        <div class="footer_title">活动说明</div>
+                        <div class="regular_commtent">
+                            <p>1、此项活动仅针对活动期间内注册的新用户，注册时</p>
+                            <p class="pindent">需填写客户经理的邀请码可获得奖励。</p>
+                            <p>2、注：用户通过客户经理注册一定要填写邀请码，</p>
+                            <p  class="pindent">“漏填”“错填”请联系客户经理解决。</p>
+                            <p>3、奖励发放：用户需完成成功出借任务，话费奖励将</p>
+                            <p  class="pindent">于<span>10个工作日</span>内发放至用户注册手机号中，奖励发</p>
+                            <p  class="pindent">放期间若因电话无法接通导致无法发放，发奖结束</p>
+                            <p  class="pindent">后不予以补发。</p>
+                            <p>4、成功出借定义是：活动期间内，您所出借的的标的</p>
+                            <p  class="pindent">进入“回款中”状态，没有出现流标情况。</p>
+                            <p>5、每个身份证仅限参加一次，刷奖及冒用他人身份证</p>
+                            <p  class="pindent">者一经核实，取消活动资格，所得奖励不予承兑。</p>
+                            <p>6、本活动最终解释权归银谷在线所有，如有疑问请咨</p>
+                            <p  class="pindent">询客服，客服电话400-8908-299。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+</div>
+<!-- 框架]] -->
+<script type="text/javascript">
+    window.onload = window.onresize = function(){
+        pageResponse({
+            selectors : '.content1',     //模块选择器，使用querySelectorAll的方法
+            mode : 'auto',     // auto || contain || cover ，默认模式为auto
+            width : '750'      //输入页面的宽度，只支持输入数值，默认宽度为320px
+//            height : '150'      //输入页面的高度，只支持输入数值，默认高度为504px
+        })
+
+    }
+    function pageResponse(opt) {
+        var ua = navigator.userAgent,
+                wp = ua.match(/Windows Phone ([\d.]+)/),
+                android = ua.match(/(Android);?[\s\/]+([\d.]+)?/),
+        // 设备宽高初始比例
+                dw = document.documentElement.clientWidth,
+                dh = document.documentElement.clientHeight,
+                ds = dw / dh,
+        // 页面宽高初始比例
+                pw = opt.width || 320,
+                ph = opt.height || 504,
+                ps = pw / ph,
+        // 调用的选择器
+                pd = document.querySelectorAll(opt.selectors),
+                i = pd.length,
+        // 核心代码：页面缩放比例
+                sm = opt.mode || "auto",
+                or = opt.origin || "left top 0",
+                sn = (sm == "contain") ? (ds > ps ? dh / ph : dw / pw) : (sm == "cover") ? (ds < ps ? dh / ph : dw / pw) : dw / pw;
+        //样式模板 auto || contain || cover
+        function template(mode, obj, num) {
+            var _o = obj.style;
+            _o.width = pw + "px";
+            _o.height = ph + "px";
+            _o.webkitTransformOrigin = or;
+            _o.transformOrigin = or;
+            _o.webkitTransform = "scale(" + num + ")";
+            _o.transform = "scale(" + num + ")";
+            // 兼容android 2.3.5系统下body高度不自动刷新的bug
+            if (mode == "auto" && android) {
+                document.body.style.height = ph * num + "px";
+            } else
+            if (mode == "contain" || mode == "cover") {
+                _o.position = "absolute";
+                _o.left = (dw - pw) / 2 + "px";
+                _o.top = (dh - ph) / 2 + "px";
+                _o.webkitTransformOrigin = "center center 0";
+                _o.transformOrigin = "center center 0";
+                // 阻止默认滑屏事件
+                if (wp) {
+                    document.body.style.msTouchAction = "none";
+                } else {
+                    document.ontouchmove = function(e) {
+                        e.preventDefault()
+                    }
+                }
+            }
+        }
+        //运行
+        while (--i >= 0) {
+            template(sm, pd[i], sn);
+        }
+    }
+
+</script>
+</body>
+
+
+
+
+</html>
