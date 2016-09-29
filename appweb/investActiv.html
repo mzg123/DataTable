@@ -10,8 +10,8 @@
     <title>投资活动</title>
     <style>
         /* ============================================================
-        样式重置
-        ============================================================ */
+         样式重置
+         ============================================================ */
         body,p{margin:0;padding:0;}
 
         body{-webkit-user-select:none;-webkit-text-size-adjust:none!important;font-family:Helvetica;}
@@ -20,7 +20,7 @@
 
         /*框架*/
         html{-ms-touch-action: none;}/* 阻止windows Phone 的默认触摸事件 */
-        body{overflow-x: hidden;}
+        body,.active_body_part1_body{overflow-x: hidden;}
         .page-wrap{overflow-x:hidden}
         .page{display:none;width:100%;height:100%;overflow-x:hidden;position:absolute;top:0;left:0}
         .content{width:100%;height:100%;display:none;position:relative;z-index:0}
@@ -28,10 +28,15 @@
         .current{display:block;z-index:1}
         .slide{display:block;z-index:2}
         .swipe{display:block;z-index:3;transition-duration:0ms!important;-webkit-transition-duration:0ms!important}
-
+        .active_body_part1_body{
+            overflow-y: hidden;
+        }
+        html {
+            font-size: 10px;
+        }
         body{
             background: #333333;
-            height:500px;
+            /*height:500px;*/
         }
         .header,.active_body,.footer{
             width:750px;
@@ -39,6 +44,22 @@
         }
         .header{
             height:344px;background: url('bg_2.png')
+        }
+        .content2{
+            position: absolute;
+            /*width:100%;*/
+            /*height:100%;*/
+            z-index: 10;
+            background: transparent;
+        }
+        .people{
+            position:absolute;
+            top:220px;
+            left:0px;
+            z-index: 3;
+            height:134px;
+            width:124px;
+            background: url('people.png') no-repeat;
         }
         .active_body_part1,.active_body_part1_title,.active_body_part1_body,.table,.listrow1,.listrow2,.code,.code_t{
             margin: 0 auto;position: relative;
@@ -89,7 +110,8 @@
             border-top:dashed 3px #7ecef4;
             border-left:dashed 3px #7ecef4;
             border-right:dashed 3px #7ecef4;
-            font-size: 36px;
+            font-size: 3.6rem;
+            /*font-size: 36px;*/
             color:#ffffff;
             border-radius: 9px  9px 0 0;
             -webkit-border-radius: 9px  9px 0 0;
@@ -116,7 +138,8 @@
             height:62px;
             line-height: 62px;
             color:#ffffff;
-            font-size: 28px;
+            font-size: 2.8rem;
+            /*font-size: 28px;*/
         }
         .table_head,.table_title,.table_row{
             border-left:1px solid #cccccc;
@@ -138,14 +161,17 @@
         }
         .table_head{
             color:#b1d6fb;
-            font-size: 25px;
+            font-size: 2.5rem;
+            /*font-size: 25px;*/
         }
         .table_row{
             color:#ffffff;
-            font-size: 25px;
+            font-size: 2.5rem;
+            /*font-size: 25px;*/
         }
         .active_body_part1_body .ttitle{
-            font-size: 30px;
+            font-size: 3.0rem;
+            /*font-size: 30px;*/
             color:#ffffff;
             margin-bottom: 30px;
         }
@@ -162,6 +188,9 @@
         }
         .p2_row2_left{
             margin-left: -90px;
+        }
+        .red{
+            color:#de0000;
         }
         .p2_row1_right{
 
@@ -185,25 +214,30 @@
             height:259px;
         }
         .p2_row1_right_row1 span:first-child{
-            font-size: 30px;
+            font-size: 3rem;
+            /*font-size: 30px;*/
             color:#d20000;
         }
         .p2_row1_right_row2 span:first-child{
+            font-size: 3rem;
             font-size: 30px;
             color:#d20000;
         }
         .p2_row1_right_row3 span:first-child{
-            font-size: 30px;
+            font-size: 3rem;
+            /*font-size: 30px;*/
             color:#d20000;
         }
         .p2_row1_right_row1 span:last-child,.p2_row1_right_row2 span:last-child,.p2_row1_right_row3 span:last-child{
             color:#666666;
-            font-size: 22px;
+            font-size: 2.2rem;
+            /*font-size: 22px;*/
         }
         .p2_row2_right_row3 span:first-child,.p2_row2_right_row3 span:nth-child(3){
             text-align: start !important;
             color:#d20000;
-            font-size: 30px;
+            font-size: 3rem;
+            /*font-size: 30px;*/
             display: inline-block;
         }
         .double{
@@ -236,7 +270,8 @@
             display: inline-block;
             margin-bottom: 38px;
             vertical-align: bottom;
-            font-size: 22px;
+            font-size: 2.2rem;
+            /*font-size: 22px;*/
             color:#666666;
         }
 
@@ -248,7 +283,8 @@
         }
         .regular_commtent{
             color:#3a0101;
-            font-size: 28px;
+            font-size: 2.8rem;
+            /*font-size: 28px;*/
             margin-top: 30px;
             margin-bottom: 55px;
         }
@@ -276,7 +312,8 @@
             position: relative;
             top:220px;
             color:#5e3d1d;
-            font-size: 18px;
+            font-size: 1.8rem;
+            /*font-size: 18px;*/
         }
         .code_t span:first-child{
             left:-80px;
@@ -297,13 +334,16 @@
     </style>
 </head>
 <body>
+
 <!-- 框架[[ -->
 <div id="pageContain" class="page-wrap">
     <div class="page current">
         <div class="content1">
+
             <div class="header" ></div>
             <div class="active_body">
                 <div class="active_body_part1">
+
                     <div class="active_body_part1_title">
                         <div class="title">活动规则</div>
                     </div>
@@ -355,6 +395,7 @@
                     </div>
                 </div>
                 <div class="active_body_part1"  style="top:-103px">
+
                     <div style="background: #3a79ba">
                         <div class="active_body_part1_title" style="background: #333333;width:280px">
                             <div class="title grayline">专项高息项目</div>
@@ -407,6 +448,7 @@
                     </div>
                 </div>
                 <div class="active_body_part1" >
+
                     <div style="background: #333333">
                         <div class="active_body_part1_title" >
                             <div class="title ">活动说明</div>
@@ -434,6 +476,7 @@
                     </div>
                 </div>
                 <div class="active_body_part1" style="top:-103px">
+
                     <div style="background: #3a79ba">
                         <div class="active_body_part1_title" style="background: #333333">
                             <div class="title grayline">专属锦囊</div>
@@ -449,6 +492,7 @@
                 </div>
             </div>
         </div>
+
     </div>
 
 
@@ -464,6 +508,12 @@
         })
     }
     function pageResponse(d){var c=navigator.userAgent,o=c.match(/Windows Phone ([\d.]+)/),e=c.match(/(Android);?[\s\/]+([\d.]+)?/),b=document.documentElement.clientWidth,n=document.documentElement.clientHeight,g=b/n,q=d.width||320,l=d.height||504,a=q/l,m=document.querySelectorAll(d.selectors),k=m.length,h=d.mode||"auto",j=d.origin||"left top 0",f=(h=="contain")?(g>a?n/l:b/q):(h=="cover")?(g<a?n/l:b/q):b/q;function p(t,s,r){var i=s.style;i.width=q+"px";i.height=l+"px";i.webkitTransformOrigin=j;i.transformOrigin=j;i.webkitTransform="scale("+r+")";i.transform="scale("+r+")";if(t=="auto"&&e){document.body.style.height=l*r+"px"}else{if(t=="contain"||t=="cover"){i.position="absolute";i.left=(b-q)/2+"px";i.top=(n-l)/2+"px";i.webkitTransformOrigin="center center 0";i.transformOrigin="center center 0";if(o){document.body.style.msTouchAction="none"}else{document.ontouchmove=function(u){u.preventDefault()}}}}}while(--k>=0){p(h,m[k],f)}};
+    ( function sizeHtml() {
+
+        window.mtSizeBase = document.body.scrollWidth / 10;
+        window.mtSizeBase = window.mtSizeBase > 10 ? 10 : window.mtSizeBase;
+        document.getElementsByTagName("html")[0].setAttribute("style", "font-size:" + window.mtSizeBase + "px")
+    })();
 </script>
 </body>
 </html>

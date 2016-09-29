@@ -17,7 +17,12 @@ body{overflow-x: hidden;}
 .current{display:block;z-index:1}
 .slide{display:block;z-index:2}
 .swipe{display:block;z-index:3;transition-duration:0ms!important;-webkit-transition-duration:0ms!important}
-
+.active_body_part1_body{
+    overflow-y: hidden;
+}
+.active_body_part1_body{
+    overflow-x:hidden;
+}
 body{
     background: #333333;
     height:500px;

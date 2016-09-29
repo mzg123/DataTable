@@ -331,8 +331,8 @@
                     <div class="regular_body_b"><span></span><span></span><span></span></div>
                     <div class="regular_body_bb"></div>
                     <div class="regular_body_arrow">
-                        <div class="arrowtop"><div class="maskl"></div> <div class="arrowl"></div><div  class="arrowr"></div> <div class="maskr"></div></div>
-                        <div class="arrowbottom"><div class="maskl"></div> <div class="arrowl"></div><div  class="arrowr"></div> <div class="maskr"></div></div>
+                        <div class="arrowtop"><div class="maskl2"></div> <div class="arrowl"></div><div  class="arrowr"></div> <div class="maskr2"></div></div>
+                        <div class="arrowbottom"><div class="maskl2"></div> <div class="arrowl"></div><div  class="arrowr"></div> <div class="maskr2"></div></div>
                     </div>
                     <div class="regular_body_h1"><span >即可获得<span class="mobfee">100手机话费</span>奖励</span></div>
                     <div class="regular_body_note"><div class="notetitle">注意事项</div><div class="notecontent">用户通过客户经理注册一定要填写邀请码，“漏填”<br/>“错填”请联系客户经理解决</div></div>
@@ -377,14 +377,28 @@
             mode : 'auto',     // auto || contain || cover ，默认模式为auto
             width : '750'      //输入页面的宽度，只支持输入数值，默认宽度为320px
 //            height : '150'      //输入页面的高度，只支持输入数值，默认高度为504px
-        })
-        isWeiXin()&&(document.getElementsByTagName("html")[0].style.fontSize="13px");
+        });
+      //  agentTest("huaweimt7-tl10")&&(document.getElementsByTagName("html")[0].style.fontSize="11.5px");
 
     }
-    function isWeiXin(){
+    agentTest("huaweimt7-tl10")&&(document.getElementsByTagName("html")[0].style.fontSize="11.5px");
+    function agentTest(agent){
         var ua = window.navigator.userAgent.toLowerCase();
+        if(agent=="huaweimt7-tl10"){
+            if(ua.match(/huaweimt7-tl10/i)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    }
+//    navigator.userAgent.search('MSIE 7.0')
+    function isWeiXin( ){
+        var ua = window.navigator.userAgent.toLowerCase();
+//    alert(agent);
 
-        if(ua.match(/micromessenger/i)){
+
+        if(ua.match(/micromessenger/i)||ua.match(/huaweimt7-tl10/i)){
             return true;
         }else{
             return false;
