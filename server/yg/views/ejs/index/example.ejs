@@ -1,0 +1,8 @@
+<% layout('../layout/main_layout') -%>
+<% script('foo.js') -%>
+<% stylesheet('https://img3.yingu.com/1475144197/module/??index/index.css,index/index-modify.css,ui/clickscroll/clickscroll.css,ui/roller/roller.css,ui/odometer/odometer.css,ui/select/select.css') -%>
+<h1>I am the <%=what%> template</h1>
+<%-partial('../block/muppets',muppets) %>
+     <% include extra %>
+<% block('header', "<p>I'm in the header.</p>") -%>
+<% block('footer', "<p>I'm in the footer.</p>") -%>
