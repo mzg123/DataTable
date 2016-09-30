@@ -1,19 +1,20 @@
 /**
  * Created by Administrator on 2016/9/30.
  */
-var initserver=function(app){
-    this.prototype.app=app;
-    this.init();
-}
-initserver.prototype={
+//var initserver=function(){
+//    //this.prototype.app=app;
+//    //this.init();
+//
+//}
+var initserver={
     init:function(app){
-        this.startMulcpu();
-        this.catch500();
-        this.catch404();
+        this.startMulcpu(app);
+        this.catch500(app);
+        this.catch404(app);
     },
-    catch404:function(){
+    catch404:function(app){
 
-        this.app.use(function(req, res, next) {
+        app.use(function(req, res, next) {
             var err = new Error('Not Found');
             err.status = 404;
             next(err);
