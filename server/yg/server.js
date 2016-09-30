@@ -20,7 +20,9 @@ app.listen(config.port);
 
 //启动多核cpu
 //错误处理
-new require('./assist/initserver')(app);
+//var iss= require('./assist/initserver');
+//new iss(app);
+require('./assist/initserver')(app);
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
