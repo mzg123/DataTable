@@ -7,6 +7,7 @@ var config=require('./common/config');
 app.express=express;
 app.path=path;
 app.route=router;
+app.config=config;
 // 设置引擎
 app.engine('ejs', engine);
 app.set('views',__dirname + '\\views\\ejs');
@@ -39,11 +40,4 @@ if (app.get('env') === 'development') {
 
 // production error handler
 // no stacktraces leaked to user
-app.use(function(err, req, res, next) {
-    res.status(err.status || 500);
-    res.send("error");
-    //res.render('error', {
-    //    message: err.message,
-    //    error: {}
-    //});
-});
+

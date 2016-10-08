@@ -9,8 +9,8 @@
 var initserver={
     init:function(app){
         this.startMulcpu(app);
-        this.catch500(app);
         this.catch404(app);
+        this.catch500(app);
     },
     catch404:function(app){
 
@@ -20,8 +20,16 @@ var initserver={
             next(err);
         });
     },
-    catch500:function(){
-
+    catch500:function(app){
+        app.use(function(err, req, res, next) {
+            app.datelogger.trace(err);
+            res.status(err.status || 500);
+            res.send("error");
+            //res.render('error', {
+            //    message: err.message,
+            //    error: {}
+            //});
+        });
     },
     startMulcpu:function(){
 
