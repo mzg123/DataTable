@@ -17,7 +17,7 @@ app.set('view engine', 'ejs'); // so you can render('index')
 require('./assist/initmiddleware')(app);
 //初始化路由页面
 require('./assist/initroutes')(app);
-app.listen(config.port);
+app.listen(config.port,config.ip);
 
 //启动多核cpu
 //错误处理

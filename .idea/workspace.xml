@@ -2,160 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/semver.browser.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/semver.min.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/.bob.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/string_decoder/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/streams/BaseRollingFileStream-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/streams/BaseRollingFileStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/streams/DateRollingFileStream-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/streams/DateRollingFileStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/core-util-is/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/string_decoder/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/core-util-is/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/isarray/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/streams/RollingFileStream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/lib/_stream_duplex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/lib/_stream_passthrough.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/lib/_stream_readable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/lib/_stream_transform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/lib/_stream_writable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/test/amd.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/test/big-numbers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/isarray/build/build.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/categoryFilter-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/categoryFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/test/clean.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/clustered.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/clusteredAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/isarray/component.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/configuration-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/configureNoLevels-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/connect-logger-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/connect-logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/console.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/consoleAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/dateFile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/dateFileAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/date_format-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/date_format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/debug-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/double-stack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/duplex.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/example-connect-logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/example-socket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/file.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/fileAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/fileSync.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/fileSyncAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/core-util-is/float.patch" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/flush-on-exit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/foot.js.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/fromreadme.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/gelf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/gelfAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/global-log-level-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/test/gtr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/head.js.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/hipchat-appender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/hipchat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/hipchatAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/isarray/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/streams/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/string_decoder/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/layouts-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/layouts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/levels-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/levels.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/log-abspath-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/log-rolling.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/log4js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/log4js.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/log4js.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/logFaces-appender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/logFacesAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/logFacesAppender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/logLevelFilter-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/logLevelFilter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/logger-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/logger.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/logging-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/loggly-appender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/loggly.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/logglyAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/logstashUDP-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/logstashUDP.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/logstashUDP.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/test/ltr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/mailgun.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/mailgunAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/test/major-minor-patch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/memory-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/multiprocess-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/multiprocess.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/newLevel-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/test/no-module.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/nolog-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/core-util-is/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/isarray/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/passthrough.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/patternLayout-tokens.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/readable.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/reloadConfiguration-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/streams/rollingFileStream-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/semver.browser.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/.bin/semver.cmd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/semver.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/semver.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/.bin/semver" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/semver/bin/semver" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/setLevel-asymmetry-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/slack-appender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/slack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/slackAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/examples/smtp-appender.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/smtp.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/smtpAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/lib/appenders/stderr.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/stderrAppender-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/subcategories-test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/core-util-is/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/transform.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/core-util-is/lib/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/with-categoryFilter.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/with-dateFile.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/with-log-rolling.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/log4js/test/with-logLevelFilter.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/node_modules/readable-stream/writable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DataTable.iml" afterPath="$PROJECT_DIR$/DataTable.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/config.js" afterPath="$PROJECT_DIR$/server/yg/common/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/assist/initmiddleware.js" afterPath="$PROJECT_DIR$/server/yg/assist/initmiddleware.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/assist/initserver.js" afterPath="$PROJECT_DIR$/server/yg/assist/initserver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/package.json" afterPath="$PROJECT_DIR$/server/yg/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/server.js" afterPath="$PROJECT_DIR$/server/yg/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mzg.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -180,31 +30,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6520979" vertical-offset="64" max-vertical-offset="931">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="235" max-vertical-offset="931">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="initserver.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="initserver.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/assist/initserver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="855">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.81116587" vertical-offset="247" max-vertical-offset="988">
+              <caret line="39" column="37" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="date-2016-10-08-11.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-08-11.log">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -223,8 +73,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.535714" vertical-offset="0" max-vertical-offset="513">
-              <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
+            <state vertical-scroll-proportion="-11.535714" vertical-offset="38" max-vertical-offset="532">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -255,16 +105,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="323">
               <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/yg/views/ejs/index/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="247">
-              <caret line="0" column="9" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -331,11 +171,11 @@
         <option value="$PROJECT_DIR$/server/yg/routes/user/users.js" />
         <option value="$PROJECT_DIR$/server/yg/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/server/yg/common/config.js" />
         <option value="$PROJECT_DIR$/server/yg/assist/initmiddleware.js" />
-        <option value="$PROJECT_DIR$/server/yg/server.js" />
-        <option value="$PROJECT_DIR$/server/yg/assist/initserver.js" />
         <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-08-11.log" />
+        <option value="$PROJECT_DIR$/server/yg/server.js" />
+        <option value="$PROJECT_DIR$/server/yg/common/config.js" />
+        <option value="$PROJECT_DIR$/server/yg/assist/initserver.js" />
       </list>
     </option>
   </component>
@@ -449,219 +289,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mzg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataTable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mzg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataTable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ejs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mzg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataTable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="user" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mzg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataTable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="index" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mzg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataTable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log_file" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mzg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataTable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="logs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log_date" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mzg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataTable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mzg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataTable" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assist" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -982,18 +610,18 @@
       <workItem from="1475039582604" duration="9911000" />
       <workItem from="1475110893533" duration="15748000" />
       <workItem from="1475197064537" duration="19732000" />
-      <workItem from="1475896827589" duration="600000" />
+      <workItem from="1475896827589" duration="5185000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274759000" />
+    <option name="totallyTimeSpent" value="279344000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1002,9 +630,9 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.14748603" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1875" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28794643" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21026894" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1075,22 +703,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/yg/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/assist/initserver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -1388,24 +1000,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.535714" vertical-offset="0" max-vertical-offset="513">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4892704" vertical-offset="57" max-vertical-offset="798">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/logs/log_file/file.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="699">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-11.535714" vertical-offset="38" max-vertical-offset="532">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1418,14 +1014,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-08-11.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="342">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/assist/initmiddleware.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
@@ -1434,18 +1022,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/assist/initserver.js">
+    <entry file="file://$PROJECT_DIR$/server/yg/logs/log_file/file.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="855">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="699">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-08-14.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1462" max-vertical-offset="2071">
+          <caret line="88" column="20" selection-start-line="63" selection-start-column="23" selection-end-line="63" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6520979" vertical-offset="64" max-vertical-offset="931">
-          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="235" max-vertical-offset="931">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/assist/initserver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.81116587" vertical-offset="247" max-vertical-offset="988">
+          <caret line="39" column="37" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="37" />
           <folding />
         </state>
       </provider>

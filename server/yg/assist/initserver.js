@@ -11,6 +11,7 @@ var initserver={
         this.startMulcpu(app);
         this.catch404(app);
         this.catch500(app);
+        this.globleError(app);
     },
     catch404:function(app){
 
@@ -22,6 +23,7 @@ var initserver={
     },
     catch500:function(app){
         app.use(function(err, req, res, next) {
+            console.log(11);
             app.datelogger.trace(err);
             res.status(err.status || 500);
             res.send("error");
@@ -33,6 +35,11 @@ var initserver={
     },
     startMulcpu:function(){
 
+    },
+    globleError:function(app){
+        process.on('uncaughtException', function (err) {
+            app.datelogger.trace(err);
+        });
     }
 }
 

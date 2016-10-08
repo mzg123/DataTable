@@ -1,7 +1,7 @@
 
 var config={
     port:3000,
-    ip:"10.0.130.14",
+    ip:"10.0.130.125",
     logger:{
         "appenders":
             [
