@@ -4,7 +4,6 @@
     <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/config.js" afterPath="$PROJECT_DIR$/server/yg/common/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/assist/initserver.js" afterPath="$PROJECT_DIR$/server/yg/assist/initserver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/package.json" afterPath="$PROJECT_DIR$/server/yg/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/server.js" afterPath="$PROJECT_DIR$/server/yg/server.js" />
     </list>
     <ignored path="mzg.iws" />
@@ -33,8 +32,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="235" max-vertical-offset="931">
-              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="874">
+              <caret line="31" column="41" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -43,8 +42,8 @@
       <file leaf-file-name="initserver.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/assist/initserver.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.81116587" vertical-offset="247" max-vertical-offset="988">
-              <caret line="39" column="37" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="37" />
+            <state vertical-scroll-proportion="0.43678162" vertical-offset="0" max-vertical-offset="1121">
+              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -53,8 +52,8 @@
       <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
-              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
+              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -173,8 +172,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server/yg/assist/initmiddleware.js" />
         <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-08-11.log" />
-        <option value="$PROJECT_DIR$/server/yg/server.js" />
         <option value="$PROJECT_DIR$/server/yg/common/config.js" />
+        <option value="$PROJECT_DIR$/server/yg/server.js" />
         <option value="$PROJECT_DIR$/server/yg/assist/initserver.js" />
       </list>
     </option>
@@ -610,12 +609,12 @@
       <workItem from="1475039582604" duration="9911000" />
       <workItem from="1475110893533" duration="15748000" />
       <workItem from="1475197064537" duration="19732000" />
-      <workItem from="1475896827589" duration="5185000" />
+      <workItem from="1475896827589" duration="7050000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279344000" />
+    <option name="totallyTimeSpent" value="281209000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -1040,24 +1039,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="235" max-vertical-offset="931">
-          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="874">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="798">
-          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="817">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/assist/initserver.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.81116587" vertical-offset="247" max-vertical-offset="988">
-          <caret line="39" column="37" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="37" />
+        <state vertical-scroll-proportion="0.43678162" vertical-offset="0" max-vertical-offset="1121">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
           <folding />
         </state>
       </provider>

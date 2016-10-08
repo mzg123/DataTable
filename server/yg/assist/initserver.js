@@ -8,6 +8,13 @@
 //}
 var initserver={
     init:function(app){
+        if (app.config.env === 'production') {
+            app.set('env', 'production');
+        }
+        else if(app.config.env === 'development') {
+            app.set('env', 'development');
+        }
+
         this.startMulcpu(app);
         this.catch404(app);
         this.catch500(app);

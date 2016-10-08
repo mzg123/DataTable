@@ -27,17 +27,14 @@ app.listen(config.port,config.ip);
 // development error han
 // dler
 // will print stacktrace
-if (app.get('env') === 'development') {
-    app.use(function(err, req, res, next) {
-        res.status(err.status || 500);
-        res.send("error");
-        //res.render('error', {
-        //    message: err.message,
-        //    error: err
-        //});
-    });
-}
+//app.set('env', 'production');
+//console.log(app.get('env'));
+//if (app.get('env') === 'development') {
+//    app.use(function(err, req, res, next) {
+//        res.status(err.status || 500);
+//        res.send("error");
+//
+//    });
+//}
 
-// production error handler
-// no stacktraces leaked to user
 
