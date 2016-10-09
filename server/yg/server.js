@@ -29,4 +29,6 @@ app.listen(config.port,config.ip);
 //模拟服务器
 require('./common/testServer')(app);
 
+require('./common/httpslisten')(app);
+
 
