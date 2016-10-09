@@ -1,10 +1,10 @@
-var httpRep=require('../../common/httphelper');
+
 var lreq, lres, lnext,lapp;
 function startRoute(app){
   app.route.get('/', function(req, res, next) {
     lreq=req; lres=res;lnext=next;lapp=app;
     var options=app.base.getRequestOptions("/user","get",null);
-    httpRep.req(app,req,options,success,error);
+    app.httpRep.req(app,req,options,success,error);
   });
   return app.route;
 }
