@@ -9,7 +9,7 @@ var httphelper={
     },
     req:function(app,req,options,success,error){
         //options.headers|| (options.headers= req.headers);
-        lreq = http.request(options, function(res) {
+        var lreq = http.request(options, function(res) {
             res.setEncoding('utf8');
             res.on('data', function (data) {
                 try{

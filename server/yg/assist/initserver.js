@@ -22,7 +22,6 @@ var initserver={
     },
     catch404:function(app){
         app.use(function(req, res, next) {
-            console.log(req.path);
 
             var err = new Error(req.path+' Not Found');
             err.status = 404;
