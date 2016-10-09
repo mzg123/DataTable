@@ -23,7 +23,7 @@ var initserver={
     catch404:function(app){
         app.use(function(req, res, next) {
             console.log(req.path);
-           
+
             var err = new Error(req.path+' Not Found');
             err.status = 404;
             next(err);
@@ -46,6 +46,7 @@ var initserver={
     },
     globleError:function(app){
         process.on('uncaughtException', function (err) {
+            app.datelogger.info("globleError:");
             app.datelogger.trace(err);
         });
     }
