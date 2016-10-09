@@ -23,12 +23,13 @@ require('./assist/initmiddleware')(app);
 //初始化路由页面
 require('./assist/initroutes')(app);
 app.listen(config.port,config.ip);
-
+//启动ssl
+require('./common/httpslisten')(app);
 
  require('./assist/initserver').init(app);
 //模拟服务器
 require('./common/testServer')(app);
 
-require('./common/httpslisten')(app);
+
 
 

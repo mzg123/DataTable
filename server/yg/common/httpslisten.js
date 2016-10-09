@@ -6,6 +6,6 @@ function httpslisten(app){
     var certificate = fs.readFileSync('./common/https/server.crt', 'utf8');
     var options={key:privatekey, cert:certificate};
     var server = https.createServer(options, app);
-    server.listen(444);
+    server.listen(app.config.ssl,app.config.ip);
 }
 module.exports=httpslisten;

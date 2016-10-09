@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/common/httpslisten.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/common/https/server.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/common/https/server.key" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/config.js" afterPath="$PROJECT_DIR$/server/yg/common/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/httpslisten.js" afterPath="$PROJECT_DIR$/server/yg/common/httpslisten.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/server.js" afterPath="$PROJECT_DIR$/server/yg/server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mzg.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,18 +32,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="185" max-vertical-offset="760">
-              <caret line="29" column="7" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="date-2016-10-09-16.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-09-16.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="931">
-              <caret line="28" column="17" selection-start-line="15" selection-start-column="148" selection-end-line="15" selection-end-column="150" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="185" max-vertical-offset="779">
+              <caret line="24" column="32" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -61,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="httpslisten.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="httpslisten.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/common/httpslisten.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.283054" vertical-offset="0" max-vertical-offset="537">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+              <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -101,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="893">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.09310987" vertical-offset="7" max-vertical-offset="912">
+              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -193,10 +181,10 @@
         <option value="$PROJECT_DIR$/server/yg/common/testServer.js" />
         <option value="$PROJECT_DIR$/server/yg/routes/index/index.js" />
         <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-09-15.log" />
-        <option value="$PROJECT_DIR$/server/yg/common/config.js" />
-        <option value="$PROJECT_DIR$/server/yg/server.js" />
         <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-09-16.log" />
+        <option value="$PROJECT_DIR$/server/yg/server.js" />
         <option value="$PROJECT_DIR$/server/yg/common/httpslisten.js" />
+        <option value="$PROJECT_DIR$/server/yg/common/config.js" />
       </list>
     </option>
   </component>
@@ -870,12 +858,12 @@
       <workItem from="1475110893533" duration="15748000" />
       <workItem from="1475197064537" duration="19732000" />
       <workItem from="1475896827589" duration="11763000" />
-      <workItem from="1475974428377" duration="20511000" />
+      <workItem from="1475974428377" duration="20696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306433000" />
+    <option name="totallyTimeSpent" value="306618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -1251,14 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/common/httphelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="836">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/assist/initserver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="1140">
@@ -1291,26 +1271,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="893">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/common/https/server.key">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="185" max-vertical-offset="760">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -1331,10 +1295,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/common/httphelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="57" max-vertical-offset="836">
+          <caret line="15" column="27" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="185" max-vertical-offset="779">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/common/httpslisten.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.283054" vertical-offset="0" max-vertical-offset="537">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09310987" vertical-offset="7" max-vertical-offset="912">
+          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
           <folding />
         </state>
       </provider>
