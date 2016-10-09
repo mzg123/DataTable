@@ -30,7 +30,6 @@ var initserver={
     },
     catch500:function(app){
         app.use(function(err, req, res, next) {
-            console.log(11);
             app.datelogger.trace(err);
             res.status(err.status || 500);
             res.send("error");

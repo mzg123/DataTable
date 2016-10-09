@@ -4,10 +4,12 @@ var express = require('express')
     ,router = express.Router();
 var path = require('path');
 var config=require('./common/config');
+var base=require('./common/base');
 app.express=express;
 app.path=path;
 app.route=router;
 app.config=config;
+app.base=base;
 // 设置引擎
 app.engine('ejs', engine);
 app.set('views',__dirname + '\\views\\ejs');

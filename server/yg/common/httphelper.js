@@ -1,46 +1,30 @@
 var http = require('http');
 var httphelper={
-    get:function(app,req,success){
-
+    options:{
+        host: 'localhost',
+        port: 8001,
+        path: '/data',
+        method: 'GET',
+        headers: null
     },
-    post:function(app,req,success){
-
+    req:function(app,req,options,success,error){
+        //options.headers|| (options.headers= req.headers);
+        lreq = http.request(options, function(res) {
+            res.setEncoding('utf8');
+            res.on('data', function (data) {
+                success(JSON.parse(data));
+            });
+        });
+        lreq.on('error', function(e){
+            error(e.message);
+            this.err(app,e);
+        });
+        lreq.end();
     },
-    err:function(){
-
+    err:function(app,e){
+        app.datelogger.trace(e);
     }
 }
 
 module.exports = httphelper;
 
-
-
-
-function find (req, success){
-
-    var headers = req.headers;
-    headers.host = 'localhost';
-
-    var options = {
-        host: 'localhost',
-        port: 8001,
-        path: '/data',
-        method: 'GET',
-        headers: headers
-    };
-
-    req = http.request(options, function(res) {
-        res.setEncoding('utf8');
-        res.on('data', function (data) {
-            console.log('>>> ', data);
-            data = JSON.parse(data);
-            success(data);
-        });
-    });
-
-    req.on('error', function(e){
-        console.log("auth_user error: " + e.message);
-    });
-
-    req.end();
-}
