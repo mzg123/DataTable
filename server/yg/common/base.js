@@ -4,13 +4,13 @@ var base={
         var options;
         headers?(options= {
             host: config.serverIp,
-            port:  config.port,
+            port:  config.serverPort,
             path: path,
             method: method,
             headers: headers
         }):options= {
             host: config.serverIp,
-            port:  config.port,
+            port:  config.serverPort,
             path: path,
             method: method
         }

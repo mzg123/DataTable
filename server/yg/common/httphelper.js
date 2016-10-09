@@ -17,12 +17,12 @@ var httphelper={
         });
         lreq.on('error', function(e){
             error(e.message);
-            this.err(app,e);
+            app.datelogger.trace(e);
         });
         lreq.end();
     },
     err:function(app,e){
-        app.datelogger.trace(e);
+
     }
 }
 
