@@ -3,7 +3,7 @@ var config={
     port:3000,
     ip:"10.0.130.25",//node 启动的ip
     serverIp:"10.0.130.25",//node请求数据的ip
-    serverPort:3000,
+    serverPort:30001,
     env:"production",//development  production
     main:"test",
     logger:{

@@ -22,13 +22,16 @@ var initserver={
     },
     catch404:function(app){
         app.use(function(req, res, next) {
-            var err = new Error('Not Found');
+            console.log(req.path);
+           
+            var err = new Error(req.path+' Not Found');
             err.status = 404;
             next(err);
         });
     },
     catch500:function(app){
         app.use(function(err, req, res, next) {
+
             app.datelogger.trace(err);
             res.status(err.status || 500);
             res.send("error");
