@@ -2,6 +2,7 @@
 var config={
     port:3000,
     ssl:4441,
+    serverSsl:444,
     ip:"10.0.130.129",//node 启动的ip
     serverIp:"10.0.130.129",//node请求数据的ip
     serverPort:30001,
