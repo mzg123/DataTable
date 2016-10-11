@@ -16,9 +16,9 @@ var initserver={
         }
 
         this.startMulcpu(app);
-        this.catch404(app);
-        this.catch500(app);
-        this.globleError(app);
+       this.catch404(app);
+       this.catch500(app);
+       this.globleError(app);
     },
     catch404:function(app){
         app.use(function(req, res, next) {

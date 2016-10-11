@@ -13,7 +13,7 @@ app.route=router;
 app.config=config;
 app.base=base;
 app.httpRep=httpRep;
-
+app.index=0;
 // 设置引擎
 app.engine('ejs', engine);
 app.set('views',__dirname + '\\views\\ejs');
@@ -24,11 +24,11 @@ require('./assist/initmiddleware')(app);
 require('./assist/initroutes')(app);
 app.listen(config.port,config.ip);
 //启动ssl
-require('./common/httpslisten')(app);
-app.index=0;
+//require('./common/httpslisten')(app);
+
  require('./assist/initserver').init(app);
 //模拟服务器
-require('./common/testServer')(app);
+//require('./common/testServer')(app);
 
 
 
