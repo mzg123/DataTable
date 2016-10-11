@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/base.js" afterPath="$PROJECT_DIR$/server/yg/common/base.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/config.js" afterPath="$PROJECT_DIR$/server/yg/common/config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/testclient/clientbrowser.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/httphelper.js" afterPath="$PROJECT_DIR$/server/yg/common/httphelper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/routes/index/index.js" afterPath="$PROJECT_DIR$/server/yg/routes/index/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/testServer.js" afterPath="$PROJECT_DIR$/server/yg/common/testServer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/server.js" afterPath="$PROJECT_DIR$/server/yg/server.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mzg.iws" />
@@ -35,8 +34,8 @@
       <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="185" max-vertical-offset="779">
-              <caret line="24" column="32" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="779">
+              <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -46,17 +45,7 @@
         <entry file="file://$PROJECT_DIR$/server/yg/routes/user/users.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-              <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="httpslisten.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/yg/common/httpslisten.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="32" />
+              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -66,27 +55,7 @@
         <entry file="file://$PROJECT_DIR$/server/yg/common/testServer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
-              <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="httphelper.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/yg/common/httphelper.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5086042" vertical-offset="0" max-vertical-offset="1387">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="initserver.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/yg/assist/initserver.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="1140">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -96,7 +65,17 @@
         <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="931">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="12" />
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/yg/views/ejs/index/test.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.04" vertical-offset="0" max-vertical-offset="247">
+              <caret line="4" column="37" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -105,8 +84,28 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/routes/index/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-              <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="clientbrowser.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/yg/testclient/clientbrowser.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1368">
+              <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="date-2016-10-11-12.log" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-11-12.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.74124515" vertical-offset="1773516" max-vertical-offset="1774030">
+              <caret line="93363" column="0" selection-start-line="93363" selection-start-column="0" selection-end-line="93363" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -115,18 +114,18 @@
       <file leaf-file-name="base.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/common/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="494">
+            <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="494">
               <caret line="6" column="16" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/yg/logs/log_file/file.log">
+      <file leaf-file-name="httphelper.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/yg/common/httphelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="133">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="95" max-vertical-offset="1444">
+              <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -147,11 +146,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/common/js/common.js" />
-        <option value="$PROJECT_DIR$/admin/user/user_index.html" />
-        <option value="$PROJECT_DIR$/admin/product/product_index.html" />
-        <option value="$PROJECT_DIR$/common/js/admin/product/product_index.js" />
-        <option value="$PROJECT_DIR$/admin/product/product_edit.html" />
         <option value="$PROJECT_DIR$/common/css/base.css" />
         <option value="$PROJECT_DIR$/appweb/fullPage.min.js" />
         <option value="$PROJECT_DIR$/appweb/app.html" />
@@ -191,13 +185,18 @@
         <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-09-14.log" />
         <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-09-15.log" />
         <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-09-16.log" />
-        <option value="$PROJECT_DIR$/server/yg/server.js" />
         <option value="$PROJECT_DIR$/server/yg/common/httpslisten.js" />
         <option value="$PROJECT_DIR$/server/yg/common/config.js" />
-        <option value="$PROJECT_DIR$/server/yg/common/testServer.js" />
         <option value="$PROJECT_DIR$/server/yg/common/base.js" />
+        <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-09-17.log" />
+        <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-11-10.log" />
         <option value="$PROJECT_DIR$/server/yg/routes/index/index.js" />
+        <option value="$PROJECT_DIR$/server/yg/server.js" />
+        <option value="$PROJECT_DIR$/server/yg/common/testServer.js" />
+        <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-11-11.log" />
         <option value="$PROJECT_DIR$/server/yg/common/httphelper.js" />
+        <option value="$PROJECT_DIR$/server/yg/testclient/clientbrowser.js" />
+        <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-11-12.log" />
       </list>
     </option>
   </component>
@@ -243,8 +242,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -382,6 +379,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="block" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mzg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataTable" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yg" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="testclient" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -571,6 +590,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -871,16 +892,18 @@
       <workItem from="1475110893533" duration="15748000" />
       <workItem from="1475197064537" duration="19732000" />
       <workItem from="1475896827589" duration="11763000" />
-      <workItem from="1475974428377" duration="23286000" />
+      <workItem from="1475974428377" duration="25532000" />
+      <workItem from="1476061708818" duration="599000" />
+      <workItem from="1476152148185" duration="7071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309208000" />
+    <option name="totallyTimeSpent" value="319124000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -893,12 +916,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3027933" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38392857" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36607143" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22860636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -911,6 +933,7 @@
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -967,21 +990,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/yg/routes/user/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/views/ejs/block/extra.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/user/user_index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.857143" vertical-offset="0" max-vertical-offset="0">
@@ -1192,7 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="456" max-vertical-offset="741">
           <caret line="24" column="9" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1200,7 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="627" max-vertical-offset="741">
           <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1208,7 +1214,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="114">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,15 +1221,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="247">
           <caret line="4" column="10" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/views/ejs/index/test.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="247">
-          <caret line="7" column="59" selection-start-line="7" selection-start-column="59" selection-end-line="7" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1232,7 +1228,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="627">
           <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1240,7 +1235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
           <caret line="4" column="47" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="47" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1248,7 +1242,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="1140">
           <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1256,7 +1249,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="699">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1264,39 +1256,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-09-16.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="394" max-vertical-offset="931">
-          <caret line="28" column="17" selection-start-line="15" selection-start-column="148" selection-end-line="15" selection-end-column="150" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/routes/user/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/common/httpslisten.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/common/testServer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
-          <caret line="13" column="30" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1308,34 +1267,82 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/routes/user/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/views/ejs/index/test.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.04" vertical-offset="0" max-vertical-offset="247">
+          <caret line="4" column="37" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="7" max-vertical-offset="931">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="12" />
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="185" max-vertical-offset="779">
-          <caret line="24" column="32" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="779">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/routes/index/index.js">
+    <entry file="file://$PROJECT_DIR$/server/yg/common/httpslisten.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="551">
-          <caret line="13" column="51" selection-start-line="13" selection-start-column="51" selection-end-line="13" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.2820037" vertical-offset="0" max-vertical-offset="539">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/common/testServer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/testclient/clientbrowser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="582" max-vertical-offset="1368">
+          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/common/httphelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5086042" vertical-offset="0" max-vertical-offset="1387">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="1444">
+          <caret line="16" column="59" selection-start-line="16" selection-start-column="59" selection-end-line="16" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/routes/index/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-11-12.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74124515" vertical-offset="1773516" max-vertical-offset="1774030">
+          <caret line="93363" column="0" selection-start-line="93363" selection-start-column="0" selection-end-line="93363" selection-end-column="0" />
           <folding />
         </state>
       </provider>

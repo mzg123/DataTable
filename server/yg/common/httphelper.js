@@ -8,22 +8,25 @@ var httphelper={
         method: 'GET',
         headers: null
     },
-    req:function(app,req,options,success,error){
+    req:function(app,req,lres,options,success,error){
         //options.headers|| (options.headers= req.headers);
+
         var htp=http;
         if(req.protocol == 'https'){
-            console.log(1000)
             htp=https;
+            process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
             options.port=app.config.serverSsl;
+
         }
+
         var lreq = htp.request(options, function(res) {
             res.setEncoding('utf8');
             res.on('data', function (data) {
                 try{
-                    success(JSON.parse(data));
+                    success(app,lres,JSON.parse(data));
                 }
                 catch (e){
-                    error(e.message);
+                    error(app,lres,e.message);
                     app.datelogger.info("原始返回数据："+data)
                     app.datelogger.trace(e);
                 }
@@ -31,7 +34,7 @@ var httphelper={
             });
         });
         lreq.on('error', function(e){
-            error(e.message);
+            error(app,lres,e.message);
             app.datelogger.trace(e);
         });
         lreq.end();
