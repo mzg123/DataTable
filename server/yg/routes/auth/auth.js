@@ -1,8 +1,7 @@
 
 function startRoute(app){
     app.route.get('/*', function(req, res, next) {
-        console.log(req.path);
-        console.log( req.url);
+        console.log(req.headers.cookie);
         res.redirect('/login')
 
 
