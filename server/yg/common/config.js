@@ -7,11 +7,15 @@ var config={
     serverIp:"10.0.130.129",//node请求数据的ip
     serverPort:30001,
     env:"production",//development  production
-    main:"test",//入口模板文件名称
+    main:{"path":"/test","render":"index/test"},//入口模板文件名称
     noAuthPath:[
         '/',
         '/products'
     ],
+    paths:{
+        "user":{"path":"/user","render":""},
+        "login":{"path":"/login","render":"login/login"}
+    },
     logger:{
         "appenders":
             [
