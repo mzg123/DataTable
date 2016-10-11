@@ -1,5 +1,6 @@
 var http = require('http');
 var https = require('https');
+var querystring=require('querystring');
 var httphelper={
     options:{
         host: 'localhost',
@@ -8,7 +9,7 @@ var httphelper={
         method: 'GET',
         headers: null
     },
-    req:function(app,req,lres,options,success,error){
+    req:function(app,req,lres,options,success,error,data){
         //options.headers|| (options.headers= req.headers);
 
         var htp=http;
@@ -37,6 +38,7 @@ var httphelper={
             error(app,lres,e.message);
             app.datelogger.trace(e);
         });
+        data&&lreq.write(querystring.stringify(data));
         lreq.end();
     },
     reqSsl:function(app,req,options,success,error){

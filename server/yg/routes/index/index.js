@@ -11,7 +11,6 @@ var success=function  (lapp,lres,jsonData){
   lres.render('index/'+lapp.config.main, jsonData);
 }
 var error=function (lapp,lres,errMsg){
-
   lres.render('index/'+lapp.config.main, { what: 'best', who: 'me', muppets: [ 'Kermit444', 'Fozzie444', 'Gonzo44' ]  });
 }
 module.exports = startRoute;
