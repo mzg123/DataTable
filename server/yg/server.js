@@ -10,6 +10,7 @@ var httpRep=require('./common/httphelper');
 var lcookie = require('cookie')
 app.express=express;
 app.path=path;
+app.myPath=config.paths;
 app.lcookie=lcookie;
 app.route=router;
 app.config=config;
