@@ -7,11 +7,11 @@ function startRoute(app){
 }
 function handleAuth(app,req,res,next,cookie){
     var cookieObj=app.lcookie.parse(cookie);
-    //console.log(cookieObj.SESSIONID);
+    console.log(cookieObj.SESSIONID);
     app.config.noAuthPath.indexOf(req.path)!=-1?next():cookieObj.SESSIONID?auth(app,req,res,next,cookieObj):res.redirect('/login');
 }
 function auth(app,req,res,next,cookieObj){
-
+console.log(33);
     var options=app.base.getRequestOptions("/auth","get",app.config.serverPort,null);
     var data={ssid:cookieObj.SESSIONID};
     // app.httpRep.req(app,req,res,options,success,error,data);
