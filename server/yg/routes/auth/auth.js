@@ -6,14 +6,13 @@ function startRoute(app){
     return app.route;
 }
 function handleAuth(app,req,res,next,cookie){
-    var cookieObj=app.lcookie.parse(cookie);
-    console.log(cookieObj.SESSIONID);
-    app.config.noAuthPath.indexOf(req.path)!=-1?next():cookieObj.SESSIONID?auth(app,req,res,next,cookieObj):res.redirect('/login');
+    var asessionid=app.base.getCookie(app,req,'SESSIONID');
+    console.log(asessionid);
+    app.config.noAuthPath.indexOf(req.path)!=-1?next():asessionid?auth(app,req,res,next,asessionid):res.redirect('/login');
 }
-function auth(app,req,res,next,cookieObj){
-console.log(33);
+function auth(app,req,res,next,asessionid){
     var options=app.base.getRequestOptions("/auth","get",app.config.serverPort,null);
-    var data={ssid:cookieObj.SESSIONID};
+    var data={ssid:asessionid};
     // app.httpRep.req(app,req,res,options,success,error,data);
     next();
 }

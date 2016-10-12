@@ -15,6 +15,14 @@ var base={
             method: method
         }
         return options;
+    },
+    setCookie:function(res,name,value,option){
+        res.cookie(name,value,option);
+    },
+    getCookie:function(app,req,cookiename){
+        var r=null;
+        req.headers.cookie&&(r=app.lcookie.parse( req.headers.cookie)[cookiename]);
+       return r;
     }
 }
 module.exports=base;

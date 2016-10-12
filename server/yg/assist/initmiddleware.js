@@ -21,7 +21,6 @@ function initmiddleware(app){
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(cookieParser());
     app.use(function(req, res, next){
-        console.log(5676);
         next();
     });
     app.use(app.express.static(app.path.join(__dirname, 'public')));
