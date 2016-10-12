@@ -24,7 +24,7 @@ app.set('view engine', 'ejs'); // so you can render('index')
 //添加中间件
 require('./assist/initmiddleware')(app);
 //初始化路由页面
-require('./assist/initroutesrender')(app);
+require('./assist/initroutes')(app);
 app.listen(config.port,config.ip);
 //启动ssl
 //require('./common/httpslisten')(app);
