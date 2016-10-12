@@ -4,7 +4,7 @@ var db={
 
     },
     connPool:[],
-    ini:function(){
+    ini:function(app){
 
     }
 }
@@ -24,6 +24,9 @@ var dbhelper={
     },
     transaction:function(sqlarr){
 
+    },
+    ini:function(app){
+        db.ini(app);
     }
 }
 module.exports=dbhelper;
