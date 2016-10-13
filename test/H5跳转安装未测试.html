@@ -1,0 +1,274 @@
+常常有这样的场景，咱们开发出来的APP需要进行推广，比如在页面顶部来一张大Banner图片，亦或一张二维码。但往往我们都是直接给推广图片加了一个下载链接（App Store中的）。所以咱们来模拟一下用户的操作步骤：
+1、用户第一次访问宣传页面
+a、点击Banner，进入到APP Store中对应的APP下载页
+b、APP下载页中提示：安装；用户点击安装
+c、安装完成后，APP下载页中提示：打开；用户继续点击打开
+d、用户正常使用APP
+2、用户第二次访问宣传页面
+a、点击Banner，进入到APP Store中对应的APP下载页
+b、APP下载页中提示：打开；用户直接点击打开
+c、用户正常使用APP
+3、用户第三次、第四次、...、第N次访问，操作步骤同2
+能看出来，不管是点击Banner还是扫描二维码的方式，对于已经安装过APP的用户来说，这个体验都是非常糟糕的。
+更优的体验是：点击Banner（或扫描二维码）后，程序判断当前系统是否已安装App，如果未安装，则自动跳转到App Store下载页；否则直接打开App。
+在iOS上，要增加一个APP的大Banner，其实只需要在<head>标签内增加一个<meta>标签即可，格式如：
+    <meta name='apple-itunes-app' content='app-id=你的APP-ID'>
+    比如加一个百度贴吧的Native APP大Banner，用下面这串儿代码：
+    [html] view plain copy 在CODE上查看代码片派生到我的代码片
+    <meta name='apple-itunes-app' content='app-id=477927812'>
+
+
+    而对于点击链接后，能否直接打开，可以通过下面的代码来实现。前提条件：你得知道你的APP对应的打开协议，如贴吧APP，协议为：com.baidu.tieba:// ，微信的：weixin:// ，and so on。。。
+    [html] view plain copy 在CODE上查看代码片派生到我的代码片
+    <!-- a标签的链接，设置为对应的下载链接；点击打开的动作，在click事件中注册 -->
+    <a href="https://itunes.apple.com/cn/app/id477927812" id="openApp">贴吧客户端</a>
+    <script type="text/javascript">
+        document.getElementById('openApp').onclick = function(e){
+            // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+            // 否则打开a标签的href链接
+            var ifr = document.createElement('iframe');
+            ifr.src = 'com.baidu.tieba://';
+            ifr.style.display = 'none';
+            document.body.appendChild(ifr);
+            window.setTimeout(function(){
+                document.body.removeChild(ifr);
+            },3000)
+        };
+    </script>
+
+
+    当然，如果你是设计成一张二维码，可以用下面这段代码：
+    [html] view plain copy 在CODE上查看代码片派生到我的代码片
+    <!-- a标签的链接，设置为对应的下载链接；点击打开的动作，在click事件中注册 -->
+    <a href="https://itunes.apple.com/cn/app/id477927812" id="openApp" style="display: none">贴吧客户端</a>
+    <script type="text/javascript">
+        document.getElementById('openApp').onclick = function(e){
+            // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+            // 否则打开a标签的href链接
+            var ifr = document.createElement('iframe');
+            ifr.src = 'com.baidu.tieba://';
+            ifr.style.display = 'none';
+            document.body.appendChild(ifr);
+            window.setTimeout(function(){
+                document.body.removeChild(ifr);
+            },3000)
+        };
+        document.getElementById('openApp').click();
+
+
+        要使用哪一种，就取决与你的实际场景了！
+
+
+        我们在浏览网页的时候，你会看到一个网页下面漂浮着一个提示框“打开APP”或者“下载APP的字样”，如果你的手机已经安装过这个APP，那么网页会提示“打开APP”，如果没有安装，那就会提示“下载APP的字样”  这个从技术角度是如何去实现的呢？下面我给大家分享这块技术，去年公司给国际动漫节做项目的时候，客户就提到这个需求，在点击网页企业的时候 那么直接打开APP（如果已经安装了） 如果没有安装过，直接打开APP页面
+        下面我把这块的源码分享一下
+
+        1
+
+        2
+
+        3
+
+        4
+
+        5
+
+        6
+
+        7
+
+        8
+
+        9
+
+        10
+
+        11
+
+        12
+
+        13
+
+        14
+
+        15
+
+        16
+
+        17
+
+        18
+
+        19
+
+        20
+
+        21
+
+        22
+
+        23
+
+        24
+
+        25
+
+        26
+
+        27
+
+        28
+
+        29
+
+        30
+
+        31
+
+        32
+
+        33
+
+        34
+
+        35
+
+        36
+
+        37
+
+        38
+
+        39
+
+        40
+
+        41
+
+        42
+
+        43
+
+        44
+
+        45
+
+        46
+
+        47
+
+        48
+
+        49
+
+        50
+
+        51
+
+        52
+
+        if
+        (navigator.userAgent.match(/android/i)) {
+
+            // 通过iframe的方式试图打开APP，如果能正常打开，会直接切换到APP，并自动阻止a标签的默认行为
+
+            // 否则打开a标签的href链接
+
+            var isInstalled;
+
+            //下面是安卓端APP接口调用的地址，自己根据情况去修改
+
+            var ifrSrc = 'cartooncomicsshowtwo://platformapi/startApp? type=0&id=${com.id}&phone_num=${com.phone_num}';
+
+            var ifr = document.createElement('iframe');
+
+            ifr.src = ifrSrc;
+
+            ifr.style.display = 'none';
+
+            ifr.onload = function() {
+
+                // alert('Is installed.');
+
+                isInstalled = true;
+
+                alert(isInstalled);
+
+                document.getElementById('openApp0').click();};
+
+            ifr.onerror = function() {
+
+                // alert('May be not installed.');
+
+                isInstalled = false;
+
+                alert(isInstalled);
+
+            }
+
+            document.body.appendChild(ifr);
+
+            setTimeout(function() {
+
+                document.body.removeChild(ifr);
+
+            },1000);
+
+        }
+
+        //ios判断
+
+        if
+        (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i))
+
+            if
+            (navigator.userAgent.match(/(iPhone|iPod|iPad);?/i))  {
+
+                //Animation://com.yz.animation
+
+                var isInstalled;
+
+                //var gz = '{"comName":"${com.short_name}","comID":"${com.id}","comPhoneNum":"${com.phone_num}","type":"0"}';
+
+                //var jsongz =JSON.parse(gz);
+
+
+
+                //下面是IOS调用的地址，自己根据情况去修改
+
+                var ifrSrc = 'Animation://?comName=${com.short_name}&comID=${com.id}&comPhoneNum=${com.phone_num}&type=0';var ifr = document.createElement('iframe');
+
+                ifr.src = ifrSrc;
+
+                ifr.style.display = 'none';
+
+                ifr.onload = function() {
+
+                    // alert('Is installed.');
+
+                    isInstalled = true;
+
+                    alert(isInstalled);
+
+                    document.getElementById('openApp1').click();};
+
+                ifr.onerror = function() {
+
+                    // alert('May be not installed.');
+
+                    isInstalled = false;
+
+                    alert(isInstalled);
+
+                }
+
+                document.body.appendChild(ifr);
+
+                setTimeout(function() {
+
+                    document.body.removeChild(ifr);
+
+                },1000);
+
+            }
+
+        }
