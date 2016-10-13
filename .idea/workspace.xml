@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/yg/common/mysqlhelper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/dbhelper.js" afterPath="$PROJECT_DIR$/server/yg/common/dbhelper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -91,11 +92,19 @@
       <file leaf-file-name="dbhelper.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/common/dbhelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6728838" vertical-offset="1659" max-vertical-offset="2394">
-              <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
-              <folding>
-                <element signature="e#3221#3782#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.8177905" vertical-offset="285" max-vertical-offset="988">
+              <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mysqlhelper.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/yg/common/mysqlhelper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="1976">
+              <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -135,7 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/helloword/package.json" />
         <option value="$PROJECT_DIR$/appweb/investActiv.html" />
         <option value="$PROJECT_DIR$/appweb/newuseractive.html" />
         <option value="$PROJECT_DIR$/appweb/test.html" />
@@ -185,6 +193,7 @@
         <option value="$PROJECT_DIR$/server/yg/routes/index/index.js" />
         <option value="$PROJECT_DIR$/server/yg/controller/index/indexcontroller.js" />
         <option value="$PROJECT_DIR$/server/yg/common/config.js" />
+        <option value="$PROJECT_DIR$/server/yg/common/mysqlhelper.js" />
         <option value="$PROJECT_DIR$/server/yg/common/dbhelper.js" />
       </list>
     </option>
@@ -633,11 +642,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg\common" />
       <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg" />
       <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg\routes\index" />
       <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg\assist" />
       <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg\views\ejs\layout" />
-      <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg\views\ejs\login" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yjx\Documents\GitHub\DataTable\server\yg\common" />
@@ -917,12 +926,12 @@
       <workItem from="1476152148185" duration="20278000" />
       <workItem from="1476233963451" duration="15469000" />
       <workItem from="1476320547796" duration="996000" />
-      <workItem from="1476321721232" duration="8687000" />
+      <workItem from="1476321721232" duration="10073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="357483000" />
+    <option name="totallyTimeSpent" value="358869000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
@@ -941,7 +950,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18882681" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19376528" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20782396" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1013,11 +1022,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/appweb/num.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appweb/bg_2.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1374,13 +1378,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/common/mysqlhelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1254" max-vertical-offset="1976">
+          <caret line="95" column="20" selection-start-line="95" selection-start-column="20" selection-end-line="95" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/common/dbhelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6728838" vertical-offset="1659" max-vertical-offset="2394">
-          <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
-          <folding>
-            <element signature="e#3221#3782#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.8177905" vertical-offset="285" max-vertical-offset="988">
+          <caret line="45" column="1" selection-start-line="45" selection-start-column="1" selection-end-line="45" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
