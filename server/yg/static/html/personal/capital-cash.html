@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="Expires" content="0">
+    <meta name="title" content="我的账户-提现"/>
+    <meta name="keywords" content="我的账户-提现"/>
+    <meta name="description" content="我的账户-提现"/>
+    <title>我的账户-提现</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://img3.yingu.com/module/??common/base.css,head/head.css,foot/foot.css"/>
+    <script type="text/javascript"
+            src="http://img3.yingu.com/module/??lib/sea.js,lib/seajs-combo.js,lib/lib.js,common/base.js,head/head.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            base: 'http://img3.yingu.com/module/'
+        });
+        seajs.use("head/head");
+    </script>
+    <!--[if lte IE 8]>
+    <style type="text/css">
+        .ie-css3 {
+            behavior: url(http://img3.yingu.com/image/common/ie-css3.htc);
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<link rel="stylesheet" type="text/css"
+      href="http://img3.yingu.com/module/??personal/personal.css,ui/modal/modal.css,personal/investment.css,ui/select/select.css"/>
+<div class="head">
+    <div class="toolbar ">
+        <div class="toolbar_content clearfix">
+            <!--<a class="home" href="" class=""><span class="home_icon"></span>首页</a>-->
+            <div class="tel"><i class="icon-tel"></i><span class="red">400-612-5859</span>（银谷财富）&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="red">400-613-5859</span>（银谷普惠）
+            </div>
+            <div class="head_right clearfix">
+                <a class="login" href="">登录</a>
+                <span class="spliter_short"></span>
+                <a class="register margin-right-10" href="">注册</a>
+                <a class="favorite" href="">银谷门户网站</a>
+                <a class="favorite" href="">积分商城</a>
+                <a class="favorite" href="">帮助中心</a>
+                <a class="favorite" href="">关于我们</a>
+
+                <!--<a class="phone" href=""><span class="phone_icon"></span>手机金融</a>-->
+                <a class="message" href="">消息<span class="message_num red">(1)</span></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_content clearfix">
+            <div class="logo_slogan clearfix">
+                <div class="logo"></div>
+                <div class="slogan"></div>
+            </div>
+
+
+            <div class="personal"><!-- personal_showlist -->
+                <div class="avatar_link clearfix">
+                    <a id="personalist_btn" href="" class="link"><img class="avatar"
+                                                                      src="http://img3.yingu.com/image/common/avatar.png"><span
+                            class="word">我的账户</span><span class="arrow"></span></a>
+                </div>
+                <div id="list_wrapper" class="list_wrapper">
+                    <div class="placeholder"></div>
+                    <ul>
+                        <li><a href="">充值</a></li>
+                        <li><a href="">提现</a></li>
+                        <li><a href="">交易记录</a></li>
+                        <li><a href="">我的资产</a></li>
+                        <li><a href="">基本信息</a></li>
+                        <li><a href="">账户安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spliter_long"></div>
+            <ul class="nav_list clearfix">
+                <li class="selected"><a href="">首页</a><span class="indicator"></span></li>
+                <li class="more">                     <a href="">财富管理</a>                     <i class="arrow"></i>                     <dl class="hover">                        <dd><a href="#">P2P债权</a></dd><dd><a href="../plan/plan_index.html">优计划</a></dd>                      </dl>                 </li>
+                <li><a href="">债权转让</a><span class="indicator"></span></li>
+                <li class="last more">                     <a href="">银谷课堂</a><i class="arrow"></i>                     <dl class="hover">                         <dd><a href="#">专家建议</a></dd>                         <dd><a href="#">调研报告</a></dd>                      </dl>                 </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper clearfix">
+    <div class="route">
+        <dl class="clearfix">
+            <dt>您的位置：</dt>
+            <dd><a href="../index/index.html">首页<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="overview.html">我的账户<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="#">资金管理<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="capital-cash.html">提现</a></dd>
+        </dl>
+    </div>
+    <div class="personal_wrap investment-withdraw clearfix border">
+        <!-- left menu -->
+        <div class="nav-left">
+            <dl>
+                <dd>
+                    <a href="overview.html">账户总览</a>
+                </dd>
+                <dd class="on">
+                    <a>资金管理</a>
+                    <ul class="sub-nav">
+                        <li><a href="capital-recharge.html">充值</a></li>
+                        <li class="on"><a href="capital-cash.html">提现</a></li>
+                        <li><a href="capital-record.html">交易记录</a></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <a>债权管理</a>
+                    <ul class="sub-nav">
+                        <!--<li><a href="creditors-total.html">债权统计</a></li>-->
+                        <li><a href="creditors-back.html">P2P债权</a></li>
+                        <li><a href="creditors-settled.html">优计划</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="collect.html">募集中</a></dd>
+                <dd><a href="collect-full.html">满标待审</a></dd>
+                <dd><a href="collect-flow.html">累计流标</a></dd>
+                <dd>
+                    <a>账户管理</a>
+                    <ul class="sub-nav">
+                        <li><a href="baseinfo.html">基本信息</a></li>
+                        <li><a href="safe.html">账户安全</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="bank.html">银行卡管理</a></dd>
+                <dd><a href="notice.html">消息通知</a></dd>
+                <dd><a href="coupon.html">我的优惠券</a></dd>
+            </dl>
+        </div>
+        <!-- right content -->
+        <div class="personal_content">
+            <div class="title"><span>提现</span></div>
+            <div class="line"></div>
+            <div class="personal_cash">
+                <div class="personal_layout">
+                    <form id="tixianForm">
+                        <div class="list clearfix bankWrap">
+                            <h6 class="lh">提现银行卡</h6>
+
+                            <div class="right clearfix" id="chooseNewBank" style="display: block">
+
+                                <div class="password">
+                                    <div class="float-left">
+                                        <input name="chooseMyBank" id="chooseMyBank" type="hidden" />
+
+                                            <div class="chooseMy" value="中国银行" >
+                                                    <span class="pic">
+                                                        <img src="http://img3.yingu.com/image/personal/bank_china.png" alt=""/>
+                                                    </span>
+                                                <b>储蓄卡</b>
+                                                <span class="black card"> 尾号 **8232</span>
+                                                <span class="gray"> |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 单笔限额1万，单日限额5万</span>
+                                                <i class="icon-right"></i>
+                                            </div>
+
+
+                                    </div>
+                                </div>
+                                <!--<div id="chooseMyBankTip" class="wrong"></div>-->
+
+
+                            </div>
+                            <!-- 未绑定银行卡 -->
+                            <div class="right clearfix" style="display: none" id="notBank"><p class="red">未绑卡</p>
+
+                            </div>
+
+                        </div>
+                        <div class="list clearfix list2">
+                            <h6>可提现金额</h6>
+
+                            <div class="right">
+                                <div class="num">
+                                    <strong class="red" id="totalNum">10.00</strong>元
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list clearfix">
+                            <h6>提现金额</h6>
+
+                            <div class="right">
+
+                                <div class="detail">
+                                    <div class="text">
+                                        <input type="number" name="cashNum" value="" id="cashNum"
+                                               class="input-box"/><span>元</span>
+
+                                    </div>
+                                    <div class="wrong" id="cashNumTip"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list clearfix list2">
+                            <h6>手续费</h6>
+
+                            <div class="right">
+                                <div class="num">
+                                    <strong id="serviceFee" >0.00</strong>元
+                                    <!--<span class="gray margin-left-20"><i class="icon_tips"></i>提现费用将从您的银谷在线账户余额中扣除</span>-->
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="list clearfix list2">-->
+                            <!--<h6>实际到账金额</h6>-->
+
+                            <!--<div class="right">-->
+                                <!--<div class="num">-->
+                                    <!--<strong id="actualCashAmount" class="red">0.00</strong>元-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <div class="list clearfix list2">
+                            <h6>预计到账日期</h6>
+
+                            <div class="right">
+                                <div class="num">
+                                    <p>1-2个工作日（双休日和法定节假日除外）之内到账</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list clearfix">
+                            <h6>手机验证码</h6>
+
+                            <div class="right">
+                                <div class="detail">
+                                    <div class="password">
+                                        <div class="text" style="width: 107px;">
+                                            <input type="text" name="b" value="" style="width: 80px;"
+                                                   id="code" class="input-box" autocomplete="off" >
+                                        </div>
+                                    </div>
+                                    <div class="float-left"><a class="btn_yellow ie-css3 margin-left-10 "
+                                                                id="getMsg">获取验证码</a>
+                                    </div>
+
+                                </div>
+                                <span class="gray margin-left-20" style="display: none" id="phoneTip"><i
+                                        class="icon_tips"></i>手机验证码将在<i class="red" id="showbox"></i>后重新发送</span>
+
+                                <div class="wrong clear" id="codeWrongTip"></div>
+
+                            </div>
+                        </div>
+
+                        <input  type="text" name="fakeusername" />
+                        <input type="password" name="fakepassword" />
+                        <div class="list clearfix">
+                            <h6>支付密码</h6>
+
+                            <div class="right">
+                                <div class="detail">
+                                    <div class="password">
+                                        <input type="password" id="vrCode" name="verifyCode" class="payment-password input-box"/>
+                                    </div>
+                                    <div class="num">
+                                        <a href="#" class="gray forget">忘记密码</a>
+                                    </div>
+                                    <div class="wrong" id="passWordTip"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
+                    <div class="bt clearfix"><a class="bt_middle_red" id="submitCash">提现</a></div>
+
+
+                </div>
+                <div class="personal_tips">
+                    <h6><i></i>温馨提示</h6>
+
+                    <p>1、请关注您的提现金额是否超限，每日单次最高申请提现金额20万元，每日最多提现4笔；</p>
+
+                    <p>2、提现申请提交成功后，我们将尽快为您处理，资金预计在1-2个工作日到账，请您注意查收；</p>
+
+                    <p>3、第三方收取手续费：2元/笔。</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+<!--未做实名认证弹窗 -->
+<script type="text/html" id="authentication" >
+    <h2 class="big model_title margin-top-20">您还未做实名认证,请先进行<a href="safe-users.html" class="red">实名认证</a></h2>
+</script>
+
+<!--未设置支付密码弹窗 -->
+<script type="text/html" id="setPassword" >
+    <h2 class="big model_title margin-top-20">您还未设置支付密码，请先<a href="safe-payment.html" class="red">设置支付密码</a>
+    </h2>
+</script>
+<!--重置支付密码弹窗 -->
+<script type="text/html" id="resetPassword" >
+    <h2 class="big model_title margin-top-20">您还未设置支付密码，请<a href="safe-payment.html" class="red">重置支付密码</a>
+    </h2>
+</script>
+<!--锁定支付密码弹窗 -->
+<script type="text/html" id="lockSetPassword" >
+    <h2 class="big model_title margin-top-20">您的支付密码已锁定，请<a href="safe-payment.html" class="red">重置支付密码</a>
+    </h2>
+</script>
+
+<!--未添加银行卡 -->
+<script type="text/html" id="needBindCard" >
+    <h2 class="big model_title margin-top-20">您还未绑定银行卡,请先去<a href="safe-users.html" class="red">添加银行卡</a></h2>
+</script>
+<div id="cashSuccess" style="display: none">
+    <h2 class="big model_title margin-top-20">
+        恭喜您，提取现金成功！
+    </h2>
+</div>
+<div id="cashWrong" style="display: none">
+    <h2 class="big model_title margin-top-20">
+        提取现金失败！
+    </h2>
+</div>
+
+<script type="text/javascript">
+    seajs.use("personal/capital-cash", function (app) {
+        app.run();
+    });
+    var __globalData = {
+        sendVerifyCode: '/api/sendVerifyCode',
+        //0：都通过 1：未设支付密码 2：未实名 3：未绑定银行卡 4：重置支付密码 5：锁定支付密码
+        //这些值如果有问题的话可以改
+        userState:0
+    }
+</script>
+<div class="foot">
+    <div class="foot_content clearfix">
+        <div class="contact_links">
+            <div class="contact_links_content clearfix">
+                <div class="left clearfix">
+                    <dl class="clearfix">
+                        <dt>帮助中心</dt>
+                        <dd><a href="">注册认证</a></dd>
+                        <dd><a href="">出借流程</a></dd>
+                        <dd><a href="">债权转让</a></dd>
+                        <dd><a href="">账户安全</a></dd>
+                        <dd><a href="">资费说明</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>关于我们</dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                        <dd><a href="">社会责任</a></dd>
+                        <dd><a href="">法律法规</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>东方银谷旗下业务</dt>
+                        <dd><a href="">银谷门户网站</a></dd>
+                        <dd><a href="">银谷财富</a></dd>
+                        <dd><a href="">银谷普惠</a></dd>
+                        <dd><a href="">银谷普诚</a></dd>
+                        <dd><a href="">银谷积分商城</a></dd>
+
+                    </dl>
+
+                    <div class="weixin  weixin-2"></div>
+                    <div class="weixin weixin-1"></div>
+
+                </div>
+                <div class="right">
+
+                    <ul class="address">
+                        <li class="clearfix"><p>人工服务时间 8:00～22:00</p></li>
+                        <li class="clearfix">
+                            <span class="phone"></span>
+                            <span class="font-16 white">客服服务热线：</span>
+
+                            <p><span class="font-16 white">400-612-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷财富）</span></p>
+
+                            <p><span class="font-16 white">400-613-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷普惠)</span></p>
+                        </li>
+                        <li class="clearfix"><p>24小时在线客服</p></li>
+                        <li class="clearfix">
+                            <span class="location"></span>
+
+                            <p class="clearfix location_title"><span class="white office">总部地址：</span>
+                                <span class="location_word white">北京市朝阳区东大桥路8号尚都国际中心A座2608-2609室</span></p>
+                        </li>
+                        <li class="clearfix margin-top-20"><p>东方银谷（北京）投资管理有限公司京ICP备14022292号</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

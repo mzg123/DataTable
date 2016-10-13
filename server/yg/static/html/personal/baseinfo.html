@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="Expires" content="0">
+    <meta name="title" content="我的账户-账户管理-基本信息"/>
+    <meta name="keywords" content="我的账户-账户管理-基本信息"/>
+    <meta name="description" content="我的账户-账户管理-基本信息"/>
+    <title>我的账户-账户管理-基本信息</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://img3.yingu.com/module/??common/base.css,head/head.css,foot/foot.css"/>
+    <script type="text/javascript"
+            src="http://img3.yingu.com/module/??lib/sea.js,lib/seajs-combo.js,lib/lib.js,common/base.js,head/head.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            base: 'http://img3.yingu.com/module/'
+        });
+        seajs.use("head/head");
+    </script>
+    <!--[if lte IE 9]>
+    <style type="text/css">
+        .ie-css3 {
+            behavior: url(http://img3.yingu.com/image/common/ie-css3.htc);
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<link rel="stylesheet" type="text/css"
+      href="http://img3.yingu.com/module/??personal/personal.css,personal/baseinfo.css,ui/modal/modal.css,personal/investment.css,personal/account.css,ui/select/select.css,ui/searchBox/searchBox.css,ui/datepicker/css/foundation-datepicker.css,ui/Jcrop/css/jquery.Jcrop.css"/>
+<div class="head">
+    <div class="toolbar ">
+        <div class="toolbar_content clearfix">
+            <!--<a class="home" href="" class=""><span class="home_icon"></span>首页</a>-->
+            <div class="tel"><i class="icon-tel"></i><span class="red">400-612-5859</span>（银谷财富）&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="red">400-613-5859</span>（银谷普惠）
+            </div>
+            <div class="head_right clearfix">
+                <a class="login" href="">登录</a>
+                <span class="spliter_short"></span>
+                <a class="register margin-right-10" href="">注册</a>
+                <a class="favorite" href="">银谷门户网站</a>
+                <a class="favorite" href="">积分商城</a>
+                <a class="favorite" href="">帮助中心</a>
+                <a class="favorite" href="">关于我们</a>
+
+                <!--<a class="phone" href=""><span class="phone_icon"></span>手机金融</a>-->
+                <a class="message" href="">消息<span class="message_num red">(1)</span></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_content clearfix">
+            <div class="logo_slogan clearfix">
+                <div class="logo"></div>
+                <div class="slogan"></div>
+            </div>
+
+
+            <div class="personal"><!-- personal_showlist -->
+                <div class="avatar_link clearfix">
+                    <a id="personalist_btn" href="" class="link"><img class="avatar"
+                                                                      src="http://img3.yingu.com/image/common/avatar.png"><span
+                            class="word">我的账户</span><span class="arrow"></span></a>
+                </div>
+                <div id="list_wrapper" class="list_wrapper">
+                    <div class="placeholder"></div>
+                    <ul>
+                        <li><a href="">充值</a></li>
+                        <li><a href="">提现</a></li>
+                        <li><a href="">交易记录</a></li>
+                        <li><a href="">我的资产</a></li>
+                        <li><a href="">基本信息</a></li>
+                        <li><a href="">账户安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spliter_long"></div>
+            <ul class="nav_list clearfix">
+                <li class="selected"><a href="">首页</a><span class="indicator"></span></li>
+                <li class="more">                     <a href="">财富管理</a>                     <i class="arrow"></i>                     <dl class="hover">                        <dd><a href="#">P2P债权</a></dd><dd><a href="../plan/plan_index.html">优计划</a></dd>                      </dl>                 </li>
+                <li><a href="">债权转让</a><span class="indicator"></span></li>
+                <li class="last more">                     <a href="">银谷课堂</a><i class="arrow"></i>                     <dl class="hover">                         <dd><a href="#">专家建议</a></dd>                         <dd><a href="#">调研报告</a></dd>                      </dl>                 </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper clearfix">
+    <div class="route">
+        <dl class="clearfix">
+            <dt>您的位置：</dt>
+            <dd><a href="../index/index.html">首页<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="overview.html">我的账户<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="#">资金管理<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="capital-cash.html">提现</a></dd>
+        </dl>
+    </div>
+    <div class="personal_wrap clearfix border">
+        <!-- left menu -->
+        <div class="nav-left">
+            <dl >
+                <dd class="on">
+                    <a href="overview.html">账户总览</a>
+                </dd>
+                <dd>
+                    <a >资金管理</a>
+                    <ul class="sub-nav" >
+                        <li><a href="capital-recharge.html">充值</a></li>
+                        <li><a href="capital-cash.html">提现</a></li>
+                        <li><a href="capital-record.html">交易记录</a></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <a >债权管理</a>
+                    <ul class="sub-nav">
+                        <!--<li><a href="creditors-total.html">债权统计</a></li>-->
+                        <li><a href="creditors-back.html">P2P债权</a></li>
+                        <li><a href="creditors-settled.html">优计划</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="collect.html">募集中</a></dd>
+                <dd><a href="collect-full.html">满标待审</a></dd>
+                <dd><a href="collect-flow.html">累计流标</a></dd>
+                <dd>
+                    <a>账户管理</a>
+                    <ul class="sub-nav" >
+                        <li><a href="baseinfo.html">基本信息</a></li>
+                        <li><a href="safe.html">账户安全</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="bank.html">银行卡管理</a></dd>
+                <dd><a href="notice.html">消息通知</a></dd>
+                <dd><a href="coupon.html">我的优惠券</a></dd>
+            </dl>
+        </div>
+
+        <!-- right content -->
+        <div class="personal_content">
+            <div class="title"><span>基本信息</span> <a  class="" id="toggleEdit" >[修改信息]</a></div>
+            <div class="line"></div>
+
+
+            <div class="personal_layout">
+                <form id="msgForm">
+                    <div class="photo">
+                        <div class="img">
+                            <img id="avatar" src="http://img3.yingu.com/image/personal/photo.png" alt="" class="ie-css3" /></div>
+                        <a class="red" id="changeAvatar">[点击修改头像]</a>
+                    </div>
+                    <!--<p class="must gray"><span class="red"> * </span>为必填项</p>-->
+                    <h3 class="group-title" >个人信息 <a class="yes gray">已实名认证</a><a class="no red" href="" >去实名认证</a></h3>
+                    <div class="row field clearfix" >
+                        <div class="col-1 label" >昵称</div>
+                        <div class="col-3 val" >xxxxxxxx</div>
+                        <div class="col-1 label" >生日</div>
+                        <div class="col-3 val" >
+                            <input name="birthday" id="birthday" type="text" value="1988-12-12" class="input-box" />
+                        </div>
+                    </div>
+                    <div class="row field clearfix" >
+                        <div class="col-1 label" >真实姓名</div>
+                        <div class="col-3 val" >xxxxxxxx</div>
+                        <div class="col-1 label" >婚姻状况</div>
+                        <div class="col-3 val" >
+                            <label><input type="radio" name="married" value="no" />未婚</label>
+                            <label><input type="radio" name="married" value="yes" />已婚</label>
+                        </div>
+                    </div>
+                    <div class="row field clearfix" >
+                        <div class="col-1 label" >身份证号</div>
+                        <div class="col-3 val" >xxxxxxxx</div>
+                        <div class="col-1 label" >居住城市</div>
+                        <div class="col-2 val" >
+                            <select name="province" id="province" >
+                            </select>
+                        </div>
+                        <div class="col-2 val" >
+                            <select name="city" id="city" ></select>
+                        </div>
+                    </div>
+                    <div class="row field clearfix" >
+                        <div class="col-1 label" >性别</div>
+                        <div class="col-3 val" >
+                            <label><input type="radio" name="gender" value="male" />男</label>
+                            <label><input type="radio" name="gender" value="female" />女</label>
+                        </div>
+                        <div class="col-1 label" >详细地址</div>
+                        <div class="col-3 val" >
+                            <input name="address" id="addr" type="text" class="input-box" />
+                        </div>
+                    </div>
+
+                    <h3 class="group-title" >学历信息 </h3>
+
+                    <div class="row field clearfix" >
+                        <div class="col-1 label" >最高学历</div>
+                        <div class="col-5 val" >
+                            <select name="eduBg" id="eduBg" class="select">
+                                <option value="">请选择</option>
+                                <option value="a">高中或以下</option>
+                                <option value="b">大专</option>
+                                <option value="c">大本</option>
+                                <!--<option value="d">研究生或以上</option>-->
+                            </select>
+                        </div>
+                        <!--<div class="col-1 tip" ><i>*</i><span id="eduTip" ></span></div>-->
+                    </div>
+                    <div class="row field clearfix" >
+                        <div class="col-1 label" >毕业院校</div>
+                        <div class="col-4 val" >
+                            <input name="graduate" id="graduate" type="text" class="input-box" />
+                        </div>
+                    </div>
+
+                    <h3 class="group-title" >工作信息 </h3>
+
+                    <div class="row field clearfix" >
+                        <div class="col-1 label" >公司行业</div>
+                        <div class="col-5 val" >
+                            <select name="industry" id="industry">
+                                <option value="">请选择</option>
+                            </select>
+                        </div>
+                        <!--<div class="col-1 tip" ><i>*</i><span id="industryTip" ></span></div>-->
+                        <div class="col-1 label" >职位</div>
+                        <div class="col-4 val" >
+                            <input name="jobTitle" id="jobTitle" type="text" class="input-box"/>
+                        </div>
+                    </div>
+
+                    <div class="row field clearfix" >
+                        <div class="col-1 label" >公司规模</div>
+                        <div class="col-5 val" >
+                            <select name="company" id="company">
+                                <option value="">请选择</option>
+                                <option value="a">10人以下</option>
+                                <option value="b">10-100人</option>
+                                <option value="c">100-500人</option>
+                                <option value="d">500人以上</option>
+                            </select>
+                        </div>
+                        <div class="col-1 label" >月收入</div>
+                        <div class="col-5 val" >
+                            <select name="monthlyIncome" id="monthlyIncome" >
+                                <option value="">请选择</option>
+                            </select>
+                        </div>
+                        <!--<div class="col-1 tip" ><i>*</i><span id="incomeTip" ></span></div>-->
+                    </div>
+
+                    <div class="row field clearfix" >
+                        <div class="col-1 label" >公司性质</div>
+                        <div class="col-5 val" >
+                            <select name="companyType" id="companyType">
+                                <option value="">请选择</option>
+                            </select>
+                        </div>
+                        <div class="col-1 label" >工作年限</div>
+                        <div class="col-5 val" >
+                            <select name="workExperience" id="workExperience" >
+                            <option value="">请选择</option>
+                            </select>
+                        </div>
+                        <!--<div class="col-1 tip" ><i>*</i><span id="weTip" ></span></div>-->
+                    </div>
+
+                </form>
+                <div class="row clearfix" style="margin-top: 30px" >
+                    <div class="col-2 col-offset-5" >
+                        <a class="bt_middle_red" id="submitMsg" >提交</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- modal -->
+<div id="photoSuccess" style="display: none">
+    <h2 class="big model_title margin-top-20">
+        您已修改成功！
+    </h2>
+</div>
+<div id="photoWrong" style="display: none">
+    <h2 class="big model_title margin-top-20">
+        修改失败！
+    </h2>
+</div>
+<!--提交成功 -->
+<div id="resultSuccess" style="display: none">
+    <h2 class="big model_title margin-top-20">您已修改成功！</h2>
+</div>
+<!--提交失败 -->
+<div id="resultWrong" style="display: none">
+    <h2 class="big model_title margin-top-20">修改失败！</h2>
+</div>
+<script type="text/html" id="photoUpdate"  >
+    <div class="photo-left">
+        <div class="choose"><button id="fileUpload" class="btn_yellow ie-css3" style="position: relative">选择您要上传的头像</button></div>
+        <p class="margin-top-10">仅支持JPG、GIF、PNG、JPEG、BMP格式，文件小于4M</p>
+        <div class="photo-big margin-top-10"><img id="userAvatar" src="<%=avatar%>"  ></div>
+    </div>
+    <div class="photo-right">
+        <h2>效果预览</h2>
+
+        <p class="margin-top-10">你上传的图片会自动生成2种尺寸请注意小尺寸的头像是否清晰</p>
+
+        <div class="photo">
+            <div id="preview100" class="photo-middle">
+                <img id="avatar_100" src="<%=avatar%>" alt="" class="ie-css3" >
+            </div>
+            <p>100*100像素</p>
+        </div>
+
+        <div class="photo">
+            <div id="preview50" class="photo-small">
+                <img id="avatar_50" src="<%=avatar%>" alt="" class="ie-css3" >
+            </div>
+            <p>50*50像素</p>
+        </div>
+
+
+    </div>
+</script>
+<script type="text/javascript">
+    seajs.use("personal/baseinfo",function(app){
+        app.run();
+    })
+</script>
+<div class="foot">
+    <div class="foot_content clearfix">
+        <div class="contact_links">
+            <div class="contact_links_content clearfix">
+                <div class="left clearfix">
+                    <dl class="clearfix">
+                        <dt>帮助中心</dt>
+                        <dd><a href="">注册认证</a></dd>
+                        <dd><a href="">出借流程</a></dd>
+                        <dd><a href="">债权转让</a></dd>
+                        <dd><a href="">账户安全</a></dd>
+                        <dd><a href="">资费说明</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>关于我们</dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                        <dd><a href="">社会责任</a></dd>
+                        <dd><a href="">法律法规</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>东方银谷旗下业务</dt>
+                        <dd><a href="">银谷门户网站</a></dd>
+                        <dd><a href="">银谷财富</a></dd>
+                        <dd><a href="">银谷普惠</a></dd>
+                        <dd><a href="">银谷普诚</a></dd>
+                        <dd><a href="">银谷积分商城</a></dd>
+
+                    </dl>
+
+                    <div class="weixin  weixin-2"></div>
+                    <div class="weixin weixin-1"></div>
+
+                </div>
+                <div class="right">
+
+                    <ul class="address">
+                        <li class="clearfix"><p>人工服务时间 8:00～22:00</p></li>
+                        <li class="clearfix">
+                            <span class="phone"></span>
+                            <span class="font-16 white">客服服务热线：</span>
+
+                            <p><span class="font-16 white">400-612-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷财富）</span></p>
+
+                            <p><span class="font-16 white">400-613-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷普惠)</span></p>
+                        </li>
+                        <li class="clearfix"><p>24小时在线客服</p></li>
+                        <li class="clearfix">
+                            <span class="location"></span>
+
+                            <p class="clearfix location_title"><span class="white office">总部地址：</span>
+                                <span class="location_word white">北京市朝阳区东大桥路8号尚都国际中心A座2608-2609室</span></p>
+                        </li>
+                        <li class="clearfix margin-top-20"><p>东方银谷（北京）投资管理有限公司京ICP备14022292号</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="float_menu" class="float_menu">
+    <ul>
+        <li id="float_menu_head_phone" class="head_phone"><a href="javascript:void(0);"></a></li>
+        <li id="float_menu_code" class="code">
+            <a href="javascript:void(0);"></a>
+
+            <div id="big_code" class="big_code"></div>
+        </li>
+        <li id="float_menu_up" class="up"><a href="javascript:void(0);"></a></li>
+    </ul>
+</div>
+
+</body>
+</html>

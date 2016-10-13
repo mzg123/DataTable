@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="Expires" content="0">
+    <meta name="title" content="我的账户-债权管理-优计划-查看详情"/>
+    <meta name="keywords" content="我的账户-债权管理-优计划-查看详情"/>
+    <meta name="description" content="我的账户-债权管理-优计划-查看详情"/>
+    <title>我的账户-债权管理-优计划-查看详情</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://img3.yingu.com/module/??common/base.css,head/head.css,foot/foot.css"/>
+    <script type="text/javascript"
+            src="http://img3.yingu.com/module/??lib/sea.js,lib/seajs-combo.js,lib/lib.js,common/base.js,head/head.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            base: 'http://img3.yingu.com/module/'
+        });
+        seajs.use("head/head");
+    </script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css"
+      href="http://img3.yingu.com/module/??ui/pager/pager.css,personal/personal.css,personal/money_manage.css,ui/modal/modal.css,personal/creditors.css"/>
+<div class="head">
+    <div class="toolbar ">
+        <div class="toolbar_content clearfix">
+            <!--<a class="home" href="" class=""><span class="home_icon"></span>首页</a>-->
+            <div class="tel"><i class="icon-tel"></i><span class="red">400-612-5859</span>（银谷财富）&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="red">400-613-5859</span>（银谷普惠）
+            </div>
+            <div class="head_right clearfix">
+                <a class="login" href="">登录</a>
+                <span class="spliter_short"></span>
+                <a class="register margin-right-10" href="">注册</a>
+                <a class="favorite" href="">银谷门户网站</a>
+                <a class="favorite" href="">积分商城</a>
+                <a class="favorite" href="">帮助中心</a>
+                <a class="favorite" href="">关于我们</a>
+
+                <!--<a class="phone" href=""><span class="phone_icon"></span>手机金融</a>-->
+                <a class="message" href="">消息<span class="message_num red">(1)</span></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_content clearfix">
+            <div class="logo_slogan clearfix">
+                <div class="logo"></div>
+                <div class="slogan"></div>
+            </div>
+
+
+            <div class="personal"><!-- personal_showlist -->
+                <div class="avatar_link clearfix">
+                    <a id="personalist_btn" href="" class="link"><img class="avatar"
+                                                                      src="http://img3.yingu.com/image/common/avatar.png"><span
+                            class="word">我的账户</span><span class="arrow"></span></a>
+                </div>
+                <div id="list_wrapper" class="list_wrapper">
+                    <div class="placeholder"></div>
+                    <ul>
+                        <li><a href="">充值</a></li>
+                        <li><a href="">提现</a></li>
+                        <li><a href="">交易记录</a></li>
+                        <li><a href="">我的资产</a></li>
+                        <li><a href="">基本信息</a></li>
+                        <li><a href="">账户安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spliter_long"></div>
+            <ul class="nav_list clearfix">
+                <li class="selected"><a href="">首页</a><span class="indicator"></span></li>
+                <li class="more">                     <a href="">财富管理</a>                     <i class="arrow"></i>                     <dl class="hover">                        <dd><a href="#">P2P债权</a></dd><dd><a href="../plan/plan_index.html">优计划</a></dd>                      </dl>                 </li>
+                <li><a href="">债权转让</a><span class="indicator"></span></li>
+                <li class="last more">                     <a href="">银谷课堂</a><i class="arrow"></i>                     <dl class="hover">                         <dd><a href="#">专家建议</a></dd>                         <dd><a href="#">调研报告</a></dd>                      </dl>                 </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper clearfix">
+    <div class="route">
+        <dl class="clearfix">
+            <dt>您的位置：</dt>
+            <dd><a href="#">首页<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="overview.html">我的账户<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="#">债权管理<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="creditors-settled.html">优计划<i></i></a></dd>
+        </dl>
+    </div>
+    <div class="personal_wrap clearfix border">
+        <!-- left menu -->
+        <div class="nav-left">
+            <dl>
+                <dd>
+                    <a href="overview.html">账户总览</a>
+                </dd>
+                <dd>
+                    <a>资金管理</a>
+                    <ul class="sub-nav">
+                        <li><a href="capital-recharge.html">充值</a></li>
+                        <li><a href="capital-cash.html">提现</a></li>
+                        <li><a href="capital-record.html">交易记录</a></li>
+                    </ul>
+                </dd>
+                <dd class="on">
+                    <a>债权管理</a>
+                    <ul class="sub-nav">
+                        <!--<li><a href="creditors-total.html">债权统计</a></li>-->
+                        <li><a href="creditors-back.html">P2P债权</a></li>
+                        <li><a href="creditors-settled.html">优计划</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="collect.html">募集中</a></dd>
+                <dd><a href="collect-full.html">满标待审</a></dd>
+                <dd><a href="collect-flow.html">累计流标</a></dd>
+                <dd>
+                    <a>账户管理</a>
+                    <ul class="sub-nav">
+                        <li><a href="baseinfo.html">基本信息</a></li>
+                        <li><a href="safe.html">账户安全</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="bank.html">银行卡管理</a></dd>
+                <dd><a href="notice.html">消息通知</a></dd>
+                <dd><a href="coupon.html">我的优惠券</a></dd>
+            </dl>
+        </div>
+        <!-- right content -->
+        <div class="personal_content">
+            <div class="manage_top creditors_set clearfix margin-top-25">
+
+                <ul class="manage_list manage_total">
+                    <li>
+                        <div class="my">
+                            <div class="clearfix">
+                                <strong>优计划A - UJH201603090001</strong>
+
+                            </div>
+
+                            <div class="cleargix">
+                                <div class="item"><span>预期年化收益率：</span><i class="font-14">12%</i></div>
+                                <div class="item"><span>出借期限：</span><i class="font-14">12个月</i></div>
+                                <div class="item"><span>出借金额：</span><i class="font-14">10000.00元</i></div>
+                                <div class="item"><span>还款方式：</span><i class="font-14">到期一次性支付本息</i></div>
+
+
+                            </div>
+                            <i class="icon_hold"></i>
+                            <!--<i class="icon_exited"></i>-->
+                            <!--<i class="icon_out"></i>-->
+
+                        </div>
+                    </li>
+
+                </ul>
+
+
+            </div>
+            <div class="manage_detail margin-top-20">
+                <ul class="clearfix">
+
+                    <li class="name"><span class="red"><i class="font-30">10000.00</i>元</span>
+
+                        <p class="gray">待收本金</p></li>
+                    <li class="name"><span class="red"><i class="font-30">1000.00</i>元</span>
+
+                        <p class="gray">待收收益</p></li>
+                    <li class="name"><span class="red"><i class="font-30">2016-02-4</i></span>
+
+                        <p class="gray">退出日期</p></li>
+
+
+                </ul>
+
+
+            </div>
+            <div class="manage_wrap margin-top-20">
+                <ul class="manage_item">
+                    <li><h6>加入日期</h6>
+
+                        <p><strong>2015-11-4-11:32</strong><span>出借成功</span></p>
+                    </li>
+
+                    <li><h6>合同</h6>
+
+                        <p><a id="Authorization">《出借咨询与服务协议》</a>&nbsp;&nbsp;
+                            <a id="Authorization2">《借款协议》</a>&nbsp;&nbsp;
+                            <a id="Authorization3">《风险提示书》</a>&nbsp;&nbsp;
+                            <a id="Authorization4">《债权转让及受让协议》</a>
+
+                    </li>
+
+                </ul>
+            </div>
+            <div class="manage_plan margin-top-20">
+                <h2>我的债权</h2>
+
+                <table class="personal_table " id="resultTable">
+                    <thead>
+                    <tr>
+                        <td>序列</td>
+                        <td>借款人</td>
+                        <td>身份证号</td>
+                        <td>借款用途</td>
+                        <td>出借金额</td>
+                        <td>应收回款</td>
+                        <td>总期数</td>
+                        <td>买入期数</td>
+                        <td>加入日期</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>孙悟空</td>
+                        <td>42****19******3154</td>
+                        <td>生活消费</td>
+                        <td>1000.00</td>
+                        <td>116.25</td>
+                        <td>36</td>
+                        <td>1</td>
+                        <td>2016-05-05</td>
+
+
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>孙悟空</td>
+                        <td>42****19******3154</td>
+                        <td>生活消费</td>
+                        <td>1000.00</td>
+                        <td>116.25</td>
+                        <td>36</td>
+                        <td>1</td>
+                        <td>2016-05-05</td>
+
+
+                    </tr>
+
+
+                    </tbody>
+                </table>
+
+
+                <div id="tableNull">
+                    <div class="manage_null"><i class="icon_close"></i>
+                        暂无记录!
+                    </div>
+                </div>
+                <div id="pager" class="page-container" current-page="1" total-num="10" show-page="5"></div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<!-- modal -->
+<script type="text/html" id="agreement" style="display: none" title="cxxxxxxxxx">
+    <div class="contract">
+        <h3>出借咨询与服务协议</h3>
+
+        <div class="contract-wrapper ie-css3">
+            <div class="contract-scroller">
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="agreement2" style="display: none" title="dxxxxxxxxx">
+    <div class="contract">
+        <h3>借款协议</h3>
+
+        <div class="contract-wrapper ie-css3">
+            <div class="contract-scroller">
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="agreement3" style="display: none" title="exxxxxxxx">
+    <div class="contract">
+        <h3>风险提示书</h3>
+
+        <div class="contract-wrapper ie-css3">
+            <div class="contract-scroller">
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="agreement4" style="display: none" title="rrrrrr">
+    <div class="contract">
+        <h3>债权转让及受让协议</h3>
+
+        <div class="contract-wrapper ie-css3">
+            <div class="contract-scroller">
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+
+                <p>哟西</p>
+            </div>
+        </div>
+    </div>
+</script>
+
+
+<script type="text/javascript">
+    seajs.use("personal/creditors-plan-detail", function (app) {
+        app.run();
+    })
+</script>
+
+<div class="foot">
+    <div class="foot_content clearfix">
+        <div class="contact_links">
+            <div class="contact_links_content clearfix">
+                <div class="left clearfix">
+                    <dl class="clearfix">
+                        <dt>帮助中心</dt>
+                        <dd><a href="">注册认证</a></dd>
+                        <dd><a href="">出借流程</a></dd>
+                        <dd><a href="">债权转让</a></dd>
+                        <dd><a href="">账户安全</a></dd>
+                        <dd><a href="">资费说明</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>关于我们</dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                        <dd><a href="">社会责任</a></dd>
+                        <dd><a href="">法律法规</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>东方银谷旗下业务</dt>
+                        <dd><a href="">银谷门户网站</a></dd>
+                        <dd><a href="">银谷财富</a></dd>
+                        <dd><a href="">银谷普惠</a></dd>
+                        <dd><a href="">银谷普诚</a></dd>
+                        <dd><a href="">银谷积分商城</a></dd>
+
+                    </dl>
+
+                    <div class="weixin  weixin-2"></div>
+                    <div class="weixin weixin-1"></div>
+
+                </div>
+                <div class="right">
+
+                    <ul class="address">
+                        <li class="clearfix"><p>人工服务时间 8:00～22:00</p></li>
+                        <li class="clearfix">
+                            <span class="phone"></span>
+                            <span class="font-16 white">客服服务热线：</span>
+
+                            <p><span class="font-16 white">400-612-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷财富）</span></p>
+
+                            <p><span class="font-16 white">400-613-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷普惠)</span></p>
+                        </li>
+                        <li class="clearfix"><p>24小时在线客服</p></li>
+                        <li class="clearfix">
+                            <span class="location"></span>
+
+                            <p class="clearfix location_title"><span class="white office">总部地址：</span>
+                                <span class="location_word white">北京市朝阳区东大桥路8号尚都国际中心A座2608-2609室</span></p>
+                        </li>
+                        <li class="clearfix margin-top-20"><p>东方银谷（北京）投资管理有限公司京ICP备14022292号</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

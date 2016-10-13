@@ -1,0 +1,59 @@
+.ui_roller{
+	overflow: hidden;
+	position: relative;
+}
+
+.ui_roller .ui_roller_content{
+	overflow: hidden;
+	position: relative;
+}
+
+.ui_roller .ui_roller_list .ui_roller_list_item{
+	float: left;
+}
+
+.ui_roller .fade{
+	position: relative;
+}
+
+.ui_roller .fade .ui_roller_list_item{
+	float: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.ui_roller .fade .ui_roller_list_item_first{
+    z-index: 1;
+}
+
+.ui_roller .ui_roller_list .ui_roller_list_item img{
+	display: block;
+	max-width: 100%;
+}
+
+.ui_roller_button_list{
+	position: absolute;
+	right: 30px;
+	bottom: 15px;
+}
+
+.ui_roller_button_list li.ui_roller_button{
+	float: left;
+	margin-right: 8px;
+}
+
+.ui_roller_button_list li.ui_roller_button span{
+	display: block;
+	width: 9px;
+	height: 9px;
+	background: url(../image/ui/slider_small_indicator.png) left top no-repeat;
+}
+
+.ui_roller_button_list li.selected span{
+	background: url(../image/ui/slider_small_indicator_selected.png) left top no-repeat;
+}
+
+.ui_roller_button_list li.last{
+	margin-right: 0;
+}

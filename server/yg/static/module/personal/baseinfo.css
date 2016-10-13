@@ -1,0 +1,107 @@
+
+.group-title{
+    /*padding: 20px 20px 30px;*/
+    font-size: 16px;
+    padding: 30px 0;
+    color: #0768ca;
+}
+.group-title a{
+    font-size: 12px;
+    margin-left: 10px;
+}
+.group-title a.yes{
+    cursor: default;
+    text-decoration: none;
+}
+.row.field {
+    line-height: 36px;
+    padding: 5px 0;
+}
+
+.col-1.label {
+    text-align: right;
+    padding-right: 10px;
+    color: #bababa;
+    font-size: 14px;
+}
+
+.val {
+    height: 36px;
+    color: #1e1e1e;
+    font-size: 14px;
+}
+.val label input[type='radio']{
+    margin: 0 5px;
+    position: relative;
+    top: 2px;
+}
+
+#msgForm .input-box{
+    width: 264px;
+}
+#msgForm {
+    position: relative;
+}
+
+#msgForm .photo {
+    position: absolute;
+    right: 80px;
+    top: 80px;
+    width: 125px;
+    text-align: center;
+    z-index: 9;
+}
+#msgForm .must{
+    position: absolute;
+    right:0;
+    top:20px;
+}
+
+#msgForm .photo .img {
+    width: 125px;
+    height: 125px;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#msgForm .photo .img img {
+    border-radius: 62.5px;
+    width: 125px;
+    height: 125px;
+}
+
+#msgForm .photo .file {
+    opacity: 0;
+    position: absolute;
+    width: 85px;
+    left: 50%;
+    margin-left: -42px;
+    cursor: pointer;
+
+}
+
+#msgForm .date_piker {
+    float: none;
+}
+
+#msgForm .date_piker .icon_date {
+    right: 5px;
+    top: 6px;
+}
+
+.col-1.tip{
+    color: #f4473b;
+    line-height: 36px;
+    position: relative;
+    left:-35px;
+}
+.col-1.tip span{
+    margin-left: 5px;
+}
+
+.title a {
+    float: right;
+    font-size: 14px;
+    color: #f4473b;
+}

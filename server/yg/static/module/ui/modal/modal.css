@@ -1,0 +1,108 @@
+.yg-modal.modal-bg{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,.1);
+
+
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#1f000000 ,endColorstr=#1f000000);
+	/*filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7f000000,endColorstr=#7f000000);*/
+	z-index:999;
+	opacity:0;
+	display: none;
+}
+
+
+
+.yg-modal.modal-bg *{
+	box-sizing:border-box;
+}
+.yg-modal .modal-wrapper{
+	position:fixed;
+	left:50%;
+	top:-50%;
+	background-color:white;
+	border:1px solid #e4e4e4;
+    box-shadow: 1px 1px 8px rgba(150,150,150,.7);
+    -webkit-box-shadow: 1px 1px 8px rgba(150,150,150,.7);
+    -moz-box-shadow: 1px 1px 8px rgba(150,150,150,.7);
+}
+.yg-modal .modal-title{
+	height:40px;
+	line-height:40px;
+	font-size:14px;
+	color: #0668cb;
+	/*border-bottom:1px solid #e4e4e4;*/
+	background-color:#faf9f9;
+}
+.yg-modal .title-txt{
+	padding-left:20px;
+	color:#0668cb;
+	font-size: 16px;
+}
+.yg-modal .modal-close{
+	position:absolute;
+	right:10px;
+	top:0;
+	width:40px;
+	color:#a5a5a5;
+	text-align:center;
+}
+.yg-modal .modal-close:hover{
+	/*background-color:#9f0710;*/
+    color:#0668cb;
+	/*color:white;*/
+	cursor:pointer;
+}
+.yg-modal .modal-content{
+	padding:20px 20px;
+	color:#787878;
+	font-size:14px;
+	line-height:180%;
+	background-color:#fff;
+}
+.yg-modal .display-content{
+	overflow-y:auto;
+	height:100%;
+	/*padding:5px ;*/
+	/*border:1px solid #e4e4e4;*/
+	background-color:white;
+}
+.yg-modal .display-content p.alert{
+	text-align: center;
+}
+.yg-modal .modal-foot{
+	height:50px;
+	font-size:16px;
+	padding:10px 10px;
+	/*border-top:1px solid #e4e4e4;*/
+	background-color:#faf9f9;
+    text-align: center;
+	position: relative;
+	z-index: 5;
+}
+.yg-modal .modal-foot span[modal-btn]{
+    margin:0 10px;
+	position: relative;
+	z-index: 10;
+	height: 30px;
+	line-height: 26px;
+	/*padding: 5px 20px;*/
+}
+/*
+.yg-modal .modal-btn{
+	float:right;
+	height:40px;
+	line-height:40px;
+	padding:0 30px;
+	text-align:center;
+	border:1px solid;
+	color: #9f0710;
+	cursor:pointer;
+}
+.yg-modal .modal-btn:hover{
+	background-color:#9f0710;
+	color:white;
+}*/

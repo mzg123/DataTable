@@ -1,0 +1,398 @@
+/*账户总览*/
+.personal_chart{
+    height: 300px;
+    width: 360px;
+    float: left;
+    padding-top: 10px;
+}
+.personal_tabs .tabs{
+    width:711px;
+    background: #faf9f9;
+    margin-top:30px;
+    padding-left: 300px;
+}
+.personal_tabs .tabs li{
+    width: 150px;
+    float: left;
+}
+.personal_tabs .tabs li a{
+    border-left:0;
+
+}
+.tabs li.hover a{
+    border-left:1px solid #e6e6e6;
+    border-right:1px solid #e6e6e6;
+    position: relative;
+    z-index: 2;
+
+}
+.tabs li + li a{
+    border-right:0;
+}
+.process_content{
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    font-size: 14px;
+    position: relative;
+
+}
+.manage_list {
+    padding-top: 20px;
+    /*width: 250px;*/
+    float: left;
+}
+.manage_list li{
+    margin-top:40px;
+}
+.manage_list li .big{
+    font-size: 26px;
+    /*font-family: Arial;*/
+}
+.personal_total{
+    top:50%;
+    position: absolute;
+    right: 50px;
+    color: #666;
+    margin-top: -19px;
+
+}
+.personal_title{
+    border-bottom: 1px solid #0096f4;
+    padding-bottom: 15px;
+}
+
+.personal_table{
+    border:none;
+    margin-bottom: 20px;
+
+}
+.personal_table tbody td a.bt_small_red{
+    color: #fff;
+    font-size: 12px;
+}
+.personal_table tbody tr{
+    border-bottom: 1px solid #e9e9e9;
+    /*font-family: Arial;*/
+}
+.personal_table td{
+     padding-left: 20px;
+     position: relative;
+
+ }
+.personal_table thead td{
+    font-size: 14px;
+
+}
+.personal_table tbody td{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+}
+/*环形进度条*/
+.circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 100%;
+    background: #00aef7;
+}
+.circle .pie_left, .circle .pie_right {
+    width:36px;
+    height:36px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.circle .left,
+.circle .right {
+    width:36px;
+    height:36px;
+    background:#bababa;
+    border-radius: 100%;
+    position: absolute;
+
+}
+.circle .pie_right, .circle .right {
+    clip:rect(0,auto,auto,18px);
+}
+.circle .pie_left, .circle .left {
+    clip:rect(0,18px,auto,0);
+}
+.circle .circle_mask {
+    width: 28px;
+    height: 28px;
+    border-radius: 100%;
+    left:24px;
+    top: 14px;
+    background: #fff;
+    position: absolute;
+    text-align: center;
+    line-height: 28px;
+    font-size: 8px;
+    color: #333;
+}
+.circle .circle_mask  span{
+    font-size: 11px;
+}
+
+/*msg*/
+.personal_msg {
+    background: #f8f8f8;
+    height: 115px;
+}
+
+.personal_msg .photo {
+    float: left;
+    width: 92px;
+    height: 92px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 100%;
+    margin:13px 30px 20px 20px;
+}
+
+/*.personal_msg .msg {*/
+    /*margin-left: 103px;*/
+
+/*}*/
+.personal_msg .detail .msg_list{
+    padding: 15px 0 0 85px;
+
+}
+.personal_msg .detail .msg_list dd{
+    position: relative;
+    float: left;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e7e7e7;
+    background: #f0f0f0;
+    border-radius: 100%;
+    margin-left:23px;
+    /*cursor: pointer;*/
+    z-index: 1;
+
+}
+.personal_msg .detail .msg_list dd span{
+    width: 20px;
+    height: 20px;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    margin:-10px 0 0 -10px;
+    background: url(../image/personal/icon_sprite.png) no-repeat;
+}
+.personal_msg .detail .msg_list dd span.icon_1{
+    background-position: 5px 1px;
+}
+.personal_msg .detail .msg_list dd.on span.icon_1{
+     background-position: 5px -41px;
+ }
+.personal_msg .detail .msg_list dd span.icon_2{
+    background-position: -49px 1px;
+}
+.personal_msg .detail .msg_list dd.on span.icon_2{
+    background-position: -49px -41px;
+}
+.personal_msg .detail .msg_list dd span.icon_3{
+    background-position: -102px 1px;
+}
+.personal_msg .detail .msg_list dd.on span.icon_3{
+    background-position: -102px -41px;
+}
+.personal_msg .detail .msg_list dd span.icon_4{
+    background-position: -155px 1px;
+}
+.personal_msg .detail .msg_list dd.on span.icon_4{
+    background-position: -155px -41px;
+}
+.personal_msg .detail .msg_list dd .hover{
+    display: none;
+    width: 235px;
+    z-index: 10;
+    position: absolute;
+    left: 2px;
+    top:38px;
+
+}
+.personal_msg .detail .msg_list dd .hover p{
+    border: 1px solid #d2d7e1;
+    box-shadow: 2px 0 1px #f3f3f3;
+    background: #fff;
+    padding: 5px 10px;
+    /*margin-left:15px;*/
+    color: #666;
+
+}
+.personal_msg .detail .msg_list dd .hover i{
+    background: url(../image/personal/icon_arrow_up.png) no-repeat;
+    width:9px;
+    height: 9px;
+    position: absolute;
+    left: 9px;
+    top:-6px;
+    display: block;
+
+}
+.personal_msg .detail .msg_list dd .hover a.red{
+    float: right;
+}
+/*.personal_msg .detail .msg_list dd .link{*/
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*display: block;*/
+    /*width: 32px;*/
+    /*height: 32px;*/
+/*}*/
+.personal_msg .msg .detail h1 {
+    font-size: 18px;
+    float: left;
+    margin-top: 16px;
+}
+.personal_msg .msg .detail{
+    float: left;
+    width:610px;
+}
+.personal_msg .msg .bt{
+    background: #f0f0f0;
+    float: right;
+    width:235px;
+    height: 115px;
+}
+.personal_msg .msg .bt p{
+    margin:30px 0 25px 15px;
+    padding-left: 20px;
+    background: url(../image/personal/icon_clock.png) no-repeat;
+
+}
+.personal_msg .msg .bt .bt_small_red{
+    margin-left:48px;
+}
+.personal_msg .msg .detail .line{
+    margin:10px 0 13px;
+}
+.personal_msg .msg .detail .msg_text dd{
+    padding-left: 20px;
+    float: left;
+    font-size: 14px;
+    background: url(../image/personal/icon_dot.png) no-repeat 0 5px;
+
+}
+.personal_msg .msg .detail .msg_text dd .red{
+    color: #0768ca;
+}
+.personal_msg .msg .detail .msg_text dd i{
+    margin:0 30px;
+    display: inline-block;
+    color: #e8e8e8;
+}
+/*.personal_msg .msg .border {*/
+    /*margin-bottom: 0;*/
+
+/*}*/
+
+/*.personal_msg .msg .detail {*/
+    /*vertical-align: text-top;*/
+    /*height: 45px;*/
+    /*color: #343434;*/
+
+/*}*/
+
+/*.personal_msg .msg .detail .bt {*/
+    /*float: right;*/
+    /*margin-top: 5px;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul {*/
+    /*float: left;*/
+    /*margin-left: 20px;*/
+/*}*/
+
+/*.personal_msg .msg .detail + .detail ul, .personal_msg .msg .detail + .detail ul li {*/
+    /*margin: 0;*/
+/*}*/
+
+/*.personal_msg .msg .detail + .detail ul li i {*/
+    /*margin-left: 0;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul li i {*/
+    /*display: inline-block;*/
+    /*margin: 0 10px 0 5px;*/
+    /*background: url(../image/personal/icon.png) no-repeat;*/
+    /*width: 30px;*/
+    /*height: 34px;*/
+
+/*}*/
+
+/*.personal_msg .msg .detail ul li i.icon_low {*/
+    /*background-position: 0 0;*/
+    /*position: relative;*/
+    /*top: 4px;*/
+
+/*}*/
+
+/*.personal_msg .msg .detail ul li i.icon_low b {*/
+    /*color: #9f0810;*/
+    /*font-style: normal;*/
+    /*position: absolute;*/
+    /*font-weight: normal;*/
+    /*left: 8px;*/
+    /*top: -6px;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul li i.icon_card {*/
+    /*background-position: 0 -515px;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul li i.icon_money {*/
+    /*background-position: 0 -593px;*/
+    /*width: 23px;*/
+
+/*}*/
+
+/*.personal_msg .msg .detail ul li i.icon_auth {*/
+    /*background-position: 0 -633px;*/
+    /*width: 23px;*/
+
+/*}*/
+
+
+/*.personal_msg .msg .detail ul li .item, .personal_msg .msg .detail ul li a {*/
+    /*display: inline-block;*/
+    /*position: relative;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul li .item {*/
+    /*top: -8px;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul li a {*/
+    /*top: -8px;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul li .num {*/
+    /*position: relative;*/
+    /*top: 0;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul li .note {*/
+    /*top: 0;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul li, .personal_msg .msg .detail + .detail ul li + li {*/
+    /*float: left;*/
+    /*margin-left: 20px;*/
+    /*line-height: 45px;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul li strong {*/
+    /*font-size: 20px;*/
+    /*font-family: "Arial";*/
+    /*font-weight: normal;*/
+/*}*/
+
+/*.personal_msg .msg .detail ul li strong .star {*/
+    /*display: none;*/
+/*}*/
+/**/

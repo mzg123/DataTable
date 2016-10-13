@@ -1,0 +1,176 @@
+body {
+    background: #f5f5f5;
+}
+
+.content-wrap {
+    background: #fafafa;
+    border-bottom: #e5e5e5 solid 1px;
+    border-left: #e5e5e5 solid 1px;
+}
+
+.content-title{
+    border-bottom: #e6e6e6 solid 1px;
+}
+
+.content-title h1{
+    color: #ad2d34;
+    font-size: 18px;
+    border-bottom: #ad2d34 solid 2px;
+    float: left;
+    padding-bottom: 20px;
+    position: relative;
+    bottom: -1px;
+}
+
+.nav-left {
+    float: left;
+    width: 141px;
+    border-top: 1px solid #e6e6e6;
+    position: relative;
+    left: -1px;
+    z-index: 9;
+}
+
+.nav-left dl dt, .nav-left dl dd a, .nav-left dl dt a {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #f1f1f1;
+    padding-left: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-left dl dt.all a {
+    border-bottom: 0;
+}
+
+.nav-left dl dd a {
+    padding-left: 40px;
+    display: block;
+}
+
+.nav-left dl dd a:hover, .nav-left dl dd.on a {
+    background: none;
+    padding-left: 38px;
+    text-decoration: none;
+}
+
+.nav-left dl dd:hover,
+.nav-left dl dd.on, .nav-left dl dt.all:hover, .nav-left dl dt.all.on {
+    border-left: 2px solid #0768ca;
+}
+
+.nav-left dl dd.on a {
+    color: #0768ca;
+
+}
+
+.nav-left dl dt.on, .nav-left dl dt.all a {
+    font-weight: bold;
+    color: #0768ca;
+
+}
+
+.nav-left dl dd:hover i,
+.nav-left dl dd.on i, .nav-left dl dt.all:hover i, .nav-left dl dt.all.on i {
+    display: block;
+}
+
+.nav-left dl dt.all {
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.nav-left dl dt.all:hover, .nav-left dl dt.all.on {
+    text-decoration: none;
+    padding-left: 0;
+
+}
+
+.nav-left dl dt.all a:hover {
+    text-decoration: none;
+
+}
+
+.nav-left dl dt a {
+    display: block;
+}
+.nav-left dl dd{
+    position: relative;
+    border-left: 2px solid transparent;
+}
+.nav-left .sub-nav{
+    display: none;
+    position: absolute;
+    width: 140px;
+    border-top: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    background: white;
+    box-shadow: 2px 2px 4px #ddd;
+}
+.nav-left .sub-nav li{
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+}
+
+.nav-left dl dd i.ar{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    border: 3px solid transparent;
+    border-right-width: 0;
+    border-left-color: #0768ca;
+    margin-top: -3px;
+}
+
+.nav-left .sub-nav li:hover a{
+    color: #0768ca;
+    text-decoration: none;
+}
+
+.nav-left dl dd a:hover{
+    padding-left: 40px;
+}
+.nav-left dl dd.on a:hover{
+    padding-left: 38px;
+}
+.nav-left dl dd.on  li a{
+    color: #333;
+}
+.nav-left dl dd.on  li.on a{
+    color: #0768ca;
+}
+
+.content-right {
+    float: left;
+    width: 1009px;
+    padding: 24px 24px 24px;
+    border-left: #e5e5e5 solid 1px;
+    background: #fff;
+    position: relative;
+    left: -1px;
+    min-height: 650px;
+}
+
+.content-right .content-title{
+    border-bottom: #e6e6e6 solid 1px;
+}
+
+.content-title h1{
+    color: #2b2b2b;
+    font-size: 16px;
+    border-bottom:none;
+    float: left;
+    padding-bottom: 20px;
+    position: relative;
+    bottom: -1px;
+}
+.tabs li.hover{
+    border-top: 2px solid #0768ca;
+}

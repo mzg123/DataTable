@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="Expires" content="0">
+    <meta name="title" content="优计划首页"/>
+    <meta name="keywords" content="优计划首页"/>
+    <meta name="description" content="优计划首页"/>
+    <title>优计划首页</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://img3.yingu.com/module/??common/base.css,head/head.css,foot/foot.css"/>
+    <script type="text/javascript"
+            src="http://img3.yingu.com/module/??lib/sea.js,lib/seajs-combo.js,lib/lib.js,common/base.js,head/head.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            base: 'http://img3.yingu.com/module/'
+        });
+        seajs.use("head/head");
+    </script>
+    <!--[if lte IE 8]>
+    <style type="text/css">
+        .ie-css3 {
+            behavior: url(http://img3.yingu.com/image/common/ie-css3.htc);
+        }
+
+    </style>
+    <![endif]-->
+</head>
+<body>
+<link rel="stylesheet" type="text/css"
+      href="http://img3.yingu.com/module/??ui/pager/pager.css,plan/plan_index.css"/>
+<div class="head">
+    <div class="toolbar ">
+        <div class="toolbar_content clearfix">
+            <!--<a class="home" href="" class=""><span class="home_icon"></span>首页</a>-->
+            <div class="tel"><i class="icon-tel"></i><span class="red">400-612-5859</span>（银谷财富）&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="red">400-613-5859</span>（银谷普惠）
+            </div>
+            <div class="head_right clearfix">
+                <a class="login" href="">登录</a>
+                <span class="spliter_short"></span>
+                <a class="register margin-right-10" href="">注册</a>
+                <a class="favorite" href="">银谷门户网站</a>
+                <a class="favorite" href="">积分商城</a>
+                <a class="favorite" href="">帮助中心</a>
+                <a class="favorite" href="">关于我们</a>
+
+                <!--<a class="phone" href=""><span class="phone_icon"></span>手机金融</a>-->
+                <a class="message" href="">消息<span class="message_num red">(1)</span></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_content clearfix">
+            <div class="logo_slogan clearfix">
+                <div class="logo"></div>
+                <div class="slogan"></div>
+            </div>
+
+
+            <div class="personal"><!-- personal_showlist -->
+                <div class="avatar_link clearfix">
+                    <a id="personalist_btn" href="" class="link"><img class="avatar"
+                                                                      src="http://img3.yingu.com/image/common/avatar.png"><span
+                            class="word">我的账户</span><span class="arrow"></span></a>
+                </div>
+                <div id="list_wrapper" class="list_wrapper">
+                    <div class="placeholder"></div>
+                    <ul>
+                        <li><a href="">充值</a></li>
+                        <li><a href="">提现</a></li>
+                        <li><a href="">资金记录</a></li>
+                        <li><a href="">我的资产</a></li>
+                        <li><a href="">基本信息</a></li>
+                        <li><a href="">账户安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spliter_long"></div>
+            <ul class="nav_list clearfix">
+                <li class="selected"><a href="">首页</a><span class="indicator"></span></li>
+                <li class="more">
+                    <a href="">财富管理</a>
+                    <i class="arrow"></i>
+                    <dl class="hover">
+                        <dd><a href="#">P2P债权</a></dd>
+                        <dd><a href="../plan/plan_index.html">优计划</a></dd>
+                    </dl>
+
+                </li>
+                <li><a href="">债权转让</a><span class="indicator"></span></li>
+                <li class="last more"><a href="">银谷课堂</a><i class="arrow"></i>
+                    <dl class="hover">
+                        <dd><a href="#">专家建议</a></dd>
+                        <dd><a href="#">调研报告</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="plan_banner">
+    <div class="wrapper">
+        <img src="http://img3.yingu.com/image/plan/banner.jpg">
+    </div>
+
+</div>
+
+<div class="wrapper clearfix">
+    <div class="plan_wrap margin-top-20">
+        <ul class="plan_list clearfix">
+            <li>
+                <div class="name">优计划A</div>
+
+                <div class="clearfix detail">
+                    <span class="item">预期年化收益率</span>
+
+                    <div class="right">
+                        <div class="percent">
+                            5.20<span>%</span></div>
+                    </div>
+                </div>
+                <div class="clearfix detail"><span class="item">出借期限</span>
+
+                    <div class="right">1个月</div>
+                </div>
+                <div class="clearfix detail"><span class="item">起投金额</span>
+
+                    <div class="right">1000元</div>
+                </div>
+                <!--<div class="clearfix detail"><span class="item">进度</span>-->
+
+                    <!--<div class="product_progress ie-css3">-->
+                        <!--<span style="width: 100%" class="ie-css3"></span>-->
+
+                    <!--</div>-->
+                    <!--<div class="right red">100%</div>-->
+
+                <!--</div>-->
+                <div class="clearfix detail">
+                    <i></i><span id="ydl1" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                </div>
+                <a href="#" class="bt_middle_red ie-css3">加入计划</a>
+            </li>
+            <li class="line"></li>
+            <li>
+                <div class="name">优计划A</div>
+
+                <div class="clearfix detail">
+                    <span class="item">预期年化收益率</span>
+
+                    <div class="right">
+                        <div class="percent">
+                            5.20<span>%</span></div>
+                    </div>
+                </div>
+                <div class="clearfix detail"><span class="item">出借期限</span>
+
+                    <div class="right">1个月</div>
+                </div>
+                <div class="clearfix detail"><span class="item">起投金额</span>
+
+                    <div class="right">1000元</div>
+                </div>
+                <!--<div class="clearfix detail progress"><span class="item">进度</span>-->
+
+                    <!--<div class="product_progress ie-css3">-->
+                        <!--<span style="width: 78%" class="ie-css3"></span>-->
+
+                    <!--</div>-->
+                    <!--<div class="right red">78%</div>-->
+                <!--</div>-->
+                <div class="clearfix detail">
+                    <i></i><span id="ydl3" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                </div>
+                <a href="#" class="bt_middle_red ie-css3">查看详情</a>
+            </li>
+            <li class="line"></li>
+            <li>
+                <div class="name">优计划A</div>
+
+                <div class="clearfix detail">
+                    <span class="item">预期年化收益率</span>
+
+                    <div class="right">
+                        <div class="percent">
+                            5.20<span>%</span></div>
+                    </div>
+                </div>
+                <div class="clearfix detail"><span class="item">出借期限</span>
+
+                    <div class="right">1个月</div>
+                </div>
+                <div class="clearfix detail"><span class="item">起投金额</span>
+
+                    <div class="right">1000元</div>
+                </div>
+                <!--<div class="clearfix detail progress"><span class="item">进度</span>-->
+
+                    <!--<div class="product_progress ie-css3">-->
+                        <!--<span style="width: 60%" class="ie-css3"></span>-->
+
+                    <!--</div>-->
+                    <!--<div class="right red">60%</div>-->
+                <!--</div>-->
+                <div class="clearfix detail">
+                    <i></i><span id="ydl6" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                </div>
+                <a href="#" class="bt_middle_red ie-css3">加入计划</a>
+            </li>
+            <li class="line"></li>
+            <li>
+                <div class="name">优计划A</div>
+
+                <div class="clearfix detail">
+                    <span class="item">预期年化收益率</span>
+
+                    <div class="right">
+                        <div class="percent">
+                            5.20<span>%</span></div>
+                    </div>
+                </div>
+                <div class="clearfix detail"><span class="item">出借期限</span>
+
+                    <div class="right">1个月</div>
+                </div>
+                <div class="clearfix detail"><span class="item">起投金额</span>
+
+                    <div class="right">1000元</div>
+                </div>
+                <!--<div class="clearfix detail progress"><span class="item">进度</span>-->
+
+                    <!--<div class="product_progress ie-css3">-->
+                        <!--<span style="width: 10%" class="ie-css3"></span>-->
+
+                    <!--</div>-->
+                    <!--<div class="right red">10%</div>-->
+                <!--</div>-->
+                <div class="clearfix detail">
+                    <i></i><span id="ydl12" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                </div>
+                <a href="#" class="bt_middle_red ie-css3">查看详情</a>
+            </li>
+            <li class="line"></li>
+            <li>
+                <div class="name">优计划A</div>
+
+                <div class="clearfix detail">
+                    <span class="item">预期年化收益率</span>
+
+                    <div class="right">
+                        <div class="percent">
+                            5.20<span>%</span></div>
+                    </div>
+                </div>
+                <div class="clearfix detail"><span class="item">出借期限</span>
+
+                    <div class="right">1个月</div>
+                </div>
+                <div class="clearfix detail"><span class="item">起投金额</span>
+
+                    <div class="right">1000元</div>
+                </div>
+                <!--<div class="clearfix detail progress"><span class="item">进度</span>-->
+
+                    <!--<div class="product_progress ie-css3">-->
+                        <!--<span style="width: 10%" class="ie-css3"></span>-->
+
+                    <!--</div>-->
+                    <!--<div class="right red">10%</div>-->
+                <!--</div>-->
+                <div class="clearfix detail">
+                    <i></i><span id="ydl24" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                </div>
+                <a href="#" class="bt_middle_red ie-css3">查看详情</a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="plan_wrap margin-top-20">
+        <h3>理财计算器</h3>
+
+        <div class="plan_calculator clearfix">
+            <div class="left">
+                <h6>加入金额</h6>
+
+                <form method="" action="" id="moneyForm">
+                    <div class="text">
+                        <input type="number" name="money" value="" id="money" class="input-box"><span>元</span>
+
+                        <div class="wrong" id="moneyTip"></div>
+                    </div>
+                </form>
+                <button class="btn_red ie-css3" id="btnBuy">开始计算</button>
+
+            </div>
+            <div class="right">
+                <h6>产品类型</h6>
+                <ul id="calculateResult" class="clearfix">
+                    <li class="clearfix">
+                        <span class="item">优计划（<i class="black">1</i>）个月</span>
+
+
+                        <div class="product_progress ie-css3">
+                            <span style="width: 30%" class="ie-css3"></span>
+                        </div>
+
+                        <span class="value">520.71元</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="item">优计划（<i class="black">3</i>）个月</span>
+
+
+                        <div class="product_progress ie-css3">
+                            <span style="width: 40%" class="ie-css3"></span>
+                        </div>
+
+                        <span class="value">520.71元</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="item">优计划（<i class="black">6</i>）个月</span>
+
+
+                        <div class="product_progress ie-css3">
+                            <span style="width:50%" class="ie-css3"></span>
+                        </div>
+
+                        <span class="value">520.71元</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="item">优计划（<i class="black">12</i>）个月</span>
+
+
+                        <div class="product_progress ie-css3">
+                            <span style="width: 80%" class="ie-css3"></span>
+                        </div>
+
+                        <span class="value">520.71元</span>
+                    </li>
+                    <li class="clearfix">
+                        <span class="item">优计划（<i class="black">24</i>）个月</span>
+
+
+                        <div class="product_progress ie-css3">
+                            <span style="width: 100%" class="ie-css3"></span>
+                        </div>
+
+                        <span class="value">720.71元</span>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="plan_wrap margin-top-20">
+
+        <div class="tabs_top">
+            <h2 class="subtitle">历史期数与收益</h2>
+            <ul id="product_tabs" class="tabs clearfix">
+                <li class="product_tab"><a class="tab_link hover" href="#">优计划1个月</a></li>
+                <li class="product_tab"><a class="tab_link" href="#">优计划3个月</a></li>
+                <li class="product_tab"><a class="tab_link" href="#">优计划6个月</a></li>
+                <li class="product_tab"><a class="tab_link" href="#">优计划12个月</a></li>
+                <li class="product_tab"><a class="tab_link" href="#">优计划24个月</a></li>
+            </ul>
+        </div>
+        <div id="product_content_container" class="product_content_container">
+            <!-- 1-->
+            <div class="product_content">
+                <table class="personal_table " id="resultTable">
+                    <thead>
+                    <tr>
+                        <td>计划名称/编号</td>
+                        <td>加入人次</td>
+                        <td>计划总额(元)</td>
+                        <td>预期年化收益率</td>
+                        <td>累计收益(元)</td>
+                        <td>状态</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="#">优计划A-UJH201603150001</a></td>
+                        <td>56</td>
+                        <td>1000.00</td>
+                        <td>12%</td>
+                        <td>1000.00</td>
+                        <td><a href="#" class="bt_small_red ie-css3">立即加入</a></td>
+                    </tr>
+                    <tr class="bg">
+                        <td><a href="#">优计划B-UJH201603150001</a></td>
+                        <td>56</td>
+                        <td>1000.00</td>
+                        <td>12%</td>
+                        <td>1000.00</td>
+                        <td>已满额</td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+                <div id="tableNull" style="display: none">
+                    <div class="manage_null"><i class="icon_close"></i>很抱歉，这儿是个荒地。<br/>
+                        您还没有债权记录，去看看有什么感兴趣的吧！
+                    </div>
+                </div>
+                <div id="pager" class="pager-container" current-page="1" total-num="10" show-page="5"></div>
+
+
+            </div>
+            <!--3-->
+            <div class="product_content">
+
+                <table class="personal_table " id="resultTable2">
+                    <thead>
+                    <tr>
+                        <td>计划名称/编号</td>
+                        <td>加入人次</td>
+                        <td>计划总额(元)</td>
+                        <td>预期年化收益率</td>
+                        <td>累计收益(元)</td>
+                        <td>状态</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="#">优计划B-UJH201603150001</a></td>
+                        <td>56</td>
+                        <td>1000.00</td>
+                        <td>12%</td>
+                        <td>1000.00</td>
+                        <td><a href="#" class="bt_small_red">立即加入</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">优计划B-UJH201603150001</a></td>
+                        <td>56</td>
+                        <td>1000.00</td>
+                        <td>12%</td>
+                        <td>1000.00</td>
+                        <td>已满额</td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+                <div id="tableNull2" style="display: none">
+                    <div class="manage_null"><i class="icon_close"></i>很抱歉，这儿是个荒地。<br/>
+                        您还没有债权记录，去看看有什么感兴趣的吧！
+                    </div>
+                </div>
+                <div id="pager2" class="pager-container" current-page="1" total-num="10" show-page="5"></div>
+
+
+            </div>
+            <!-- 6-->
+            <div class="product_content">
+                <table class="personal_table " id="resultTable3">
+                    <thead>
+                    <tr>
+                        <td>计划名称/编号</td>
+                        <td>加入人次</td>
+                        <td>计划总额(元)</td>
+                        <td>预期年化收益率</td>
+                        <td>累计收益(元)</td>
+                        <td>状态</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="#">优计划C-UJH201603150001</a></td>
+                        <td>56</td>
+                        <td>1000.00</td>
+                        <td>12%</td>
+                        <td>1000.00</td>
+                        <td><a href="#" class="bt_small_red">立即加入</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">优计划B-UJH201603150001</a></td>
+                        <td>56</td>
+                        <td>1000.00</td>
+                        <td>12%</td>
+                        <td>1000.00</td>
+                        <td>已满额</td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+                <div id="tableNull3" style="display: none">
+                    <div class="manage_null"><i class="icon_close"></i>很抱歉，这儿是个荒地。<br/>
+                        您还没有债权记录，去看看有什么感兴趣的吧！
+                    </div>
+                </div>
+                <div id="pager3" class="pager-container" current-page="1" total-num="10" show-page="5"></div>
+
+
+            </div>
+            <!-- 12-->
+            <div class="product_content">
+                <table class="personal_table " id="resultTable4">
+                    <thead>
+                    <tr>
+                        <td>计划名称/编号</td>
+                        <td>加入人次</td>
+                        <td>计划总额(元)</td>
+                        <td>预期年化收益率</td>
+                        <td>累计收益(元)</td>
+                        <td>状态</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="#">优计划D-UJH201603150001</a></td>
+                        <td>56</td>
+                        <td>1000.00</td>
+                        <td>12%</td>
+                        <td>1000.00</td>
+                        <td><a href="#" class="bt_small_red">立即加入</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">优计划B-UJH201603150001</a></td>
+                        <td>56</td>
+                        <td>1000.00</td>
+                        <td>12%</td>
+                        <td>1000.00</td>
+                        <td>已满额</td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+                <div id="tableNull4" style="display: none">
+                    <div class="manage_null"><i class="icon_close"></i>很抱歉，这儿是个荒地。<br/>
+                        您还没有债权记录，去看看有什么感兴趣的吧！
+                    </div>
+                </div>
+                <div id="pager4" class="pager-container" current-page="1" total-num="10" show-page="5"></div>
+
+            </div>
+            <!-- 24-->
+            <div class="product_content">
+                <table class="personal_table " id="resultTable5">
+                    <thead>
+                    <tr>
+                        <td>计划名称/编号</td>
+                        <td>加入人次</td>
+                        <td>计划总额(元)</td>
+                        <td>预期年化收益率</td>
+                        <td>累计收益(元)</td>
+                        <td>状态</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="#">优计划D-UJH201603150001</a></td>
+                        <td>56</td>
+                        <td>1000.00</td>
+                        <td>12%</td>
+                        <td>1000.00</td>
+                        <td><a href="#" class="bt_small_red">立即加入</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">优计划B-UJH201603150001</a></td>
+                        <td>56</td>
+                        <td>1000.00</td>
+                        <td>12%</td>
+                        <td>1000.00</td>
+                        <td>已满额</td>
+                    </tr>
+
+
+                    </tbody>
+                </table>
+                <div id="tableNull5" style="display: none">
+                    <div class="manage_null"><i class="icon_close"></i>很抱歉，这儿是个荒地。<br/>
+                        您还没有债权记录，去看看有什么感兴趣的吧！
+                    </div>
+                </div>
+                <div id="pager5" class="pager-container" current-page="1" total-num="10" show-page="5"></div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    seajs.use("plan/plan_index");
+
+</script>
+<div class="foot">
+    <div class="foot_content clearfix">
+        <div class="contact_links">
+            <div class="contact_links_content clearfix">
+                <div class="left clearfix">
+                    <dl class="clearfix">
+                        <dt>帮助中心</dt>
+                        <dd><a href="">注册认证</a></dd>
+                        <dd><a href="">出借流程</a></dd>
+                        <dd><a href="">债权转让</a></dd>
+                        <dd><a href="">账户安全</a></dd>
+                        <dd><a href="">资费说明</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>关于我们</dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                        <dd><a href="">社会责任</a></dd>
+                        <dd><a href="">法律法规</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>东方银谷旗下业务</dt>
+                        <dd><a href="">银谷门户网站</a></dd>
+                        <dd><a href="">银谷财富</a></dd>
+                        <dd><a href="">银谷普惠</a></dd>
+                        <dd><a href="">银谷普诚</a></dd>
+                        <dd><a href="">银谷积分商城</a></dd>
+
+                    </dl>
+
+                    <div class="weixin  weixin-2"></div>
+                    <div class="weixin weixin-1"></div>
+
+                </div>
+                <div class="right">
+
+                    <ul class="address">
+                        <li class="clearfix"><p>人工服务时间 8:00～22:00</p></li>
+                        <li class="clearfix">
+                            <span class="phone"></span>
+                            <span class="font-16 white">客服服务热线：</span>
+
+                            <p><span class="font-16 white">400-612-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷财富）</span>
+                            </p>
+
+                            <p><span class="font-16 white">400-613-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷普惠)</span>
+                            </p>
+                        </li>
+                        <li class="clearfix"><p>24小时在线客服</p></li>
+                        <li class="clearfix">
+                            <span class="location"></span>
+
+                            <p class="clearfix location_title"><span class="white office">总部地址：</span>
+                                <span class="location_word white">北京市朝阳区东大桥路8号尚都国际中心A座2608-2609室</span></p>
+                        </li>
+                        <li class="clearfix margin-top-20"><p>东方银谷（北京）投资管理有限公司京ICP备14022292号</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

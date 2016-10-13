@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="Expires" content="0">
+    <meta name="title" content="我的账户-交易记录"/>
+    <meta name="keywords" content="我的账户-交易记录"/>
+    <meta name="description" content="我的账户-交易记录"/>
+    <title>我的账户-交易记录</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://img3.yingu.com/module/??ui/datepicker/css/foundation-datepicker.min.css,ui/dataTable/css/jquery.dataTables.min.css,common/base.css,head/head.css,foot/foot.css"/>
+    <script type="text/javascript"
+            src="http://img3.yingu.com/module/??lib/sea.js,lib/seajs-combo.js,lib/lib.js,common/base.js,head/head.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            base: 'http://img3.yingu.com/module/'
+        });
+        seajs.use("head/head");
+    </script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css"
+      href="http://img3.yingu.com/module/??ui/pager/pager.css,personal/personal.css,personal/investment.css,ui/modal/modal.css,ui/select/select.css"/>
+<div class="head">
+    <div class="toolbar ">
+        <div class="toolbar_content clearfix">
+            <!--<a class="home" href="" class=""><span class="home_icon"></span>首页</a>-->
+            <div class="tel"><i class="icon-tel"></i><span class="red">400-612-5859</span>（银谷财富）&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="red">400-613-5859</span>（银谷普惠）
+            </div>
+            <div class="head_right clearfix">
+                <a class="login" href="">登录</a>
+                <span class="spliter_short"></span>
+                <a class="register margin-right-10" href="">注册</a>
+                <a class="favorite" href="">银谷门户网站</a>
+                <a class="favorite" href="">积分商城</a>
+                <a class="favorite" href="">帮助中心</a>
+                <a class="favorite" href="">关于我们</a>
+
+                <!--<a class="phone" href=""><span class="phone_icon"></span>手机金融</a>-->
+                <a class="message" href="">消息<span class="message_num red">(1)</span></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_content clearfix">
+            <div class="logo_slogan clearfix">
+                <div class="logo"></div>
+                <div class="slogan"></div>
+            </div>
+
+
+            <div class="personal"><!-- personal_showlist -->
+                <div class="avatar_link clearfix">
+                    <a id="personalist_btn" href="" class="link"><img class="avatar"
+                                                                      src="http://img3.yingu.com/image/common/avatar.png"><span
+                            class="word">我的账户</span><span class="arrow"></span></a>
+                </div>
+                <div id="list_wrapper" class="list_wrapper">
+                    <div class="placeholder"></div>
+                    <ul>
+                        <li><a href="">充值</a></li>
+                        <li><a href="">提现</a></li>
+                        <li><a href="">交易记录</a></li>
+                        <li><a href="">我的资产</a></li>
+                        <li><a href="">基本信息</a></li>
+                        <li><a href="">账户安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spliter_long"></div>
+            <ul class="nav_list clearfix">
+                <li class="selected"><a href="">首页</a><span class="indicator"></span></li>
+                <li class="more"><a href="">财富管理</a> <i class="arrow"></i>
+                    <dl class="hover">
+                        <dd><a href="#">P2P债权</a></dd><dd><a href="../plan/plan_index.html">优计划</a></dd>
+                    </dl>
+                </li>
+                <li><a href="">债权转让</a><span class="indicator"></span></li>
+                <li class="last more"><a href="">银谷课堂</a><i class="arrow"></i>
+                    <dl class="hover">
+                        <dd><a href="#">专家建议</a></dd>
+                        <dd><a href="#">调研报告</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper clearfix">
+    <div class="route">
+        <dl class="clearfix">
+            <dt>您的位置：</dt>
+            <dd><a href="#">首页<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="personal.html">我的账户<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="#">资金管理<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="investment-record.html">交易记录</a></dd>
+        </dl>
+    </div>
+    <div class="personal_wrap clearfix border">
+        <!-- left menu -->
+        <div class="nav-left">
+            <dl>
+                <dd>
+                    <a href="overview.html">账户总览</a>
+                </dd>
+                <dd class="on">
+                    <a>资金管理</a>
+                    <ul class="sub-nav">
+                        <li><a href="capital-recharge.html">充值</a></li>
+                        <li><a href="capital-cash.html">提现</a></li>
+                        <li class="on"><a href="capital-record.html">交易记录</a></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <a>债权管理</a>
+                    <ul class="sub-nav">
+                        <!--<li><a href="creditors-total.html">债权统计</a></li>-->
+                        <li><a href="creditors-back.html">P2P债权</a></li>
+                        <li><a href="creditors-settled.html">优计划</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="collect.html">募集中</a></dd>
+                <dd><a href="collect-full.html">满标待审</a></dd>
+                <dd><a href="collect-flow.html">累计流标</a></dd>
+                <dd>
+                    <a>账户管理</a>
+                    <ul class="sub-nav">
+                        <li><a href="baseinfo.html">基本信息</a></li>
+                        <li><a href="safe.html">账户安全</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="bank.html">银行卡管理</a></dd>
+                <dd><a href="notice.html">消息通知</a></dd>
+                <dd><a href="coupon.html">我的优惠券</a></dd>
+            </dl>
+        </div>
+        <!-- right content -->
+        <div class="personal_content">
+            <div class="title"><span>交易记录</span></div>
+            <div class="line"></div>
+            <!--<div class="personal_kinds clearfix">-->
+            <!--<h6>记录类别</h6>-->
+
+            <!--<div class="right">-->
+            <!--<div class="choose" id="invest_filter">-->
+            <!--<a type="all" class="on">全部</a>-->
+            <!--<a type="recharge" >充值</a>-->
+            <!--<a type="withdraw" >提现</a>-->
+            <!--<a type="invest" >投资</a>-->
+            <!--<a type="" >赎回</a>-->
+            <!--<a type="" >派息</a>-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+            <div class="clearfix exportResult"><a href="#" class="red">[导出查询结果]</a></div>
+            <div class="personal_kinds clearfix">
+                <h6>起止时间</h6>
+
+                <div class="right">
+
+                    <div class="date clearfix data-record">
+                        <div class="date_piker"><span class="icon_date"></span><input id="startDate" type="text"
+                                                                                      value="2014-10-10"
+                                                                                      readonly="true">
+                        </div>
+                        <div class="float-left"> &nbsp;&nbsp;-&nbsp;&nbsp;</div>
+                        <div class="date_piker"><span class="icon_date"></span> <input id="endDate" type="text"
+                                                                                       value="2017-10-10"
+                                                                                       readonly="true"></div>
+                        <a class="bt_small_red margin-left-10" id="queryBtn">查询</a>
+                    </div>
+                    <div class="personal_type">
+                        <i class="hr"></i>
+                        <span>交易类型</span>
+                        <select name="typeItem" id="typeItem" class="select">
+                            <option type="all">全部</option>
+                            <option type="recharge">充值</option>
+                            <option type="withdraw">提现</option>
+                            <option type="invest">出借</option>
+                            <option type="d">转让</option>
+                            <option type="e">服务费</option>
+                            <option type="f">收益</option>
+                            <option type="g">回款</option>
+                        </select>
+                    </div>
+                    <div class="choose" id="invest_filter">
+                        <a type="0">全部</a>
+                        <a type="1">最近一个月</a>
+                        <a type="2">最近三个月</a>
+                        <a type="3">最近一年</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="margin-top-20"></div>
+
+                <table class="personal_table" id="resultTable">
+                    <thead>
+                    <tr>
+                        <td>处理时间</td>
+                        <td>交易类型</td>
+                        <td>交易金额（元）</td>
+                        <td>冻结金额（元）</td>
+                        <td>可用余额（元）</td>
+                        <td>备注</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>2015-11-30 10:20</td>
+                        <td>收益</td>
+                        <td>
+                            <div class="green">+30</div>
+                        </td>
+                        <td>
+                            <div class="red">-30</div>
+                        </td>
+                        <td>7031.00</td>
+                        <td>红包</td>
+                    </tr>
+                    <tr>
+                        <td>2015-11-30 10:20</td>
+                        <td>收益</td>
+                        <td>
+                            <div class="red">-30</div>
+                        </td>
+                        <td>
+                            <div class="red">-30</div>
+                        </td>
+                        <td>7031.00</td>
+                        <td><a href="#" class="red">CJ1603011578</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+
+            <div id="tableNull" style="display: none">
+                <div class="manage_null"><i class="icon_close"></i>很抱歉，这儿是个荒地。<br/>
+                    您还没有支持任何项目，去看看有什么感兴趣的吧！
+                </div>
+            </div>
+            <div id="pager" current-page="1" total-num="10" show-page="5"></div>
+
+        </div>
+
+
+    </div>
+</div>
+<script id="rowTemplate" type="text/html">
+    <% var typeAry = ['-','充值','提现','投资','赎回','派息'],states = ['提现申请中','提现成功','提现失败']; %>
+    <!--<tr>-->
+    <!--<td>-->
+    <!--<div><%=createTime%></div>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<div><%=typeAry[type] || '-'%></div>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<div class="green"><%= amount > 0 ? "+"+amount : "+0.00" %></div>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<div class="red"><%= amount < 0 ? amount : "-0.00" %></div>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<div><%=availableAmount%></div>-->
+    <!--</td>-->
+    <!--<td>-->
+    <!--<div>-->
+    <!--<% if(type == 1){ %>-->
+    <!--<%='充值成功'%>-->
+    <!--<% }else if(type == 2){ %>-->
+    <!--<%=states[state]%>-->
+    <!--<% }else if(type == 3 || type == 4){ %>-->
+    <!--<a href=""><%=orderId%></a>-->
+    <!--<% } %>-->
+    <!--</div>-->
+    <!--</td>-->
+    <!--</tr>-->
+</script>
+
+<script type="text/javascript">
+    seajs.use("personal/capital-record");
+
+</script>
+<div class="foot">
+    <div class="foot_content clearfix">
+        <div class="contact_links">
+            <div class="contact_links_content clearfix">
+                <div class="left clearfix">
+                    <dl class="clearfix">
+                        <dt>帮助中心</dt>
+                        <dd><a href="">注册认证</a></dd>
+                        <dd><a href="">出借流程</a></dd>
+                        <dd><a href="">债权转让</a></dd>
+                        <dd><a href="">账户安全</a></dd>
+                        <dd><a href="">资费说明</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>关于我们</dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                        <dd><a href="">社会责任</a></dd>
+                        <dd><a href="">法律法规</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>东方银谷旗下业务</dt>
+                        <dd><a href="">银谷门户网站</a></dd>
+                        <dd><a href="">银谷财富</a></dd>
+                        <dd><a href="">银谷普惠</a></dd>
+                        <dd><a href="">银谷普诚</a></dd>
+                        <dd><a href="">银谷积分商城</a></dd>
+
+                    </dl>
+
+                    <div class="weixin  weixin-2"></div>
+                    <div class="weixin weixin-1"></div>
+
+                </div>
+                <div class="right">
+
+                    <ul class="address">
+                        <li class="clearfix"><p>人工服务时间 8:00～22:00</p></li>
+                        <li class="clearfix">
+                            <span class="phone"></span>
+                            <span class="font-16 white">客服服务热线：</span>
+
+                            <p><span class="font-16 white">400-612-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷财富）</span></p>
+
+                            <p><span class="font-16 white">400-613-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷普惠)</span></p>
+                        </li>
+                        <li class="clearfix"><p>24小时在线客服</p></li>
+                        <li class="clearfix">
+                            <span class="location"></span>
+
+                            <p class="clearfix location_title"><span class="white office">总部地址：</span>
+                                <span class="location_word white">北京市朝阳区东大桥路8号尚都国际中心A座2608-2609室</span></p>
+                        </li>
+                        <li class="clearfix margin-top-20"><p>东方银谷（北京）投资管理有限公司京ICP备14022292号</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

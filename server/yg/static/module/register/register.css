@@ -1,0 +1,323 @@
+body {
+  background-color: #fff;
+}
+body .content-top {
+  background: #f7f4f3;
+}
+.logo_slogan{
+  margin-left:30px;
+}
+.head .nav{
+  border-bottom: 0;
+}
+.wrapper .content {
+  background: #f7f4f3;
+  padding: 24px;
+  border-top: 1px solid #0768ca;
+  margin-bottom: 40px;
+}
+.wrapper .content h1 {
+  font-size: 16px;
+  font-weight: 900;
+}
+.wrapper .content .form-panel {
+  /*width: 685px;*/
+  /*margin: 20px auto;*/
+  /*border: 1px solid #e1e1e1;*/
+  /*padding: 135px 35px 35px;*/
+  background: url(../image/register/bg.png) no-repeat 600px 25px;
+  height: 615px;
+  /*background-size: 100% auto;*/
+}
+.wrapper .content .form-panel.success,
+.wrapper .content .form-panel.verify2,
+.wrapper .content .form-panel.set-pwd {
+  display: none;
+}
+.wrapper .content .form-panel.verify2 h6{
+  margin-left:100px;
+  font-size: 14px;
+
+}
+.wrapper .content .form-panel.verify2 h6 .icon_tips{
+  background: url(../image/register/login_icons.png) no-repeat 0 -186px;
+}
+.wrapper .content .form-panel .form {
+  width:700px;
+  margin-top:35px;
+}
+.wrapper .content .form-panel.success .form {
+  width: auto;
+
+}
+.wrapper .content .form-panel.success .btn-wrapper .btn_red{
+  width: 100px;
+  margin: 0 0 0 10px;
+}
+.wrapper .content .form-panel.success{
+  background: none;
+
+}
+.wrapper .content .form-panel .form .field {
+  padding: 15px 0;
+}
+.wrapper .content .form-panel .form .field .col-offset-3{
+  font-size: 14px;
+
+}
+.wrapper .content .form-panel .form .field .col-5 {
+  padding-left: 15px;
+  line-height: 34px;
+  color: #787878;
+}
+.wrapper .content .form-panel .form .field .col-5 .error-tip {
+  color: #f4473b;
+  white-space: nowrap;
+  position: absolute;
+}
+.wrapper .content .form-panel .form .field input {
+  box-sizing: border-box;
+  font-size:12px;
+}
+.wrapper .content .form-panel .form .field label {
+  float: right;
+  line-height: 34px;
+  padding-right: 15px;
+  color: #333;
+  font-size: 14px;
+}
+.wrapper .content .form-panel .form .field #invite label{
+  font-size: 12px;
+
+}
+.wrapper .content .form-panel .form .field .radio{
+  float: left;
+  padding-right: 10px;
+}
+.wrapper .content .form-panel .form .field .radio input{
+  position: relative;
+  top:3px;
+}
+.wrapper .content .form-panel .form .field #vcImg {
+  width: 100px;
+  height: 34px;
+  float: right;
+}
+.wrapper .content .form-panel .form .field #sendVerifyCodeMsg {
+  width: 100px;
+  float: right;
+  box-sizing: border-box;
+  height: 34px;
+  line-height: 34px;
+  padding: 0;
+  text-align: center;
+}
+.wrapper .content .form-panel .form .field #verifyCode,
+.wrapper .content .form-panel .form .field #verifyCodeMsg,
+.wrapper .content .form-panel .form .field #verifyCode2{
+  width: 122px;
+}
+.wrapper .content .form-panel .form .field #inviteCode{
+  width: 163px;
+  float: left;
+  display: none;
+
+}
+.wrapper .content .form-panel .form .field #inviteCode{
+  width: 100%;
+  float: none;
+  display: block;
+  padding: 0px 4px;
+}
+.wrapper .content .form-panel .form .field #protocol {
+  float: left;
+  margin: 2px 5px 0 0;
+}
+.wrapper .content .form-panel .form .field .pwd-level {
+  text-align: right;
+  position: absolute;
+  right: 0;
+  bottom: -22px;
+  color: #b8b8b8;
+}
+.wrapper .content .form-panel .form .field .pwd-level span {
+  background: #e2e2e2;
+  color: white;
+  margin: 0 1px;
+  padding: 0 12px;
+}
+.wrapper .content .form-panel .form .field .pwd-level span.on {
+  background: #ff9000;
+}
+.wrapper .content .form-panel .form .field .phone-number {
+  line-height: 34px;
+  font-size: 16px;
+}
+.wrapper .content .form-panel .form .info-text {
+  padding-left: 20px;
+  color: #a5a5a5;
+  background: url(../image/personal/icon.png) no-repeat 0 -313px;
+}
+.wrapper .content .form-panel .form .icon_close{
+  background: url(../image/register/login_icons.png) 0 -160px no-repeat;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top:2px;
+  margin-right:5px;
+
+}
+.wrapper .content .form-panel .form .icon_ok{
+  background: url(../image/register/login_icons.png) 0 -140px no-repeat;
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top:3px;
+  margin-right:5px;
+
+}
+.wrapper .content .form-panel .form .info-text#cdTip {
+  display: none;
+}
+.wrapper .content .form-panel .form .info-text#cdTip .cd {
+  color: #555;
+}
+.wrapper .content .form-panel .form .result {
+  /*width: 340px;*/
+  text-align: left;
+  margin: 0 0 0 400px;
+  background: url(../image/personal/icon-ok.png) no-repeat 0 15px;
+  padding: 20px 0 20px 70px;
+}
+.wrapper .content .form-panel .form .result .result-title {
+  color: #5d5d5d;
+  font-size: 30px;
+
+}
+.wrapper .content .form-panel .btn-wrapper {
+  padding: 20px 0;
+  /*text-align: right;*/
+}
+.wrapper .content .form-panel .btn-wrapper .btn_red {
+  margin: 0 10px 0 174px;
+  width: 235px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  float: left;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+}
+
+.wrapper .content .form-panel .btn-wrapper span {
+  display: inline-block;
+  padding: 5px;
+  color: #bababa;
+  font-size: 14px;
+}
+.page-foot{
+  width: 1200px;
+  margin: 0 auto;
+  background: white;
+}
+.page-foot .foot-line{
+  padding:15px 0;
+  color: #a5a5a5;
+  font-size: 12px;
+  border-top: 1px solid #e6e6e6;
+  line-height: 20px;
+}
+.page-foot .foot-line .com-links{
+  float: left;
+}
+.page-foot .foot-line .com-links a{
+  padding: 0 20px;
+  border-right: 1px solid #e6e6e6;
+  color: #a6a6a6;
+  text-decoration: none;
+}
+.page-foot .foot-line .com-links a.first{
+  padding-left: 0;
+}
+.page-foot .foot-line .com-links a.last{
+  padding-right: 0;
+  border-right: none;
+}
+.page-foot .foot-line .com-contact{
+  float: right;
+  padding-left: 20px;
+  background: url(../image/register/login_icons.png) 0 -77px no-repeat;
+}
+
+/*.foot_content{*/
+/*width:1200px;*/
+/*margin:0 auto 30px;*/
+
+/*}*/
+/*.foot_content .foot_layout{*/
+
+/*border-top:1px solid #ccc;*/
+/*border-bottom:1px solid #ccc;*/
+/*padding: 10px 0 10px;*/
+/*line-height: 18px;*/
+
+/*}*/
+/*.foot_content .copyright{*/
+/*color: #6c6c6c;*/
+/*padding-top:10px;*/
+
+/*}*/
+/*.foot_content .foot_link{*/
+/*float: left;*/
+/*}*/
+/*.foot_content .foot_link a{*/
+/*color: #6c6c6c;*/
+/*position: relative;*/
+/*top:2px;*/
+/*}*/
+/*.foot_content .foot_link a:hover{*/
+/*color: #b23037;*/
+/*text-decoration: none;*/
+/*}*/
+/*.foot_content .foot_link span{*/
+/*margin:0 20px;*/
+/*display: inline-block;*/
+/*color: #dededf;*/
+/*}*/
+/*.foot_content .online {*/
+/*float: right;*/
+/*color: #6c6c6c;*/
+/*position: relative;*/
+/*top:-2px;*/
+/*margin-right:30px;*/
+/*}*/
+/*.foot_content .online i{*/
+/*display: inline-block;*/
+/*width: 18px;*/
+/*height: 18px;*/
+/*background: url(../image/register/login_icons.png) 0 -78px no-repeat;*/
+/*position: relative;*/
+/*top:4px;*/
+/*}*/
+.regModal{
+  font-size: 12px;
+}
+.regModal h1{
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+.regModal h2{
+  font-weight: bold;
+  color: #333;
+  font-size: 14px;
+}
+.regModal p{
+  text-indent: 2em;
+  color: #666;
+}

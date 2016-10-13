@@ -1,0 +1,57 @@
+
+/*.survey-item div{*/
+    /*float: left;*/
+    /*width: 315px;*/
+/*}*/
+.survey-item{
+    /*float: left;*/
+    /*width: 495px;*/
+    height: 232px;
+    box-sizing: border-box;
+    margin: 20px 0 0 0;
+    border-bottom: 1px dotted #aaa;
+    /*background: #fafafa;*/
+    padding-bottom: 10px;
+}
+/*.survey-item.even{*/
+    /*float: right;*/
+/*}*/
+.survey-item img{
+    width: 140px;
+    height: 210px;
+    float: left;
+    margin-right: 15px;
+    border-radius: 3px;
+}
+.survey-date{
+    /*text-align: right;*/
+    /*font-size: 14px;*/
+    color: #515151;
+    padding: 25px 0 5px;
+}
+
+.survey-brief{
+    line-height: 27px;
+    text-indent: 20px;
+    color: #848484;
+    font-size: 14px;
+    margin: 15px 0 0;
+    height: 137px;
+    word-break:break-all;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.survey-title{
+    font-size: 16px;
+    text-decoration: none;
+    /*line-height: 30px;*/
+    /*display: block;*/
+    /*text-indent: 20px;*/
+    color: #444;
+    /*border-bottom: 1px solid #d2d2d2;*/
+    padding-bottom: 10px;
+}
+.survey-title:hover{
+    color: #0768ca;
+    text-decoration: none;
+}

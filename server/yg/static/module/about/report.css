@@ -1,0 +1,43 @@
+.report_wrapper .media_list{
+	margin-top: 10px;
+}
+
+.report_wrapper .media_list li{
+	padding: 20px 0;
+	border-bottom: 1px dotted #c1c1c1;
+	background: url("../image/about/list_indicator_icon.png") 100px 62px no-repeat;
+}
+
+.report_wrapper .media_list li.last_item{
+	border: none;
+}
+
+.report_wrapper .media_list img{
+	float: left;
+	width: 90px;
+}
+
+.report_wrapper .media_list dl{
+    width: 799px;
+    float: left;
+    margin-left: 30px;
+}
+
+.report_wrapper .media_list dt{
+	margin-bottom: 10px;
+}
+
+.report_wrapper .media_list dt a{
+	color: #0768ca;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.report_wrapper .media_list dd{
+	line-height: 160%;
+	font-size: 14px;
+}
+
+.report_wrapper .pager{
+	margin-top: 30px;
+}

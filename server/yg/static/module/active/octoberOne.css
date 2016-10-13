@@ -1,0 +1,367 @@
+/*ȫ����ʽ*/
+body, a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 16px/38px 'Microsoft YaHei', '����', 'Arial', 'MicrosoftJhengHei', 'sans-serif';
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    width: 100%;
+}
+
+.full_w {
+    height: 2281px;
+    min-width: 1240px;
+    background: url("../image/active/octoberOne/bg.png") no-repeat top center;
+    /*background-size: 100%;*/
+}
+
+.container {
+    width: 1198px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .banner {
+    height: 500px;
+}
+
+.banner img {
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+}
+
+.rule {
+    width: 100%;
+    height: 456px;
+}
+
+.rule .rule-top {
+    width: 100%;
+    height: 12px;
+    background: #7c1818;
+}
+
+.rule .rule-title {
+    width: 100%;
+    height: 63px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+.rule .rule-title img {
+    width: 325px;
+    height: 100%;
+    padding-left: 439px;
+
+}
+
+.rule .rule-content {
+    width: 100%;
+    height: 368px;
+    background: #fff;
+}
+
+.rule .rule-content .title {
+    font-size: 20px;
+    padding-top: 38px;
+    padding-left: 43px;
+
+}
+
+
+.rule .rule-content .rule-table {
+    border-collapse: collapse;
+    border-spacing:0;
+    margin-left: 44px;
+    width: 1106px;
+    height: 200px;
+    margin-top: 26px;
+}
+
+.rule .rule-content .rule-table tr {
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+}
+
+.rule .rule-content .rule-table tr td {
+    width: 311px;
+    border: 1px solid #ccc;
+}
+.rule .rule-content .rule-table tr td.left{
+    text-align: left;
+    padding-left: 251px;
+}
+
+.project {
+    height: 474px;
+}
+
+.project .project-title {
+    height: 135px;
+}
+
+.project .project-title img {
+    height: 33px;
+    text-align: center;
+    padding-top: 53px;
+}
+
+.project-product {
+    width: 100%;
+    height: 339px;
+}
+
+.project-product .product {
+    width: 579px;
+    height: 100%;
+    background: #fff;
+    margin-right: 40px;
+    float: left;
+}
+
+.project-product .product-right {
+    margin-right: 0;
+}
+
+.yinduoli span.yinduoli-title {
+    display: inline-block;
+    width: 180px;
+    height: 66px;
+    float: left;
+    margin-top: 15px;
+    margin-left: -10px;
+}
+
+.yinduoli span img {
+    width: 100%;
+    height: 100%;
+}
+
+.yinduoli p {
+    float: left;
+    margin-top: 14px;
+    color: #afafaf;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.product span.red-word {
+    color: #ce0e0e;
+}
+
+.product p {
+    width: 200px;
+    height: 69px;
+    text-align: center;
+    line-height: 69px;
+}
+
+.product .year-number {
+    width: 468px;
+    height: 112px;
+    /*background: yellow;*/
+    clear: both;
+    text-align: center;
+    margin-left: 50px;
+    line-height: 144px;
+    padding-top: 29px;
+}
+
+.product .year-number span {
+    font-size: 18px;
+    color: #ce0e0e;
+    display: inline-block;
+}
+
+.product .year-number span i {
+    font-style: normal;
+    font-size: 34px;
+
+}
+
+.product .year-number li {
+    margin-left: 28px;
+    text-align: center;
+    line-height: 49px;
+    width: 204px;
+    height: 84px;
+    float: left;
+    /*background: yellow;*/
+    /*border-right: 1px dashed #afafaf;*/
+}
+
+.product .year-number li.two {
+    border: none;
+    margin-left: 0;
+}
+
+.product .year-number li h2 {
+    font-weight: 400;
+    width: 130px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 20px;
+    color: #afafaf;
+    padding-left: 35px;
+}
+
+.product .year-number li.line {
+    margin-left: 0;
+    width: 20px;
+    border-right: 1px dashed #ccc;
+    height: 84px;
+}
+
+.product .detail {
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 470px;
+    height: 62px;
+    border-radius: 5px;
+    background: #f76060;
+}
+
+.product .detail a {
+    width: 100%;
+    height: 62px;
+    display: inline-block;
+    font-size: 22px;
+    text-align: center;
+    line-height: 62px;
+    color: #fff;
+}
+
+.product .detail:hover {
+    cursor: pointer;
+    background: #c53030;
+
+}
+
+.yueyingli span.yueyingli-title {
+    display: inline-block;
+    width: 180px;
+    height: 66px;
+    float: right;
+    margin-top: 15px;
+    margin-right: -10px;
+}
+
+.yueyingli span img {
+    width: 100%;
+    height: 100%;
+}
+
+.yueyingli p {
+    width: 338px;
+    float: right;
+    margin-top: 14px;
+    color: #afafaf;
+    font-size: 16px;
+    margin-right: 20px;
+    /*line-height: 16px;*/
+    text-align: left;
+}
+
+.activity {
+    /*height: 466px;*/
+    /*background: red;*/
+    margin-top: 50px;
+}
+
+.activity-content {
+    font-size: 20px;
+    margin-top: 40px;
+    width: 1102px;
+    margin-left: 47px;
+    line-height: 38px;
+    /*box-sizing: border-box;*/
+}
+
+.activity .activity-content dt {
+    float: left;
+
+}
+
+.activity .activity-content dd {
+    /*float: left;*/
+    width: 1070px;
+    padding-left: 32px;
+}
+
+.unique {
+    margin-top: 40px;
+}
+
+.unique-content {
+    margin-top: 40px;
+    width: 1104px;
+    height: 259px;
+    /*background: red;*/
+    margin-left: 47px;
+}
+
+.unique-content li {
+    margin-right: 244px;
+    float: left;
+    width: 205px;
+    height: 259px;
+    /*background: yellow;*/
+}
+
+.unique-content li img {
+    width: 100%;
+    height: 100%;
+}
+
+.unique-content li.last {
+    margin-right: 0;
+}

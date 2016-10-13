@@ -1,0 +1,349 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family:"Microsoft YaHei",微软雅黑,宋体,"Microsoft JhengHei",华文细黑,STHeiti,MingLiu;
+
+}
+.page_bg{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+}
+.page_bg img{
+    width: 100%;
+}
+.page_wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 999;
+    height: 727px;
+    /*background: url(../image/register/login_bg.jpg) 0 0 no-repeat;*/
+    background: #fbfbfc;
+}
+
+.page_wrapper .logo{
+    position: absolute;
+    top: 50px;
+    left: 15px;
+}
+.page_wrapper .logo img{
+    border: none;
+}
+.page_wrapper .login_form{
+    width: 450px;
+    background: #f7f4f3;
+    top: 215px;
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-size: 14px;
+    right: 110px;
+    border-top: 1px solid #0096f4;
+}
+.login_form *{
+    box-sizing: border-box;
+}
+.login_form form{
+    padding: 0 82px 0 40px;
+}
+.page_wrapper .login_form .head{
+    font-size: 18px;
+    height: 55px;
+    color: white;
+    border-bottom: 1px solid #e6e6e6;
+}
+.page_wrapper .login_form .head .title{
+    /*border-bottom: 2px solid #0768ca;*/
+    color: #6fabf4;
+    padding: 0 0 33px 0;
+    display: inline-block;
+  /*  margin-bottom: -1px;*/
+    font-size: 16px;
+}
+.page_wrapper .login_form .field{
+    width: 100%;
+    padding: 10px 0 5px;
+}
+.page_wrapper .login_form #password, .page_wrapper .login_form #userName{
+    display: inline-block;
+    outline: none;
+    width: 243px;
+    box-sizing: border-box;
+    height: 36px;
+    line-height: 36px;
+    +text-indent:0;
+    +padding:0px;
+    +border-width:0px;
+    /*border: 1px solid #e6e6e6;*/
+    /*padding-left: 30px;*/
+    font-family:"\5FAE\8F6F\96C5\9ED1";
+    padding-left: 30px;
+}
+.page_wrapper .login_form #userName{
+    background: url(../image/register/login_icons.png) 7px 2px no-repeat #f7f7f7;
+}
+.page_wrapper .login_form #password{
+    background: url(../image/register/login_icons.png) 7px -34px no-repeat #f7f7f7;
+}
+@media \0screen{
+    .page_wrapper .login_form #password, .page_wrapper .login_form #userName{
+        height: 36px !important;
+        line-height: 36px !important;
+    }
+
+}
+.page_wrapper .login_form label{
+    float: left;
+    color: #d0d0d0;
+}
+.page_wrapper .login_form .tip{
+    float: right;
+    color: #fe0000;
+    font-size: 12px;
+}
+.page_wrapper .login_form .foot{
+    text-align: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    padding: 0 80px 25px 20px;
+}
+.page_wrapper .login_form .foot a{
+    padding: 0 3px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #6fabf4;
+}
+
+.page_wrapper .login_form .foot a:hover{
+    color: #3abbfb;
+}
+.page_wrapper .login_form .val{
+    position: relative;
+    margin: 24px 0 0;
+}
+.page_wrapper .login_form .val .vhead{
+    /*position: absolute;*/
+    width: 30px;
+    height: 36px;
+    float: left;
+    /*height: 100%;*/
+    background: url(../image/register/login_icons.png) 7px 2px no-repeat #f7f7f7;
+    box-shadow: 0 0 5px #ddd inset;
+    display: none;
+}
+.page_wrapper .login_form .val .vhead.lock{
+    background-position: 8px -33px;
+}
+.page_wrapper .login_form .val .x{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 50%;
+    margin-top: -10px;
+    right: 7px;
+    background: #fff;
+    /*background: url(../image/common/icon_cancel.png);*/
+    /*cursor: pointer;*/
+    display: none;
+    /*z-index: 100;*/
+}
+.page_wrapper .login_form .val .et{
+    position: absolute;
+    left: 0;
+    padding-left: 20px;
+    top: 38px;
+    font-size: 12px;
+    background: url(../image/register/login_icons.png) 0 -114px no-repeat #f7f7f7;
+    color: #ff6d58;
+}
+.page_wrapper .login_form .val .forget{
+    color: #666;
+    font-size: 14px;
+    position: absolute;
+    left: 253px;
+    top:6px;
+    width: 80px;
+}
+.page_wrapper .login_form .val .forget:hover{
+    color:#00aaf6 ;
+    text-decoration: none;
+}
+.page_wrapper .login_form .submit{
+    margin: 20px 0 10px;
+    background: #00b3f7;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 3px;
+}
+.page_wrapper .login_form .submit:hover{
+    background: #1aacef;
+}
+.page_wrapper .login_form .errorTip{
+    /*padding-left: 20px;*/
+    /*margin-left: -20px;*/
+    /*background: url(../image/register/login_icons.png) 0px -112px no-repeat;*/
+    color: #6d6d6d;
+    font-size: 12px;
+    line-height: 18px;
+    position: relative;
+    left:-15px;
+    margin-top:10px;
+    display: none;
+}
+.page_wrapper .login_form .errorTip.error{
+    display: block;
+}
+.page_wrapper .login_form .errorTip span{
+    background: url(../image/register/login_icons.png) 0px -112px no-repeat;
+    padding-left: 20px;
+    color: #b23037;
+    display: inline-block;
+    line-height: 20px;
+}
+.page_wrapper .login_form .errorTip p{
+    color: #a5a5a5;
+    padding-left: 20px;
+    margin-top:5px;
+}
+.page_wrapper .login_form .remember{
+    clear: both;
+    float: none;
+    font-size: 12px;
+    color: #515151;
+    cursor: pointer;
+    padding-top:24px;
+    display: inline-block;
+    font-size: 14px;
+
+
+}
+.page_wrapper .login_form .remember input{
+    position: relative;
+    top:3px;
+    margin-right: 5px;
+}
+.clearfix:after{
+    width: 0;
+    height: 0;
+    display: block;
+    content: " ";
+    clear: both;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+    background: white;
+}
+.page-foot{
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+}
+.page-foot .foot-line{
+    padding:15px 0;
+    color: #a5a5a5;
+    font-size: 12px;
+    border-top: 1px solid #e6e6e6;
+    line-height: 20px;
+}
+.page-foot .foot-line .com-links{
+    float: left;
+}
+.page-foot .foot-line .com-links a{
+    padding: 0 20px;
+    border-right: 1px solid #e6e6e6;
+    color: #a6a6a6;
+    text-decoration: none;
+}
+.page-foot .foot-line .com-links a.first{
+    padding-left: 0;
+}
+.page-foot .foot-line .com-links a.last{
+    padding-right: 0;
+    border-right: none;
+}
+.page-foot .foot-line .com-contact{
+    float: right;
+    padding-left: 20px;
+    background: url(../image/register/login_icons.png) 0 -77px no-repeat;
+}
+.icon_tips{
+    display: inline-block;
+    width:15px;
+    height: 15px;
+    position: relative;
+    top: 3px;
+    margin-right:5px;
+    background: url(../image/personal/icon.png) no-repeat 0 -313px;
+
+}
+.outer{
+    width: 475px;
+    height: 350px;
+    padding-top:223px;
+    margin-left:50px;
+    /*background: red;*/
+    position: absolute;
+    top: 223px;
+    overflow: hidden;
+
+}
+.inner {
+    /*float: left;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2375px;
+    height: 350px;
+}
+.inner_roller{
+    float: left;
+    width: 475px;
+    height: 350px;
+}
+.inner img {
+    margin-left:103px;
+    width: 267px;
+    height: 267px;
+}
+.inner_roller h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    margin: 27px auto;
+    text-align: center;
+}
+.inner_roller p{
+    font-size: 16px;
+    color: #898989;
+    margin: 0 auto;
+    text-align: center;
+}
+.outer a {
+    position: absolute;
+    width: 23px;
+    height: 47px;
+}
+.outer a.btnLeft{
+    background: url("../image/register/arrow.png");
+    top: 110px;
+    left: 0;
+}
+.outer a.btnRight{
+    background: url("../image/register/arrow_01.png");
+    top: 110px;
+    right: 0;
+}
+.outer a.btnLeft:hover{
+    background: url("../image/register/arrow_blue01.png");
+}
+.outer a.btnRight:hover{
+    background: url("../image/register/arrow_blue.png");
+
+}

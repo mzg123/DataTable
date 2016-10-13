@@ -1,0 +1,469 @@
+
+/*��ֵ*/
+.personal_layout {
+    /*margin: 35px 26px 35px 60px;*/
+    border: 1px solid #e7e7e7;
+    padding-bottom: 35px;
+}
+.personal_layout.no-border{
+    border:none;
+}
+.personal_content_recharge{
+    border: 1px solid #e7e7e7;
+    margin-top:20px;
+    padding: 0;
+
+}
+.personal_content_recharge .personal_tips{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.personal_content .personal_layout .list {
+    margin-bottom:25px;
+    clear: both;
+    font-size: 14px;
+
+}
+.personal_content .personal_layout .list .radio{
+    margin-right:30px;
+    cursor: pointer;
+}
+.personal_content .personal_layout .list .radio input{
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+}
+.personal_content .personal_layout .list .select{
+    border: 1px solid #dadada;
+    height: 32px;
+    width:274px;
+}
+.rechargemodel{
+    color:#515151;
+}
+
+.personal_content .personal_layout .list h6 ,  .rechargemodel h6{
+    width: 84px;
+    float: left;
+    text-align: right;
+    line-height: 32px;
+    color:#515151;
+}
+
+.personal_content .personal_layout .list h6.lh {
+    line-height: 38px;
+}
+.personal_content .personal_layout .list .right, .rechargemodel .right {
+    margin: 0 0 0 100px;
+    color:#1e1e1e;
+    position: relative;
+}
+.personal_content .personal_layout .list .right .fuyouLogo{
+    background: url(../image/personal/fuyou.png) no-repeat center center;
+    width:149px;
+    height: 65px;
+    border: 1px solid #dedede;
+
+}
+.personal_content .personal_layout .list .right .shouxinyi{
+    background: url(../image/personal/shouxinyi.png) no-repeat center center;
+    width:135px;
+    height: 50px;
+    border: 1px solid #dedede;
+
+}
+.personal_content .personal_layout .list.bankWrap  .right{
+    background: #f9f9f9;
+    padding:10px;
+    margin-left: 100px;
+    width:860px;
+    position: relative;
+}
+.personal_content .personal_layout .list #backMyBankBtn{
+    position: absolute;
+    right: 0;
+    top:-20px;
+
+}
+.personal_content .personal_layout .list #chooseOtherBank{
+    background: #fff;
+    padding: 0;
+}
+.personal_content .personal_layout .list #chooseOtherBank .bg_gray{
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.personal_content .personal_layout .list.bankWrap h6{
+    margin-top: 11px;
+    line-height: normal;
+
+}
+.personal_content .personal_layout .list.fuyou h6{
+    line-height: 52px;
+}
+.rechargemodel h6{
+    text-align: left;
+    width: auto;
+    margin-right:10px;
+}
+.rechargemodel .right{
+    overflow: hidden;
+    margin:0 ;
+}
+.personal_content .personal_layout .list .detail .text {
+    /*border: 1px solid #dadada;*/
+    /*height: 30px;*/
+    /*line-height: 30px;*/
+    width:272px;
+    /*font-size: 14px;*/
+    float: left;
+    position: relative;
+}
+
+.personal_content .personal_layout .list .detail .text input{
+    width:247px;
+    padding-left: 1px;
+    padding-right: 20px;
+    /*height: 28px;*/
+    /*line-height: 28px;*/
+    /*border:none;*/
+
+}
+ .personal_content .personal_layout .list .detail .password, .rechargemodel .detail .password{
+     font-size: 14px;
+     float: left;
+     /*height: 30px;*/
+     /*line-height: 30px;*/
+
+  }
+.personal_content .personal_layout .list .detail .password input, .rechargemodel .detail .password input{
+    height: 33px;
+    line-height: 33px;
+}
+.personal_content .personal_layout .list .detail .text input{
+    /*padding:0 10px 0 20px;*/
+}
+.personal_content .personal_layout .list .detail .text span {
+    color:#aeaeae;
+    position: absolute;
+    right: 10px;
+    top: 9px;
+}
+.personal_content .personal_layout .list .detail p{
+    float: left;
+    line-height: 32px;
+    margin-left:30px;
+}
+.personal_content .personal_layout .list .detail .bank{
+    float: left;
+    border:1px solid #ad2d34;
+    width:272px;
+    height:38px;
+    overflow: hidden;
+    position:relative;
+}
+.personal_content .personal_layout .list .detail .bank span{
+    position: relative;top:-6px;
+    margin-left:10px;
+}
+.personal_content .personal_layout .list .detail .bank img{
+    margin:6px 10px 0 15px;
+}
+.personal_content .personal_layout .list .detail .ok{
+    position: absolute;
+    right: 0;
+    top:0;
+    display: block;
+    width:16px;
+    height:17px;
+    background: url(../image/personal/icon.png) no-repeat 0 -237px;
+
+
+}
+.personal_content .personal_layout .list .detail .choose{
+    border:1px solid #e3e3e3;
+    width:153px;
+    height:34px;
+    display: block;
+    float: left;
+    padding:4px 0 0 2px;
+    overflow: hidden;
+    margin:0 15px 0 0;
+    position: relative;
+}
+.personal_content .personal_layout .list .detail .more{
+    border:1px solid #e3e3e3;
+    width:153px;
+    height:38px;
+    text-align: center;
+    line-height:  38px;
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+}
+.personal_content .personal_layout .list .detail .more:hover{
+    background: #eee;
+    text-decoration: none;
+}
+.personal_content .personal_layout .list .detail#bankChoose .choose{
+    margin-bottom: 10px;
+}
+.personal_content .personal_layout .list .right{
+    padding-top: 0;
+}
+.personal_content .personal_layout .list .wrong{
+    line-height:30px;
+    color:#f4473b ;
+    float: left;
+    margin-left:10px;
+}
+.personal_content .personal_layout .list .detail .choose.on, .personal_content .personal_layout .list .detail .choose:hover{
+    border:1px solid #0096f4;
+
+}
+.personal_content .personal_layout .list .detail .choose i{
+    display: none;
+}
+.personal_content .personal_layout .list .detail .choose.on i,  .personal_content .personal_layout .list .detail .choose:hover i{
+    display: block;
+}
+.personal_content .personal_layout .bt{
+    clear: both;
+    margin-left:100px;
+}
+.personal_content .personal_layout .item{
+    border-bottom:1px solid #ededed;
+    margin-bottom:35px;
+    color:#343434;
+
+}
+.personal_content .personal_layout .item li{
+    float: left;
+    width:326px;
+    padding-left:35px;
+    height:55px;
+    line-height:55px;
+    position: relative;
+    font-size: 14px;
+
+
+}
+.personal_content .personal_layout .item li+li{
+    background: #efefef;
+
+}
+.personal_content .personal_layout .item li span{
+    font-size: 20px;
+    /*font-family: Arial;*/
+
+}
+.personal_content .personal_layout .item li cite{
+    position: absolute;
+    right:-7px;
+    top:23px;
+    display: block;
+    width:11px;
+    height: 11px;
+    z-index: 2;
+    background: url(../image/personal/icon.png) no-repeat 0 -196px;
+
+}
+.personal_content .personal_layout .item li i{
+    font-style:normal;
+    font-size:12px;
+
+}
+
+/*����*/
+.personal_cash .personal_layout{
+    border:none;
+    margin:35px 30px 35px 30px;
+
+}
+.personal_content .personal_layout .list2 h6{
+    line-height: 24px;
+    color:#515151;
+}
+.personal_content .personal_layout .list .right .num{
+    line-height: 24px;
+    float: left;
+
+}
+
+
+.personal_content .personal_layout .list2 .right .num strong{
+    font-size: 20px;
+    font-family: "Arial"!important;
+    font-weight: normal;
+
+}
+.personal_content .personal_layout .list .right .num .forget, .rechargemodel .right .num .forget{
+    line-height: 35px;
+    margin-left:10px;
+    font-size: 14px;
+    color: #0768ca;
+}
+/*.personal_content .personal_layout .list .right .num .forget:hover,  .rechargemodel .right .num .forget:hover{*/
+    /*color:#212121;*/
+    /*text-decoration: none;*/
+/*}*/
+
+.dataTables_filter{
+    display: none;
+}
+#phoneTip{
+    position: relative;
+    top:5px;
+}
+.tabs li a{
+    border-right: 1px solid #e6e6e6;
+}
+
+.investment-withdraw .payment-password{
+    width: 160px;
+}
+#chooseMyBankTip{
+    top:42px;
+    left: 0;
+}
+.personal_content .personal_layout .list .chooseMy{
+    border:1px solid #0096f4;
+    /*width: 600px;*/
+    height: 38px;
+    padding: 0 10px;
+}
+
+.chooseMy b{
+    display: inline-block;
+    padding:0 5px;
+    background: #87abdb;
+    height: 20px;
+    line-height: 20px;
+    color: #fff;
+    font-weight: normal;
+    margin: 0 10px 0 10px;
+
+
+}
+.chooseMy .card{
+    /*font-size: 14px;*/
+    margin: 0 30px 0 10px;
+
+}
+.chooseMy .pic{
+    /*width: 125px;*/
+    display: inline-block;
+}
+.chooseMy  img{
+    height: 25px;
+    position: relative;
+    top: 7px;
+}
+.chooseMy .icon-right{
+    display:none;
+    background: url(../image/personal/icon-right.png) no-repeat;
+    width: 9px;
+    height: 9px;
+    margin-left: 10px;
+}
+.select-wrapper .select-display{
+    /*border-color: #ad2d34!important;*/
+}
+.select-dropdown .select-item:hover{
+    background: #efefef;
+}
+.select-dropdown .select-item.selected .icon-right{
+    display: inline-block;
+}
+
+/*交易记录*/
+.exportResult{
+    margin:20px 0;
+    text-align: right;
+}
+.exportResult a{
+    color: #0768ca;
+}
+.personal_type{
+    position: relative;
+    float: right;
+
+}
+.personal_type .hr{
+    width: 1px;
+    height: 30px;
+    background: #e6e6e6;
+    display: block;
+    float: left;
+    margin:0 30px 0 10px;
+}
+.personal_type span{
+    display: block;
+    line-height: 30px;
+    float: left;
+    margin-right: 10px;
+    /*font-size: 14px;*/
+}
+.data-record .date_piker input{
+    width: 90px;
+
+}
+.data-record .date_piker{
+    width: 100px;
+
+}
+.personal_table a.red:hover{
+    text-decoration: underline;
+}
+.wrapper  .mail-success .detail{
+    width: 458px;
+}
+
+.recharge_tips{
+    padding:10px 45px;
+}
+.recharge_tips .personal_table, #chooseOtherBank .personal_table{
+    text-align: center;
+
+}
+.recharge_tips .personal_table thead{
+    color: #bababa;
+    border-bottom: 1px solid #e4e4e4;
+    padding-left:0;
+}
+.recharge_tips .personal_table tbody td{
+    border-bottom: 1px solid #e4e4e4;
+    padding-left:0;
+
+}
+.recharge_tips .personal_table thead td{
+    padding-left:0;
+
+}
+ #chooseOtherBank .personal_table thead td{
+    color: #bababa;
+    border: 1px solid #e4e4e4;  padding-left:0;
+}
+ #chooseOtherBank .personal_table tbody td{
+    border: 1px solid #e4e4e4;
+     padding-left:0;
+
+}
+.manage_null{
+    border: none;
+}
+.model_title a.red{
+    color: #0768ca;
+}
+.select-dropdown .select-item:hover, .select-dropdown .select-item.selected, .select-wrapper .select-display:hover, .select-dropdown .select-item:hover,
+.select-dropdown .select-item.selected, .select-wrapper .select-display:hover{
+    color: #0768ca!important;
+}
+.select-wrapper:hover .icon-arrow {
+    border-top-color: #0768ca!important;
+}
+.select-wrapper:hover .icon-arrow.on {
+    border-top-color: transparent!important;
+    border-bottom-color: #0768ca!important;
+}

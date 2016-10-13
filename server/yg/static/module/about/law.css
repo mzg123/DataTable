@@ -1,0 +1,20 @@
+.law_wrapper .law_list{
+	margin-top: 10px;
+}
+
+.law_wrapper .law_list li{
+	padding: 20px 0;
+	border-bottom: 1px dotted #c1c1c1;
+}
+
+.law_wrapper .law_list li a{
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.law_wrapper .law_list li a:hover{
+	color: #0768ca;
+}
+.law_wrapper #pager{
+	margin-top: 20px;
+}

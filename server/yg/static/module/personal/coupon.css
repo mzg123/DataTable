@@ -1,0 +1,206 @@
+
+.product_tips {
+    margin-left: 20px;
+}
+
+.creditors-back .tabs {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.coupon_list li {
+    float: left;
+    width: 459px;
+    height: 176px;
+    margin: 40px 40px 0 0;
+    position: relative;
+    background: url(../image/personal/coupon.png) no-repeat;
+
+}
+/*.red_content .coupon_list li {*/
+    /*cursor: pointer;*/
+
+/*}*/
+.coupon_list li .coupon_hover{
+    position: absolute;
+    background: url(../image/personal/coupon_hover.png) no-repeat;
+    width: 459px;
+    height: 176px;
+    left: 0;
+    top:2px;
+    display: none;
+
+}
+.coupon_list li:hover .coupon_hover{
+    display: block;
+
+}
+.coupon_list li .coupon_hover .btn_yellow{
+    position: relative;
+    top:75px;
+    left:176px;
+}
+
+.coupon_list li .left {
+    float: left;
+    width: 240px;
+    padding: 10px 25px 15px 35px;
+    color: #fff;
+
+}
+
+.coupon_list li .right {
+    float: left;
+    width: 135px;
+    padding: 30px 12px 12px 12px;
+
+}
+
+.coupon_list li .left h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+
+}
+
+.coupon_list li .left h3 span {
+    font-size: 50px;
+
+}
+
+.coupon_list li .left p {
+    line-height: 25px;
+
+}
+
+.coupon_list li .right h4 {
+    color: #cf1922;
+    font-size: 26px;
+    margin-bottom: 20px;
+
+}
+
+.coupon_list li .right p {
+    font-size: 14px;
+    line-height: 22px;
+
+}
+
+.coupon_list li .right p span {
+    font-size: 12px;
+}
+
+.creditors-back .coupon_tabs,.creditors-back .status_tabs {
+    border: none;
+    background: #fff;
+    margin-top: 20px;
+
+}
+
+.creditors-back .coupon_tabs li,.creditors-back .status_tabs li {
+    width: auto;
+    top: 0;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 30px;
+    border: 0;
+}
+
+.creditors-back .coupon_tabs li a,.creditors-back .status_tabs li a {
+    height: 20px;
+    line-height: 20px;
+}
+
+.creditors-back .coupon_tabs li.hover a,.creditors-back .status_tabs li.hover a {
+    border: none;
+    color: #0768ca;
+    line-height: 20px !important;
+}
+
+.creditors-back .coupon_tabs li.hover,.creditors-back .status_tabs li.hover {
+    border: none;
+}
+.creditors-back .coupon_tabs li + li.hover a,.creditors-back .status_tabs li + li.hover a {
+    border: none;
+}
+
+.creditors-back .tabs li{
+    border-top: 0;
+    border-left: 0;
+}
+.creditors-back .tabs li.hover{
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+
+}
+.creditors-back .tabs .status_tabs li.hover{
+    border: 0!important;
+}
+.coupon .coupon_tabs li a input,.coupon .status_tabs li a input {
+    position: relative;
+    top: 2px;
+}
+.creditors-back  .tabs{
+    width: 1011px;
+    float: none;
+    background: #faf9f9;
+    /*border-right:1px solid #e6e6e6;*/
+}
+.coupon{
+    position: relative;
+}
+.process_content .tabs{
+    background: none;
+
+}
+.addCouponBtn{
+    position: absolute;
+    right:0;
+    top:0;
+    z-index: 10;
+}
+.addCouponList{
+    margin:0 0 0 100px;
+}
+.addCouponList li{
+    margin-top:20px;
+    clear: both;
+}
+.addCouponList li span{
+    display: block;
+    width: 60px;
+    float: left;
+    font-size: 16px;
+    line-height: 33px;
+
+}
+.addCouponList li .input-box{
+    width: 275px;
+    float: left;
+
+}
+.addCouponList li .wrong{
+    float: left;
+    padding-left: 10px;
+    padding-top: 4px;
+}
+.page-container{
+    margin-top:10px;
+}
+.manage_null{
+    border: none;
+}
+.coupon .coupon_tabs li a input:checked{
+    color: #0096f4;
+
+}
+.creditors-back #status_tabs li.hover{
+    border: 0!important;
+}
+.creditors-back .tabs li#process_tabs-tab-3{
+    border-right: inherit;
+}
+.creditors-back .tabs li.process_tab.hover{
+    border-right: 1px solid #e6e6e6!important;
+}
+.creditors-back .tabs li:nth-last-child(1){
+    border-right: 0;
+}

@@ -1,0 +1,137 @@
+body {
+    background: #f5f5f5;
+}
+
+.about_wrap {
+    background: #fafafa;
+    border-bottom: #e5e5e5 solid 1px;
+    border-left: #e5e5e5 solid 1px;
+}
+
+/*left menu*/
+.about_menu {
+    float: left;
+    width: 141px;
+    border-top: 1px solid #e6e6e6;
+    position: relative;
+    left: -1px;
+}
+
+.about_menu dl dt, .about_menu dl dd a, .about_menu dl dt a {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #f1f1f1;
+    padding-left: 24px;
+    position: relative;
+
+}
+
+.about_menu dl dt.all a {
+    border-bottom: 0;
+}
+
+.about_menu dl dd a {
+    padding-left: 40px;
+    display: block;
+}
+
+.about_menu dl dd a:hover, .about_menu dl dd.on a {
+    background: none;
+    padding-left: 38px;
+    text-decoration: none;
+}
+
+.about_menu dl dd:hover,
+.about_menu dl dd.on, .about_menu dl dt.all:hover, .about_menu dl dt.all.on {
+    border-left: 2px solid #0768ca;
+}
+
+.about_menu dl dd.on a {
+    color: #0768ca;
+    box-shadow: 0 0 5px #e8e8e8;
+
+}
+
+.about_menu dl dt.on, .about_menu dl dt.all a {
+    font-weight: bold;
+    color: #0768ca;
+
+}
+
+.about_menu dl dd:hover i,
+.about_menu dl dd.on i, .about_menu dl dt.all:hover i, .about_menu dl dt.all.on i {
+    display: block;
+}
+
+.about_menu dl dt.all {
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.about_menu dl dt.all:hover, .about_menu dl dt.all.on {
+    text-decoration: none;
+    padding-left: 0;
+
+}
+
+.about_menu dl dt.all a:hover {
+    text-decoration: none;
+
+}
+
+.about_menu dl dt a {
+    display: block;
+}
+
+/*right content*/
+.about_content {
+    float: left;
+    width: 1009px;
+    padding: 24px 24px 24px;
+    border-left: #e5e5e5 solid 1px;
+    background: #fff;
+    position: relative;
+    left: -1px;
+    min-height: 650px;
+}
+
+.about_title{
+   border-bottom: #e6e6e6 solid 1px;
+}
+
+.about_title h1{
+    color: #2b2b2b;
+    font-size: 18px;
+    /*border-bottom: #0768ca solid 2px;*/
+    float: left;
+    padding-bottom: 20px;
+    position: relative;
+    bottom: -1px;
+}
+
+.detail_wrapper{
+    margin-top: 30px;
+}
+
+.detail_wrapper .detail_title{
+    color: #0768ca;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.detail_wrapper .detail_content{
+    min-height: 500px;
+}
+
+.detail_wrapper .back{
+    float: right;
+    text-decoration: none;
+    color: #0768ca;
+    font-size: 16px;
+}
+.about_culture{
+    width: 100%;
+}

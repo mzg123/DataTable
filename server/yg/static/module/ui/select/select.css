@@ -1,0 +1,74 @@
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+  z-index: 9;
+}
+.select-wrapper .select-display {
+  border: 1px solid #e4e4e4;
+  padding-left: 10px;
+  cursor: pointer;
+  padding-right: 20px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.select-wrapper .select-display:hover {
+  color: #0098f4;
+}
+.select-wrapper.disable .select-display {
+  color: #777;
+  background-color: #eee;
+}
+.select-wrapper.disable .select-display:hover {
+  color: #777;
+}
+.select-wrapper .icon-arrow {
+  position: absolute;
+  border: 6px solid transparent;
+  right: 8px;
+  top: 50%;
+  border-top-color: #666;
+  margin-top: -3px;
+}
+.select-wrapper .icon-arrow.on {
+  border-top-color: transparent;
+  border-bottom-color: #666;
+  margin-top: -9px;
+}
+.select-wrapper:hover.disable .icon-arrow {
+  border-top-color: #666;
+}
+.select-wrapper:hover .icon-arrow {
+  border-top-color: #0098f4;
+}
+.select-wrapper:hover .icon-arrow.on {
+  border-top-color: transparent;
+  border-bottom-color: #0098f4;
+}
+.select-wrapper.active {
+  z-index: 99;
+}
+.select-dropdown {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 8px #999;
+  list-style: none;
+  background: white;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.select-dropdown .select-item {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 10px;
+  cursor: pointer;
+  width: 100%;
+  margin: 0;
+}
+.select-dropdown .select-item:hover,
+.select-dropdown .select-item.selected {
+  color: #0098f4;
+}

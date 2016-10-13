@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="Expires" content="0">
+    <meta name="title" content="首页"/>
+    <meta name="keywords" content="首页"/>
+    <meta name="description" content="首页"/>
+    <link rel="icon" href="http://img3.yingu.com/image/common/logo_icon.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="http://img3.yingu.com/image/common/logo_icon.png" type="image/x-icon"/>
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://img3.yingu.com/module/??common/base.css,head/head.css,foot/foot.css"/>
+    <script type="text/javascript"
+            src="http://img3.yingu.com/module/??lib/sea.js,lib/seajs-combo.js,lib/lib.js,common/base.js,head/head.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            base: 'http://img3.yingu.com/module/'
+        });
+        seajs.use("head/head");
+
+    </script>
+    <!--[if lte IE 8]>
+    <style type="text/css">
+        .ie-css3 {
+            behavior: url(http://img3.yingu.com/image/common/ie-css3.htc);
+        }
+    </style>
+    <![endif]-->
+</head>
+<body>
+<link rel="stylesheet" type="text/css"
+      href="http://img3.yingu.com/module/??index/index.css,ui/clickscroll/clickscroll.css,ui/roller/roller.css,ui/odometer/odometer.css,ui/select/select.css"/>
+
+<div class="head">
+    <div class="toolbar ">
+        <div class="toolbar_content clearfix">
+            <!--<a class="home" href="" class=""><span class="home_icon"></span>首页</a>400-890-8299-->
+            <div class="tel"><i class="icon-tel"></i><span class="red">400-890-8299</span>&nbsp;&nbsp;&nbsp; <span class="gray">400-612-5859（银谷财富）</span>
+                <!--&nbsp;&nbsp;&nbsp;&nbsp;<span-->
+                <!--class="red">400-613-5859</span>（银谷普惠）-->
+            </div>
+            <div class="head_right clearfix">
+                <a class="login" href="">登录</a>
+                <span class="spliter_short"></span>
+                <a class="register margin-right-10" href="">注册</a>
+                <a class="favorite" href="">银谷门户网站</a>
+                <a class="favorite" href="">积分商城</a>
+                <a class="favorite phone" href="../app/app.html"><i class="phone_icon"></i>手机客户端
+                    <div class="hover">
+                        <i class="icon_arrow"></i><i class="icon_arrow2"></i>
+                        <img class="avatar" src="http://img3.yingu.com/image/common/app.png">
+                    </div>
+                </a>
+                <a class="favorite" href="">帮助中心</a>
+                <a class="favorite" href="">关于我们</a>
+
+                <!--<a class="phone" href=""><span class="phone_icon"></span>手机金融</a>-->
+                <a class="message" href="">消息<span class="message_num red">(1)</span></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_content clearfix">
+            <div class="logo_slogan clearfix">
+                <div class="logo"></div>
+                <div class="slogan"></div>
+            </div>
+            <div class="personal"><!-- personal_showlist -->
+                <div class="avatar_link clearfix">
+                    <a id="personalist_btn" href="" class="link"><img class="avatar"
+                                                                      src="http://img3.yingu.com/image/common/avatar.png"><span
+                            class="word">我的账户</span><span class="arrow"></span></a>
+                </div>
+                <div id="list_wrapper" class="list_wrapper">
+                    <div class="placeholder"></div>
+                    <ul>
+                        <li><a href="../personal/capital-recharge.html">充值</a></li>
+                        <li><a href="../personal/capital-cash.html">提现</a></li>
+                        <li><a href="../personal/capital-record.html">资金记录</a></li>
+                        <li><a href="../personal/overview.html">我的资产</a></li>
+                        <li><a href="../personal/baseinfo.html">基本信息</a></li>
+                        <li><a href="../personal/safe.html">账户安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spliter_long"></div>
+            <ul class="nav_list clearfix">
+                <li class="selected"><a href="">首页</a></li>
+                <li class="more">
+                    <a href="">财富管理</a>
+                    <i class="arrow"></i>
+                    <dl class="hover">
+                        <dd><a href="#">谷便利</a></dd>
+                        <dd><a href="#">月盈利</a></dd>
+                        <dd><a href="../plan/plan_index.html">银多利</a></dd>
+
+                    </dl>
+                </li>
+                <li><a href="">债权转让</a></li>
+                <li class="last more">
+                    <a href="">银谷课堂</a><i class="arrow"></i>
+                    <dl class="hover">
+                        <dd><a href="#">专家建议</a></dd>
+                        <dd><a href="#">调研报告</a></dd>
+
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="roller_wrapper" class="roller_wrapper" style="background-color:#06042b;">
+    <div id="rollerBanner" class="ui_roller">
+        <div class="ui_roller_content">
+            <div class="ui_roller_list fade clearfix">
+                <div bgcolor="#06042b" class="ui_roller_list_item ui_roller_list_item_first"><img
+                        src="http://img3.yingu.com/image/index/banner_1.jpg"></div>
+                <div bgcolor="#f3742c" class="ui_roller_list_item"><a href=""><img
+                        src="http://img3.yingu.com/image/index/banner_2.jpg"></a></div>
+            </div>
+        </div>
+        <ul id="rollerBanner_btn_list" class="ui_roller_button_list clearfix">
+            <li class="ui_roller_button selected"><span></span></li>
+            <li class="ui_roller_button"><span></span></li>
+        </ul>
+        <!-- investment search used to be here -->
+    </div>
+</div>
+
+<div class="notice_wrap">
+    <div class="wrapper">
+        <ul class="notice clearfix">
+            <li data="212345678910" >昨日成交：</li>
+            <li data="310987654321" >累计成交：</li>
+            <li data="45098763">已加入人数：</li>
+            <li data="1233211232" >累计收益：</li>
+        </ul>
+    </div>
+</div>
+<!-- 公告 -->
+<div class="wrapper">
+    <div class="notice_text clearfix">
+        <b class="icon_notice"></b><i></i>
+        <p>您好！浦发银行将于2016年2月6日（周六）19:00至2月9日（周二）21:00进行系统升级维护，在此期间</p>
+        <div class="float-right">
+            <i></i><a href="#" class="red">更多公告</a></div>
+
+    </div>
+</div>
+<div class="wrapper">
+    <div class="index_wrap">
+        <ul class="advantage clearfix">
+            <li>
+                <div class="round"><span class="icon-1"></span></div>
+                <p>严格风控，层层审查</p></li>
+            <li>
+                <div class="round"><span class="icon-2"></span></div>
+                <p>专业高效，财富见证</p></li>
+            <li>
+                <div class="round"><span class="icon-3"></span></div>
+                <p>实力团队，全国遍布</p></li>
+            <li class="last">
+                <div class="round"><span class="icon-4"></span></div>
+                <p>特设“风险准备金机制”</p></li>
+        </ul>
+    </div>
+
+</div>
+<div class="wrapper">
+
+    <div class="intro clearfix">
+        <h1 class="intro_title">新手专区</h1>
+        <!--<a class="more">查看更多&gt;</a>-->
+    </div>
+    <div class="index_wrap new_zone">
+        <div class="ad"><img src="http://img3.yingu.com/image/index/ad-1.png"/></div>
+        <div class="right">
+            <table class="index_table">
+                <thead>
+                <tr>
+                    <th class="align-left">债权类型</th>
+                    <th>交易对价</th>
+                    <th>债权总额（元）</th>
+                    <th>出借期限</th>
+                    <th>进度</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="align-left"><a href="#" class="link">精英贷</a></td>
+                    <td>12.00%</td>
+                    <td>13000.00</td>
+                    <td>12个月</td>
+                    <td>
+                        <canvas class="crclp" progress="100%"  ></canvas>
+                    </td>
+                    <td><a href="#" class="btn_red ">立即出借</a></td>
+                </tr>
+                <tr>
+                    <td class="align-left"><a href="#" class="link">东方红1号<span class="gray font-12">JK201603090001</span><i class="icon_new ie-css3">新手</i></a></td>
+                    <td>12.00%</td>
+                    <td>13000.00</td>
+                    <td>12个月</td>
+                    <td>
+                        <canvas class="crclp" progress="35%"  ></canvas>
+                    </td>
+                    <td><a class="btn_gray">还款中</a></td>
+                </tr>
+                <tr>
+                    <td class="align-left"><a href="#" class="link">东方红1号<span class="gray font-12">JK201603090001</span><i class="icon_turn ie-css3">可转</i></a> </td>
+                    <td>12.00%</td>
+                    <td>13000.00</td>
+                    <td>12个月</td>
+                    <td>
+                        <canvas class="crclp" progress="55%"  ></canvas>
+                    </td>
+                    <td><a class="btn_gray ">立即出借</a></td>
+                </tr>
+                <tr>
+                    <td class="align-left"><a href="#" class="link">精英贷</a></td>
+                    <td>12.00%</td>
+                    <td>13000.00</td>
+                    <td>12个月</td>
+                    <td>
+                        <canvas class="crclp" progress="0%"  ></canvas>
+                    </td>
+                    <td><a class="btn_gray">立即出借</a></td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
+<div class="wrapper margin-top-10">
+    <div class="index_wrap new_guiade">
+        <h2 class="font-14">新手指南</h2>
+        <ul class="clearfix">
+            <li class="clearfix">
+                <strong>1</strong>
+
+                <div class="text">
+                    <p><span class="red font-16">会员注册</span></p>
+
+                    <p>新手注册</p>
+                    <h6>100元抵用券</h6>
+                </div>
+            </li>
+            <li class="icon-step"></li>
+            <li class="clearfix">
+                <strong>2</strong>
+
+                <div class="text">
+                    <p><span class="red font-16">实名认证</span></p>
+
+                    <p>注册24小时内认证</p>
+                    <h6>50元抵用券</h6></div>
+            </li>
+            <li class="icon-step"></li>
+            <li class="clearfix">
+                <strong>3</strong>
+
+                <div class="text">
+                    <p><span class="red font-16">充值出借</span></p>
+
+                    <p>注册24小时内认证首次充值</p><h6>100元红包</h6></div>
+            </li>
+            <li class="icon-step"></li>
+            <li class="clearfix">
+                <strong>4</strong>
+
+                <div class="text">
+                    <p><span class="red font-16">绑卡提现</span></p>
+
+                    <p>只可绑定本人名下借记卡</p><h6>免提现费</h6></div>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+<div class="wrapper">
+
+    <div class="intro clearfix">
+        <h1 class="intro_title">优计划</h1>
+        <a class="more">查看更多&gt;</a>
+    </div>
+    <div class="index_wrap manage_plan manage_plan_ydl clearfix">
+        <div class="ad"><img src="http://img3.yingu.com/image/index/ad-5.png"></div>
+        <div class="right">
+            <ul class="list clearfix list2">
+                <li>
+                    <div class="name"><i></i><span>优计划A</span></div>
+                    <div class="percent"> 5.20<span>%</span></div>
+                    <p>出借期限<span class="black">1</span>个月</p>
+                    <i></i><span id="ydl1" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                    <a href="#" class="bt_middle_red ">加入计划</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <div class="name"><i></i><span>优计划B</span></div>
+                    <div class="percent"> 6.20<span>%</span></div>
+                    <p>出借期限<span class="black">3</span>个月</p>
+                    <i></i><span id="ydl3" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                    <a href="#" class="bt_middle_red ">查看详情</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <div class="name"><i></i><span>优计划C</span></div>
+                    <div class="percent"> 8.20<span>%</span></div>
+                    <p>出借期限<span class="black">6</span>个月</p>
+                    <i></i><span id="ydl6" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                    <a href="#" class="bt_middle_red ">加入计划</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <div class="name"><i></i><span>优计划D</span></div>
+                    <div class="percent"> 9.20<span>%</span></div>
+                    <p>出借期限<span class="black">12</span>个月</p>
+                    <i></i><span id="ydl12" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                    <a href="#" class="bt_middle_red ">查看详情</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <div class="name"><i></i><span>银多利Y-24期</span></div>
+                    <div class="percent"> 9.20<span>%</span></div>
+                    <p>出借期限<span class="black">12</span>个月</p>
+                    <i></i><span id="ydl24" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                    <a href="#" class="bt_middle_red ">查看详情</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+
+    <div class="intro clearfix">
+        <h1 class="intro_title">月盈利</h1>
+        <a class="more">查看更多&gt;</a>
+    </div>
+    <div class="index_wrap manage_plan clearfix  yyl">
+        <div class="ad"><img src="http://img3.yingu.com/image/index/ad-6.png"></div>
+        <div class="right">
+            <ul class="list clearfix list2">
+                <li class="new_list">
+                    <div class="name"><span class="double_month">谷双丰</span></div>
+                    <div class="payment">还款方式：<p>每两月返息，到期还本</p></div>
+                    <div class="percent return">
+                        <div class="left_2">
+                            <p class="return_rate">预期年化收益率</p>
+                            <span class="number">11.50</span>
+                            <span style="margin-left: -10px">%</span>
+                        </div>
+                        <div class="right_2">
+                            <p>出借期限<span class="number">12</span><span class="month_2">个月</span></p>
+                        </div>
+                    </div>
+                    <div class="remain_time">
+                        <div class="time_2">
+                            <i></i>
+                            <!--<span id="countDown">&lt;!&ndash;倒计时&ndash;&gt;-->
+                            <!--<span class="ending_time">剩余时间</span>-->
+                            <!--<div class="syf-yyy" id="syfTime" time-syf="10000000000">-->
+                            <!--&lt;!&ndash;<span class="num_time" style="margin-left: 13px">10</span>时<span  class="num_time">57</span>分<span class="num_time">03</span>秒&ndash;&gt;-->
+                            <!--</div>-->
+                            <span id="gsf" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+                            <!--</span>-->
+                        </div>
+                        <div class="starting"><a href="#" class="bt_middle_red ">加入计划</a></div>
+                    </div>
+
+                </li>
+                <li class="line line_2"></li>
+                <li class="new_list" style="float: right;">
+                    <div class="name"><span class="double_month">银月盈</span></div>
+                    <div class="payment">还款方式：<p>每月返息，到期还本</p></div>
+                    <div class="percent return">
+                        <div class="left_2">
+                            <p class="return_rate">预期年化收益率</p>
+                            <span class="number">11.00</span>
+                            <span style="margin-left: -10px">%</span>
+                        </div>
+                        <div class="right_2">
+                            <p>出借期限<span class="number">12</span><span class="month_2">个月</span></p>
+                        </div>
+                    </div>
+                    <div class="remain_time">
+                        <div class="time_2">
+                            <i></i>
+                            <!--<span class="ending_time">倒计时</span>-->
+                            <!--<div class="syf-yyy" id="yyyTime" time-syf="10000000000">-->
+                            <!--&lt;!&ndash;<span class="num_time red_border" style="margin-left: 13px">10</span>时<span  class="num_time red_border">57</span>分<span class="num_time red_border">03</span>秒&ndash;&gt;-->
+                            <!--</div>-->
+                            <span id="yyy" style="width: 100%" time-left="1000000000" class="clock ie-css3">剩余时间</span>
+
+                        </div>
+                        <div class="starting"><a href="#" class="bt_middle_red ">即将开始</a></div>
+                    </div>
+                    <!--<div>-->
+                    <!--<div class="remain_time"><i></i><span>倒计时：</span><span>10</span>时<span>57</span>分<span>03</span>秒</div>-->
+                    <!--<a href="#" class="bt_middle_red ">加入计划</a>-->
+                    <!--</div>-->
+
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+
+    <div class="intro clearfix">
+        <h1 class="intro_title">东方红财富系列管理计划</h1>
+        <a class="more">查看更多&gt;</a>
+    </div>
+    <div class="index_wrap manage_plan clearfix">
+        <div class="ad"><img src="http://img3.yingu.com/image/index/ad-3.png"></div>
+        <div class="right">
+            <ul class="list clearfix">
+                <li>
+                    <div class="name"><i></i><span>东方红1号</span></div>
+                    <div class="percent"> 12<span>%</span> ~13<span>%</span></div>
+                    <p>出借期限<span class="black">12</span>个月</p>
+                    <a href="#" class="bt_middle_red ">查看详情</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <div class="name"><i></i><span>东方红2号</span></div>
+                    <div class="percent"> 12<span>%</span> ~13<span>%</span></div>
+                    <p>出借期限<span class="black">18</span>个月</p>
+                    <a href="#" class="bt_middle_red ">查看详情</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <div class="name"><i></i><span>东方红3号</span></div>
+                    <div class="percent"> 12<span>%</span> ~13<span>%</span></div>
+                    <p>出借期限<span class="black">24</span>个月</p>
+                    <a href="#" class="bt_middle_red ie-css3">查看详情</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div class="wrapper">
+
+    <div class="intro clearfix">
+        <h1 class="intro_title">任逍遥财富系列管理计划</h1>
+        <a class="more">查看更多&gt;</a>
+    </div>
+    <div class="index_wrap manage_plan clearfix">
+        <div class="ad"><img src="http://img3.yingu.com/image/index/ad-4.png"></div>
+        <div class="right">
+            <ul class="list clearfix">
+                <li>
+                    <div class="name"><i></i><span>任逍遥1号</span></div>
+                    <div class="percent"> 7<span>%</span></div>
+                    <p>出借期限<span class="black">1</span>个月</p>
+                    <a href="#" class="bt_middle_red ">查看详情</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <div class="name"><i></i><span>任逍遥2号</span></div>
+                    <div class="percent"> 8<span>%</span></div>
+                    <p>出借期限<span class="black">3</span>个月</p>
+                    <a href="#" class="bt_middle_red ">查看详情</a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <div class="name"><i></i><span>任逍遥3号</span></div>
+                    <div class="percent"> 9<span>%</span></div>
+                    <p>出借期限<span class="black">6</span>个月</p>
+                    <a href="#" class="bt_middle_red ">查看详情</a>
+                </li>
+
+
+            </ul>
+
+        </div>
+    </div>
+</div>
+<div class="wrapper clearfix">
+    <div class=" media_report ">
+        <div class="intro clearfix">
+            <h1 class="intro_title">媒体报道</h1>
+        </div>
+        <div class="index_wrap">
+            <div class="content">
+                <div class="clearfix">
+                    <div class="pic"><img src="http://img3.yingu.com/image/index/pic-1.png"></div>
+                    <h3><a href="#" class="red"> 勇担社会责任 践行中国梦——银谷再创行业新榜样</a></h3>
+
+                    <p>
+                        作为行业重量级企业，银谷一直积极投身社会公益事业：从“爱行走，爱生命，爱地球——银谷世界地球日公益活动”，到“银谷福利院爱心活动”，再到“‘爱心传递，情暖银谷’爱心捐款活动”，银谷的每次公益活动都获得媒体的关注银谷世界地球日......
+                        <a href="#" class="red">[ 点击详情 ]</a></p>
+                </div>
+                <div class="clearfix">
+                    <ul class="news">
+                        <li class="clearfix"><!--<a href="#" class="red news_title">网易 | </a>--><a href="#"
+                                                                                                   class="news_text"><span>放眼未来，银谷财富将以实际行动践行</span><i>2016-03-02</i></a>
+                        </li>
+                        <li class="clearfix"><!--<a href="#" class="red news_title">网易 | </a>--><a href="#"
+                                                                                                   class="news_text"><span>放眼未来，银谷财富将以实际行动践行</span><i>2016-03-02</i></a>
+                        </li>
+                        <li class="clearfix"><!--<a href="#" class="red news_title">网易 | </a>--><a href="#"
+                                                                                                   class="news_text"><span>放眼未来，银谷财富将以实际行动践行</span><i>2016-03-02</i></a>
+                        </li>
+                    </ul>
+                    <ul class="news">
+                        <li class="clearfix"><!--<a href="#" class="red news_title">网易 | </a>--><a href="#"
+                                                                                                   class="news_text"><span>放眼未来，银谷财富将以实际行动践行</span><i>2016-03-02</i></a>
+                        </li>
+                        <li class="clearfix"><!--<a href="#" class="red news_title">网易 | </a>--><a href="#"
+                                                                                                   class="news_text"><span>放眼未来，银谷财富将以实际行动践行</span><i>2016-03-02</i></a>
+                        </li>
+                        <li class="clearfix"><!--<a href="#" class="red news_title">网易 | </a>--><a href="#"
+                                                                                                   class="news_text"><span>放眼未来，银谷财富将以实际行动践行</span><i>2016-03-02</i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="company_success ">
+        <div class="intro clearfix">
+            <h1 class="intro_title">公司成就</h1>
+        </div>
+        <div class="index_wrap">
+            <div class="content">
+                <div class="pic"><img src="http://img3.yingu.com/image/index/pic-2.png"></div>
+                <p>作为行业重量级企业，银谷一直积极投身社会公益事业活动都获得媒体的关注谷一直积极...... <a href="#" class="red">[ 点击详情 ]</a></p>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<div class="partener">
+    <div class="partener_content">
+        <div class="intro clearfix">
+            <h1 class="intro_title">合作机构</h1>
+        </div>
+        <ul class="partnerlist clearfix">
+            <li><a href=""><img src="http://img3.yingu.com/image/index/partner_fico.png" alt="FICO"/></a></li>
+            <li><a href=""><img src="http://img3.yingu.com/image/index/partner_fuyou.png" alt="富友支付服务有限公司"/></a></li>
+            <!--<li><a href=""><img src="http://img3.yingu.com/image/index/partner_upay.png" alt="广州银联网络支付有限公司"/></a></li>-->
+            <li><a href=""><img src="http://img3.yingu.com/image/index/partner_payeEase.png" alt="首信易支付"/></a></li>
+            <li><a href=""><img src="http://img3.yingu.com/image/index/partner_caijing.png" alt="中央财经大学"/></a></li>
+            <li><a href=""><img src="http://img3.yingu.com/image/index/partner_lianlian.png" alt="连连科技"/></a></li>
+            <li class="last"><a href=""><img src="http://img3.yingu.com/image/index/partner_horwath.png" alt="北京浩华浩信资产管理顾问有限公司"/></a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    seajs.use("index/index");
+</script>
+<div class="foot">
+    <div class="foot_content clearfix">
+        <div class="contact_links">
+            <div class="contact_links_content clearfix">
+                <div class="left clearfix">
+                    <dl class="clearfix">
+                        <dt>帮助中心</dt>
+                        <dd><a href="">注册认证</a></dd>
+                        <dd><a href="">出借流程</a></dd>
+                        <dd><a href="">债权转让</a></dd>
+                        <dd><a href="">账户安全</a></dd>
+                        <dd><a href="">资费说明</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>关于我们</dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                        <dd><a href="">社会责任</a></dd>
+                        <dd><a href="">法律法规</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>东方银谷旗下业务</dt>
+                        <dd><a href="">银谷门户网站</a></dd>
+                        <dd><a href="">银谷财富</a></dd>
+                        <dd><a href="">银谷普惠</a></dd>
+                        <dd><a href="">银谷普诚</a></dd>
+                        <dd><a href="">银谷积分商城</a></dd>
+
+                    </dl>
+
+                    <div class="weixin  weixin-2"></div>
+                    <div class="weixin weixin-1"></div>
+
+                </div>
+                <div class="right">
+
+                    <ul class="address">
+                        <li class="clearfix"><p>工作时间  周一至周日  9:00-20:00  节假日除外</p></li>
+                        <li class="clearfix">
+                            <span class="phone"></span>
+                            <span class="font-16 white">客服服务热线：</span>
+
+                            <p><span class="font-16 white">400-890-8299</span>&nbsp;&nbsp;&nbsp;<span class="font-16 gray">400-612-5859</span>&nbsp;&nbsp;&nbsp;<span class="grey">（银谷财富）</span></p>
+                        </li>
+                        <li class="clearfix">
+                            <span class="location"></span>
+
+                            <p class="clearfix location_title"><span class="white office">总部地址：</span>
+                                <span class="location_word white">北京市朝阳区东大桥路8号尚都国际中心A座2608-2609室</span></p>
+                        </li>
+                        <li class="clearfix margin-top-20"><p>东方银谷（北京）投资管理有限公司京ICP备14022292号</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="float_menu" class="float_menu">
+    <ul>
+        <li id="float_menu_head_phone" class="head_phone"><a href="javascript:void(0);"></a></li>
+        <li id="float_menu_calculator" class="calculator">
+            <a href="javascript:void(0);"></a>
+            <div class="calculator-wrapper" >
+                <div class="calculator-form" >
+                    <form id="calculatorForm" >
+                        <div class="form-field" >
+                            <input name="lendingAmount" id="amount" class="input-box" />
+                            <span class="unit" >元</span>
+                        </div>
+                        <div class="form-field" >
+                            <input name="rate" id="apr" class="input-box" />
+                            <span class="unit" >%</span>
+                        </div>
+                        <div class="form-field" >
+                            <select name="term" id="term" >
+                                <option value="">选择出借期限</option>
+                                <option value="1">1个月</option>
+                                <option value="3">3个月</option>
+                                <option value="6">6个月</option>
+                                <option value="12">12个月</option>
+                                <option value="18">18个月</option>
+                                <option value="24">24个月</option>
+                            </select>
+                        </div>
+                        <div class="form-field" >
+                            <select name="method" id="repayType" >
+                                <option value="">选择还款方式</option>
+                                <option value="20">等额本息/按月</option>
+                                <option value="21">等额本金/按月</option>
+                                <option value="22">一次性还本付息</option>
+                            </select>
+                        </div>
+                        <div class="cal-errorTip" ></div>
+                        <div style="text-align: center" >
+                            <span id="calBtn" class="btn_red" >计算</span>
+                        </div>
+                    </form>
+                </div>
+                <div class="result-sect">
+                    <div class="result" >
+                        <h3>计算结果</h3>
+                        <table >
+                            <tbody>
+                            <tr><td class="active" >预期收益</td><td><span class="red" >100.00元</span></td></tr>
+                            <tr><td class="active" >出借服务费</td><td>20.00元</td></tr>
+                            <tr><td class="active" >出借本金</td><td>10000.00元</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="calculator-toggle disable" ></div>
+                </div>
+
+            </div>
+        </li>
+
+        <li id="float_menu_code" class="code">
+            <a href="javascript:void(0);"></a>
+
+            <div id="big_code" class="big_code"></div>
+        </li>
+        <li id="float_menu_up" class="up"><a href="javascript:void(0);"></a></li>
+    </ul>
+</div>
+<script type="text/javascript">
+    seajs.use("foot/foot");
+</script>
+</body>
+</html>

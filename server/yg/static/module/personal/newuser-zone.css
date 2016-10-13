@@ -1,0 +1,144 @@
+.newuser_content{
+    float: left;
+    margin: 20px 24px 0 24px;
+    width:1010px;
+}
+
+.personal_table td + td  {
+    width: 50px !important;
+
+}
+.personal_table td + td + td {
+    width: 50px !important;
+}
+.personal_table td + td + td+ td {
+    width: 50px !important;
+}
+
+.personal_table td + td + td+ td+ td {
+    width: 50px !important;
+}
+.personal_table td + td + td+ td+ td+ td {
+    width: 50px !important;
+}
+.newuser_table td{
+    width: 30px !important;
+}
+.newuser_table td+td{
+    width: 60px !important;
+}
+tbody td {
+    font-size: 14px !important;
+    color: #333333 !important;
+}
+.nu_title{
+    font-size: 16px;
+    color:#333333;
+    height: 49px;
+    line-height: 49px;
+    padding-left: 22px;
+    background: #faf9f9;
+}
+.contract_title{
+    font-size: 14px;
+    color:#848484;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 22px;
+    background: #faf9f9;
+}
+.mycapitaldata{
+    margin-top: 15px;
+    margin-bottom: 60px;
+}
+.font_cf4473b{
+    color:#f4473b !important;
+}
+.agreement{
+    font-size: 14px;
+    color:#333333;
+    height: 44px;
+    line-height: 44px;
+    padding-left: 22px;
+}
+.agreement a:hover{
+    text-decoration: none;
+    color:#3b96f4;
+    cursor: pointer;
+}
+.step{
+    margin-top: 10px;
+    padding-left: 44px;
+    border-top: solid 1px #dcdcdc;
+    height:180px;
+    line-height:180px;
+    position: relative;
+    padding-top:47px;
+}
+.step1,.step2,.step3{
+    display: inline-block;
+    width:141px;
+    height:141px;
+    line-height: 141px;
+    border-radius:100% ;
+    margin: 0;
+    padding: 0;
+z-index: 2;
+}
+.stepline{
+    display: inline-block;
+    width:253px;
+    height:3px;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.steplinecon{
+    display: inline-block;
+    width:243px;
+    height:141px;
+    line-height: 141px;
+    border-radius:100% ;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    position: relative;
+    left:-5px;
+}
+.personal_table{
+    border: none;
+}
+.stepcoloryes{
+    background: #00b3f7;
+}
+.stepcolorno{
+    background: #dddddd;
+}
+.step1_content1,.step1_content2{
+    height:31px;
+    width:94px;
+
+}
+.step1_content1{
+    font-size: 20px;
+    color:#ffffff;
+    position: relative;
+    left:40px;
+    top:-10px;
+}
+.step1_content2{
+    font-size: 16px;
+    color:#ffffff;
+    position: relative;
+    left:24px;
+    top:-10px;
+}
+
+.mycapitaldata tbody tr.bg {
+    background: #fbfbfb;
+}
+
+.mycapitaldata tbody td,.mycapitaldata  td,.mycapitaldata tbody tr,.manage_null  {
+    background: transparent;
+    border: none;
+}

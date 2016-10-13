@@ -1,0 +1,339 @@
+/*全局样式*/
+body, a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 16px/38px 'Microsoft YaHei', '宋体', 'Arial', 'MicrosoftJhengHei', 'sans-serif';
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    width: 100%;
+}
+
+.full_w {
+    height: 2700px;
+    min-width: 1240px;
+    background: #404040;
+    /*background-size: 100%;*/
+}
+
+.full_w .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container .banner {
+    height: 634px;
+}
+
+.banner img {
+    /*margin-top: 100px;*/
+    width: 100%;
+    height: 100%;
+}
+
+.rule {
+    width: 100%;
+    height: 440px;
+    background: #3a79ba;
+}
+
+.rule .rule-content {
+    width: 1002px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 460px;
+    /*background: red;*/
+}
+
+.rule-content .rule-title {
+    width: 546px;
+    height: 77px;
+    font-size: 26px;
+    margin: 0 auto;
+    padding-top: 47px;
+    text-align: center;
+    color: #fff;
+}
+
+.rule-content .rule-word {
+    width: 100%;
+    height: 314px;
+
+}
+
+.rule-content .rule-word li {
+    float: left;
+    width: 482px;
+    background: #024d99;
+}
+
+.rule-content .rule-word li.last {
+    margin-left: 38px;
+}
+
+.rule-content .rule-word li table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.rule-content .rule-word li table td {
+    border: 1px solid #fff;
+    text-align: center;
+    color: #fff;
+
+}
+
+.project {
+    height: 580px;
+}
+
+.project .project-title {
+    height: 136px;
+}
+
+.project .project-title img {
+    width: 100%;
+    height: 100%;
+}
+
+.project .project-product {
+    height: 440px;
+    width: 1002px;
+    margin-right: auto;
+    margin-left: auto;
+    /*background: red;*/
+}
+
+.project-product .product {
+    width: 100%;
+    height: 169px;
+    background: #fff;
+    margin-top: 40px;
+}
+
+.project-product .product .yinduoli-img {
+    width: 179px;
+    height: 167px;
+    margin-left: 30px;
+    float: left;
+}
+
+.project-product .product .yinduoli-content {
+    width: 762px;
+    height: 169px;
+    /*background: yellow;*/
+    float: right;
+}
+
+.project-product .product .yinduoli-content h2 {
+    font-size: 24px;
+    color: #0a3a6b;
+    float: left;
+    margin-top: 42px;
+    margin-right: 40px;
+}
+
+.project-product .product .yinduoli-content p {
+    font-size: 16px;
+    color: #666666;
+    margin-top: 42px;
+}
+
+.project-product .product .yinduoli-content p span {
+    color: #d20000;
+}
+
+.project-product .product .yinduoli-content ul {
+    width: 100%;
+    height: 50px;
+    /*background: blue;*/
+}
+
+.project-product .product .yinduoli-content ul li {
+    float: left;
+    margin-right: 55px;
+    font-size: 18px;
+    color: #b7b7b7;
+    margin-top: 17px;
+}
+
+.project-product .product .yinduoli-content ul li span {
+    font-size: 18px;
+    color: #ce0e0e;
+}
+
+.project-product .product .yinduoli-content ul li span i {
+    font-style: normal;
+    font-size: 30px;
+}
+
+.project-product .product .yinduoli-content ul li.detail {
+    margin-right: 20px;
+    width: 116px;
+    height: 45px;
+    cursor: pointer;
+    text-align: center;
+    border: 2px solid #3a79ba;
+    border-radius: 10px;
+    position: relative;
+    z-index:2;
+    /*behavior: url(../image/common/ie-css3.htc);*/
+    /*这需要把这个文件找到正确的路径  然后引进来即可解决border-raduis的兼容性问题*/
+    /*
+        <!--[if lte IE 8]>
+    <style type="text/css">
+        .ie-css3 {
+            behavior: url(http://img3.yingu.com/image/common/ie-css3.htc);
+        }
+    </style>
+    <![endif]-->
+    */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.project-product .product .yinduoli-content ul li.detail a {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    color: #3a79ba;
+}
+
+.project-product .product .yinduoli-content ul li.detail:hover a {
+    background: #3a79ba;
+    color: #fff;
+}
+
+.activity {
+    height: 443px;
+    background: #3a79ba;
+    /*margin-top: 50px;*/
+}
+
+.activity .activity-title {
+    height: 110px;
+}
+
+.activity .activity-title img {
+    width: 100%;
+    height: 100%;
+}
+
+.activity .activity-content {
+    /*background: yellow;*/
+    font-size: 22px;
+    margin-top: 50px;
+    width: 1002px;
+    height: 288px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    line-height: 46px;
+    /*margin-left: 47px;*/
+    /*line-height: 38px;*/
+    /*box-sizing: border-box;*/
+}
+
+.activity .activity-content dt {
+    float: left;
+
+}
+
+.activity .activity-content dd {
+    /*float: left;*/
+    width: 965px;
+    padding-left: 32px;
+}
+
+.unique {
+    /*margin-top: 40px;*/
+    height: 540px;
+    /*background: blue;*/
+}
+
+.unique .unique-title {
+    width: 100%;
+    height: 128px;
+}
+
+.unique .unique-title img {
+    width: 100%;
+    height: 100%;
+}
+
+.unique-content {
+    margin-top: 30px;
+    width: 1002px;
+    height: 358px;
+    /*background: red;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.unique-content img{
+    width: 100%;
+    height: 100%;
+}
+
+/*.unique-content li {*/
+/*margin-right: 244px;*/
+/*float: left;*/
+/*width: 205px;*/
+/*height: 259px;*/
+/*/!*background: yellow;*!/*/
+/*}*/
+
+/*.unique-content li img {*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*}*/
+
+/*.unique-content li.last {*/
+/*margin-right: 0;*/
+/*}*/

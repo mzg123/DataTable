@@ -1,0 +1,366 @@
+.head{
+	width: 100%;
+	position: relative;
+	z-index: 100;
+	background: #fff;
+}
+
+.head .toolbar{
+	width: 100%;
+	height: 32px;
+	background-color: #f5f5f5;
+	border-bottom: #e3e3e3 solid 1px;
+}
+
+.head .toolbar .toolbar_content{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*.head .toolbar .toolbar_content .home{*/
+	/*float: left;*/
+	/*margin-top: 7px;*/
+/*}
+
+.head .toolbar .toolbar_content .home .home_icon{
+	float: left;
+	width: 14px;
+	height: 11px;
+	background: url(../image/common/common.png) -57px top no-repeat;
+	margin: 3px 10px 0 0;
+}*/
+.head .toolbar .toolbar_content .tel{
+	float: left;
+	margin-top: 7px;
+	font-size: 14px;
+	/*color: #b8b8b8;*/
+}
+.head .toolbar .toolbar_content .tel .red{
+	/*color: #7e7e7e;*/
+	position: relative;
+	top:1px;
+
+}
+.head .toolbar .toolbar_content .tel .icon-tel{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: relative;
+	top: 3px;
+	margin-right: 5px;
+	background: url(../image/common/icon-tel.png) no-repeat;
+}
+.head .toolbar .toolbar_content .head_right{
+	float: right;
+}
+
+.head .toolbar .toolbar_content .head_right a{
+	padding: 0 20px;
+	float: left;
+	height: 32px;
+	line-height: 32px;
+}
+.head .toolbar .toolbar_content .head_right a.register, .head .toolbar .toolbar_content .head_right a.login {
+	padding: 0 10px;
+}
+.head .toolbar .toolbar_content .head_right .spliter_short{
+	float: left;
+	width: 1px;
+	height: 16px;
+	margin-top: 9px;
+	background: url(../image/common/common.png) -302px -88px no-repeat;
+}
+
+.head .toolbar .toolbar_content .head_right .phone ,
+.head .toolbar .toolbar_content .head_right .message ,
+.head .toolbar .toolbar_content .head_right .favorite{
+	border-left: #e3e3e3 solid 1px;
+}
+.head .toolbar .toolbar_content .head_right .phone{
+	 position: relative;
+ }
+/*.head .toolbar .toolbar_content .head_right .phone:hover .hover{*/
+	/*display: block;*/
+/*}*/
+.head .toolbar .toolbar_content .head_right .phone .hover{
+	position: absolute;
+	top:30px;
+	right: -40px;
+	border: 1px solid #ccc;
+	padding: 10px 10px 0 10px;
+	background: #fff;
+	z-index: 100;
+	display: none;
+}
+.head .toolbar .toolbar_content .head_right .phone .hover .icon_arrow{
+	position: absolute;
+	top:-9px;
+	right: 80px;
+	width: 0;
+	height: 0;
+	border-left:8px solid transparent;
+	border-right:8px solid transparent;
+	border-bottom:8px solid #ccc;
+}
+.head .toolbar .toolbar_content .head_right .phone .hover .icon_arrow2{
+	position: absolute;
+	top:-7px;
+	right: 81px;
+	width: 0;
+	height: 0;
+	border-left:7px solid transparent;
+	border-right:7px solid transparent;
+	border-bottom:7px solid #fff;
+
+}
+.head .toolbar .toolbar_content .head_right .phone .phone_icon{
+	float: left;
+	width: 13px;
+	height: 22px;
+    margin: 5px 5px 0 2px;
+	background: url(../image/common/common.png) -268px -88px no-repeat;
+}
+.head .toolbar .toolbar_content .head_right .phone:hover .phone_icon{
+	background-position: -510px 0;
+}
+/*.head .toolbar .toolbar_content .head_right .message .message_num{*/
+	/*color: #ad2d34;*/
+/*}*/
+
+.head .toolbar .toolbar_content .head_right a:hover{
+	/*padding-right: 0;*/
+	color:#0768ca ;
+	text-decoration: none;
+}
+
+.head .nav{
+	width: 100%;
+	padding: 36px 0 0 0;
+	border-bottom: #e2e2e2 solid 1px;
+}
+
+.nav .nav_content{
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.logo_slogan{
+	float: left;
+	margin-right: 40px;
+}
+.logo_slogan h1{
+	color: #0768ca;
+	float: left;
+	font-size:24px;
+	font-family: "Microsoft YaHei";
+	margin: 5px 0 37px 80px;
+
+}
+.logo{
+	width: 133px;
+	height: 44px;
+	background: url(../image/common/common.png) -221px top no-repeat;
+	float: left;
+}
+
+.slogan{
+	width: 115px;
+	height: 24px;
+	background: url(../image/common/common.png) -221px -54px no-repeat;
+	float: left;
+	margin: 10px 0 0 15px;
+}
+
+.nav_list{
+	float: right;
+    margin: 0 30px 0 0;
+	/*width: 475px;*/
+}
+
+.nav_list li{
+	float: left;
+	height: 55px;
+	margin-right: 58px;
+	/*width: 70px;*/
+	text-align: center;
+	position: relative;
+}
+
+.nav_list li.last{
+	margin-right: 20px;
+}
+
+.nav_list li a{
+	display: block;
+	font-size: 16px;
+	color: #000;
+	float: left;
+	padding: 10px;
+}
+
+.nav_list li.more:hover{
+	background: #f5f5f5;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+.nav_list li.more:hover a{
+	color: #0768ca;
+}
+.nav_list li a:hover, .nav_list li.more:hover dd a:hover{
+	text-decoration: none;
+	color: #0768ca;
+
+}
+.nav_list li.more:hover dd a{
+	color: #333;
+}
+.nav_list li .arrow{
+	background: url(../image/common/not_combined/arrow_down_gray.png) no-repeat;
+	display: inline-block;
+	width: 9px;
+	height: 5px;
+	float: left;
+	margin:17px 10px 0 0;
+
+}
+.nav_list li.more:hover .arrow{
+	background: url(../image/common/not_combined/arrow_down_red.png) no-repeat;
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+.nav_list li .hover{
+	position: absolute;
+	top:30px;
+	left: 0;
+	width: 120px;
+	background: #f5f5f5;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	/*border-top-right-radius: 3px;*/
+	padding: 10px 5px 5px;
+	display: none;
+
+}
+.nav_list li .hover dd{
+	border-bottom: 1px solid #e3e3e3;
+	padding: 10px 0;
+	text-align: left;
+	display: block;
+
+}
+.nav_list li .hover dd a{
+
+	padding: 0 20px;
+	font-size: 14px;
+	display: inline;
+	float: none;
+}
+/*.indicator{*/
+	/*display: block;*/
+	/*width: 64px;*/
+	/*height: 2px;*/
+	/*background: #ad2d34;*/
+	/*margin: 27px auto 0;*/
+/*}*/
+
+.nav_list li.selected a{
+	color: #0768ca;
+}
+
+/*.nav_list li.selected .indicator{*/
+	/*display: none;*/
+/*}*/
+
+.spliter_long{
+	float: right;
+	height: 40px;
+	width: 1px;
+	margin-right: 40px;
+	background: url(../image/common/common.png) -291px -88px no-repeat;
+}
+
+.head .nav .personal{
+	float: right;
+	margin-left: 10px;
+	position: relative;
+	width: 173px;
+}
+
+.head .nav .personal .avatar_link{
+	position: relative;
+	z-index: 2;
+
+}
+
+.head .nav .personal .avatar , .head .nav .personal .word , .personal .link{
+	float: left;
+}
+
+.head .nav .personal .avatar{
+	margin-right: 20px;
+	margin-top: 2px;
+}
+
+.head .nav .personal .word{
+	margin-top: 10px;
+}
+
+.head .nav .personal .link{
+	margin: 0 15px 0 5px;
+	font-size: 16px;
+	color: #0768ca;
+}
+
+.head .nav .personal .link .arrow{
+	margin:19px 0 0 20px;
+	width: 9px;
+	height: 5px;
+	float: right;
+	background: url(../image/common/not_combined/arrow_down_red.png) left top no-repeat;
+}
+
+.head .nav .personal .list_wrapper {
+    position: absolute;
+    left: -4px;
+    top: -15px;
+    background: #4b5259;
+    z-index: 1;
+    display: none;
+    border-radius: 5px;
+}
+
+.head .nav .personal .placeholder{
+	height: 75px;
+	border-bottom: #667085 dotted 1px;
+}
+
+.head .nav .personal .list_wrapper ul{
+	padding: 15px 0px 15px 30px;
+}
+
+.head .nav .personal .list_wrapper ul li{
+	width: 140px;
+	margin-bottom: 15px;
+}
+
+.head .nav .personal .list_wrapper ul li a{
+	color: #9b9ea4;
+	font-size: 14px;
+}
+
+.head .nav .personal .list_wrapper ul li a:hover{
+	color: #fff;
+	text-decoration: none;
+}
+
+.head .nav .personal .link_hover{
+	color: #fff;
+}
+
+.head .nav .personal .link_hover .arrow{
+	background: url(../image/common/common.png) -19px top no-repeat;
+}

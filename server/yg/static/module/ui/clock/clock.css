@@ -1,0 +1,6 @@
+.hour,.minute,.sec{
+    display:inline-block;
+    font-size: 18px;
+    padding: 5px 4px;
+    border-radius: 3px;
+}

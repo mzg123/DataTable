@@ -1,0 +1,1302 @@
+
+.personal_layout {
+    border: none;
+}
+
+.personal_cash .personal_layout {
+    margin: 35px 100px;
+}
+
+/*�ϴ�ͷ��*/
+.photo-left {
+    float: left;
+    width: 410px;
+    border-right: 1px solid #eee;
+    color: #a5a5a5;
+}
+
+.photo-left .photo-big {
+    width: 390px;
+    height: 240px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.photo-left .photo-big .jcrop-holder {
+    margin: 0 auto;
+}
+
+.photo-left .choose {
+    position: relative;
+}
+
+.photo-left .choose .file {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 30px;
+    opacity: 0;
+}
+
+.photo-right {
+    float: right;
+    width: 178px;
+    padding-left: 10px;
+    color: #a5a5a5;
+}
+
+.photo-right h2 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+.yg-modal .modal-content {
+    /*font-size: 12px;*/
+}
+
+.photo-right .photo-middle, .photo-right .photo-small {
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.photo-right .photo-middle {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 99;
+}
+
+.photo-right .photo-small {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 99;
+}
+
+.photo-right .photo {
+    width: 100px;
+    text-align: center;
+    margin-top: 15px;
+
+}
+
+.photo-right .photo + .photo {
+    margin-left: 30px;
+    text-align: left;
+}
+
+/*�˻���ȫ*/
+.icon-close, .icon-open {
+    position: relative;
+    top: 3px;
+    margin-right: 10px;
+}
+
+/*.safe-list{*/
+/*border: 1px solid #e6e6e6;*/
+/*border-bottom: none;*/
+
+/*}*/
+.safe-list li {
+    height: 60px;
+    border-bottom: 1px solid #e6e6e6;
+    position: relative;
+
+}
+
+.safe-list li .col {
+    float: left;
+    width: 130px;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.safe-list li .item-1 {
+    background: #fafafa;
+    width: 100px;
+    margin-right: 20px;
+    color: #515151;
+    height: 20px;
+    padding-left: 20px;
+}
+
+.safe-list li .item-2 {
+    width: 175px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+    padding-top: 20px;
+    height: 20px;
+}
+
+.safe-list li .item-3 {
+    color: #b0b0b0;
+    width: 665px;
+    padding-top: 21px;
+}
+
+.safe-list li .item-3 p {
+    float: left;
+}
+
+.safe-list li .item-3 .action {
+    float: right;
+    color: #515151;
+    text-align: right;
+    /*padding-top: 22px;*/
+}
+
+.safe-list li .item-3 .action a {
+    margin-left: 10px;
+    color: #0768ca;
+
+}
+.personal_safe.no-border{
+    border-bottom: 0;
+}
+/*��Ϣ֪ͨ*/
+.note-title p {
+    float: right;
+
+}
+
+#investments_filter {
+    display: none;
+}
+
+.repay_history_table tr td div a, .note-title {
+    color: #515151;
+    font-size: 14px;
+}
+
+.repay_history_table tr:hover td div a {
+    color: #000;
+    text-decoration: none;
+}
+
+.personal-note {
+    border: 1px solid #eee;
+}
+
+.personal-note h3 {
+    background: #faf9f9;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.personal-note p {
+    margin: 25px;
+    line-height: 25px;
+    color: #515151;
+    word-break: break-all;
+}
+
+.personal_table td {
+    padding: 15px 0 15px 15px;
+
+}
+
+.personal_table tbody td {
+    font-size: 12px;
+    width: 13px;
+}
+
+.personal_table tbody td + td {
+    width: 15px;
+}
+
+.personal_table td + td + td {
+    width: 67px;
+}
+
+.personal_table td + td + td + td {
+    width: 440px;
+}
+
+.personal_table td + td + td + td div a {
+    display: inline-block;
+    width: 440px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding-top: 2px;
+}
+
+.personal_table td + td + td + td + td {
+    width: 130px;
+}
+
+.icon-mail, .icon-mail-open {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 2px;
+    background: url(../image/personal/icon.png) no-repeat 0 -406px;
+}
+
+.icon-mail {
+    background-position: 0 -406px;
+}
+
+.personal_table tbody tr:hover td a {
+    color: #000;
+}
+
+.personal_table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.personal_table tr.visited .icon-mail {
+    background-position: 0 -431px;
+}
+
+.personal_table tr.visited td div, .personal_table tr.visited:hover td div, .personal_table tr.visited:hover td a, .personal_table tr.visited td a {
+    color: #b6b6b6;
+}
+
+/*tab*/
+.tabs {
+    width: 100%;
+
+}
+
+.tabs li {
+    width: 50%;
+    text-align: center;
+    top: 0;
+    position: relative;
+}
+
+.tabs2 li {
+    width: 33.33%;
+}
+
+.tabs li a {
+    width: 100%;
+}
+
+.tabs li.hover {
+    border-top: 0;
+
+}
+
+.tabs li.hover a {
+    background: #0096f4;
+    color: #fff;
+    height: 50px;
+    line-height: 50px !important;
+
+}
+
+.tabs li a, .tabs li + li a {
+    border-right: 0;
+    border-left: 0;
+    color: #333;
+}
+
+.tabs li .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 25px solid #faf9f9;
+    position: absolute;
+    right: -25px;
+    top: 0;
+    z-index: 2;
+}
+
+.tabs li.hover .arrow-right {
+    border-left: 25px solid #0096f4;
+}
+
+.tabs_top {
+    border-bottom: 0;
+}
+
+.personal_safe {
+    border: 1px solid #eee;
+    /*border-bottom: none;*/
+}
+
+.personal_account {
+    margin: 0;
+    padding: 50px 0 50px 250px;
+}
+
+/*mail success*/
+.mail-success {
+    background: #fff;
+    padding: 25px;
+    min-height: 400px;
+    border-top: 1px solid #0096f4;
+
+}
+
+.mail-success h1 {
+    color: #666;
+}
+
+.mail-success .detail {
+    position: relative;
+    padding-left: 70px;
+    width: 560px;
+    margin: 40px auto;
+
+}
+
+.mail-success .detail p {
+    color: #666;
+    font-size: 14px;
+}
+
+.mail-success .detail p.detail-line{
+    padding: 3px 1px;
+}
+
+.mail-line {
+    height: 4px;
+    background: url(../image/personal/mail-line.png) repeat-x;
+}
+
+.personal_weixin {
+    padding: 20px;
+    /*background: #f7f7f7;*/
+    margin: 100px 100px 50px;
+}
+
+.personal_weixin .personal_tips {
+    margin: 0;
+    /*float: left;*/
+
+}
+
+/*.personal_tips {*/
+    /*margin-left: 150px;*/
+
+/*}*/
+
+/*.personal_safe .personal_tips {*/
+/*text-align: center;*/
+
+/*}*/
+
+.personal_weixin .weixin {
+    float: right;
+}
+
+#phoneTip {
+    position: relative;
+    top: 5px;
+}
+
+.personal_wrap.change_card {
+    background-image: none;
+    padding: 8px 20px 20px;
+}
+
+.change_card .form_wrapper {
+    padding: 20px 0;
+}
+
+.change_card .form_wrapper .row {
+    padding: 15px 0;
+}
+
+.change_card .form_wrapper .phone-number {
+    line-height: 34px;
+    font-size: 16px;
+}
+
+.change_card .form_wrapper label {
+    float: right;
+    line-height: 34px;
+    padding-right: 15px;
+    color: #787878;
+}
+
+.change_card .form_wrapper .input-box {
+    box-sizing: border-box;
+}
+
+.change_card .form_wrapper .btn {
+    padding: 7px 20px;
+}
+
+.change_card .form_wrapper .col-5 {
+    line-height: 34px;
+    padding-left: 15px;
+    color: #999;
+}
+
+.change_card .form_wrapper .col-5 a {
+    color: #999;
+}
+
+.form_wrapper .error-tip {
+    position: absolute;
+    bottom: -20px;
+    color: #ad2d34;
+}
+
+.form_wrapper .icon-info {
+    display: inline-block;
+    padding: 8px;
+    background: url(../image/personal/icon.png) 0px -312px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+.form_wrapper #verifyTip {
+    display: none;
+}
+
+.upload_table {
+    width: 100%;
+}
+
+.upload_table th {
+    background: #f8f8f8;
+    border-right: 1px solid #eee;
+    width: 25%;
+    padding: 0 30px;
+    color: #787878;
+}
+
+.upload_table tr {
+    line-height: 60px;
+    border: 1px solid #eee;
+}
+
+.upload_table td {
+    position: relative;
+    border-right: 1px solid #EEEEEE;
+    padding: 0 30px;
+    font-size: 14px;
+}
+
+.upload_table td .status {
+    background: url(../image/personal/icon.png) no-repeat;
+    padding-left: 20px;
+}
+
+.upload_table td .status.ok {
+    background-position: 0 -383px;
+}
+
+.upload_table td .status.error {
+    background-position: 0 -357px;
+}
+
+.upload_table td .status.uploading {
+    background-image: none;
+    padding-left: 0;
+}
+
+.upload_table td .status.uploading img {
+    margin-right: 8px;
+}
+
+.upload_table td .status.uploading {
+
+}
+
+.upload_table td .fileName {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: url(../image/personal/icon.png) 0 -491px no-repeat;
+}
+
+.fileName.has-content {
+    padding-left: 20px;
+}
+
+.form_wrapper .upload_table td label {
+    float: none;
+    color: #ad2d34;
+}
+
+.btn-wrapper {
+    padding: 25px 0 0;
+    text-align: center;
+}
+
+#getVerifyCode {
+    margin-top: -3px;
+}
+
+#verifyCode {
+    width: 220px;
+}
+
+.safe-tip {
+    width: 630px;
+    margin: 70px auto;
+    color: #333;
+}
+
+.safe-tip p {
+    line-height: 25px;
+    padding-left: 25px;
+}
+
+.safe-tip p.tip-title {
+    background: url(../image/personal/icon.png) 3px -279px no-repeat;
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 20px;
+    color: #111;
+}
+
+.col-wrap .personal_content {
+    float: none;
+    width: 1150px;
+    padding-right: 0;
+    padding-top: 20px;
+
+}
+.col-wrap .personal_content .title{
+    margin-top: 0;
+}
+.col-wrap {
+    background: #fff;
+    /*padding-top: 5px;*/
+}
+
+/*更换银行卡*/
+.model_title.tal {
+    text-align: left;
+    margin: 0 50px;
+    line-height: 25px;
+}
+
+.account-bank-modal {
+    padding: 10px 80px 30px;
+}
+
+/*实名及绑定*/
+.account-users {
+    margin: 0;
+    padding: 80px 0;
+}
+
+.account-users .account-validator .user-left {
+    float: left;
+    width: 450px;
+    padding-left: 20px;
+}
+
+.account-users .account-validator .user-right {
+    float: left;
+    width: 470px;
+    border-left: 1px dashed #d9d8d8;
+}
+
+.personal_content .account-users .bt {
+    margin: 50px 0 0 433px;
+}
+
+#province .select-wrapper, #province .select-dropdown {
+    width: 114px !important;
+}
+
+#city .select-wrapper, #city .select-dropdown {
+    width: 150px !important;
+}
+
+/*绑定银行卡*/
+.personal_bank {
+    padding: 20px 0;
+    margin-bottom: 100px;
+}
+
+.personal_bank li {
+    float: left;
+    margin: 0 24px 20px 0;
+    position: relative;
+
+}
+
+.personal_bank li .detail {
+    width: 298px;
+    height: 143px;
+    padding: 10px;
+    border: 1px solid #d6cfcf;
+    position: relative;
+    border-radius: 5px;
+}
+.personal_bank li .bg_china{
+    background: url(../image/personal/bg_china.png) no-repeat right 0;
+}
+.personal_bank li .bg_gongshang{
+    background: url(../image/personal/bg_gongshang.png) no-repeat right 0;
+}
+.personal_bank li .bg_jianshe{
+    background: url(../image/personal/bg_jianshe.png) no-repeat right 0;
+}
+.personal_bank li .bg_beijing{
+    background: url(../image/personal/bg_beijing.png) no-repeat right 0;
+}
+.personal_bank li .bg_guangda{
+    background: url(../image/personal/bg_guangda.png) no-repeat right 0;
+}
+.personal_bank li .bg_guangfa{
+    background: url(../image/personal/bg_guangfa.png) no-repeat right 0;
+}
+.personal_bank li .bg_huaxia{
+    background: url(../image/personal/bg_huaxia.png) no-repeat right 0;
+}
+.personal_bank li .bg_jiaotong{
+    background: url(../image/personal/bg_jiaotong.png) no-repeat right 0;
+}
+.personal_bank li .bg_minsheng{
+    background: url(../image/personal/bg_minsheng.png) no-repeat right 0;
+}
+.personal_bank li .bg_nongye{
+    background: url(../image/personal/bg_nongye.png) no-repeat right 0;
+}
+.personal_bank li .bg_pingan{
+    background: url(../image/personal/bg_pingan.png) no-repeat right 0;
+}
+.personal_bank li .bg_pufa{
+    background: url(../image/personal/bg_pufa.png) no-repeat right 0;
+}
+.personal_bank li .bg_shanghai{
+    background: url(../image/personal/bg_shanghai.png) no-repeat right 0;
+}
+.personal_bank li .bg_xingye{
+    background: url(../image/personal/bg_xingye.png) no-repeat right 0;
+}
+.personal_bank li .bg_youzheng{
+    background: url(../image/personal/bg_youzheng.png) no-repeat right 0;
+}
+.personal_bank li .bg_zhaoshang{
+    background: url(../image/personal/bg_zhaoshang.png) no-repeat right 0;
+}
+.personal_bank li .bg_zhongxin{
+    background: url(../image/personal/bg_zhongxin.png) no-repeat right 0;
+}
+.personal_bank li .card {
+    font-size: 14px;
+    display: block;
+}
+.personal_bank li h3 {
+
+    font-size: 18px;
+    padding: 10px 0;
+}
+.personal_bank li p {
+    margin-top: 10px;
+    font-size: 38px;
+    font-family: Arial;
+    border-top: 1px solid #e6e6e6;
+    padding: 5px 0 0 0;
+}
+
+.personal_bank li .add {
+    display: block;
+    width: 318px;
+    height: 163px;
+    position: absolute;
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.personal_bank li .add i {
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin: 65px auto 10px;
+    background: url(../image/personal/add.png) no-repeat;
+}
+
+.personal_bank li .add span {
+    font-size: 13px;
+    color: #c7c7c7;
+}
+
+.personal_bank li .add:hover {
+    text-decoration: none;
+    background: #eee;
+}
+
+.personal_bank li .img {
+    border: 1px solid #eee;
+    box-shadow: 0 0 3px #eee;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 15px;
+    overflow: hidden;
+}
+
+.personal_bank li .bt {
+    position: absolute;
+    right:0;
+    background: url(../image/personal/icon_bank.png) no-repeat;
+    top:0;
+    width: 67px;
+    height: 63px;
+    border-top-right-radius: 5px;
+    text-indent: -99999px;
+	z-index:10;
+}
+.personal_bank li .bt a{
+    color: #0768ca;
+}
+.personal_bank li .hover{
+    position: absolute;
+    left: 0;
+    width: 319px;
+    bottom: 0;
+    font-size: 42px;
+    height: 164px;
+    line-height: 164px;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    background: rgba(0,0,0,.5);
+    z-index: 20;
+}
+@media \0screen{
+
+    .personal_bank li .hover{
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000');
+    }
+}
+
+/*修改手机号*/
+.phone_wrap h2 {
+    font-size: 16px;
+    color: #350815;
+    margin: 20px 0;
+
+}
+
+.phone_wrap h3 {
+    font-size: 16px;
+    color: #350815;
+    background: #eefed1;
+    border-bottom: 1px solid #e2e2e2;
+    height: 69px;
+    width: 700px;
+    text-align: center;
+    line-height: 70px;
+    margin-bottom: 30px;
+
+}
+
+.phone_list {
+    padding-bottom: 100px;
+}
+
+.phone_list li {
+    margin-bottom: 25px;
+    background: #fff;
+    border-bottom: 1px solid #d4d4d4;
+    padding: 15px;
+    position: relative;
+    width: 670px;
+    height: 56px;
+
+}
+
+.phone_list li:hover {
+    background: #f7f9fc;
+}
+
+.phone_list li i {
+    display: block;
+    width: 40px;
+    height: 50px;
+    background: url(../image/personal/phone.png) no-repeat;
+    margin: 2px 0 0 30px;
+    float: left;
+}
+
+.phone_list li i.icon-msg {
+    background-position: 0 0;
+}
+
+.phone_list li i.icon-mail {
+    background-position: 0 -117px;
+}
+
+.phone_list li i.icon-people {
+    background-position: 0 -227px;
+}
+
+.phone_list li h5 {
+    margin: 0 0 0 80px;
+    font-size: 16px;
+    color: #4b2d34;
+
+}
+
+.phone_list li p {
+    margin: 5px 0 0 80px;
+    color: #a5a5a5;
+
+}
+
+.phone_list li a.btn_red {
+    position: absolute;
+    right: 15px;
+    top: 27px;
+
+}
+
+.tabs2 li.hover .arrow-right {
+    border-left: 15px solid #ad2d34;
+}
+
+.tabs2 li .arrow-right {
+    right: -15px;
+
+}
+
+.tabs li .arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 15px solid #faf9f9;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.phone_mail i {
+    float: left;
+
+}
+
+.phone_mail p {
+    margin-left: 30px;
+}
+
+/*人工*/
+.personal_phone {
+    margin: 30px 0 0 100px;
+}
+
+.personal_phone #submitForm {
+    float: none;
+    margin: 0 auto;
+
+}
+
+.personal_content .personal_phone .bt {
+    margin: 60px 0 0;
+}
+
+.personal_phone_upload .list li {
+    float: left;
+    width: 50%;
+    position: relative;
+    height: 125px;
+}
+
+.personal_phone_upload .list li + li + li {
+    clear: both;
+    margin-top: 50px;
+}
+
+.personal_phone_upload .list li .pic {
+    float: left;
+    width: 130px;
+    height: 86px;
+    overflow: hidden;
+}
+
+.personal_phone_upload .list li .pic img {
+    width: 130px;
+    height: 86px;
+
+}
+
+.personal_phone_upload .list li .pic i {
+    display: block;
+    width: 105px;
+    height: 86px;
+    background: url(../image/personal/upload.png) no-repeat;
+}
+
+.personal_phone_upload .list li .pic i.icon_1 {
+    background-position: 0 -122px;
+}
+
+.personal_phone_upload .list li .pic i.icon_2 {
+    background-position: -120px -128px;
+}
+
+.personal_phone_upload .list li .pic i.icon_3 {
+    background-position: -245px -125px;
+}
+
+.personal_phone_upload .list li .pic i.icon_1.wrong {
+    background-position: -2px 0;
+}
+
+.personal_phone_upload .list li .pic i.icon_2.wrong {
+    background-position: -120px 1px;
+}
+
+.personal_phone_upload .list li .pic i.icon_3.wrong {
+    background-position: -241px -0px;
+}
+
+.personal_phone_upload .list li .right {
+    margin-left: 140px !important;
+}
+
+.personal_phone_upload .list li p {
+    margin-top: 5px;
+}
+
+.personal_phone_upload .list li .right .upload {
+    padding: 17px 0 0;
+    position: relative;
+    width: 113px;
+    height: 33px;
+}
+
+.personal_phone_upload .list {
+    margin-top: 20px;
+}
+
+.yg-modal .display-content {
+    padding: 0;
+}
+
+#idPicFrontFaceTip, #idPicBackFace, #idPicWithUserFace {
+    position: absolute;
+    left: 0;
+    top: 85px;
+}
+
+.select-wrapper .select-display {
+    border-color: #e1e1e1 !important;
+}
+
+.personal_content .personal_layout .list2 .right .num strong {
+    font-size: 14px;
+    font-family: "Microsoft YaHei" ! important;
+
+}
+
+/*绑定银行卡*/
+.personal_border {
+    border: 1px solid #eee;
+}
+
+#bankMsgForm {
+    margin: 70px 0 0 230px;
+}
+
+#bankName {
+    width: 247px;
+}
+
+.search-wrapper {
+    left: 0 !important;
+}
+
+/*风险评估*/
+.personal_risk{
+    margin-top:1px;
+}
+.personal_risk .left {
+    background: url(../image/personal/dashed.png) repeat-y right 0;
+    float: left;
+    width: 575px;
+
+}
+
+.personal_risk .right {
+    float: left;
+    width: 575px;
+}
+
+.personal_risk .left dl {
+    padding-right: 30px;
+
+}
+
+.personal_risk .right dl {
+    padding-left: 30px;
+
+}
+
+.personal_risk dl {
+    width: 545px;
+    height: 240px;
+    float: left;
+    padding-bottom: 30px;
+    background: url(../image/product/line.png) repeat-x 0 bottom;
+
+}
+
+.personal_risk dl p, .personal_risk dl .radio {
+    display: block;
+    float: left;
+}
+
+.personal_risk dl p {
+    /*width: 520px;*/
+    margin: 0 0 0 10px;
+    font-size: 14px;
+}
+
+.personal_risk dl.dashed-right {
+    padding-left: 0;
+    padding-right: 30px;
+}
+
+.dashed-right {
+    background: url(../image/personal/dashed.png) repeat-y right 0;
+}
+
+.dashed-bottom {
+    background: url(../image/product/line.png) repeat-x 0 bottom;
+    height: 1px;
+    clear: both;
+}
+
+.personal_risk dl dd {
+    margin-bottom: 10px;
+
+}
+
+.personal_risk dl dt {
+    font-size: 16px;
+    color: #0768ca;
+    margin: 20px 0 30px;
+
+}
+
+.personal_risk dl dd label {
+    color: #bababa;
+}
+
+.personal_risk dl dd label span {
+    color: #1e1e1e;
+    margin-right: 5px;
+
+}
+
+/*.personal_risk dl dd label .radio {*/
+    /*position: relative;*/
+    /*top: -2px;*/
+/*}*/
+
+.personal_ask {
+    padding: 50px 0;
+    width: 86px;
+    margin: 0 auto;
+}
+
+.personal_risk .wrong {
+    color: #f60505;
+}
+
+#nameMsgForm {
+    margin: 60px 0 0 350px;
+    position: relative;
+}
+
+#setMailSuccess .no span {
+    float: left;
+    line-height: 25px;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+#setMailSuccess .icon-warn {
+    top: 57px;
+    left: -20px;
+}
+#setMailSuccess p{
+    font-size: 16px;
+}
+#setMailSuccess p .red{
+  color: #0096f4;
+}
+#setMailSuccess p .big{
+    font-size: 28px;
+}
+#setMailSuccess .yellow{
+    color: #f4473b;
+}
+#setMailSuccess .bg{
+    background: #f7f4f3;
+    clear: both;
+    padding: 20px 40px;
+    width: 400px;
+}
+#returnModify {
+    background: #aa7322;
+    background: -moz-linear-gradient(top, #c2932b, #aa7322 80%);
+    background: -webkit-linear-gradient(top, #c2932b, #aa7322 80%);
+    background: -o-linear-gradient(top, #c2932b, #aa7322 80%);
+    background: -ms-linear-gradient(top, #c2932b, #aa7322 80%);
+    -pie-background:linear-gradient(#c2932b, #aa7322);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2932b', endColorstr='#aa7322',GradientType=0 );
+}
+#returnModify:hover {
+    background: #c2932b;
+    background: -moz-linear-gradient(top, #aa7322, #c2932b 20%);
+    background: -webkit-linear-gradient(top, #aa7322, #c2932b 20%);
+    background: -o-linear-gradient(top, #aa7322, #c2932b 20%);
+    background: -ms-linear-gradient(top, #aa7322, #c2932b 20%);
+    -pie-background:linear-gradient(#aa7322, #c2932b);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aa7322', endColorstr='#c2932b',GradientType=0 );
+}
+.personal_content p.tac.margin-top-25 {
+    background: #fbfbfb;
+    margin: 0;
+    padding: 15px;
+    font-size: 16px;
+}
+.personal_content p.tac a.black{
+    color: #0768ca;
+
+}
+.personal_content .personal_layout .list h6, .rechargemodel h6{
+    width: 115px;
+}
+.personal_content .personal_layout .bt, .personal_content .personal_layout .list .right, .rechargemodel .right, .personal_content .personal_layout .list.bankWrap  .right{
+    margin-left:125px;
+}
+
+.personal_table tr.visited.expanded {
+    background-color: #f9f9f9;
+    border-top: 1px solid #d9d9d9;
+}
+.personal_table tr.visited.first.expanded{
+    border-top: none;
+}
+.personal_table tr.msg-detail {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #d9d9d9;
+    /*font-weight: inherit;*/
+}
+.personal_table tr.msg-detail div {
+    padding: 5px 40px;
+    color: #666;
+    font-weight: normal;
+}
+.personal_table tr.msg-detail .msg-to {
+    padding: 2px 0;
+}
+.personal_table tr.msg-detail .msg-content {
+    text-indent: 30px;
+    padding: 5px 0;
+    line-height: 20px;
+}
+.personal_table tr.msg-detail .msg-from {
+    text-align: right;
+}
+#recard,#unbindcard{
+    clear: both;
+    margin-left: 135px;
+    font-size: 14px;
+}
+.noticeTable td{
+    font-size: 14px;
+}
+.form{
+    width:340px ;
+    position: relative;
+    left:25px;
+    top: 40px;
+}
+#unbindcard a:hover{
+    cursor: pointer;
+}
+.error-tip {
+    color: #f4473b;
+    white-space: nowrap;
+}
+.unbindtip{
+    color:#222222;
+    font-size: 16px;
+}
+#unbinderror i{
+    display: inline-block;
+    width: 22px;
+    height: 18px;
+    background: url(../image/personal/unbindtip.png) no-repeat;
+    top: 5px;
+    position: relative;
+}
+.bank_model,.account_model,.pw_model{
+    margin-left: 145px;
+}
+.bank_model{
+    margin-bottom: 12px;
+    margin-top: 45px;
+}
+.account_model{
+    margin-bottom: 21px;
+}
+.unbindtip_model{
+    margin-left: 85px;
+
+}
+.unbindtip_model span{
+    font-size: 30px;
+    color:#666666;
+}
+.bank_model span,.account_model span,.pw_model span,.pw_model span a{
+    font-size: 16px;
+    color:#848484;
+}
+.pw_model .password{
+    margin-left: 21px;
+    margin-right: 12px;
+    font-size:25px;
+
+}
+.pw_model .password input{
+    width:193px;
+}
+#bankname,#bankaccouont{
+    font-size: 16px;
+    color:#2b2b2b;
+}
+.unbindtipp_model{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: url(../image/personal/unbindtip_model.png) no-repeat;
+    top: 15px;
+    left: 80px;
+    position: relative;
+}
+  .btn_cancel_gray{
+    border-radius: 2px;
+    background-image: -webkit-linear-gradient(top,#aaaaaa,#aaaaaa);
+    background-image: linear-gradient(top,#aaaaaa,#aaaaaa);
+    background-image: -moz-linear-gradient(top,#aaaaaa,#aaaaaa);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#aaaaaa', endColorstr='#aaaaaa',GradientType=0 );
+    background-color: #aaaaaa;
+    padding: 2px 20px;
+    color: white;
+    border-width: 0;
+}

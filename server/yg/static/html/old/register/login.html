@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="//img3.yingu.com/module/??register/login.css,ui/roller/roller.css" >
+    <title>用户登录</title>
+</head>
+<body>
+    <div class="page_wrapper" >
+        <div class="logo" >
+            <a href="" style="margin-left: 15px" >
+                <img src="//img3.yingu.com/image/common/logo.png">
+            </a>
+        </div>
+        <div class="login_form" >
+            <div class="head" ><span class="title" >用户登录</span></div>
+            <form action="" method="post" target="_self" id="loginForm" autocomplete="off" >
+
+                <div class="val" >
+                    <span class="vhead"></span>
+                    <input name="userName" id="userName" type="text" placeholder="请输入用户名/手机号"/>
+                    <i class="x" ></i>
+                    <span class="et" ></span>
+                </div>
+
+                <div class="val" >
+                    <span class="vhead lock"></span>
+                    <input name="password" id="password" type="password"   placeholder="请输入密码"/>
+                    <i class="x" ></i>
+                    <span class="et" ></span>
+                </div>
+                <label class="remember"><input name="remember" id="remember" type="checkbox" />记住用户名</label>
+
+                <div class="errorTip">
+
+                </div>
+
+                <div class="submit" id="submit" >
+                    登录
+                </div>
+            </form>
+            <div class="foot" >
+                <a href="" class="forget">忘记密码</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="" >免费注册</a>
+            </div>
+        </div>
+
+    </div>
+    <div class="page-foot" >
+        <div class="foot-line clearfix" >
+            <span class="com-links" >
+                <a href="" class="first" >联系我们</a>
+                <a href="" >银谷资讯</a>
+                <a href="" >诚聘英才</a>
+                <a href="" >关于我们</a>
+                <a href="" >常见问题</a>
+                <a href="" class="last" >网站地图</a>
+            </span>
+            <span class="com-contact" >客服热线：400-612-5859（银谷财富）400-613-5859（银谷普惠）</span>
+        </div>
+
+        <div class="foot-line" >版权所有 东方银谷（北京）投资管理有限公司  京ICP备13047353号-1</div>
+    </div>
+    <script type="text/javascript" src="//img3.yingu.com/module/??lib/sea.js,lib/lib.js,register/login.js"></script>
+    <script>
+        seajs.config({
+            base: '//img3.yingu.com/module/'
+        });
+        seajs.use('register/login',function(md){
+            md.run();
+        })
+
+        var __globalData = {
+//            errorCode:1
+        }
+    </script>
+</body>
+</html>

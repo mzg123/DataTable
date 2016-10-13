@@ -1,0 +1,250 @@
+/*�ҵ�Ͷ��index*/
+.personal_table td, .personal_table th {
+    padding-left: 15px;
+}
+.dataTables_wrapper .dataTables_filter {
+    display: none;
+}
+.personal_table tbody tr:hover td a:hover{
+    color: #0768ca;
+}
+.personal_table tbody tr td div span.gray{
+    color: #595959;
+}
+
+ .personal_table tbody tr:hover td a, .personal_table tbody tr td a, .personal_table tbody tr:hover td div span.gray{
+    color: #000
+}
+
+table.dataTable thead th {
+    /*font-size: 12px;*/
+    font-weight: normal;
+    color: #000;
+}
+
+table.dataTable thead th, table.dataTable thead td, table.dataTable tbody th, table.dataTable tbody td {
+    padding: 15px 9px;
+}
+
+.manage_top {
+    border-top: 1px solid #0092ed;
+
+}
+
+.manage_list {
+    float: left;
+    background: #f8f8f8;
+    height: 107px;
+    width: 625px;
+    overflow: hidden;
+
+}
+
+.manage_list li {
+    float: left;
+    height: 107px;
+    color: #343434;
+    width: 100%;
+}
+.manage_total{
+    width:100%;
+}
+
+.manage_total li{
+    width:auto;
+}
+
+.manage_list li .list {
+    padding: 15px 20px 0 20px;
+    width: 239px;
+    font-size: 14px;
+}
+.manage_list li .list .big{
+    font-size: 34px;
+}
+.manage_list li+li .list{
+    padding-left: 42px;
+
+}
+.manage_list li .list .arrow{
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #0096f4;
+    position: absolute;
+    right: -5px;
+    top: 50px;
+}
+.manage_list li.bg_red .list {
+    padding-top: 25px;
+
+}
+
+.manage_list li strong {
+    font-weight: normal;
+}
+
+/*.manage_list li p {*/
+    /*padding-left: 3px;*/
+/*}*/
+
+.manage_list li.bg_red {
+    background: #0096f4;
+    color: #fff;
+    width: 107px;
+    position: relative;
+}
+
+.manage_list li.bg_red strong {
+    font-size: 16px;
+    font-family: "Microsoft YaHei";
+    display: block;
+    width:68px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.repay_history_table td a {
+    margin: 3px 0;
+    display: block;
+}
+
+.repay_history_table td a:hover {
+    color: #0096f4;
+    text-decoration: none;
+}
+
+.manage_bt {
+    float: right;
+    text-align: center;
+    width: 185px;
+    height: 110px;
+    background: #f0f0f0;
+
+}
+
+.manage_bt .bt {
+    padding: 42px 0 0 20px
+}
+
+/*�ҵ�Ͷ��*/
+.manage_bt h6 {
+    line-height: 110px;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.manage_list li .my {
+    padding: 20px;
+}
+
+.manage_list li .my strong {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.manage_list li .my {
+    manage_detail: 20px;
+}
+
+.manage_list li .my .item {
+    float: left;
+    margin: 20px 20px 0 0;
+    width: 45%;
+}
+
+.manage_detail {
+    border: 1px solid #eee;
+    border-right: none;
+
+}
+
+.manage_detail ul li {
+    width: 228px;
+    padding: 20px;
+    height: 125px;
+    border-right: 1px solid #eee;
+    float: left;
+}
+
+.manage_detail ul li.all {
+    font-size: 34px;
+}
+
+.manage_detail ul li.name {
+    padding-top: 50px;
+    height: 95px;
+}
+
+.manage_wrap {
+    border: 1px solid #eee;
+
+}
+
+.manage_item li strong {
+    font-weight: normal;
+    width: 150px;
+    display: block;
+    float: left;
+
+}
+
+.manage_item li span {
+    display: block;
+    margin-left: 150px;
+}
+
+.manage_item li h6, .manage_item li p {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.manage_item li h6 {
+    font-size: 16px;
+    background: #faf9f9;
+}
+
+
+/*����ؽ��*/
+.manage_redemption{
+    padding:30px;
+}
+.manage_redemption li{
+    float: left;
+    width: 310px;
+}
+.manage_redemption li strong{
+    font-weight: normal;
+}
+.manage_redemption li+li{
+    padding-top:36px;
+}
+.manage_redemption li+li+li, .manage_redemption li+li+li+li{
+    padding-top:16px;
+}
+.personal_layout.no-border{
+    border: none;
+    margin:100px 0 0 100px;
+}
+
+.wrapper .personal_wrap #pager{
+    float: none;
+}
+#resultTable tbody td .border-dashed{
+    background: url(../image/personal/dashed.png) right 0 repeat-y;
+    min-height: 68px;
+    line-height: 68px;
+}
+#resultTable  tbody td{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+#resultTable  tbody td .name{
+    margin: 5px 0;
+}
+#resultTable  tbody td .item{
+    line-height: normal;
+}

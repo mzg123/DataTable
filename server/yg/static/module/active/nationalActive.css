@@ -1,0 +1,78 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+
+body{
+    background-color: #fffcd1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+   height:2850px ;
+    /*background-color:red;*/
+}
+
+.header{
+    height: 903px;
+    min-width: 1240px;
+    background: url("../image/active/nationalActive/header.png") no-repeat top center;
+}
+ .pc_part1{
+     position: relative;
+     top:-400px;
+     height: 642px;
+     min-width: 1240px;
+     background: url("../image/active/nationalActive/body1.png") no-repeat top center;
+ }
+.pc_part2{
+    height: 594px;
+    min-width: 1240px;
+    background: url("../image/active/nationalActive/body2-1.png") no-repeat top center;
+}
+.pc_part2{
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+}
+.pc_part2 .txt{
+    position: relative;
+    top:485px;
+    text-align: center;
+}
+.safe a,.cfca a{
+    text-decoration: none;
+    font-size: 22px;
+    color:#ffffff;
+}
+.safe{
+    position: relative;
+    left:  -205px;
+}
+.cfca{
+    position: relative;
+    left:  220px;
+}
+.pc_part3{
+    height: 520px;
+    min-width: 1240px;
+    background: url("../image/active/nationalActive/body3-1.png") no-repeat top center;
+}
+.footer{
+    height: 500px;
+    min-width: 1240px;
+    background: url("../image/active/nationalActive/footer1.png") no-repeat top center;
+}
+.pc_body{
+    position: relative;
+    top:-300px;
+}

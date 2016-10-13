@@ -1,0 +1,56 @@
+.ui_clickscroll{
+	overflow: hidden;
+	position: relative;
+}
+
+.ui_clickscroll .ui_clickscroll_content{
+	overflow: hidden;
+	position: relative;
+}
+
+.ui_clickscroll .ui_clickscroll_list .ui_clickscroll_list_item{
+	float: left;
+}
+
+.ui_clickscroll .ui_clickscroll_list .ui_clickscroll_list_item img{
+	display: block;
+}
+
+.ui_clickscroll_button_list{
+	float: right;
+}
+
+.ui_clickscroll_button_list li.ui_clickscroll_button{
+	float: left;
+	margin-left: 25px;
+	width: 21px;
+	height: 21px;
+}
+
+.ui_clickscroll_button_list li.left{
+	background: url(../image/ui/ui_click_scroll_left.png) left top no-repeat;
+}
+
+.ui_clickscroll_button_list li.right{
+	background: url(../image/ui/ui_click_scroll_right.png) left top no-repeat;
+}
+
+.ui_clickscroll_button_list li.invalidLeft{
+	background: url(../image/ui/ui_click_scroll_invalid_left.png) left top no-repeat;
+}
+
+.ui_clickscroll_button_list li.invalidRight{
+	background: url(../image/ui/ui_click_scroll_invalid_right.png) left top no-repeat;
+}
+
+.ui_clickscroll_button_list li.hoverLeft{
+	background: url(../image/ui/ui_click_scroll_hover_left.png) left top no-repeat;
+}
+
+.ui_clickscroll_button_list li.hoverRight{
+	background: url(../image/ui/ui_click_scroll_hover_right.png) left top no-repeat;
+}
+
+.ui_clickscroll_button_list li.selected span{
+	background-color: #fff;
+}

@@ -1,0 +1,694 @@
+body {
+    background: #f5f5f5;
+}
+
+.personal_wrap {
+    background: #fff url(../image/personal/bg.png) repeat-y;
+}
+
+/*left menu*/
+.personal_menu {
+    float: left;
+    width: 141px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.personal_menu dl i {
+    background: url(../image/personal/icon.png) no-repeat 1px -196px;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    right: -6px;
+    top: 17px;
+    display: none;
+
+}
+
+.personal_menu dl dt, .personal_menu dl dd a, .personal_menu dl dt a {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #f1f1f1;
+    padding-left: 24px;
+    position: relative;
+
+}
+
+#moreBankBtn:hover, #chooseOtherBankBtn:hover {
+    cursor: pointer;
+}
+
+.personal_menu dl dt.all a {
+    border-bottom: 0;
+}
+
+.personal_menu dl dd a {
+    background: url(../image/personal/icon.png) no-repeat 35px -145px;
+    padding-left: 45px;
+    display: block;
+}
+
+.personal_menu dl dd a:hover, .personal_menu dl dd.on a {
+    background: none;
+    padding-left: 43px;
+    text-decoration: none;
+}
+
+.personal_menu dl dd:hover,
+.personal_menu dl dd.on, .personal_menu dl dt.all:hover, .personal_menu dl dt.all.on {
+    border-left: 2px solid #0768ca;
+
+}
+
+.personal_menu dl dd.on a {
+    color: #0768ca;
+
+}
+
+.personal_menu dl dt.on, .personal_menu dl dt.all a {
+    font-weight: bold;
+    color: #0768ca;
+
+}
+
+.personal_menu dl dd:hover i,
+.personal_menu dl dd.on i, .personal_menu dl dt.all:hover i, .personal_menu dl dt.all.on i {
+    display: block;
+}
+
+.personal_menu dl dt.all {
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.personal_menu dl dt.all:hover, .personal_menu dl dt.all.on {
+    text-decoration: none;
+    padding-left: 0;
+
+}
+
+.personal_menu dl dt.all a:hover {
+    text-decoration: none;
+
+}
+
+.personal_menu dl dt a {
+    display: block;
+}
+
+/*right content*/
+.personal_content {
+    float: left;
+    width: 1011px;
+    padding: 0 24px 24px;
+    min-height: 500px;
+
+}
+
+.personal_title {
+    position: relative;
+
+}
+
+.personal_title h2 {
+    float: left;
+    font-size: 16px;
+    color: #2b2b2b;
+}
+
+.personal_title p {
+    float: left;
+    margin: 3px 0 0 15px;
+    color: #bababa;
+}
+
+.personal_title .more {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    color: #4682d2;
+
+}
+
+.personal_table {
+    border: 1px solid #e0e0e0;
+    width: 100%;
+
+}
+
+.table-border {
+    border: 1px solid #e0e0e0;
+
+}
+
+.personal_table tbody td {
+    text-align: center;
+    border-right:1px solid #e0e0e0 ;
+    background: #fff;
+    color: #565656;
+}
+
+.personal_table td, .personal_table th {
+    text-align: center;
+    border-right:1px solid #e0e0e0 ;
+    padding: 15px 0 15px 10px;
+}
+.more:hover{
+    cursor: pointer;
+}
+.newuser tbody td {
+    border-right:none;
+}
+.newuser td, .personal_table th {
+    border-right:none;
+}
+.nu_head{
+    background: #fbfbfb;
+    font-size: 14px;
+    color:#939393;
+}
+.newuser_btn_r{
+    margin-right: 10px;
+    float: right;
+    height:31px;
+    line-height:31px;
+    width:80px;
+}
+.personal_table thead {
+    background: #fbfbfb;
+    border: none;
+    /*font-size: 14px;*/
+}
+
+.personal_table tbody tr {
+    border-bottom: 1px dashed #d9d9d9;
+    color: #565656;
+    /*font-size: 14px;*/
+    /*font-weight: bold;*/
+}
+
+.personal_table tbody tr:last-child {
+    border: none;
+}
+
+.personal_table tbody tr:hover {
+    background: #fbfbfb;
+}
+
+.personal_table tbody tr:hover td {
+    color: #000;
+
+}
+
+.personal_table tbody tr:hover td div {
+    color: #000;
+
+}
+
+.personal_table tbody td a {
+    color: #565656;
+}
+
+.personal_table tbody td .font-14 {
+    font-size: 16px;
+}
+
+.personal_table tbody td .gray {
+    font-size: 12px;
+}
+
+.personal_table tbody tr.visited {
+    font-weight: normal;
+}
+
+.personal_table tbody tr td .red, .personal_table tbody tr:hover td .red {
+    color: #f4473b;
+}
+
+.personal_table tbody tr td a.red, .personal_table tbody tr:hover td a.red {
+    color: #0768ca;
+}
+
+.personal_table tbody td a.red:hover {
+    border-bottom: 1px dashed #ccc;
+    text-decoration: none;
+}
+
+.personal_table tbody tr td .green, .personal_table tbody tr:hover td .green {
+    color: #4ead2d;
+}
+
+.personal_table tbody td a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.noticeTable tbody tr {
+    font-weight: bold;
+}
+
+.noticeTable tbody tr td {
+    font-size: 14px;
+}
+
+.personal_table.noticeTable tbody tr:hover div, .personal_table.noticeTable tbody tr:hover a {
+    color: #0768ca;
+}
+
+.personal_table.noticeTable tbody tr.visited:hover div, .personal_table.noticeTable tbody tr.visited:hover a {
+    color: #2b2b2b;
+}
+
+.personal_table.noticeTable tbody tr a[note-id] {
+    cursor: pointer;
+}
+
+.personal_table.noticeTable tbody tr.visited:hover .icon-mail {
+    background-position: 0 -545px;
+}
+
+/*index*/
+.personal_notes {
+    border-bottom: 1px solid #0096f4;
+    text-align: center;
+    height: 34px;
+    line-height: 34px;
+    color: #343434;
+    cursor: pointer;
+
+}
+
+/*personal bread*/
+.personal_kinds {
+    margin-top: 20px;
+}
+
+.personal_kinds h6 {
+    float: left;
+    /*width: 65px;*/
+    /*text-align: right;*/
+    line-height: 25px;
+    margin-right: 10px;
+    font-size: 14px;
+
+}
+
+/*.personal_kinds .right {*/
+/*margin-left: 80px;*/
+/*}*/
+.personal_kinds .right .date {
+    float: left;
+
+}
+
+.personal_kinds .right .choose {
+    float: right;
+
+}
+
+.personal_kinds .choose a {
+    display: block;
+    float: left;
+    width: 80px;
+    text-align: center;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 20px;
+    border-radius: 3px;
+    font-size: 14px;
+
+}
+
+.personal_kinds .choose a.on, .personal_kinds .choose a:hover {
+    color: #fff;
+    background: #009ff5;
+    text-decoration: none;
+}
+
+/*page*/
+.wrapper .personal_wrap #pager, .wrapper .personal_wrap #pager2, .wrapper .personal_wrap #pager3 {
+    /*float: right;*/
+    margin-top: 25px;
+}
+
+.wrapper .personal_wrap #pager .pager i {
+    color: #ccc;
+    margin: 0 5px;
+}
+
+.wrapper .personal_wrap #pager .pager .pager-page {
+    background: white;
+    border: 1px solid #f1f1f1;
+    color: #333;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+}
+
+.wrapper .personal_wrap #pager .pager .pager-page.pager-current {
+    background: #009ff5;
+    color: #FFFFFF;
+    border-color: #009ff5;
+    cursor: default;
+    margin: 0 2px;
+}
+
+/*��ֵ����*/
+.model_title {
+    text-align: center;
+    font-family: "Microsoft YaHei" ! important;
+    color: #111;
+}
+
+/*输入框验证提示*/
+#codeWrongTip, #passwordWrongTip, #passwordWrongTip2, #fullNameTip, #documentsTip, #numberTip, #telNumTip, #bankNameTip, #bankNumTip, #passWordTip, .bankPlace, #bankDepositTip, #phoneNumberTip,
+#codeTip, #telTip, #resetTelTip, #nameTip, #idTip, #telephoneTip, #telephoneTip2, #reasonTip, #mailWrongTip, #cashNumTip, #bankMoneyTip, #chooseMyBankTip,
+#idNumTip, #mailNewTip {
+    position: absolute;
+    left: -8px;
+    top: 30px;
+}
+
+#rechargeBankTip {
+    position: absolute;
+    left: -10px;
+    bottom: -25px;
+}
+
+#reasonTip {
+    bottom: -25px;
+    top: inherit;
+}
+
+.personal_tips {
+    margin: 65px 0;
+    background: #fbfbfb;
+    padding: 30px;
+
+}
+
+.personal_tips h6 {
+    font-size: 16px;
+    color: #111;
+    font-family: "Microsoft YaHei" ! important;;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.personal_tips h6 i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    display: block;;
+    width: 15px;
+    height: 17px;
+    background: url(../image/personal/icon.png) no-repeat 0 -283px;
+}
+
+.personal_tips p {
+    line-height: 28px;
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+.personal_tips p a {
+    color: #0768ca;
+}
+
+.nav-left {
+    float: left;
+    width: 141px;
+    border-top: 1px solid #e6e6e6;
+    position: relative;
+    left: -1px;
+    z-index: 30;
+}
+
+.nav-left dl dt, .nav-left dl dd a, .nav-left dl dt a {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #f1f1f1;
+    padding-left: 24px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav-left dl dt.all a {
+    border-bottom: 0;
+}
+
+.nav-left dl dd a {
+    padding-left: 40px;
+    display: block;
+}
+
+.nav-left dl dd a:hover, .nav-left dl dd.on a {
+    background: none;
+    text-decoration: none;
+}
+
+.nav-left dl dd:hover,
+.nav-left dl dd.on, .nav-left dl dt.all:hover, .nav-left dl dt.all.on {
+    border-left: 2px solid #0768ca;
+}
+
+.nav-left dl dd.on ul li a {
+    color: #666;
+
+}
+
+.nav-left dl dd.on a, .nav-left dl dd ul li.on a {
+    color: #0768ca;
+
+}
+
+.nav-left dl dt.on, .nav-left dl dt.all a {
+    font-weight: bold;
+    color: #0768ca;
+
+}
+
+.nav-left dl dd:hover i,
+.nav-left dl dd.on i, .nav-left dl dt.all:hover i, .nav-left dl dt.all.on i {
+    display: block;
+}
+
+.nav-left dl dt.all {
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.nav-left dl dt.all:hover, .nav-left dl dt.all.on {
+    text-decoration: none;
+    padding-left: 0;
+
+}
+
+.nav-left dl dt.all a:hover {
+    text-decoration: none;
+
+}
+
+.nav-left dl dt a {
+    display: block;
+}
+
+.nav-left dl dd {
+    position: relative;
+    border-left: 2px solid transparent;
+}
+
+.nav-left .sub-nav {
+    display: none;
+    position: absolute;
+    width: 140px;
+    border-top: 1px solid #f1f1f1;
+    border-right: 1px solid #f1f1f1;
+    background: white;
+    box-shadow: 2px 2px 4px #ddd;
+}
+
+.nav-left .sub-nav li {
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #f1f1f1;
+    position: relative;
+}
+
+.nav-left dl dd i.ar {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    border: 3px solid transparent;
+    border-right-width: 0;
+    border-left-color: #0768ca;
+    margin-top: -3px;
+}
+
+.nav-left .sub-nav li:hover a {
+    color: #0768ca;
+    text-decoration: none;
+}
+
+/*提示*/
+.product_tips {
+    margin: 65px 80px;
+    background: #fbfbfb;
+    padding: 20px;
+
+}
+
+.product_tips h6 {
+    font-size: 16px;
+    color: #111;
+    font-family: "Microsoft YaHei" ! important;;
+    margin-bottom: 30px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.product_tips h6 i {
+    position: absolute;
+    left: 0;
+    top: 3px;
+    display: block;
+    width: 15px;
+    height: 17px;
+    background: url(../image/personal/icon.png) no-repeat 0 -283px;
+}
+
+.product_tips p {
+    line-height: 28px;
+    padding-left: 25px;
+    font-size: 14px;
+}
+
+input#idNum, input#idCode {
+    text-transform: uppercase;
+}
+
+/*2016-09-09  pjl*/
+.payment-mode {
+    position: relative;
+    line-height: 63px;
+    text-align: center;
+    width: 174px;
+    height: 63px;
+    border: 1px solid #dadada;
+    display: inline-block;
+    /*line-height: 25px;*/
+    background-color: #f9f9f9;
+    margin: 0  0  0 30px;
+    /*float: left;*/
+    cursor: pointer;
+}
+
+
+.payment-mode input {
+    margin-left: -18px;
+    margin-right: 11px;
+    /*margin: 0 5px;*/
+}
+.payment-mode .kuai-word{
+    margin-left: 6px;
+    width: 24px;
+    height: 15px;
+    /*background: url(../image/personal/kuai-word.png) no-repeat;*/
+}
+.payment-mode .unionpay-word{
+    margin-left: 6px;
+    width: 25px;
+    height: 17px;
+    /*background: url(../image/personal/kuai-word.png) no-repeat;*/
+}
+.payment-mode i.recommend-word{
+    position: absolute;
+    display: inline-block;
+    width: 39px;
+    height: 37px;
+    background: url(../image/personal/recommend-word.png) no-repeat;
+}
+
+.payment-mode i.lower-triangle{
+    top: 100%;
+    left: 50%;
+    width: 9px;
+    height: 5px;
+    display: none;
+    position: absolute;
+    background:url(../image/personal/lower-triangle.png) no-repeat;
+}
+.payment-mode-checked,.payment-mode:hover{
+    background: #e9fbff;
+    border: 1px solid #00b3f7;
+}
+.payment-mode-checked i.lower-triangle,.payment-mode:hover  i.lower-triangle{
+    display: block;
+}
+.payment-mode p {
+    text-indent: 6px;
+}
+
+.payment-mode span.warning {
+    color: red;
+    margin-left: 5px;
+}
+.kuai-word-title{
+    position: relative;
+    float: right;
+    width: 470px;
+    height: 63px;
+    /*opacity:0;*/
+    /*filter:alpha(opacity=0);*/
+    /*background: red;*/
+}
+.kuai-word-title .line-word{
+    float: left;
+    display: inline-block;
+    width: 5px;
+    height: 63px;
+    /*margin: -26px 0  0 30px;*/
+    background: url("../image/personal/line.png") no-repeat;
+}
+.kuai-word-title .i-icon{
+    margin: 24px 16px 0 16px;
+    padding-top: 32px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background:url("../image/personal/i-icon.png") no-repeat;
+}
+.kuai-word-title  p{
+    position: absolute;
+    top: 33%;
+    display: inline-block;
+    font-size: 14px;
+    width: 410px\9;
+}
+.current{
+    opacity:1;
+    filter:alpha(opacity=1);
+}
+.payment-mode-gray {
+    background-color: #e4e4e4;
+    z-index: 500;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.personal_content .personal_layout .list .detail .more{
+    background-color: #ffffff;
+    color: #3b96f4;
+}
+

@@ -1,0 +1,109 @@
+.product_left{
+    position: relative;
+}
+
+.product_left h6{
+    position: absolute;
+    right: 20px;
+    top:10px;
+    font-size: 14px;
+
+}
+.product_left h6 a{
+    color: #bfbfbf;
+    font-size: 14px;
+
+}
+.product_title i{
+    display: inline-block;
+    /*width: 18px;*/
+    height: 18px;
+    padding: 0 3px;
+    line-height: 18px;
+    text-align: center;
+    background: #f4473b;
+    color: #fff;
+    border-radius: 5px;
+    margin-left:10px;
+
+}
+.product_left .product_list {
+    padding-bottom: 0;
+
+}
+.product_left .product_list li{
+    padding: 37px 0 25px 0;
+
+}
+.product_left .product_list li strong{
+    margin-bottom: 15px;
+}
+.product_left{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.product_left .product_list li.first{
+    background: url("../image/transfer/line.png") repeat-y right 0;
+    width: 155px!important;
+    padding-top: 10px;
+
+}
+.product_left .product_list li.first strong{
+    margin-bottom: 0;
+    font-size: 22px;
+}
+.product_left .product_list li{
+    width: 100px!important;
+}
+.product_left .product_list li+li{
+    padding-left: 50px;
+}
+.product_right{
+    height: 300px;
+}
+#productFinish .product_right{
+    height: 252px;
+}
+#productFinish .product_full h4{
+    color: #f4473b;
+}
+#productFinish .product_list li.first{
+    background: none;
+    width:250px!important;
+}
+#productFinish .product_list li{
+    width:250px!important;
+}
+#productFinish  .product_list li+li{
+    padding-left: 0;
+}
+
+@media \0screen{
+    /*兼容ie8 input*/
+    #amountValueForm #amountValue.input-box{
+        padding: 0px 3px !important;
+        height: 36px !important;
+        line-height: 36px !important;
+        width:228px;
+    }
+}
+.product_all .icon_new{
+    float: left;
+}
+.product_list li .item strong  #transferValue{
+    font-size: 32px;
+}
+.product_list li p.transferValue{
+    position: relative;
+    top:5px;
+}
+.product_right .product_btn{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.product .tabs{
+    width: 500px;
+}
+.product .tabs li{
+    width: 33.33%;
+}

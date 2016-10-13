@@ -1,0 +1,53 @@
+
+.step-title{
+    line-height: 20px;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
+}
+.content-title{
+    margin-bottom: 30px;
+
+}
+
+.step-pic{
+    /*margin-bottom: 10px;*/
+    background: #eee;
+    border-radius: 3px;
+    /*border:1px solid #e3e3e3;*/
+    max-width:1010px;
+    display: block;
+    margin: 10px auto;
+    /*min-width: 60px;*/
+}
+
+.tabs{
+    width: 90%;
+}
+
+.tabs li{
+    width: 12.5%;
+}
+/*操作演示*/
+#operation_tabs li{
+    width: 150px;
+}
+#operation_tabs li + li a{
+    border-right: 0;
+
+}
+#operation_tabs{
+    border-right: 1px solid #e6e6e6;
+    width:900px;
+}
+.operation_title{
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+    margin:20px 0;
+}
+.operation_title p{
+    font-size: 12px;
+    margin-top:10px;
+    font-weight: normal;
+}

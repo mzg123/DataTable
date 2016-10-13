@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="Expires" content="0">
+    <meta name="title" content="我的账户-账户管理-风险评估"/>
+    <meta name="keywords" content="我的账户-账户管理-风险评估"/>
+    <meta name="description" content="我的账户-账户管理-风险评估"/>
+    <title>我的账户-账户管理-风险评估</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://img3.yingu.com/module/??common/base.css,head/head.css,foot/foot.css"/>
+    <script type="text/javascript"
+            src="http://img3.yingu.com/module/??lib/sea.js,lib/seajs-combo.js,lib/lib.js,common/base.js,head/head.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            base: 'http://img3.yingu.com/module/'
+        });
+        seajs.use("head/head");
+    </script>
+
+</head>
+<body>
+<link rel="stylesheet" type="text/css"
+      href="http://img3.yingu.com/module/??personal/personal.css,personal/account.css"/>
+<div class="head">
+    <div class="toolbar ">
+        <div class="toolbar_content clearfix">
+            <!--<a class="home" href="" class=""><span class="home_icon"></span>首页</a>-->
+            <div class="tel"><i class="icon-tel"></i><span class="red">400-612-5859</span>（银谷财富）&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="red">400-613-5859</span>（银谷普惠）
+            </div>
+            <div class="head_right clearfix">
+                <a class="login" href="">登录</a>
+                <span class="spliter_short"></span>
+                <a class="register margin-right-10" href="">注册</a>
+                <a class="favorite" href="">银谷门户网站</a>
+                <a class="favorite" href="">积分商城</a>
+                <a class="favorite" href="">帮助中心</a>
+                <a class="favorite" href="">关于我们</a>
+
+                <!--<a class="phone" href=""><span class="phone_icon"></span>手机金融</a>-->
+                <a class="message" href="">消息<span class="message_num red">(1)</span></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_content clearfix">
+            <div class="logo_slogan clearfix">
+                <div class="logo"></div>
+                <div class="slogan"></div>
+            </div>
+
+
+            <div class="personal"><!-- personal_showlist -->
+                <div class="avatar_link clearfix">
+                    <a id="personalist_btn" href="" class="link"><img class="avatar"
+                                                                      src="http://img3.yingu.com/image/common/avatar.png"><span
+                            class="word">我的账户</span><span class="arrow"></span></a>
+                </div>
+                <div id="list_wrapper" class="list_wrapper">
+                    <div class="placeholder"></div>
+                    <ul>
+                        <li><a href="">充值</a></li>
+                        <li><a href="">提现</a></li>
+                        <li><a href="">交易记录</a></li>
+                        <li><a href="">我的资产</a></li>
+                        <li><a href="">基本信息</a></li>
+                        <li><a href="">账户安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spliter_long"></div>
+            <ul class="nav_list clearfix">
+                <li class="selected"><a href="">首页</a><span class="indicator"></span></li>
+                <li class="more">                     <a href="">财富管理</a>                     <i class="arrow"></i>                     <dl class="hover">                        <dd><a href="#">P2P债权</a></dd><dd><a href="../plan/plan_index.html">优计划</a></dd>                      </dl>                 </li>
+                <li><a href="">债权转让</a><span class="indicator"></span></li>
+                <li class="last more">                     <a href="">银谷课堂</a><i class="arrow"></i>                     <dl class="hover">                         <dd><a href="#">专家建议</a></dd>                         <dd><a href="#">调研报告</a></dd>                      </dl>                 </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper clearfix">
+    <div class="route">
+        <dl class="clearfix">
+            <dt>您的位置：</dt>
+            <dd><a href="#">首页<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="overview.html">我的账户<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="#">账户管理<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="safe.html">账户安全<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a>风险评估</a></dd>
+        </dl>
+    </div>
+    <div class="personal_wrap clearfix border col-wrap">
+        <div class="personal_content">
+            <div class="title"><span>风险承受能力评估</span></div>
+            <div class="line"></div>
+            <div class="clearfix personal_risk">
+                <form method="" action="" id="safeRiskForm">
+                    <div class="left">
+                        <dl id="age">
+                            <dt>1、您目前所处的年龄阶段为</dt>
+                            <dd><label class="clearfix"><input type="radio" name="age" value="1" class="radio"/>
+
+                                <p><span>A</span>55岁以上</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="age" value="2" class="radio"/>
+
+                                <p><span>B</span>40-55岁</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="age" value="3" class="radio"/>
+
+                                <p><span>C</span>30-40岁</p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="age" value="4" class="radio"/>
+
+                                <p><span>D</span>30岁以下</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="ageTip"></div>
+                            </dd>
+
+                        </dl>
+                        <dl id="experience">
+                            <dt>3、以下哪项最能说明您的投资经验？</dt>
+                            <dd><label class="clearfix"><input type="radio" name="experience" value="1" class="radio"/>
+
+                                <p><span>A</span>除存款、国债外，我几乎不投资其他金融产品</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="experience" value="2" class="radio"/>
+
+                                <p><span>B</span>大部分投资于存款、国债等，较少投资于股票、基金等风险产品</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="experience" value="3" class="radio"/>
+
+                                <p><span>C</span>资产均衡地分布于存款、国债、银行理财产品、信托产品、股票、基金等</p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="experience" value="4" class="radio"/>
+
+                                <p><span>D</span>大部分投资于股票、基金、外汇等高风险产品，较少投资于存款、国债</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="experienceTip"></div>
+                            </dd>
+
+                        </dl>
+                        <dl id="year">
+                            <dt>5、您一般投资的期限为</dt>
+                            <dd><label class="clearfix"><input type="radio" name="year" value="1" class="radio"/>
+
+                                <p><span>A</span>1年以内</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="year" value="2" class="radio"/>
+
+                                <p><span>B</span>41-3年（包括3年）</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="year" value="3" class="radio"/>
+
+                                <p><span>C</span>3-5年（包括5年）</p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="year" value="4" class="radio"/>
+
+                                <p><span>D</span>5年以上</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="yearTip"></div>
+                            </dd>
+
+                        </dl>
+                        <dl id="important">
+                            <dt>7、对您而言，保本比高收益更重要</dt>
+                            <dd><label class="clearfix"><input type="radio" name="important" value="1" class="radio"/>
+
+                                <p><span>A</span>非常不同意</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="important" value="2" class="radio"/>
+
+                                <p><span>B</span>不同意</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="important" value="3" class="radio"/>
+
+                                <p><span>C</span>无所谓 </p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="important" value="4" class="radio"/>
+
+                                <p><span>D</span>同意</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="importantTip"></div>
+                            </dd>
+
+                        </dl>
+
+                        <dl id="attitude">
+                            <dt>9、以下哪项描述最符合您的投资态度？</dt>
+                            <dd><label class="clearfix"><input type="radio" name="attitude" value="1" class="radio"/>
+
+                                <p><span>A</span>厌恶风险，不希望本金损失，希望获得稳定回报</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="attitude" value="2" class="radio"/>
+
+                                <p><span>B</span>保守投资，不希望本金损失，愿意承担一定幅度的收益波动</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="attitude" value="3" class="radio"/>
+
+                                <p><span>C</span>寻求资金的较高收益和成长性，愿意为此承担有限本金损失</p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="attitude" value="4" class="radio"/>
+
+                                <p><span>D</span>希望赚取高回报，愿意为此承担较大本金损失</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="attitudeTip"></div>
+                            </dd>
+
+                        </dl>
+                        <dl id="how">
+                            <dt>11、如果你突然有20000元可用于投资，你会？</dt>
+                            <dd><label class="clearfix"><input type="radio" name="how" value="1" class="radio"/>
+
+                                <p><span>A</span>将它存入银行户口、货币市场户口、存款证或定期存款</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="how" value="2" class="radio"/>
+
+                                <p><span>B</span>投资在一些比较安全及高素质的债券</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="how" value="3" class="radio"/>
+
+                                <p><span>C</span>投资到股票或股票基金 </p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="how" value="4" class="radio"/>
+
+                                <p><span>D</span>投资到外汇或私募股权等高风险产品</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="howTip"></div>
+                            </dd>
+
+                        </dl>
+
+
+                    </div>
+                    <div class="right">
+                        <dl id="money">
+                            <dt>2、您的家庭总资产净值为（折合人民币）？（不包括自用住宅和私营企业等实业投资，包括储蓄、保险、金融投资，并需扣除未结清贷款、信用卡账单等债务）</dt>
+                            <dd><label class="clearfix"><input type="radio" name="money" value="1" class="radio"/>
+
+                                <p><span>A</span>15万元以下</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="money" value="2" class="radio"/>
+
+                                <p><span>B</span>15万元（不含）-50万元（含）</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="money" value="3" class="radio"/>
+
+                                <p><span>C</span>50万元（不含）-100万元（含）</p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="money" value="4" class="radio"/>
+
+                                <p><span>D</span>100万元（不含）-1000万元（含）</p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="money" value="5" class="radio"/>
+
+                                <p><span>E</span>1000万元（不含）以上</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="moneyTip"></div>
+                            </dd>
+
+                        </dl>
+                        <dl id="objective">
+                            <dt>4、您的投资目的是什么</dt>
+                            <dd><label class="clearfix"><input type="radio" name="objective" value="1" class="radio"/>
+
+                                <p><span>A</span>超过通货膨胀就好（每年5%左右）</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="objective" value="2" class="radio"/>
+
+                                <p><span>B</span>获取较稳定收益（每年10%左右）</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="objective" value="3" class="radio"/>
+
+                                <p><span>C</span>获取较高收益（每年20%左右）</p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="objective" value="4" class="radio"/>
+
+                                <p><span>D</span>博取高收益（每年30% 以上）</p></label>
+                            </dd>
+
+                            <dd>
+                                <div class="wrong" id="objectiveTip"></div>
+                            </dd>
+
+                        </dl>
+                        <dl id="choose">
+                            <dt>6、某组合/基金未来3年里平均收益、最好和最坏的收益情况如下，您会选择哪种</dt>
+                            <dd><label class="clearfix"><input type="radio" name="choose" value="1" class="radio"/>
+
+                                <p><span>A</span>平均年收益率为2%，最好情况3%，最坏情况1%</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="choose" value="2" class="radio"/>
+
+                                <p><span>B</span>平均年收益率为6%，最好情况13%，最坏情况-2%</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="choose" value="3" class="radio"/>
+
+                                <p><span>C</span>平均年收益率为8%，最好情况53%，最坏情况-35%</p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="choose" value="4" class="radio"/>
+
+                                <p><span>D</span>平均年收益率为10%，最好情况65%，最坏情况-45%</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="chooseTip"></div>
+                            </dd>
+
+                        </dl>
+                        <dl id="high">
+                            <dt>8、您曾投资过的风险最高的产品是</dt>
+                            <dd><label class="clearfix"><input type="radio" name="high" value="1" class="radio"/>
+
+                                <p><span>A</span>储蓄、银行理财产品、货币基金等风险极小的现金管理工具 </p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="high" value="2" class="radio"/>
+
+                                <p><span>B</span>债券或债券类基金、固定收益信托等 </p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="high" value="3" class="radio"/>
+
+                                <p><span>C</span>股票或股票型基金 </p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="high" value="4" class="radio"/>
+
+                                <p><span>D</span>期货或期货类基金、PE、房地产基金、艺术品基金等另类投资产品</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="highTip"></div>
+                            </dd>
+
+                        </dl>
+                        <dl id="risk">
+                            <dt>10、假设您预期投资期限为3-5年，在您投资60天以后，投资组合中的某类资产价格下跌了20%。在假设其他情况不变的情况下，您将选择什么？</dt>
+                            <dd><label class="clearfix"><input type="radio" name="risk" value="1" class="radio"/>
+
+                                <p><span>A</span>为避免更大的损失，把它抛掉 </p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="risk" value="2" class="radio"/>
+
+                                <p><span>B</span>适度卖出部分资产 </p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="risk" value="3" class="radio"/>
+
+                                <p><span>C</span>什么也不做，继续观望 </p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="risk" value="4" class="radio"/>
+
+                                <p><span>D</span>再买入</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="riskTip"></div>
+                            </dd>
+
+                        </dl>
+                        <dl id="temptation">
+                            <dt>
+                                12、你的好朋友和邻居连同一位知名的地质学家组成一个探索金矿的研究小组，一旦探索成功，回报可高达50至100倍；但如果失败，你将血本无归。你的朋友估计这项计划的成功率约为20%。假设你有足够的资金，你是否会投资？
+                            </dt>
+                            <dd><label class="clearfix"><input type="radio" name="temptation" value="1" class="radio"/>
+
+                                <p><span>A</span>不会</p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="temptation" value="2" class="radio"/>
+
+                                <p><span>B</span>会，少量参与 </p></label></dd>
+                            <dd><label class="clearfix"><input type="radio" name="temptation" value="3" class="radio"/>
+
+                                <p><span>C</span>会，将手头的闲钱都投入</p></label>
+                            </dd>
+                            <dd><label class="clearfix"><input type="radio" name="temptation" value="4" class="radio"/>
+
+                                <p><span>D</span>会，尽量筹集资金全额投入</p></label>
+                            </dd>
+                            <dd>
+                                <div class="wrong" id="temptationTip"></div>
+                            </dd>
+
+                        </dl>
+
+
+                    </div>
+                </form>
+
+
+            </div>
+            <div class="personal_ask clear"><a class="bt_middle_red" id="btnAsk">提交问卷</a></div>
+        </div>
+
+    </div>
+
+</div>
+<script type="text/javascript">
+    seajs.use("personal/safe-risk", function (app) {
+        app.run();
+    })
+</script>
+<div class="foot">
+    <div class="foot_content clearfix">
+        <div class="contact_links">
+            <div class="contact_links_content clearfix">
+                <div class="left clearfix">
+                    <dl class="clearfix">
+                        <dt>帮助中心</dt>
+                        <dd><a href="">注册认证</a></dd>
+                        <dd><a href="">出借流程</a></dd>
+                        <dd><a href="">债权转让</a></dd>
+                        <dd><a href="">账户安全</a></dd>
+                        <dd><a href="">资费说明</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>关于我们</dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                        <dd><a href="">社会责任</a></dd>
+                        <dd><a href="">法律法规</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>东方银谷旗下业务</dt>
+                        <dd><a href="">银谷门户网站</a></dd>
+                        <dd><a href="">银谷财富</a></dd>
+                        <dd><a href="">银谷普惠</a></dd>
+                        <dd><a href="">银谷普诚</a></dd>
+                        <dd><a href="">银谷积分商城</a></dd>
+
+                    </dl>
+
+                    <div class="weixin  weixin-2"></div>
+                    <div class="weixin weixin-1"></div>
+
+                </div>
+                <div class="right">
+
+                    <ul class="address">
+                        <li class="clearfix"><p>人工服务时间 8:00～22:00</p></li>
+                        <li class="clearfix">
+                            <span class="phone"></span>
+                            <span class="font-16 white">客服服务热线：</span>
+
+                            <p><span class="font-16 white">400-612-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷财富）</span></p>
+
+                            <p><span class="font-16 white">400-613-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷普惠)</span></p>
+                        </li>
+                        <li class="clearfix"><p>24小时在线客服</p></li>
+                        <li class="clearfix">
+                            <span class="location"></span>
+
+                            <p class="clearfix location_title"><span class="white office">总部地址：</span>
+                                <span class="location_word white">北京市朝阳区东大桥路8号尚都国际中心A座2608-2609室</span></p>
+                        </li>
+                        <li class="clearfix margin-top-20"><p>东方银谷（北京）投资管理有限公司京ICP备14022292号</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

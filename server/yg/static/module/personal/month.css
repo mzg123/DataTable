@@ -1,0 +1,352 @@
+.creditors .manage_total{
+    width: 560px;
+    height: 140px;
+    float: left;
+    margin:80px 0 0 20px;
+}
+.creditors .manage_total li{
+    float: left;
+    width: 50%;
+
+}
+.creditors_set .manage_total{
+    height: auto;
+    padding-bottom: 20px;
+}
+.creditors_set .manage_total li{
+    width:100%;
+    height: auto;
+}
+.creditors_set .manage_list li .my .item{
+    width: 200px;
+}
+.creditors_set .manage_list li .my .item span{
+    color: #999;
+    font-size: 14px;
+}
+.creditors_set .manage_list li .my{
+    position: relative;
+
+}
+.creditors_set .manage_list li .my .btn_red{
+    position: absolute;
+    right:138px;
+    top:50px;
+
+}
+.creditors_set .manage_list li .my .icon_back,
+.creditors_set .manage_list li .my .icon_compensatory,
+.creditors_set .manage_list li .my .icon_overdue,
+.creditors_set .manage_list li .my .icon_transfer,
+.creditors_set .manage_list li .my .icon_hold,
+.creditors_set .manage_list li .my .icon_exited,
+.creditors_set .manage_list li .my .icon_out{
+    display: block;
+    width: 140px;
+    height: 100px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+.creditors_set .manage_list li .my .icon_back{
+    background: url(../image/personal/icon_back.png) no-repeat 0 bottom;
+}
+.creditors_set .manage_list li .my .icon_compensatory{
+    background: url(../image/personal/icon_compensatory.png) no-repeat 0 bottom;
+}
+.creditors_set .manage_list li .my .icon_overdue{
+    background: url(../image/personal/icon_overdue.png) no-repeat 0 bottom;
+}
+.creditors_set .manage_list li .my .icon_transfer{
+    background: url(../image/personal/icon_transfer.png) no-repeat 0 bottom;
+}
+.creditors_set .manage_list li .my .icon_hold{
+    background: url(../image/personal/icon_hold.png) no-repeat 0 bottom;
+}
+.creditors_set .manage_list li .my .icon_exited{
+    background: url(../image/personal/icon_exited.png) no-repeat 0 bottom;
+}
+.creditors_set .manage_list li .my .icon_out{
+    background: url(../image/personal/icon_out.png) no-repeat 0 bottom;
+}
+.manage_list li.bg_red strong{
+    width: 80px;
+}
+.manage_list li.bg_red{
+    width: 120px;
+    background: #0096f4;
+}
+.manage_list li .list{
+    /*width: 190px;*/
+    font-size: 14px;
+    color: #848484;
+}
+.manage_list li .list .big{
+    font-size: 34px;
+}
+.manage_list li .my .item{
+    width: 185px;
+}
+.creditors_chart{
+    float: right;
+    width: 430px;
+    height: 220px;
+}
+.manage_list li .list {
+    padding: 15px 20px 0 20px;
+    width: 190px;
+    font-size: 14px;
+}
+.creditors_total{
+
+    width:470px;
+    float: left;
+}
+.creditors_total.float-right{
+    float: right;
+}
+
+.manage_list_collecting li .list{
+    width: auto;
+    padding: 20px 0 0 20px;
+}
+/*.creditors_total h4{*/
+    /*background: #f4f4f4;*/
+    /*height: 50px;*/
+    /*line-height: 50px;*/
+    /*padding-left: 20px;*/
+    /*font-size:16px;*/
+    /*color: #000;*/
+/*}*/
+.creditors_total ul li{
+    padding: 30px 0 0 40px;
+    color: #848484;
+    font-size: 14px;
+
+}
+.creditors_total ul li i{
+    margin-left: 20px;
+    color: #333;
+}
+.creditors_see{
+    padding:20px 40px 40px 0;
+}
+.creditors_see a{
+    float: right;
+    display: block;
+    color: #0768ca;
+
+}
+
+.manage_total li .tips{
+    background:#fed18e;
+    padding: 0 10px;
+    height: 18px;
+    line-height: 18px;
+    margin-left:30px;
+    color: #5d3800;
+    position: relative;
+    display: inline-block;
+}
+.manage_total li .tips i{
+    width:0;
+    height:0;
+    border-top:9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 9px solid #fed18e;
+    position: absolute;
+    right:-9px;
+}
+.personal_table tbody tr:hover td a.bt_small_red, .personal_table tbody tr td a.bt_small_red:hover, .personal_table tbody td a.bt_small_red{
+    color: #fff;
+    width: 65px;
+    float: none;
+}
+.personal_table tbody tr td .see{
+    display: inline-block;
+    /*margin:5px 0 0 10px;*/
+}
+
+#resultTable tbody td{
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+.creditors-back .manage_list{
+    float: none;
+    background: #fff;
+    border:1px solid #e6e6e6;
+    /*width: 910px;*/
+    /*padding-left: 10px;*/
+}
+.manage_detail ul li {
+    width: 190px;
+    padding: 20px;
+    float: left;
+    font-size: 14px;
+}
+.creditors-back  .tabs{
+    width: auto;
+    float: right;
+    position: relative;
+    right: -1px;
+    border-right/*\**/:1px solid #eee \9;
+
+}
+
+.creditors-back .tabs li{
+    width: 170px;
+    float: left;
+    text-align: center;
+    border-left: 1px solid #e6e6e6;
+    border-top: 1px solid #e6e6e6;
+    height: 50px;
+
+
+}
+
+.creditors-back .tabs li:nth-last-child(1){
+    border-right:1px solid #e6e6e6;
+
+}
+.creditors-back .tabs li + li a{
+    border-right:0;
+}
+.creditors-back  .tabs li a{
+    border-left:0;
+
+}
+.creditors-back .tabs li.hover{
+    border-top: 2px solid #0098f4
+
+}
+
+.product_name li{
+    width: 100%;
+    position: relative;
+}
+.product_name li #amountTip, .product_name li #amountTip2{
+    position:absolute;
+    top:34px;
+    left:280px;
+}
+#viewTemplate, #viewTemplate2 {
+    float: none;
+    color: #0768ca;
+    cursor: pointer;
+}
+#agree{
+    position: relative;
+    top:0px;
+}
+.product_name li .amount{
+    width: 100px;
+    height: 30px;
+    display: inline-block;
+}
+.product_tips{
+    margin-left:200px;
+    color: #0e0e0e;
+}
+.product_msg .left{
+    width: 190px;
+}
+.product_msg_detail{
+    padding-left: 20px;
+}
+.product_msg .product_pay{
+    padding-left: 120px;
+}
+.creditors_title{
+    color: #0768ca;
+    font-size: 16px;
+    float: left;
+    padding: 10px 0 0 20px;
+
+}
+.product_msg .product_btn{
+    margin-left: 322px;
+}
+.product_msg .product_name{
+    padding-left: 100px;
+}
+.product_msg_detail .product_name li{
+    padding-left: 200px;
+    clear: both;
+    width: auto;
+}
+.product_msg .product_name li span{
+    color: #848484;
+}
+.product_msg .product_pay li{
+    width: 1010px;
+}
+.product_msg .product_name li.bg{
+    margin-left: 37px;
+    padding-left: 177px;
+    width: 750px;
+}
+.product_msg .product_pay li .right .num a{
+    font-size: 14px;
+}
+/*.product_msg .product_name li.bg{*/
+    /*padding-bottom: 25px;*/
+/*}*/
+.product_msg .product_name li .gray{
+    color: #a7a7a7;
+    padding-left: 20px;
+    font-size: 12px;
+}
+.product_msg .product_name li .gray.forget{
+    color: #0768ca!important;
+}
+.product_msg .product_name li .red{
+    color: #f4473b;
+
+}
+.product_msg .product_name li #amount{
+    font-size: 28px;
+}
+.manage_item li p a:hover, .manage_list li .my .num:hover, .manage_item dl dd a:hover{
+    color: #0768ca;
+    text-decoration: none;
+}
+.creditors_total_layout{
+    clear: both;
+
+}
+/*.manage_item dl dd a{*/
+    /*color: #999;*/
+/*}*/
+.creditors_table td{
+    font-size: 12px;
+    padding:5px  10px ;
+}
+.creditors-back .manage_list_collecting{
+    width: 1010px;
+    padding-left: 0;
+
+}
+.creditors-back .tabs.tabs_two{
+    width: 342px;
+}
+/*.processTab_content{*/
+    /*display: none;*/
+/*}*/
+#processTab_tabs{
+    width: 500px;
+    margin: 0 auto;
+    float: none;
+
+
+}
+.creditors_tabs{
+    margin: 20px 0;
+    background: #faf9f9;
+    border-bottom: 1px solid #e6e6e6;
+}
+.creditors_tabs .tabs li.hover a{
+    line-height: 47px!important;
+}
+.creditors-back .tabs#processTab_tabs li{
+    width: 165px;
+}

@@ -1,0 +1,70 @@
+.pager{
+	margin:0 auto;
+}
+
+
+.pager i{
+	width:12px;
+	float:left;
+	/*color: #FFFFFF;*/
+	text-align: center;
+
+	color: #ccc;
+	margin: 0 5px;
+}
+
+.pager .pager-page{
+	/*background: #312d2b;*/
+	/*border: 1px solid #534d4a;*/
+	/*color: #FFFFFF;*/
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	margin: 0 1px;
+	min-width: 12px;
+	padding: 0 4px;
+	text-align: center;
+	white-space: nowrap;
+	cursor: pointer;
+
+	background: white;
+	border: 1px solid #f1f1f1;
+	color: #333;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+.pager  .pager-previous{
+	display:none;
+	padding-left:10px;
+	padding-right:10px;
+	*line-height:24px;
+	line-height:25px\0;
+	_line-height:20px;
+	_height: 16px;
+	_padding-top: 2px;
+	_padding-bottom: 0;
+}
+
+.pager  .pager-next{
+	padding-right:10px;
+	padding-left:10px;
+	*line-height:24px;
+	line-height:25px\0;
+	_line-height:20px;
+	_height: 16px;
+	_padding-top: 2px;
+	_padding-bottom: 0;
+}
+
+.pager .pager-current{
+    /*background:#70280e;*/
+    color: #FFFFFF;
+    /*border-color: #f18919;*/
+    cursor: default;
+
+	background: #0096f4;
+	border-color: #0096f4;
+	margin: 0 2px;
+}

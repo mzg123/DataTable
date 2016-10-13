@@ -1,0 +1,341 @@
+
+.product_title strong{
+    font-size: 20px;
+}
+.product_progress{
+    display: inline-block;
+}
+.clock_full{
+    top:40px;
+    position: relative;
+    font-size: 16px;
+}
+.product_title span{
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.product_title div span{
+    margin-left: 1px;
+}
+.product_title .right{
+    float:right;
+    font-size: 16px;
+}
+.product{
+    margin-top: 30px;
+}
+.product .tabs{
+    width: 500px;
+}
+.product .tabs li{
+    width: 33.33%;
+}
+.product_plan{
+    font-size: 14px;
+    padding-bottom: 50px;
+
+}
+
+.product_plan li{
+    line-height: 25px;
+    padding: 15px 60px 15px 0;
+
+}
+.product_plan li span{
+    width: 160px;
+    float: left;
+    text-align: right;
+    color: #848484;
+}
+.product_plan li p{
+    line-height: 25px;
+    margin-left: 185px;
+}
+.product_plan li.bg{
+    background: #faf9f9;
+
+}
+#viewTemplate{
+    float: none;
+
+}
+.about_detail {
+    background: url(../image/plan/bg.png) repeat-y 0;
+    margin:20px 0 50px;
+}
+
+.about_detail .left {
+    float: left;
+    width: 576px;
+
+}
+.about_detail .right {
+    width: 576px;
+    float: left;
+
+}
+.about_detail .left, .about_detail .right {
+    font-size: 16px;
+    color: #666;
+
+}
+.about_detail .left{
+    text-align: right;
+
+}
+.about_detail .right{
+    text-align: left;
+
+}
+.about_detail .list li {
+    position: relative;
+    width: 485px;
+
+}
+
+.about_detail .left .list li {
+    padding-right: 94px;
+    margin-top: 50px;
+}
+
+.about_detail .right .list li {
+    padding-left: 157px;
+}
+
+.about_detail .list li p {
+    line-height: 28px;
+    padding-top: 10px;
+}
+
+.about_detail .list li h6 {
+    width: 105px;
+    height: 105px;
+    background: #0096f4;
+    border-radius: 100%;
+    margin-right: 69px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.about_detail .left .list li h6 {
+    float: right;
+}
+.about_detail .right .list li h6 {
+    float: left;
+}
+.about_detail .list li h6 span {
+    color: #222;
+    position: absolute;
+    left: 7px;
+    top:7px;
+    display:inline-block;
+    width: 91px;
+    height: 91px;
+    background: #fff;
+    border-radius: 100%;
+    font-size: 14px;
+    text-align: center;
+
+}
+.about_detail .list li h6 span i{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    text-align: center;
+    margin: -20px 0 0 -45px;
+    color: #848484;
+    display: inline-block;
+    width: 91px;
+
+}
+.about_detail .list li h6 span i cite{
+    color: #000;
+    font-size: 12px;
+}
+.about_detail .list li .line {
+    width: 139px;
+    height: 4px;
+    top: 53px;
+    position: absolute;
+    background: url(../image/plan/line.png) no-repeat;
+
+}
+
+.about_detail .left .list li .line {
+    right: 24px;
+}
+
+.about_detail .right .list li .line {
+    left: 18px;
+
+}
+.about_detail .left .list li.hr{
+    height: 70px;
+}
+.about_detail .left .list li.hr2{
+    height: 300px;
+}
+.about_detail .list li .round {
+    width: 23px;
+    height: 23px;
+    background: #0096f4;
+    border-radius: 100%;
+    box-shadow: 0 0 3px #0096f4;
+    position: absolute;
+    top: 42px;
+}
+
+.about_detail .left .list li .round {
+    right: -8px;
+
+}
+
+.about_detail .right .list li .round {
+    left: -12px;
+}
+.about_detail .right .list li.hr{
+    height: 120px;
+
+}
+.about_detail .right .list li.hr2{
+    height: 220px;
+}
+.about_detail .left .list{
+    margin-top:0;
+}
+.about_detail .right .list{
+    margin-top: 290px;
+}
+.about_detail  .list li.first, .about_detail  .list li.last {
+    margin-top: 0;
+}
+.about_detail  .list li.first .round{
+     top:-50px;
+ }
+.about_detail  .list li.last .round{
+    bottom:-115px;
+    top: inherit;
+}
+.about_detail  .list li.first .round span, .about_detail  .list li.last .round span{
+    position: absolute;
+    background: #fff;
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+    right: 2px;
+    top:2px;
+    display: inline-block;
+}
+.product_full .icon_full{
+    background: url(../image/plan/icon_full.png) no-repeat;
+}
+.product_full .icon_finish{
+    background: url(../image/plan/icon_finish.png) no-repeat;
+}
+.product_full .icon_end{
+    background: url(../image/plan/icon_end.png) no-repeat;
+}
+.product_full .icon_back{
+    background: url(../image/plan/icon_back.png) no-repeat;
+}
+.plan_guiade {
+    padding: 15px 25px 10px;
+    background: #fff;
+    border-bottom: 1px solid #e2e2e2;
+}
+.plan_guiade .plan_title {
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 10px;
+}
+.plan_guiade .plan_title h2{
+    float: left;
+    font-size: 16px;
+}
+.plan_guiade .plan_title .more{
+    float: right;
+    color: #0768ca;
+    font-size: 14px;
+}
+.plan_guiade ul li {
+    margin: 20px 0;
+    float: left;
+    width: 127px;
+    text-align: center;
+}
+
+.plan_guiade ul li strong {
+    width: 79px;
+    height: 79px;
+    text-align: center;
+    line-height: 79px;
+    font-size: 42px;
+    font-family: franklin gothic;
+    color: #6f6f6f;
+    font-weight: normal;
+    background: #fafafa;
+    border-radius: 100%;
+    display: block;
+    float: left;
+
+}
+
+.plan_guiade ul li .text p{
+    color: #939393;
+    margin-top: 5px;
+
+}
+.plan_guiade ul li p{
+    font-size: 14px;
+}
+
+
+.plan_guiade ul li .text p span{
+    color: #333;
+}
+
+.plan_guiade ul li .text h6{
+    color: #0768ca;
+    font-size: 14px;
+    margin-top:2px;
+    font-family: "Microsoft YaHei";
+}
+.plan_guiade ul li .icon-step {
+    background: url(../image/plan/icon_arrow.png) no-repeat;
+    width: 21px;
+    height: 36px;
+    margin: 30px 30px 0 30px;
+    display: inline-block;
+
+}
+.plan_guiade ul li .icon-step.on{
+    background: url(../image/plan/icon_arrow_on.png) no-repeat;
+
+}
+.plan_guiade ul li .text.gray p span, .plan_guiade ul li .text.gray h6{
+    color: #bfbfbf;
+}
+.manage_null{
+    width: 300px;
+    border: none;
+}
+.product_right{
+    min-height: 215px;
+}
+.product_progress span{
+    background: #0096f4;
+}
+.product_right .product_buy input{
+    width: 281px;
+    text-align: center;
+}
+.product_buy .amountValueNumber{
+    width: 284px;
+    height: 38px;
+    background: #f5f5f5;
+    border: 1px solid #e1e1e1 ;
+    border-radius: 4px;
+    color: #adadad;
+    text-align: center;
+    line-height: 38px;
+}
+

@@ -1,0 +1,46 @@
+.ceo_wrapper .person_list{
+	margin-top: 10px;
+}
+
+.ceo_wrapper .person_list li{
+	padding: 20px 0;
+	border-bottom: 1px dotted #c1c1c1;
+}
+
+.ceo_wrapper .person_list li.last_item{
+	border: none;
+}
+
+.ceo_wrapper .person_list img{
+	float: left;
+}
+
+.ceo_wrapper .person_list dl{
+    width: 799px;
+    float: left;
+    margin-left: 30px;
+}
+
+.ceo_wrapper .person_list dt{
+	margin-bottom: 15px;
+}
+
+.ceo_wrapper .person_list dt .person_list_name{
+	color: #000;
+	font-size: 28px;
+}
+
+.ceo_wrapper .person_list dt .person_list_subtitle{
+	font-size: 16px;
+	/*margin-left: 10px;*/
+	color: #888;
+	display: block;
+	padding-top: 5px;
+}
+
+.ceo_wrapper .person_list dd p{
+	line-height: 25px;
+	/*text-indent: 20px;*/
+	font-size: 14px;
+	margin-bottom: 10px;
+}

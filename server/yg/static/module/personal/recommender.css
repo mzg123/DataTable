@@ -1,0 +1,212 @@
+.recommender {
+    font-size: 14px;
+}
+
+.process_content{
+    position: relative;
+}
+.personal_table thead {
+    background: #f9f9f9;
+    border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid #00b3f7;
+    color: #848484;
+}
+
+.personal_table thead tr {
+    height: 52px;
+}
+
+.personal_table td, .personal_table th, .personal_table tbody td {
+    border-right: none;
+}
+
+.personal_table tbody tr {
+    border-bottom: 1px solid #e9e9e9;
+}
+
+.personal_kinds h6 {
+    margin-top: 22px;
+    font-size: 16px;
+    color: #343434;
+}
+
+.recommender .channel {
+    width: 109px;
+    background-color: #00b3f7;
+    color: #fff;
+    line-height: 107px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.recommender .channel:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 46%;
+    right: -10%;
+    right: -9% \9;
+    background: url(../image/personal/icon_triangle_right.png) no-repeat 0 bottom;
+}
+
+.recommender .manage_list .list p {
+    color: #848484;
+    margin-top: 4px;
+}
+
+.manage_list {
+    background-color: #f0f0f0;
+    border-top: 1px solid #00b3f7;
+}
+
+.manage_list li + li {
+    background-color: #f8f8f8;
+}
+
+.manage_list li + li .list {
+    padding-left: 45px;
+    box-sizing: border-box;
+}
+
+.recommender .manage_list .share {
+    line-height: 107px;
+    /*padding-left: 18px;*/
+    background-color: #f0f0f0;
+    float: right;
+}
+
+.recommender .share span {
+    margin-right: 24px;
+}
+.recommender .share a{
+    text-decoration: none;
+    color: #848484;
+}
+
+.recommender .share dl {
+    float: right;
+    line-height: 28px;
+    font-size: 12px;
+    color: #848484;
+    text-align: center;
+    margin: 12px 20px 0 0;
+    cursor: pointer;
+
+}
+
+.recommender .share dt {
+    width: 55px;
+    height: 55px;
+}
+
+.recommender .share .copy dt {
+    background: url(../image/personal/share.png) /*#00b3f7*/ no-repeat;
+}
+
+.recommender .share .weixin dt {
+    background: url(../image/personal/share.png) no-repeat 0 -60px;
+    position: relative;
+}
+
+.recommender .share .sina dt {
+    background: url(../image/personal/share.png) /*#d42c4d*/ no-repeat 0 -120px;
+}
+
+.recommender .share .qq dt {
+    background: url(../image/personal/share.png) /*#e2bf1d*/ no-repeat 0 -178px;
+}
+
+.recommender .share_erweima {
+    position: absolute;
+    width: 134px;
+    top: 36px;
+    right: -14px;
+    border: 1px solid #cccccc;
+    background-color: #fff;
+    z-index: 10;
+    margin: 0 auto;
+    display: none;
+    padding: 20px 16px;
+}
+.recommender .share_erweima span{
+    background: url(../image/personal/share.png) no-repeat left bottom;
+    width: 10px;
+    height: 10px;
+    display: block;
+    float: left;
+    margin-left: -24px;
+    margin-top: -21px;
+}
+.recommender .share_erweima p{
+    font-size: 12px;
+    color: #848484;
+}
+
+#resultTable tbody td {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #333333;
+}
+
+#resultTable tbody td a {
+    color: #3b96f4;
+    cursor: pointer;
+}
+
+.yg-modal .modal-content {
+    padding: 20px 0;
+}
+
+.yg-modal .modal-content {
+    padding: 0;
+}
+
+#resultTableDetails {
+    width: 100%;
+    height: 100%;
+}
+
+#resultTableDetails .personal_wrap {
+    background: none;
+    position: relative;
+}
+
+#resultTableDetails .personal_table {
+    border: none;
+    border-top: 1px solid #e9e9e9;
+}
+
+#resultTableDetails .personal_table thead {
+    border-top: none;
+}
+
+#resultTableDetails .personal_table thead tr {
+    height: 48px;
+}
+
+#resultTableDetails .personal_table tbody tr, #resultTableDetails .personal_table {
+    border-bottom: 1px dashed #e9e9e9;
+}
+
+#resultTableDetails tbody td {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+#resultTableDetails .tips {
+    font-size: 14px;
+    margin: 0 0 0 20px;
+    position: absolute;
+    bottom: 50px;
+}
+
+#tableNullDetails .manage_null {
+    height: 528px;
+}
+
+
+

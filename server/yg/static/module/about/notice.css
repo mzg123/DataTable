@@ -1,0 +1,25 @@
+.notice_wrapper .notice_list{
+	margin-top: 10px;
+}
+
+.notice_wrapper .notice_list li{
+	padding: 20px 0;
+	border-bottom: 1px dotted #c1c1c1;
+}
+
+.notice_wrapper .notice_list li a{
+	text-decoration: none;
+	font-size: 14px;
+}
+
+.notice_wrapper .notice_list li a:hover{
+	color: #0768ca;
+}
+
+.notice_wrapper .notice_list li a .notice_date{
+	float: right;
+}
+
+.notice_wrapper .pager{
+	margin: 30px auto 0;
+}

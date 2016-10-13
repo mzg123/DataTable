@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="Expires" content="0">
+    <meta name="title" content="确认债权信息"/>
+    <meta name="keywords" content="确认债权信息"/>
+    <meta name="description" content="确认债权信息"/>
+    <title>确认债权信息</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://img3.yingu.com/module/??common/base.css,head/head.css,foot/foot.css"/>
+    <script type="text/javascript"
+            src="http://img3.yingu.com/module/??lib/sea.js,lib/seajs-combo.js,lib/lib.js,common/base.js,head/head.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            base: 'http://img3.yingu.com/module/'
+        });
+        seajs.use("head/head");
+    </script>
+    <!--[if lte IE 8]>
+    <style type="text/css">
+        .ie-css3 {
+            behavior: url(http://img3.yingu.com/image/common/ie-css3.htc);
+        }
+
+    </style>
+    <![endif]-->
+</head>
+<body>
+<link rel="stylesheet" type="text/css"
+      href="http://img3.yingu.com/module/??product/product.css,ui/modal/modal.css,ui/pager/pager.css,ui/select/select.css,personal/creditors.css"/>
+<div class="head">
+    <div class="toolbar ">
+        <div class="toolbar_content clearfix">
+            <!--<a class="home" href="" class=""><span class="home_icon"></span>首页</a>-->
+            <div class="tel"><i class="icon-tel"></i><span class="red">400-612-5859</span>（银谷财富）&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="red">400-613-5859</span>（银谷普惠）
+            </div>
+            <div class="head_right clearfix">
+                <a class="login" href="">登录</a>
+                <span class="spliter_short"></span>
+                <a class="register margin-right-10" href="">注册</a>
+                <a class="favorite" href="">银谷门户网站</a>
+                <a class="favorite" href="">积分商城</a>
+                <a class="favorite" href="">帮助中心</a>
+                <a class="favorite" href="">关于我们</a>
+
+                <!--<a class="phone" href=""><span class="phone_icon"></span>手机金融</a>-->
+                <a class="message" href="">消息<span class="message_num red">(1)</span></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_content clearfix">
+            <div class="logo_slogan clearfix">
+                <div class="logo"></div>
+                <div class="slogan"></div>
+            </div>
+
+
+            <div class="personal"><!-- personal_showlist -->
+                <div class="avatar_link clearfix">
+                    <a id="personalist_btn" href="" class="link"><img class="avatar"
+                                                                      src="http://img3.yingu.com/image/common/avatar.png"><span
+                            class="word">我的账户</span><span class="arrow"></span></a>
+                </div>
+                <div id="list_wrapper" class="list_wrapper">
+                    <div class="placeholder"></div>
+                    <ul>
+                        <li><a href="">充值</a></li>
+                        <li><a href="">提现</a></li>
+                        <li><a href="">交易记录</a></li>
+                        <li><a href="">我的资产</a></li>
+                        <li><a href="">基本信息</a></li>
+                        <li><a href="">账户安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spliter_long"></div>
+            <ul class="nav_list clearfix">
+                <li class="selected"><a href="">首页</a><span class="indicator"></span></li>
+                <li class="more"><a href="">财富管理</a> <i class="arrow"></i>
+                    <dl class="hover">
+                        <dd><a href="#">P2P债权</a></dd><dd><a href="../plan/plan_index.html">优计划</a></dd>
+                    </dl>
+                </li>
+                <li><a href="">债权转让</a><span class="indicator"></span></li>
+                <li class="last more"><a href="">银谷课堂</a><i class="arrow"></i>
+                    <dl class="hover">
+                        <dd><a href="#">专家建议</a></dd>
+                        <dd><a href="#">调研报告</a></dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper clearfix">
+
+    <!-- product -->
+
+    <div class="product_msg">
+        <h1>发布债权转让</h1>
+
+        <form id="productMsgForm" action="">
+
+
+            <div class="clearfix product_msg_detail">
+                <div class="left">
+                    <h2>债权信息</h2>
+
+                </div>
+                <div class="right">
+                    <ul class="product_name clearfix">
+
+                        <li><span>当前债权价值：</span><i id="totalNum">20008.88</i>元</li>
+
+                        <li><span>剩余期数：</span><i>3/12期</i></li>
+
+                        <li><span>借款编号：</span><i>JK201603090001</i></li>
+                        <li class="hr"></li>
+
+                        <li><span>转让金额：</span><span class="font-14">
+                            <!--<input type="number" name="amount" value="" class="input-box amount" id="amount"/>-->
+                            <span class="red" id="amount">5555</span>
+                            &nbsp;&nbsp;<i class="gray">元</i></span>
+                            <span class="gray"><i class='icon_tips'></i>其中待收本金<i id="wait4collectPrincipal"
+                                                                                 class="black">200.00</i>元，待收收益<i
+                                    class="red">0.00</i>元</span>
+
+                            <div class="wrong" id="amountTip"></div>
+                        </li>
+                        <li><span>转让管理费：</span><i id="calTransferInfoFee" class="red">112元</i><span class="gray"><i
+                                class='icon_tips'></i>按成功转让金额的<i class="black">1%</i>收取</span></li>
+
+                        <li><span>转让信息费：</span><i id="calTransferManagementFee" class="red">56元</i><span class="gray"><i
+                                class='icon_tips'></i>按转让金额的<i class="black">0.5%</i>收取</span></li>
+                        <li class="hr"></li>
+                        <li>
+                            <span>转让价格：</span><span class="font-14"><input type="number" name="amount2" value=""
+                                                                           class="input-box amount" id="amount2"
+                                                                           amount-value="100"/>&nbsp;&nbsp;<i
+                                class="gray">元</i></span>
+                            <span class="gray"><i class='icon_tips'></i>100的整数倍</span>
+
+                            <div class="wrong" id="amountTip2"></div>
+                        </li>
+
+                        <li><span>折价系数：</span><i id="calDiscount" class="red">96.43%</i></li>
+
+                        <li><span>受让交易对价：</span><i id="calAssigneeConsideration" class="red">14.81%</i></li>
+
+
+                        <li class="hr"></li>
+                        <!--<li class="all">
+                            <label class="float-left"><input type="checkbox" name="userCoupon" id="userCoupon" value=""/> 使用优惠券</label>
+                            <div class="float-left">
+                                <div class="chooseCoupon"> <select name="chooseMyCoupon" id="chooseMyCoupon" style="visibility: hidden"></select></div>
+
+                            </div>
+                            <div class="wrong" id="couponResult"></div>
+
+                        </li>-->
+
+                        <!--<li class="hr"></li>-->
+
+                        <li class="clear all"><input id="agree" type="checkbox" name="agree" value="protocol"/>
+                            我确认并同意签署<span class="red" id="viewTemplate">《债权转让及受让协议》</span> 、<span class="red" id="viewTemplate2">《xxxx》</span>，并自愿承担出借该项目所产生的风险和全部后果。
+                            <div class="wrong" id="agreeTip"></div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </form>
+        <div class="product_btn">
+            <button class="btn_red" id="btnOk">&nbsp;&nbsp;提&nbsp;&nbsp;交&nbsp;&nbsp;</button>
+        </div>
+        <div class="product_tips">
+            <h6><i></i>温馨提示</h6>
+
+            <p>1、债权有效期为发起债权转让起3个工作日，若转让尚未完成，则剩余部分债权由发起转让的出借人继续持有。</p>
+
+        </div>
+
+
+    </div>
+</div>
+<!--查看协议范本 -->
+<script type="text/html" id="viewProtocol" style="display: none" title="xxxx">
+    <div class="product_view">
+        <p>本协议由以下三方于<span class="space-50"></span>年<span class="space-50"></span> 月<span class="space-50"></span>
+            日在中华人民共和国<span class="space-50"></span> 签署并履行。</p>
+
+        <p>甲方（出借人）：<span class="space"></span></p>
+
+        <p>证件类型：<span class="space"></span></p>
+
+        <p>证件号：<span class="space"></span></p>
+
+        <p>乙方：银谷财富（北京）投资管理有限公司</p>
+
+        <p>地址：北京市朝阳区东大桥路8号1楼18层2106室</p>
+
+        <p>丙方：东方银谷（北京）投资管理有限公司</p>
+
+        <p>地址：北京市朝阳区东大桥路8号1楼22层2609室</p>
+
+        <p>
+            根据《中华人民共和国合同法》及相关法律法规的规定，三方遵循平等、自愿、互利和诚实信用原则，经友好协商，就乙方为甲方提供信用咨询与管理服务、丙方为甲方提供出借信息咨询和服务事宜达成一致意见，特签订本协议，以兹共同信守。</p>
+
+        <p>第一条 定义</p>
+
+        <p>1.1 本协议中下列词语具有以下含义：</p>
+
+        <p>1.1.1出借人：指将自有合法资金自愿出借给他人的中华人民共和国公民。</p>
+
+        <p> 1.1.2借款人：指具有合法资金用途自愿取得借款的中华人民共和国公民。</p>
+
+        <p>1.1.3借款或资金或款项：指以人民币计量的货币。</p>
+
+        <p>1.1.4本协议、本合同：指本《出借咨询与服务协议》以及各方就本《出借咨询与服务协议》约定事项共同签署的补充协议和相关文件。</p>
+
+        <p>.5债权：指在出借人与借款人借贷关系存续期间出借人拥有的全部权益，债权以人民币计价。</p>
+
+        <p>1.1.6服务费：指基于本协议或与本协议相关的协议由乙方或丙方以自己所有的人、财、物为出借人或借款人提供信息咨询等服务而向出借人或借款人收取的以人民币计量的费用。</p>
+
+        <p>
+            1.1.7风险准备金：指为出借人的共同利益考虑，由丙方设立并管理、以丙方的名义单独开立的一个专用账户。从当期已实际收取的服务费中，按丙方管理的当期借款余额的一定比例提取的资金。风险准备金的用途是，在借款人发生违约，造成出借人应收本金和利息不能收取的情况下，按照本合同约定的方
+            式和比例以风险准备金先行向出借人支付，后期收取的前期已先行支付的款项计入当期风险准备金账户。</p>
+
+        <p>1.1.8工作日：指中华人民共和国政府规定的工作日期。</p>
+
+        <p>1.1.9元：指中华人民共和国法定货币即人民币计量的单位。</p>
+
+        <p>1.1.10送达：指本协议任意一方按照本协议约定的任一种送达方式将书面文件送至其他方的行为。</p>
+
+        <p>1.1.11单月：指甲方资金出借实现后第一个月开始计算的奇数月。</p>
+
+        <p>1.1.12双月：指甲方资金出借实现后第一个月开始计算的偶数月。</p>
+
+        <p>1.1.13推荐期：指本协议约定的由丙方推荐借款人的期限。</p>
+
+        <p>1.1.14我国或中国：指中华人民共和国（不含港澳台地区）。</p>
+
+        <p>1.1.15书面：以纸质、电子文档等形式通过快递、当面提交或E-mail、短信、MSN、QQ、微信等各方认可的方式提供并保留的，以汉字书写的文件。</p>
+
+        <p>1. 1.16恶意出借或收购债权：指一人或受同一一致行动人控制的多人以自己的名义进行出借或收购本协议项下的相关债权超过乙方内部确认的一定限额，可能引发债权集中等情况。</p></div>
+</script>
+<script type="text/html" id="modalView" style="display: none">
+    <h2 class="big model_title margin-top-20">您输入的转让价格已低于待收本金，是否确认发布转让？</h2>
+</script>
+<!--查看协议范本 -->
+<script type="text/html" id="viewProtocol2" style="display: none" title="xxxxxx">
+    <div class="product_view">
+        <p>xxxxxxxxxxxxxx</p>
+        <p>xxxxxxxxxxxxxx</p>
+        <p>xxxxxxxxxxxxxx</p>
+        <p>xxxxxxxxxxxxxx</p>
+
+    </div>
+</script>
+<script type="text/javascript">
+    seajs.use("personal/creditors-back-msg");
+
+</script>
+<div class="foot">
+    <div class="foot_content clearfix">
+        <div class="contact_links">
+            <div class="contact_links_content clearfix">
+                <div class="left clearfix">
+                    <dl class="clearfix">
+                        <dt>帮助中心</dt>
+                        <dd><a href="">注册认证</a></dd>
+                        <dd><a href="">出借流程</a></dd>
+                        <dd><a href="">债权转让</a></dd>
+                        <dd><a href="">账户安全</a></dd>
+                        <dd><a href="">资费说明</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>关于我们</dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                        <dd><a href="">社会责任</a></dd>
+                        <dd><a href="">法律法规</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>东方银谷旗下业务</dt>
+                        <dd><a href="">银谷门户网站</a></dd>
+                        <dd><a href="">银谷财富</a></dd>
+                        <dd><a href="">银谷普惠</a></dd>
+                        <dd><a href="">银谷普诚</a></dd>
+                        <dd><a href="">银谷积分商城</a></dd>
+
+                    </dl>
+
+                    <div class="weixin  weixin-2"></div>
+                    <div class="weixin weixin-1"></div>
+
+                </div>
+                <div class="right">
+
+                    <ul class="address">
+                        <li class="clearfix"><p>人工服务时间 8:00～22:00</p></li>
+                        <li class="clearfix">
+                            <span class="phone"></span>
+                            <span class="font-16 white">客服服务热线：</span>
+
+                            <p><span class="font-16 white">400-612-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷财富）</span>
+                            </p>
+
+                            <p><span class="font-16 white">400-613-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷普惠)</span>
+                            </p>
+                        </li>
+                        <li class="clearfix"><p>24小时在线客服</p></li>
+                        <li class="clearfix">
+                            <span class="location"></span>
+
+                            <p class="clearfix location_title"><span class="white office">总部地址：</span>
+                                <span class="location_word white">北京市朝阳区东大桥路8号尚都国际中心A座2608-2609室</span></p>
+                        </li>
+                        <li class="clearfix margin-top-20"><p>东方银谷（北京）投资管理有限公司京ICP备14022292号</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+.honor_wrapper .honor_list li{
+	font-size: 14px;
+	border: 1px solid #e0e0e0;
+	padding: 15px;
+	float: left;
+	width: 465px;
+	height: 260px;
+	margin-top: 15px;
+}
+.honor_wrapper .honor_list li.odd{
+	float: right;
+}
+
+
+.honor_wrapper .honor_list li .img{
+	width: 213px;
+	height: 160px;
+	overflow: hidden;
+	background: #ededed;
+	border: 1px solid #e0e0e0;
+	padding: 5px;
+	float: left;
+	margin-right: 15px;
+
+}
+.honor_wrapper .honor_list li h4{
+	font-size: 16px;
+	line-height: 25px;
+	padding: 10px 0 20px;
+
+}
+.honor_wrapper .honor_list li p{
+	line-height: 28px;
+
+}
+
+.honor_wrapper .honor_list li h6{
+	color: #534f4f;
+	padding-top: 20px;
+	line-height: 28px;
+}
+

@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="Expires" content="0">
+    <meta name="title" content="我的账户-优惠劵-抵扣劵"/>
+    <meta name="keywords" content="我的账户-优惠劵-抵扣劵"/>
+    <meta name="description" content="我的账户-优惠劵-抵扣劵"/>
+    <title>我的账户-优惠劵-抵扣劵</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://img3.yingu.com/module/??common/base.css,head/head.css,foot/foot.css"/>
+    <script type="text/javascript"
+            src="http://img3.yingu.com/module/??lib/sea.js,lib/seajs-combo.js,lib/lib.js,common/base.js,head/head.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            base: 'http://img3.yingu.com/module/'
+        });
+        seajs.use("head/head");
+    </script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css"
+      href="http://img3.yingu.com/module/??ui/pager/pager.css,personal/personal.css,personal/creditors.css,personal/coupon.css,ui/modal/modal.css"/>
+<div class="head">
+    <div class="toolbar ">
+        <div class="toolbar_content clearfix">
+            <!--<a class="home" href="" class=""><span class="home_icon"></span>首页</a>-->
+            <div class="tel"><i class="icon-tel"></i><span class="red">400-612-5859</span>（银谷财富）&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="red">400-613-5859</span>（银谷普惠）
+            </div>
+            <div class="head_right clearfix">
+                <a class="login" href="">登录</a>
+                <span class="spliter_short"></span>
+                <a class="register margin-right-10" href="">注册</a>
+                <a class="favorite" href="">银谷门户网站</a>
+                <a class="favorite" href="">积分商城</a>
+                <a class="favorite" href="">帮助中心</a>
+                <a class="favorite" href="">关于我们</a>
+
+                <!--<a class="phone" href=""><span class="phone_icon"></span>手机金融</a>-->
+                <a class="message" href="">消息<span class="message_num red">(1)</span></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_content clearfix">
+            <div class="logo_slogan clearfix">
+                <div class="logo"></div>
+                <div class="slogan"></div>
+            </div>
+
+
+            <div class="personal"><!-- personal_showlist -->
+                <div class="avatar_link clearfix">
+                    <a id="personalist_btn" href="" class="link"><img class="avatar"
+                                                                      src="http://img3.yingu.com/image/common/avatar.png"><span
+                            class="word">我的账户</span><span class="arrow"></span></a>
+                </div>
+                <div id="list_wrapper" class="list_wrapper">
+                    <div class="placeholder"></div>
+                    <ul>
+                        <li><a href="">充值</a></li>
+                        <li><a href="">提现</a></li>
+                        <li><a href="">交易记录</a></li>
+                        <li><a href="">我的资产</a></li>
+                        <li><a href="">基本信息</a></li>
+                        <li><a href="">账户安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spliter_long"></div>
+            <ul class="nav_list clearfix">
+                <li class="selected"><a href="">首页</a><span class="indicator"></span></li>
+                <li class="more">                     <a href="">财富管理</a>                     <i class="arrow"></i>                     <dl class="hover">                        <dd><a href="#">P2P债权</a></dd><dd><a href="../plan/plan_index.html">优计划</a></dd>                      </dl>                 </li>
+                <li><a href="">债权转让</a><span class="indicator"></span></li>
+                <li class="last more">                     <a href="">银谷课堂</a><i class="arrow"></i>                     <dl class="hover">                         <dd><a href="#">专家建议</a></dd>                         <dd><a href="#">调研报告</a></dd>                      </dl>                 </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper clearfix">
+    <div class="route">
+        <dl class="clearfix">
+            <dt>您的位置：</dt>
+            <dd><a href="../index/index.html">首页<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="overview.html">我的账户<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="coupon.html">我的优惠劵<i></i></a></dd>
+        </dl>
+    </div>
+    <div class="personal_wrap clearfix border">
+        <!-- left menu -->
+        <div class="nav-left">
+            <dl>
+                <dd>
+                    <a href="overview.html">账户总览</a>
+                </dd>
+                <dd>
+                    <a>资金管理</a>
+                    <ul class="sub-nav">
+                        <li><a href="capital-recharge.html">充值</a></li>
+                        <li><a href="capital-cash.html">提现</a></li>
+                        <li><a href="capital-record.html">交易记录</a></li>
+                    </ul>
+                </dd>
+                <dd>
+                    <a>债权管理</a>
+                    <ul class="sub-nav">
+                        <!--<li><a href="creditors-total.html">债权统计</a></li>-->
+                        <li><a href="creditors-back.html">P2P债权</a></li>
+                        <li><a href="creditors-settled.html">优计划</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="collect.html">募集中</a></dd>
+                <dd><a href="collect-full.html">满标待审</a></dd>
+                <dd><a href="collect-flow.html">累计流标</a></dd>
+                <dd>
+                    <a>账户管理</a>
+                    <ul class="sub-nav">
+                        <li><a href="baseinfo.html">基本信息</a></li>
+                        <li><a href="safe.html">账户安全</a></li>
+                    </ul>
+                </dd>
+                <dd><a href="bank.html">银行卡管理</a></dd>
+                <dd><a href="notice.html">消息通知</a></dd>
+                <dd class="on"><a href="coupon.html">我的优惠券</a></dd>
+            </dl>
+        </div>
+        <!-- right content -->
+        <div class="personal_content">
+            <div class="title"><span>优惠劵</span></div>
+            <div class="line"></div>
+            <div class="creditors-back clearfix margin-top-25">
+
+                <ul id="process_tabs" class="tabs clearfix">
+                    <li class="process_tab deductibleTab"><a class="tab_link ">抵扣劵</a></li>
+                    <li class="process_tab redCouponTab"><a class="tab_link">红包</a></li>
+                    <li class="process_tab valueCouponTab"><a class="tab_link">增值劵</a></li>
+                    <!--<li class="process_tab"><a class="tab_link">服务费劵</a></li>-->
+                    <li class="process_tab cashCouponTab"><a class="tab_link">提现劵</a></li>
+                </ul>
+
+                <div id="process_content_container" class="coupon">
+
+
+                    <!-- 抵扣劵 -->
+                    <div class="process_content">
+
+                        <ul id="coupon_tabs" class="tabs clearfix coupon_tabs">
+                            <li class="coupon_tab">
+                                <a class="tab_link"><input type="checkbox" name="" value="" checked/>未使用</a></li>
+                            <li class="coupon_tab" id="deductibleYes"><a class="tab_link"><input type="checkbox" name="" value=""/>
+                                已使用</a></li>
+                            <li class="coupon_tab" id="deductibleLose"><a class="tab_link"><input type="checkbox" name="" value=""/>
+                                已失效</a></li>
+
+                        </ul>
+
+
+                        <div id="coupon_content_container">
+                            <div class="coupon_content">
+                                <a class="btn_red addCouponBtn">+添加优惠劵</a>
+                                <!--<div class="manage_null"><i class="icon_close"></i>-->
+                                    <!--您还没有未使用的抵扣劵-->
+                                <!--</div>-->
+                                <ul class="clearfix coupon_list" id="deductibleList">
+                                    <!--<li>-->
+                                        <!--<div class="left">-->
+                                            <!--<h3><span>100</span>元</h3>-->
+
+                                            <!--<p>使用条件： 限定使用1.00%</p>-->
+
+                                            <!--<p>适用项目： 出借P2P债权债权、债权转让时使用</p>-->
+
+                                            <!--<p>来源： 注册成功获得</p></div>-->
+                                        <!--<div class="right">-->
+                                            <!--<h4>抵扣券</h4>-->
+
+                                            <!--<p><span>有效时间：</span></p>-->
+
+                                            <!--<p>2016年2月3日-</p>-->
+
+                                            <!--<p>2016年3月2日</p>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<div class="left">-->
+                                            <!--<h3><span>100</span>元</h3>-->
+
+                                            <!--<p>使用条件： 限定使用1.00%</p>-->
+
+                                            <!--<p>适用项目： 出借P2P债权债权、债权转让时使用</p>-->
+
+                                            <!--<p>来源： 注册成功获得</p></div>-->
+                                        <!--<div class="right">-->
+                                            <!--<h4>抵扣券</h4>-->
+
+                                            <!--<p><span>有效时间：</span></p>-->
+
+                                            <!--<p>2016年2月3日-</p>-->
+
+                                            <!--<p>2016年3月2日</p>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<div class="left">-->
+                                            <!--<h3><span>100</span>元</h3>-->
+
+                                            <!--<p>使用条件： 限定使用1.00%</p>-->
+
+                                            <!--<p>适用项目： 出借P2P债权债权、债权转让时使用</p>-->
+
+                                            <!--<p>来源： 注册成功获得</p></div>-->
+                                        <!--<div class="right">-->
+                                            <!--<h4>抵扣券</h4>-->
+
+                                            <!--<p><span>有效时间：</span></p>-->
+
+                                            <!--<p>2016年2月3日-</p>-->
+
+                                            <!--<p>2016年3月2日</p>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+                                </ul>
+
+
+                                <div class="product_tips">
+                                    <h6><i></i>温馨提示</h6>
+
+                                    <p>1、每张券仅限使用一次，每次仅限使用一张；</p>
+
+                                    <p>2、抵扣券不可拆分、不可提现；</p>
+
+                                    <p>3. 出借金额需不低于该抵扣券所需的最低出借金额，抵扣券最高可抵扣出借本金的0.5%；</p>
+
+                                    <p>4. 不可当服务费券使用；</p>
+
+                                </div>
+                            </div>
+                            <div class="coupon_content">
+                                <table class="personal_table margin-top-20" id="deductibleTable">
+                                    <thead>
+                                    <tr>
+                                        <td>获取时间</td>
+                                        <td>面值（元）</td>
+                                        <td>来源</td>
+                                        <td>使用项目</td>
+                                        <td>状态</td>
+                                        <td>使用时间</td>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--<tr>-->
+                                    <!--<td>2015.5.5</td>-->
+                                    <!--<td>100</td>-->
+                                    <!--<td>注册成功</td>-->
+                                    <!--<td><p>东方红1号</p><a href="#" class="red">CJ1602290000</a></td>-->
+                                    <!--<td>已使用</td>-->
+                                    <!--<td>2015.5.7</td>-->
+
+
+                                    <!--</tr>-->
+
+                                    </tbody>
+                                </table>
+
+
+                                <div id="deductibleTableNull" style="display: none">
+                                    <div class="manage_null"><i class="icon_close"></i>
+                                        您还没有未使用的抵扣劵
+                                    </div>
+                                </div>
+                                <div id="deductiblePager" class="page-container" current-page="1" total-num="10"
+                                     show-page="5"></div>
+
+                            </div>
+                            <div class="coupon_content">
+                                <table class="personal_table margin-top-20" id="deductibleTable2">
+                                    <thead>
+                                    <tr>
+
+                                        <td>面值（元）</td>
+                                        <td>来源</td>
+                                        <td>有效期</td>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--<tr>-->
+                                    <!--<td>100</td>-->
+                                    <!--<td>注册成功</td>-->
+                                    <!--<td>2016/02/03-2016/03/02</td>-->
+
+                                    <!--</tr>-->
+
+                                    </tbody>
+                                </table>
+
+
+                                <div id="deductibleTableNull2" style="display: none">
+                                    <div class="manage_null"><i class="icon_close"></i>
+                                        您还没有失效抵扣劵
+                                    </div>
+                                </div>
+                                <div id="deductiblePager2" class="page-container" current-page="1" total-num="10"
+                                     show-page="5"></div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- 红包 -->
+                    <div class="process_content">
+                        <ul id="red_tabs" class="tabs clearfix coupon_tabs">
+                            <li class="red_tab">
+                                <a class="tab_link"><input type="checkbox" name="" value="" checked/>未使用</a></li>
+                            <li class="red_tab" id="redCouponYes"><a class="tab_link"><input type="checkbox" name="" value=""/>
+                                已使用</a></li>
+                            <li class="red_tab" id="redCouponLose"><a class="tab_link"><input type="checkbox" name="" value=""/>
+                                已失效</a></li>
+                        </ul>
+
+
+                        <div id="red_content_container">
+                            <div class="red_content">
+                                <ul class="clearfix coupon_list" id="redCouponList">
+                                    <!--<li coupon-id="">-->
+                                        <!--<div class="left">-->
+                                            <!--<h3><span>100</span>元</h3>-->
+
+                                            <!--<p>使用条件： 限定使用1.00%</p>-->
+
+                                            <!--<p>适用项目： 红包必须兑换方可使用</p>-->
+
+                                            <!--<p>来源： 参加线下优惠活动获得</p>-->
+                                        <!--</div>-->
+                                        <!--<div class="right">-->
+                                            <!--<h4>红包</h4>-->
+                                            <!--<br/><br/><br/>-->
+
+                                            <!--<p><span>有效时间：</span>永久有效</p>-->
+
+                                        <!--</div>-->
+                                        <!--<div class="coupon_hover">-->
+                                            <!--<a class="btn_yellow redBtn">&nbsp;&nbsp;&nbsp;&nbsp;兑换&nbsp;&nbsp;&nbsp;&nbsp;</a>-->
+
+                                        <!--</div>-->
+                                    <!--</li>-->
+
+                                </ul>
+
+                                <div class="product_tips">
+                                    <h6><i></i>温馨提示</h6>
+
+                                    <p>1、面值为100元（针对首次出借的用户）；</p>
+
+                                    <p>2、不定期的线下优惠活动，面值根据线下活动而定；</p>
+
+                                    <p>3. 邀请的好友成功出借，按照成功出借金额而定。</p>
+                                </div>
+                            </div>
+                            <div class="red_content">
+                                <table class="personal_table margin-top-20" id="redTable">
+                                    <thead>
+                                    <tr>
+                                        <td>获取时间</td>
+                                        <td>面值（元）</td>
+                                        <td>来源</td>
+                                        <td>使用项目</td>
+                                        <td>状态</td>
+                                        <td>使用时间</td>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--<tr>-->
+                                    <!--<td>2015.5.5</td>-->
+                                    <!--<td>100</td>-->
+                                    <!--<td>注册成功</td>-->
+                                    <!--<td><p>东方红1号</p><a href="#" class="red">CJ1602290000</a></td>-->
+                                    <!--<td>已使用</td>-->
+                                    <!--<td>2015.5.7</td>-->
+
+
+                                    <!--</tr>-->
+
+                                    </tbody>
+                                </table>
+
+
+                                <div id="redTableNull" style="display: none">
+                                    <div class="manage_null"><i class="icon_close"></i>
+                                        您还没有未使用的抵扣劵
+                                    </div>
+                                </div>
+                                <div id="redPager" class="page-container" current-page="1" total-num="10"
+                                     show-page="5"></div>
+
+                            </div>
+                            <div class="red_content">
+                                <table class="personal_table margin-top-20" id="redTable2">
+                                    <thead>
+                                    <tr>
+
+                                        <td>面值（元）</td>
+                                        <td>来源</td>
+                                        <td>有效期</td>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--<tr>-->
+                                    <!--<td>100</td>-->
+                                    <!--<td>注册成功</td>-->
+                                    <!--<td>2016/02/03-2016/03/02</td>-->
+
+                                    <!--</tr>-->
+
+                                    </tbody>
+                                </table>
+
+
+                                <div id="redTableNull2" style="display: none">
+                                    <div class="manage_null"><i class="icon_close"></i>
+                                        您还没有失效抵扣劵
+                                    </div>
+                                </div>
+                                <div id="redPager2" class="page-container" current-page="1" total-num="10"
+                                     show-page="5"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- 增值劵 -->
+                    <div class="process_content">
+                        <ul id="add_tabs" class="tabs clearfix coupon_tabs">
+                            <li class="add_tab">
+                                <a class="tab_link"><input type="checkbox" name="" value="" checked/>未使用</a></li>
+                            <li class="add_tab" id="valueCouponYes"><a class="tab_link"><input type="checkbox" name="" value=""/>
+                                已使用</a></li>
+                            <li class="add_tab" id="valueCouponLose"><a class="tab_link"><input type="checkbox" name="" value=""/>
+                                已失效</a></li>
+                        </ul>
+
+
+
+                        <div id="add_content_container">
+                            <div class="add_content">
+                                <ul class="clearfix coupon_list" id="valueCouponList">
+
+                                    <!--<li>-->
+                                        <!--<div class="left">-->
+                                            <!--<h3><span>8</span>%</h3>-->
+
+                                            <!--<p>使用条件： 每张券仅限使用一次</p>-->
+
+                                            <!--<p>适用项目： 出借P2P债权债权、债权转让时使用</p>-->
+
+                                            <!--<p>来源： 注册成功获得</p>-->
+
+                                        <!--</div>-->
+                                        <!--<div class="right">-->
+                                            <!--<h4>增值券</h4>-->
+
+                                            <!--<p><span>有效时间：</span></p>-->
+
+                                            <!--<p>2016年2月3日-</p>-->
+
+                                            <!--<p>2016年3月2日</p>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+
+
+                                </ul>
+
+                                <div class="product_tips">
+                                    <h6><i></i>温馨提示</h6>
+
+                                    <p>1，M%增值券的增值期限为30（含）个自然日，且只适用于东方红系列；</p>
+
+                                    <p>2，每张券仅限使用一次，每次仅限使用一张；</p>
+
+                                    <p>3，首次出借可使用增值券（8%）1张；</p>
+
+                                    <p>4，非首次单笔出借5千（含）-5万（不含）元可使用增值券（3%）1张；</p>
+
+                                    <p>5，非首次单笔出借5万（含）-10万（不含）元可使用增值券（5%）1张；</p>
+
+                                    <p>6，非首次单笔出借10万及以上元可使用增值券（8%）1张。</p>
+
+
+                                </div>
+                            </div>
+                            <div class="add_content">
+                                <table class="personal_table margin-top-20" id="addTable">
+                                    <thead>
+                                    <tr>
+                                        <td>获取时间</td>
+                                        <td>面值（元）</td>
+                                        <td>来源</td>
+                                        <td>使用项目</td>
+                                        <td>状态</td>
+                                        <td>使用时间</td>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--<tr>-->
+                                    <!--<td>2015.5.5</td>-->
+                                    <!--<td>100</td>-->
+                                    <!--<td>注册成功</td>-->
+                                    <!--<td><p>东方红1号</p><a href="#" class="red">CJ1602290000</a></td>-->
+                                    <!--<td>已使用</td>-->
+                                    <!--<td>2015.5.7</td>-->
+
+
+                                    <!--</tr>-->
+
+                                    </tbody>
+                                </table>
+
+
+                                <div id="addTableNull" style="display: none">
+                                    <div class="manage_null"><i class="icon_close"></i>
+                                        您还没有未使用的抵扣劵
+                                    </div>
+                                </div>
+                                <div id="addPager" class="page-container" current-page="1" total-num="10"
+                                     show-page="5"></div>
+
+                            </div>
+                            <div class="add_content">
+                                <table class="personal_table margin-top-20" id="addTable2">
+                                    <thead>
+                                    <tr>
+
+                                        <td>面值（元）</td>
+                                        <td>来源</td>
+                                        <td>有效期</td>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--<tr>-->
+                                    <!--<td>100</td>-->
+                                    <!--<td>注册成功</td>-->
+                                    <!--<td>2016/02/03-2016/03/02</td>-->
+
+                                    <!--</tr>-->
+
+                                    </tbody>
+                                </table>
+
+
+                                <div id="addTableNull2" style="display: none">
+                                    <div class="manage_null"><i class="icon_close"></i>
+                                        您还没有失效抵扣劵
+                                    </div>
+                                </div>
+                                <div id="addPager2" class="page-container" current-page="1" total-num="10"
+                                     show-page="5"></div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- 服务费劵 -->
+                    <!--<div class="process_content">-->
+                        <!--<ul id="service_tabs" class="tabs clearfix coupon_tabs">-->
+                            <!--<li class="service_tab">-->
+                                <!--<a class="tab_link"><input type="checkbox" name="" value="" checked/>未使用</a></li>-->
+                            <!--<li class="service_tab"><a class="tab_link"><input type="checkbox" name="" value=""/>-->
+                                <!--已使用</a></li>-->
+                            <!--<li class="service_tab"><a class="tab_link"><input type="checkbox" name="" value=""/>-->
+                                <!--已失效</a></li>-->
+                        <!--</ul>-->
+                        <!-- -->
+
+                        <!--<div id="service_content_container">-->
+                            <!--<div class="service_content">-->
+                                <!--<ul class="clearfix coupon_list">-->
+                                    <!--<li>-->
+                                        <!--<div class="left">-->
+                                            <!--<h3><span>5</span>元</h3>-->
+
+                                            <!--<p>使用条件： 每张券仅限使用一次</p>-->
+
+                                            <!--<p>适用项目： 出借P2P债权债权、债权转让时使用</p>-->
+
+                                            <!--<p>来源： 注册成功获得</p>-->
+
+                                        <!--</div>-->
+                                        <!--<div class="right">-->
+                                            <!--<h4>服务费券</h4>-->
+
+                                            <!--<p><span>有效时间：</span></p>-->
+
+                                            <!--<p>2016年2月3日-</p>-->
+
+                                            <!--<p>2016年3月2日</p>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<div class="left">-->
+                                            <!--<h3><span>5</span>元</h3>-->
+
+                                            <!--<p>使用条件： 每张券仅限使用一次</p>-->
+
+                                            <!--<p>适用项目： 出借P2P债权债权、债权转让时使用</p>-->
+
+                                            <!--<p>来源： 注册成功获得</p>-->
+
+                                        <!--</div>-->
+                                        <!--<div class="right">-->
+                                            <!--<h4>服务费券</h4>-->
+
+                                            <!--<p><span>有效时间：</span></p>-->
+
+                                            <!--<p>2016年2月3日-</p>-->
+
+                                            <!--<p>2016年3月2日</p>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+                                    <!--<li>-->
+                                        <!--<div class="left">-->
+                                            <!--<h3><span>5</span>元</h3>-->
+
+                                            <!--<p>使用条件： 每张券仅限使用一次</p>-->
+
+                                            <!--<p>适用项目： 出借P2P债权债权、债权转让时使用</p>-->
+
+                                            <!--<p>来源： 注册成功获得</p>-->
+
+                                        <!--</div>-->
+                                        <!--<div class="right">-->
+                                            <!--<h4>服务费券</h4>-->
+
+                                            <!--<p><span>有效时间：</span></p>-->
+
+                                            <!--<p>2016年2月3日-</p>-->
+
+                                            <!--<p>2016年3月2日</p>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+
+                                <!--</ul>-->
+
+                                <!--<div class="product_tips">-->
+                                    <!--<h6><i></i>温馨提示</h6>-->
+
+                                    <!--<p>1、每张券仅限使用一次，每次仅限使用一张；</p>-->
+
+                                    <!--<p>2、服务费券最高可抵扣出借债权或转让债权所需的服务费，不足抵扣部分从“可用余额”划扣；</p>-->
+
+                                    <!--<p>3. 不可拆分，不可提现。</p>-->
+
+
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="service_content">-->
+                                <!--<table class="personal_table margin-top-20" id="serviceTable">-->
+                                    <!--<thead>-->
+                                    <!--<tr>-->
+                                        <!--<td>获取时间</td>-->
+                                        <!--<td>面值（元）</td>-->
+                                        <!--<td>来源</td>-->
+                                        <!--<td>使用项目</td>-->
+                                        <!--<td>状态</td>-->
+                                        <!--<td>使用时间</td>-->
+
+                                    <!--</tr>-->
+                                    <!--</thead>-->
+                                    <!--<tbody>-->
+                                    <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<td>2015.5.5</td>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<td>100</td>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<td>注册成功</td>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<td><p>东方红1号</p><a href="#" class="red">CJ1602290000</a></td>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<td>已使用</td>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<td>2015.5.7</td>&ndash;&gt;-->
+
+
+                                    <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+
+                                    <!--</tbody>-->
+                                <!--</table>-->
+
+
+                                <!--<div id="serviceTableNull" style="display: none">-->
+                                    <!--<div class="manage_null"><i class="icon_close"></i>-->
+                                        <!--您还没有未使用的抵扣劵-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div id="servicePager" class="page-container" current-page="1" total-num="10"-->
+                                     <!--show-page="5"></div>-->
+
+                            <!--</div>-->
+                            <!--<div class="service_content">-->
+                                <!--<table class="personal_table margin-top-20" id="serviceTable2">-->
+                                    <!--<thead>-->
+                                    <!--<tr>-->
+
+                                        <!--<td>面值（元）</td>-->
+                                        <!--<td>来源</td>-->
+                                        <!--<td>有效期</td>-->
+
+                                    <!--</tr>-->
+                                    <!--</thead>-->
+                                    <!--<tbody>-->
+                                    <!--&lt;!&ndash;<tr>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<td>100</td>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<td>注册成功</td>&ndash;&gt;-->
+                                    <!--&lt;!&ndash;<td>2016/02/03-2016/03/02</td>&ndash;&gt;-->
+
+                                    <!--&lt;!&ndash;</tr>&ndash;&gt;-->
+
+                                    <!--</tbody>-->
+                                <!--</table>-->
+
+
+                                <!--<div id="serviceTableNull2" style="display: none">-->
+                                    <!--<div class="manage_null"><i class="icon_close"></i>-->
+                                        <!--您还没有失效抵扣劵-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div id="servicePager2" class="page-container" current-page="1" total-num="10"-->
+                                     <!--show-page="5"></div>-->
+
+                            <!--</div>-->
+                        <!--</div>-->
+
+                    <!--</div>-->
+
+
+                    <!-- 提现劵 -->
+                    <div class="process_content">
+                        <ul id="cash_tabs" class="tabs clearfix coupon_tabs">
+                            <li class="cash_tab">
+                                <a class="tab_link"><input type="checkbox" name="" value="" checked/>未使用</a></li>
+                            <li class="cash_tab" id="cashCouponYes"><a class="tab_link"><input type="checkbox" name="" value=""/>
+                                已使用</a></li>
+                            <li class="cash_tab" id="cashCouponLose"><a class="tab_link"><input type="checkbox" name="" value=""/>
+                                已失效</a></li>
+                        </ul>
+
+
+                        <div id="cash_content_container">
+                            <div class="cash_content">
+                                <ul class="clearfix coupon_list" id="cashCouponList">
+
+                                    <!--<li>-->
+                                        <!--<div class="left">-->
+                                            <!--<h3><span>2</span>元</h3>-->
+
+                                            <!--<p>使用条件： 每张券仅限使用一次</p>-->
+
+                                            <!--<p>适用项目： 提现券只在操作提现时使用</p>-->
+
+                                            <!--<p>来源： 注册成功获得</p></div>-->
+                                        <!--<div class="right">-->
+                                            <!--<h4>提现券</h4>-->
+                                            <!--<br/><br/><br/>-->
+
+                                            <!--<p><span>有效时间：</span>永久有效</p>-->
+                                        <!--</div>-->
+                                    <!--</li>-->
+
+                                </ul>
+                                <div class="product_tips">
+                                    <h6><i></i>温馨提示</h6>
+
+                                    <p>1、每张券仅限使用一次，每次仅限使用一张；</p>
+
+                                    <p> 2、提现券只在操作提现时使用</p>
+
+                                </div>
+                            </div>
+                            <div class="cash_content">
+                                <table class="personal_table margin-top-20" id="cashTable">
+                                    <thead>
+                                    <tr>
+                                        <td>获取时间</td>
+                                        <td>面值（元）</td>
+                                        <td>来源</td>
+                                        <td>使用项目</td>
+                                        <td>状态</td>
+                                        <td>使用时间</td>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--<tr>-->
+                                    <!--<td>2015.5.5</td>-->
+                                    <!--<td>100</td>-->
+                                    <!--<td>注册成功</td>-->
+                                    <!--<td><p>东方红1号</p><a href="#" class="red">CJ1602290000</a></td>-->
+                                    <!--<td>已使用</td>-->
+                                    <!--<td>2015.5.7</td>-->
+
+
+                                    <!--</tr>-->
+
+                                    </tbody>
+                                </table>
+
+
+                                <div id="cashTableNull" style="display: none">
+                                    <div class="manage_null"><i class="icon_close"></i>
+                                        您还没有未使用的抵扣劵
+                                    </div>
+                                </div>
+                                <div id="cashPager" class="page-container" current-page="1" total-num="10"
+                                     show-page="5"></div>
+
+                            </div>
+                            <div class="cash_content">
+                                <table class="personal_table margin-top-20" id="cashTable2">
+                                    <thead>
+                                    <tr>
+
+                                        <td>面值（元）</td>
+                                        <td>来源</td>
+                                        <td>有效期</td>
+
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <!--<tr>-->
+                                    <!--<td>100</td>-->
+                                    <!--<td>注册成功</td>-->
+                                    <!--<td>2016/02/03-2016/03/02</td>-->
+
+                                    <!--</tr>-->
+
+                                    </tbody>
+                                </table>
+
+
+                                <div id="cashTableNull2" style="display: none">
+                                    <div class="manage_null"><i class="icon_close"></i>
+                                        您还没有失效抵扣劵
+                                    </div>
+                                </div>
+                                <div id="cashPager2" class="page-container" current-page="1" total-num="10"
+                                     show-page="5"></div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+
+<script type="text/javascript">
+    seajs.use("personal/coupon", function (app) {
+        app.run();
+    });
+
+</script>
+<!--添加优惠券 -->
+<script type="text/html" id="addCouponTemplate" style="display: none">
+    <form method="get" id="addCouponForm">
+        <ul class="addCouponList">
+            <li class="clearfix"><span>卡号：</span><input type="text" name="couponNumber" id="couponNumber" value="" class="input-box"/><div class="wrong" id="couponNumberTip"></div> </li>
+            <li class="clearfix"><span>密码：</span><input type="password" name="couponPassWord"  id="couponPassWord" value="" class="input-box"/><div class="wrong" id="couponPassWordTip"></div></li>
+        </ul>
+    </form>
+</script>
+<!--添加优惠券成功-->
+<script type="text/html"  id="addCouponSuccess" style="display: none">
+    <h2 class="big model_title margin-top-20"><span class="red">添加成功!</span> </h2>
+
+    <p class="tac margin-top-10">恭喜您获得了<%=effect%>元面值的<%=couponType%>券1张</p>
+</script>
+<!--红包兑换 -->
+<script type="text/html"  id="redPacketsTemplate" style="display: none">
+    <h2 class="big model_title margin-top-20">确定将<span class="red"><%=effect%>元红包</span> 兑换至账户余额？</h2>
+</script>
+<!--红包兑换成功-->
+<script type="text/html"  id="redSuccess" style="display: none">
+    <h2 class="big model_title margin-top-20"><span class="red">红包</span>已成功添加至账户余额</h2>
+
+    <p class="tac margin-top-10">预计1-3个工作日到账</p>
+
+</script>
+
+<script id="deductibleTableTemplate" type="text/html">
+    <tr>
+        <td><%=effect%></td>
+        <td><%=createTime%></td>
+        <td><%=triggerTypeCN%></td>
+        <td><%=applyItem%></td>
+        <td><%=status%></td>
+        <td><%=useTime%></td>
+
+    </tr>
+
+</script>
+<script id="deductibleTableTemplate2" type="text/html">
+    <tr>
+        <td><%=effect%></td>
+        <td><%=triggerTypeCN%></td>
+        <td><%=expireTime%></td>
+
+    </tr>
+
+</script>
+<!--<script id="serviceTableTemplate" type="text/html">-->
+    <!--<tr>-->
+        <!--<td><%=%></td>-->
+        <!--<td><%=%></td>-->
+        <!--<td><%=%></td>-->
+        <!--<td><%=%></td>-->
+        <!--<td><%=%></td>-->
+        <!--<td><%=%></td>-->
+
+    <!--</tr>-->
+
+<!--</script>-->
+<!--<script id="serviceTableTemplate2" type="text/html">-->
+    <!--<tr>-->
+        <!--<td><%=%></td>-->
+        <!--<td><%=%></td>-->
+        <!--<td><%=%></td>-->
+
+    <!--</tr>-->
+
+<!--</script>-->
+<script id="cashTableTemplate" type="text/html">
+    <tr>
+        <td><%=createTime%></td>
+        <td><%=effect%></td>
+        <td><%=triggerTypeCN%></td>
+        <td><%=applyItem%></td>
+        <td><%=status%></td>
+        <td><%=useTime%></td>
+
+    </tr>
+
+</script>
+<script id="cashTableTemplate2" type="text/html">
+    <tr>
+        <td><%=effect%></td>
+        <td><%=triggerTypeCN%></td>
+        <td><%=expireTime%></td>
+
+    </tr>
+
+</script>
+<script id="addTableTemplate" type="text/html">
+    <tr>
+        <td><%=createTime%></td>
+        <td><%=effect%></td>
+        <td><%=triggerTypeCN%></td>
+        <td><%=applyItem%></td>
+        <td><%=status%></td>
+        <td><%=useTime%></td>
+
+    </tr>
+
+</script>
+<script id="addTableTemplate2" type="text/html">
+    <tr>
+        <td><%=effect%></td>
+        <td><%=triggerTypeCN%></td>
+        <td><%=expireTime%></td>
+
+    </tr>
+
+</script>
+<script id="redTableTemplate" type="text/html">
+    <tr>
+        <td><%=createTime%></td>
+        <td><%=effect%></td>
+        <td><%=triggerTypeCN%></td>
+        <td><%=applyItem%></td>
+        <td><%=status%></td>
+        <td><%=useTime%></td>
+
+    </tr>
+
+</script>
+<script id="redTableTemplate2" type="text/html">
+    <tr>
+        <td><%=effect%></td>
+        <td><%=triggerTypeCN%></td>
+        <td><%=expireTime%></td>
+
+    </tr>
+
+</script>
+<div class="foot">
+    <div class="foot_content clearfix">
+        <div class="contact_links">
+            <div class="contact_links_content clearfix">
+                <div class="left clearfix">
+                    <dl class="clearfix">
+                        <dt>帮助中心</dt>
+                        <dd><a href="">注册认证</a></dd>
+                        <dd><a href="">出借流程</a></dd>
+                        <dd><a href="">债权转让</a></dd>
+                        <dd><a href="">账户安全</a></dd>
+                        <dd><a href="">资费说明</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>关于我们</dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                        <dd><a href="">社会责任</a></dd>
+                        <dd><a href="">法律法规</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>东方银谷旗下业务</dt>
+                        <dd><a href="">银谷门户网站</a></dd>
+                        <dd><a href="">银谷财富</a></dd>
+                        <dd><a href="">银谷普惠</a></dd>
+                        <dd><a href="">银谷普诚</a></dd>
+                        <dd><a href="">银谷积分商城</a></dd>
+
+                    </dl>
+
+                    <div class="weixin  weixin-2"></div>
+                    <div class="weixin weixin-1"></div>
+
+                </div>
+                <div class="right">
+
+                    <ul class="address">
+                        <li class="clearfix"><p>人工服务时间 8:00～22:00</p></li>
+                        <li class="clearfix">
+                            <span class="phone"></span>
+                            <span class="font-16 white">客服服务热线：</span>
+
+                            <p><span class="font-16 white">400-612-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷财富）</span></p>
+
+                            <p><span class="font-16 white">400-613-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷普惠)</span></p>
+                        </li>
+                        <li class="clearfix"><p>24小时在线客服</p></li>
+                        <li class="clearfix">
+                            <span class="location"></span>
+
+                            <p class="clearfix location_title"><span class="white office">总部地址：</span>
+                                <span class="location_word white">北京市朝阳区东大桥路8号尚都国际中心A座2608-2609室</span></p>
+                        </li>
+                        <li class="clearfix margin-top-20"><p>东方银谷（北京）投资管理有限公司京ICP备14022292号</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

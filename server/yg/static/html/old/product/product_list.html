@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, post-check=0, pre-check=0">
+    <meta http-equiv="Expires" content="0">
+    <meta name="title" content="产品详情页"/>
+    <meta name="keywords" content="产品详情页"/>
+    <meta name="description" content="产品详情页"/>
+    <title>产品详情页</title>
+    <link rel="stylesheet" type="text/css"
+          href="http://img3.yingu.com/module/??common/base.css,head/head.css,foot/foot.css"/>
+    <script type="text/javascript"
+            src="http://img3.yingu.com/module/??lib/sea.js,lib/seajs-combo.js,lib/lib.js,common/base.js,head/head.js"></script>
+    <script type="text/javascript">
+        seajs.config({
+            base: 'http://img3.yingu.com/module/'
+        });
+        seajs.use("head/head");
+    </script>
+    <!--[if lte IE 8]>
+    <style type="text/css">
+        .ie-css3 {
+            behavior: url(http://img3.yingu.com/image/common/ie-css3.htc);
+        }
+
+    </style>
+    <![endif]-->
+</head>
+<body>
+<link rel="stylesheet" type="text/css"
+      href="http://img3.yingu.com/module/??product/product.css,ui/pager/pager.css"/>
+<div class="head">
+    <div class="toolbar ">
+        <div class="toolbar_content clearfix">
+            <!--<a class="home" href="" class=""><span class="home_icon"></span>首页</a>-->
+            <div class="tel"><i class="icon-tel"></i><span class="red">400-612-5859</span>（银谷财富）&nbsp;&nbsp;&nbsp;&nbsp;<span
+                    class="red">400-613-5859</span>（银谷普惠）
+            </div>
+            <div class="head_right clearfix">
+                <a class="login" href="">登录</a>
+                <span class="spliter_short"></span>
+                <a class="register margin-right-10" href="">注册</a>
+                <a class="favorite" href="">银谷门户网站</a>
+                <a class="favorite" href="">积分商城</a>
+                <a class="favorite" href="">帮助中心</a>
+                <a class="favorite" href="">关于我们</a>
+
+                <!--<a class="phone" href=""><span class="phone_icon"></span>手机金融</a>-->
+                <a class="message" href="">消息<span class="message_num red">(1)</span></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="nav_content clearfix">
+            <div class="logo_slogan clearfix">
+                <div class="logo"></div>
+                <div class="slogan"></div>
+            </div>
+
+
+            <div class="personal"><!-- personal_showlist -->
+                <div class="avatar_link clearfix">
+                    <a id="personalist_btn" href="" class="link"><img class="avatar"
+                                                                      src="http://img3.yingu.com/image/common/avatar.png"><span
+                            class="word">我的账户</span><span class="arrow"></span></a>
+                </div>
+                <div id="list_wrapper" class="list_wrapper">
+                    <div class="placeholder"></div>
+                    <ul>
+                        <li><a href="">充值</a></li>
+                        <li><a href="">提现</a></li>
+                        <li><a href="">资金记录</a></li>
+                        <li><a href="">我的资产</a></li>
+                        <li><a href="">基本信息</a></li>
+                        <li><a href="">账户安全</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="spliter_long"></div>
+            <ul class="nav_list clearfix">
+                <li class="selected"><a href="">首页</a><span class="indicator"></span></li>
+                <li class="more">                     <a href="">财富管理</a>                     <i class="arrow"></i>                     <dl class="hover">                        <dd><a href="#">P2P债权</a></dd><dd><a href="../plan/plan_index.html">优计划</a></dd>                      </dl>                 </li>
+                <li><a href="">债权转让</a><span class="indicator"></span></li>
+                <li class="last more">                     <a href="">银谷课堂</a><i class="arrow"></i>                     <dl class="hover">                         <dd><a href="#">专家建议</a></dd>                         <dd><a href="#">调研报告</a></dd>                      </dl>                 </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div class="wrapper clearfix">
+    <div class="route">
+        <dl class="clearfix">
+            <dt>您的位置：</dt>
+            <dd><a href="../index">首页<i>&nbsp;&gt;&nbsp;</i></a></dd>
+            <dd><a href="product.html">财富管理</a></dd>
+        </dl>
+    </div>
+    <!-- 筛选 -->
+    <div class="product_msg margin-top-0">
+        <h1>财富管理计划</h1>
+
+        <div class="product-filter">
+            <ul id="invest_filter">
+                <li filter-name="title">
+                    <div class="item clearfix">
+                        <span class="name">计划名称：</span>
+
+                        <div class="kinds"><a class="on">不限</a><a
+                                >东方红1号</a><a>东方红1号</a><a>东方红1号</a><a>东方红1号</a><a>东方红1号</a><a>东方红1号</a><a>东方红1号</a>
+                        </div>
+                    </div>
+                </li>
+                <li filter-name="term">
+                    <div class="item clearfix">
+                        <span class="name">出借期限：</span>
+
+                        <div class="kinds"><a class="on">不限</a><a
+                                >1个月</a><a>3个月</a><a>6个月</a><a>12个月</a><a>18个月</a><a>24个月</a>
+                        </div>
+                    </div>
+                </li>
+                <li filter-name="rate">
+                    <div class="item clearfix">
+                        <span class="name">债权评级：</span>
+
+                        <div class="kinds"><a class="on">不限</a><a
+                                >AAA</a><a>AA</a><a>A</a><a>B</a><a>C</a>
+
+                        </div>
+                    </div>
+                </li>
+                <li filter-name="method">
+                    <div class="item clearfix last">
+                        <span class="name">还款方式：</span>
+
+                        <div class="kinds"><a class="on">不限</a><a
+                                >等额本息支付本息</a><a>等额本金支付本息</a><a>到期一次性支付本息 </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <div class="product_msg">
+        <div class="product-filter">
+            <ul>
+                <li filter-name="title" class="if">
+                    <div class="item clearfix">
+                        <span class="name">排序条件：</span>
+
+                        <div class="kinds"><a>全部</a><a class="on">预期年化收益率<i class="down"></i></a><a>剩余可出借金额<i
+                                class="up"></i></a>
+                        </div>
+                        <label class="red" id="queryBtn"><input type="checkbox" name="" value=""/> 只显示可出借债权</label>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+        <dl class="product_all" id="productAll">
+            <dd class="clearfix">
+                <div class="product_title clearfix">
+                    <strong>东方红1号</strong>
+                    <span>JK201603090001</span>
+
+                    <div class="arrow">一次性还本付息支付本息<i class="ie-css3"></i></div>
+                    <div class="arrow">债权评级 AAA<i class="ie-css3"></i></div>
+                </div>
+                <ul class="product_list clearfix ">
+                    <li>
+                        <div class="clearfix"><strong class="big">12.00<span>%</span></strong></div>
+                        <p>12个月</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">债权金额(元)</strong></div>
+                        <p>100000.00</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">剩余可出借金额(元) </strong></div>
+                        <p>33000.00</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">募集进度</strong></div>
+                        <div class="product_progress ie-css3">
+                            <span style="width: 50%" class="ie-css3"></span>
+                            <i>50%</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix"><strong class="black">起始出借金额(元) </strong></div>
+                        <p>100.00</p></li>
+
+                </ul>
+                <a  class="btn_red">立即出借</a>
+            </dd>
+            <dd class="clearfix">
+                <div class="product_title clearfix">
+                    <strong>东方红1号</strong>
+                    <span>JK201603090001</span>
+
+                    <div class="arrow">一次性还本付息支付本息<i class="ie-css3"></i></div>
+                    <div class="arrow">债权评级 AAA<i class="ie-css3"></i></div>
+                </div>
+                <ul class="product_list clearfix ">
+                    <li>
+                        <div class="clearfix"><strong class="big">12.00<span>%</span></strong></div>
+                        <p>12个月</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">债权金额(元)</strong></div>
+                        <p>100000.00</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">剩余可出借金额(元) </strong></div>
+                        <p>33000.00</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">募集进度</strong></div>
+                        <div class="product_progress ie-css3">
+                            <span style="width: 50%" class="ie-css3"></span>
+                            <i>50%</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix"><strong class="black">起始出借金额(元) </strong></div>
+                        <p>100.00</p></li>
+
+                </ul>
+                <a  class="btn_red">立即出借</a>
+            </dd>
+            <dd class="clearfix">
+                <div class="product_title clearfix">
+                    <strong>东方红1号</strong>
+                    <span>JK201603090001</span>
+
+                    <div class="arrow">一次性还本付息支付本息<i class="ie-css3"></i></div>
+                    <div class="arrow">债权评级 AAA<i class="ie-css3"></i></div>
+                </div>
+                <ul class="product_list clearfix ">
+                    <li>
+                        <div class="clearfix"><strong class="big">12.00<span>%</span></strong></div>
+                        <p>12个月</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">债权金额(元)</strong></div>
+                        <p>100000.00</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">剩余可出借金额(元) </strong></div>
+                        <p>33000.00</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">募集进度</strong></div>
+                        <div class="product_progress ie-css3">
+                            <span style="width: 100%" class="ie-css3"></span>
+                            <i>100%</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix"><strong class="black">起始出借金额(元) </strong></div>
+                        <p>100.00</p></li>
+
+                </ul>
+                <a  class="btn_red btn_disable">已满标</a>
+            </dd>
+            <dd class="clearfix">
+                <div class="product_title clearfix">
+                    <strong>东方红1号</strong>
+                    <span>JK201603090001</span>
+
+                    <div class="arrow">一次性还本付息支付本息<i class="ie-css3"></i></div>
+                    <div class="arrow">债权评级 AAA<i class="ie-css3"></i></div>
+                </div>
+                <ul class="product_list clearfix ">
+                    <li>
+                        <div class="clearfix"><strong class="big">12.00<span>%</span></strong></div>
+                        <p>12个月</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">债权金额(元)</strong></div>
+                        <p>100000.00</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">剩余可出借金额(元) </strong></div>
+                        <p>33000.00</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">募集进度</strong></div>
+                        <div class="product_progress ie-css3">
+                            <span style="width: 100%" class="ie-css3"></span>
+                            <i>100%</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix"><strong class="black">起始出借金额(元) </strong></div>
+                        <p>100.00</p></li>
+
+                </ul>
+                <a  class="btn_red btn_disable">还款中</a>
+            </dd>
+            <dd class="clearfix">
+                <div class="product_title clearfix">
+                    <strong>东方红1号</strong>
+                    <span>JK201603090001</span>
+
+                    <div class="arrow">一次性还本付息支付本息<i class="ie-css3"></i></div>
+                    <div class="arrow">债权评级 AAA<i class="ie-css3"></i></div>
+                </div>
+                <ul class="product_list clearfix ">
+                    <li>
+                        <div class="clearfix"><strong class="big">12.00<span>%</span></strong></div>
+                        <p>12个月</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">债权金额(元)</strong></div>
+                        <p>100000.00</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">剩余可出借金额(元) </strong></div>
+                        <p>33000.00</p></li>
+                    <li>
+                        <div class="clearfix"><strong class="black">募集进度</strong></div>
+                        <div class="product_progress ie-css3">
+                            <span style="width: 50%" class="ie-css3"></span>
+                            <i>50%</i>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="clearfix"><strong class="black">起始出借金额(元) </strong></div>
+                        <p>100.00</p></li>
+
+                </ul>
+                <a class="btn_red" href="#">立即出借</a>
+            </dd>
+        </dl>
+        <div id="productNull" style="display: none">
+            <div class="manage_null"><i class="icon_close"></i>很抱歉，这儿是个荒地。<br/>
+                您还没有支持任何项目，去看看有什么感兴趣的吧！
+            </div>
+        </div>
+        <div id="pager" current-page="1" total-num="10" show-page="5"></div>
+
+
+    </div>
+
+</div>
+<script id="rowTemplate" type="text/html">
+</script>
+<script type="text/javascript">
+    seajs.use("product/product_list");
+
+</script>
+<div class="foot">
+    <div class="foot_content clearfix">
+        <div class="contact_links">
+            <div class="contact_links_content clearfix">
+                <div class="left clearfix">
+                    <dl class="clearfix">
+                        <dt>帮助中心</dt>
+                        <dd><a href="">注册认证</a></dd>
+                        <dd><a href="">出借流程</a></dd>
+                        <dd><a href="">债权转让</a></dd>
+                        <dd><a href="">账户安全</a></dd>
+                        <dd><a href="">资费说明</a></dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>关于我们</dt>
+                        <dd><a href="">公司介绍</a></dd>
+                        <dd><a href="">媒体报道</a></dd>
+                        <dd><a href="">社会责任</a></dd>
+                        <dd><a href="">法律法规</a></dd>
+                        <dd><a href="">联系我们</a></dd>
+
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>东方银谷旗下业务</dt>
+                        <dd><a href="">银谷门户网站</a></dd>
+                        <dd><a href="">银谷财富</a></dd>
+                        <dd><a href="">银谷普惠</a></dd>
+                        <dd><a href="">银谷普诚</a></dd>
+                        <dd><a href="">银谷积分商城</a></dd>
+
+                    </dl>
+
+                    <div class="weixin  weixin-2"></div>
+                    <div class="weixin weixin-1"></div>
+
+                </div>
+                <div class="right">
+
+                    <ul class="address">
+                        <li class="clearfix"><p>人工服务时间 8:00～22:00</p></li>
+                        <li class="clearfix">
+                            <span class="phone"></span>
+                            <span class="font-16 white">客服服务热线：</span>
+
+                            <p><span class="font-16 white">400-612-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷财富）</span></p>
+
+                            <p><span class="font-16 white">400-613-5859</span>&nbsp;&nbsp;&nbsp;<span>（银谷普惠)</span></p>
+                        </li>
+                        <li class="clearfix"><p>24小时在线客服</p></li>
+                        <li class="clearfix">
+                            <span class="location"></span>
+
+                            <p class="clearfix location_title"><span class="white office">总部地址：</span>
+                                <span class="location_word white">北京市朝阳区东大桥路8号尚都国际中心A座2608-2609室</span></p>
+                        </li>
+                        <li class="clearfix margin-top-20"><p>东方银谷（北京）投资管理有限公司京ICP备14022292号</p></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

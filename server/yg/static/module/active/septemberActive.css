@@ -1,0 +1,336 @@
+/*全局样式*/
+body, a, address, b, big, blockquote, body, center, cite, code, dd, del, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, label, legend, li, ol, p, pre, small, span, strong, u, ul, var {
+    margin: 0;
+    padding: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 16px/38px 'Microsoft YaHei', '宋体', 'Arial', 'MicrosoftJhengHei', 'sans-serif';
+    color: #000;
+    background-color: #1f2436;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+}
+
+.dgkt ul li, .dgkt .task img, .financial-product .product-bigclass, .financial-product .product-list {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    width: 100%;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full_w {
+    height: 1644px;
+    min-width: 1240px;
+    background: url("../image/active/septemberActive/bg2.png") no-repeat top center;
+    /*background-size: 100%;*/
+}
+
+/*大谷课堂*/
+.dgkt {
+    width: 996px;
+    height: 637px;
+    /*border: 1px solid white;*/
+    padding-top: 738px;
+    padding-left: 60px;
+    font-size: 18px;
+}
+
+.dgkt ul li {
+    margin-right: 16px;
+}
+
+.dgkt ul li img {
+    width: 100%;
+}
+
+.dgkt .task {
+    width: 976px;
+    margin: 25px 0;
+    position: relative;
+}
+
+.dgkt .task img {
+    margin-left: 24px;
+}
+
+.dgkt img.bao {
+    position: absolute;
+    top: 14px;
+    left: 630px;
+}
+
+.dgkt .task:last-child img {
+    margin-top: 26px;
+}
+
+.dgkt .task p, .dgkt .task h3 {
+    margin-left: 165px;
+}
+
+.dgkt .task h3 span {
+    font-size: 16px;
+    color: #ff0000;
+    padding-left: 32px;
+}
+
+.dgkt hr {
+    border: 0;
+    border-top: 2px dotted #3b2e2e;
+    width: 960px;
+}
+
+/*项目理财*/
+.financial-product {
+    width: 1101px;
+}
+
+.financial-product .p-ydl, .financial-product .p-yyy {
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.financial-product .p-yyy {
+    margin-bottom: 100px;
+}
+
+.financial-product .p-ydl {
+    /*height: 192px;*/
+}
+
+.financial-product .product-bigclass {
+    width: 250px;
+    height: 192px;
+    position: relative;
+    background-color: #ffc334;
+    margin: 0 48px;
+}
+
+.financial-product .p-yyy .product-bigclass {
+    height: 400px;
+}
+
+.financial-product .product-bigclass div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+}
+
+.financial-product .product-bigclass h3 {
+    margin-bottom: 21px;
+    color: #491313;
+    font-size: 28px;
+}
+
+.financial-product .product-list h3 {
+    height: 24px;
+    color: #d20000;
+    font-size: 20px;
+    font-weight: normal;
+    border-left: 5px solid #d20000;
+    line-height: 24px;
+    padding-left: 8px;
+}
+
+.financial-product  .p-ydl .product-list h3 {
+    border: 0;
+}
+
+.financial-product .product-list ul {
+    margin-bottom: 20px;
+}
+
+.financial-product .product-list {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #666666;
+}
+
+.financial-product .product-list label {
+    color: #d20000;
+}
+
+.financial-product .product-list label i {
+    font-size: 30px;
+    font-style: normal;
+}
+
+.financial-product .product-list a {
+    font-size: 18px;
+    color: #d20000;
+    display: block;
+    width: 116px;
+    height: 40px;
+    border: 2px solid #d20000;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.financial-product .product-list li {
+    float: left;
+    width: 200px;
+}
+
+.financial-product .product-list li:first-child {
+    width: 288px;
+}
+
+.financial-product .product-list li.last-li {
+    float: right;
+    margin: 0 auto;
+}
+
+.financial-product hr {
+    /*height: 1px;*/
+    border-top: 2px dotted #666;
+    width: 630px;
+    margin-left: 0;
+    float: left;
+}
+
+.nav {
+    position: absolute;
+    width: 271px;
+    height: 93px;
+    line-height: 93px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    color: #491313;
+    font-size: 36px;
+}
+
+/*活动说明*/
+.activity-desc {
+    background-color: #060b1f;
+    padding: 104px 0 96px 0;
+    position: relative;
+    color: #fff;
+    font-size: 22px;
+    line-height: 50px;
+}
+
+.activity-desc .nav {
+    background: url(../image/active/septemberActive/block_bg.png);
+    top: -49px;
+}
+
+.activity-desc .activity-content {
+    border-radius: 10px;
+    background-color: #1f2436;
+    border: 1px solid #1f2436;
+    width: 1101px;
+    padding: 56px 52px 43px 44px;
+    box-sizing: border-box;
+}
+
+.activity-desc dt, .activity-desc dd {
+    float: left;
+}
+
+.activity-desc dd {
+    width: 880px;
+}
+
+/*专属锦囊*/
+.silk-bag {
+    /*height: 465px;*/
+    position: relative;
+    background: url("../image/active/septemberActive/bottom-bg.png") no-repeat bottom center;
+    background-size: 100%;
+    padding-top: 34%;
+}
+
+.silk-bag .nav {
+    background: url(../image/active/septemberActive/block_bg.png);
+    top: -49px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+.color-red {
+    color: #ff0000;
+}
+
+.color-russetish {
+    color: #ea2515;
+}
+
+.color-brown {
+    color: #871b20;
+}
+
+
+
