@@ -16,6 +16,14 @@ var config={
         "user":{"path":"/user","render":""},
         "login":{"path":"/login","render":"login/login"}
     },
+    dbconfig:{
+        mysql:{
+            host:"10.0.130.129",
+            user            : 'admin',
+            pw        : 'admin',
+            database        : 'test'
+        }
+    },
     logger:{
         "appenders":
             [

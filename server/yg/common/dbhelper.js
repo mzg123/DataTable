@@ -5,6 +5,7 @@
 //    user   : 'me',
 //    password : 'secret',
 //    database : 'my_db'
+///////pool.escape()
 //});
 //
 //connection.connect();
@@ -32,35 +33,59 @@
 //
 //connection.end();
 
-
+var mysql = require('mysql');
 var db={
+    lapp:null,
     getConn:function (){
-
+       return this.connPool.getConnection(function(err, connection) {
+           if(err){
+               this.lapp.datelogger.info("ConnectedMySqlError:");
+               this.lapp.datelogger.trace(err);
+               return null;
+           }else{
+               return connection;
+           }
+        });
     },
-    connPool:[],
+    connPool:null,
     ini:function(app){
-
+        this.lapp=app;
+        this.connPool  = mysql.createPool({
+            connectionLimit : 10,
+            host            : app.config.dbconfig.host,
+            user            : app.config.dbconfig.user,
+            password        : app.config.dbconfig.pw,
+            database        : app.config.dbconfig.database
+        });
+        return this;
     }
 }
 
 var dbhelper={
-    query:function(sql){
-
+    ldb:null,
+    lapp:null,
+    execSql:function(sql){
+        var relust=null;
+        var conn=this.ldb.getConn();
+        conn.query(sql, function(err, rows) {
+             if(err){
+                 this.lapp.datelogger.info("ConnectedMySqlError:");
+                 this.lapp.datelogger.trace(err);
+             }
+             else{
+                 relust=rows;
+             }
+            conn.release();
+         });
+        return relust;
     },
-    insert:function(sql){
 
-    },
-    update:function(sql){
-
-    },
-    delete:function(sql){
-
-    },
     transaction:function(sqlarr){
 
     },
     ini:function(app){
-        db.ini(app);
+        this.lapp=app;
+        ldb=db.ini(app);
     }
 }
 module.exports=dbhelper;
