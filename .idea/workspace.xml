@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/config.js" afterPath="$PROJECT_DIR$/server/yg/common/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/dbhelper.js" afterPath="$PROJECT_DIR$/server/yg/common/dbhelper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -92,9 +91,11 @@
       <file leaf-file-name="dbhelper.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/common/dbhelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2912482" vertical-offset="1051" max-vertical-offset="1824">
-              <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
-              <folding />
+            <state vertical-scroll-proportion="0.6728838" vertical-offset="1659" max-vertical-offset="2394">
+              <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+              <folding>
+                <element signature="e#3221#3782#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -102,8 +103,8 @@
       <file leaf-file-name="Readme.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/node_modules/mysql/Readme.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8" vertical-offset="11780" max-vertical-offset="26049">
-              <caret line="631" column="24" selection-start-line="631" selection-start-column="18" selection-end-line="631" selection-end-column="24" />
+            <state vertical-scroll-proportion="-8.290909" vertical-offset="18867" max-vertical-offset="26049">
+              <caret line="1017" column="77" selection-start-line="1017" selection-start-column="72" selection-end-line="1017" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -632,11 +633,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg" />
       <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg\routes\index" />
       <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg\assist" />
       <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg\views\ejs\layout" />
       <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg\views\ejs\login" />
-      <recent name="C:\Users\Administrator\IdeaProjects\DataTable\server\yg\common\https" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\yjx\Documents\GitHub\DataTable\server\yg\common" />
@@ -916,15 +917,15 @@
       <workItem from="1476152148185" duration="20278000" />
       <workItem from="1476233963451" duration="15469000" />
       <workItem from="1476320547796" duration="996000" />
-      <workItem from="1476321721232" duration="4976000" />
+      <workItem from="1476321721232" duration="8687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="353772000" />
+    <option name="totallyTimeSpent" value="357483000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="1" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1012,13 +1013,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="24" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="126" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/appweb/num.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1361,19 +1355,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/static/html/app/app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3667">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1473213160752" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1473213160752" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/node_modules/mysql/Readme.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8" vertical-offset="11780" max-vertical-offset="26049">
-          <caret line="631" column="24" selection-start-line="631" selection-start-column="18" selection-end-line="631" selection-end-column="24" />
+        <state vertical-scroll-proportion="-8.290909" vertical-offset="18867" max-vertical-offset="26049">
+          <caret line="1017" column="77" selection-start-line="1017" selection-start-column="72" selection-end-line="1017" selection-end-column="83" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/common/dbhelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2912482" vertical-offset="1051" max-vertical-offset="1824">
-          <caret line="66" column="24" selection-start-line="66" selection-start-column="24" selection-end-line="66" selection-end-column="24" />
-          <folding />
+        <state vertical-scroll-proportion="0.6728838" vertical-offset="1659" max-vertical-offset="2394">
+          <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
+          <folding>
+            <element signature="e#3221#3782#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

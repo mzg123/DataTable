@@ -36,7 +36,7 @@
 var mysql = require('mysql');
 var db={
     lapp:null,
-    getConn:function (){
+    getConn:function (dbtype){
        return this.connPool.getConnection(function(err, connection) {
            if(err){
                this.lapp.datelogger.info("ConnectedMySqlError:");
@@ -48,15 +48,15 @@ var db={
         });
     },
     connPool:null,
-    ini:function(app){
+    ini:function(app,dbtype){
         this.lapp=app;
-        this.connPool  = mysql.createPool({
+        this.connPool||(this.connPool  = mysql.createPool({
             connectionLimit : 10,
             host            : app.config.dbconfig.host,
             user            : app.config.dbconfig.user,
             password        : app.config.dbconfig.pw,
             database        : app.config.dbconfig.database
-        });
+        }));
         return this;
     }
 }
@@ -64,9 +64,17 @@ var db={
 var dbhelper={
     ldb:null,
     lapp:null,
-    execSql:function(sql){
+    assist:{
+        escape:function(sql){
+            var conn=this.ldb.getConn(),result;
+            result= conn.escape(sql);
+            conn.release();
+            return result;
+        }
+    },
+    execSql:function(sql,dbtype){
         var relust=null;
-        var conn=this.ldb.getConn();
+        var conn=this.ldb.getConn(dbtype);
         conn.query(sql, function(err, rows) {
              if(err){
                  this.lapp.datelogger.info("ConnectedMySqlError:");
@@ -80,12 +88,45 @@ var dbhelper={
         return relust;
     },
 
-    transaction:function(sqlarr){
-
+    transaction:function(sqlarr,dbtype){
+        var mldb=this.ldb;
+        var connection=this.ldb.getConn(dbtype);
+        connection.beginTransaction(function(err) {
+            if (err) {
+                mldb.datelogger.info("TransactionError:");
+                mldb.datelogger.trace(err);
+                return false;
+            }else{
+                return sqlarr.every(function(item, index, arr) {
+                    connection.query(item, function(err, result) {
+                        if (err) {
+                             connection.rollback(function () {
+                                mldb.datelogger.info("TransactionError:");
+                                mldb.datelogger.trace(err);
+                            });
+                            return false;
+                        }
+                        if(index==arr.length-1){
+                            connection.commit(function(err) {
+                                if (err) {
+                                     connection.rollback(function() {
+                                         mldb.datelogger.info("LastTransactionError:");
+                                         mldb.datelogger.trace(err);
+                                    });
+                                    return false;
+                                }
+                                 return true;
+                            });
+                        }
+                    });
+                    return true;
+                });
+            }
+        });
     },
-    ini:function(app){
+    ini:function(app,dbtype){
         this.lapp=app;
-        ldb=db.ini(app);
+        ldb=db.ini(app,dbtype);
     }
 }
 module.exports=dbhelper;
