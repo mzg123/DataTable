@@ -33,17 +33,17 @@ var dbhelper={
         }
     },
 
-    transaction:function(sqlarr,dbtype){
+    transaction:function(sqlarr,option){
 
         switch(dbtype){
             case 1 :
-                return mysql.ini(this.lapp,dbtype).transaction(sql,getResult);
+                return mysql.ini(this.lapp,this.dbtype).transaction(sqlarr,option);
                 break;
             case 2 :
-                return mongo.ini(this.lapp,dbtype).transaction(sql,getResult);
+                return mongo.ini(this.lapp,this.dbtype).transaction(sqlarr,option);
                 break;
             default:
-                return mysql(this.lapp,dbtype).transaction(sql,getResult);
+                return mysql(this.lapp,this.dbtype).transaction(sqlarr,option);
                 break;
         }
     },

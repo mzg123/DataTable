@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/testclient/clientbrowser.js" afterPath="$PROJECT_DIR$/server/yg/testclient/clientbrowser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/config.js" afterPath="$PROJECT_DIR$/server/yg/common/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/dbhelper.js" afterPath="$PROJECT_DIR$/server/yg/common/dbhelper.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/controller/index/indexcontroller.js" afterPath="$PROJECT_DIR$/server/yg/controller/index/indexcontroller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/common/mysqlhelper.js" afterPath="$PROJECT_DIR$/server/yg/common/mysqlhelper.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -50,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clientbrowser.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clientbrowser.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/testclient/clientbrowser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29400387" vertical-offset="1064" max-vertical-offset="1596">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1036" max-vertical-offset="1596">
               <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
               <folding />
             </state>
@@ -90,13 +91,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mysqlhelper.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mysqlhelper.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/common/mysqlhelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="1368">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.7978142" vertical-offset="708" max-vertical-offset="2109">
+              <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
               <folding>
-                <element signature="e#1678#3165#0" expanded="false" />
+                <element signature="e#3251#3633#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -105,8 +106,18 @@
       <file leaf-file-name="indexcontroller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/controller/index/indexcontroller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+              <caret line="9" column="37" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="date-2016-10-14-12.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-14-12.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2442" max-vertical-offset="3230">
+              <caret line="137" column="63" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -115,8 +126,8 @@
       <file leaf-file-name="dbhelper.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/common/dbhelper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="543" max-vertical-offset="1159">
-              <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="1159">
+              <caret line="45" column="77" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -137,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/yg/views/ejs/index/extra.ejs" />
         <option value="$PROJECT_DIR$/server/yg/views/ejs/index/index.ejs" />
         <option value="$PROJECT_DIR$/server/yg/views/ejs/block/extra.ejs" />
         <option value="$PROJECT_DIR$/server/yg/assist/handlemiddleware.js" />
@@ -178,16 +188,17 @@
         <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-13-16.log" />
         <option value="$PROJECT_DIR$/server/yg/routes/index/index.js" />
         <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-13-17.log" />
-        <option value="$PROJECT_DIR$/server/yg/common/dbhelper.js" />
-        <option value="$PROJECT_DIR$/server/yg/controller/index/indexcontroller.js" />
         <option value="$PROJECT_DIR$/server/yg/routes/index/index_db.js" />
         <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-14-09.log" />
         <option value="$PROJECT_DIR$/server/yg/common/httphelper.js" />
         <option value="$PROJECT_DIR$/server/yg/assist/initmiddleware.js" />
         <option value="$PROJECT_DIR$/server/yg/testclient/package.json" />
-        <option value="$PROJECT_DIR$/server/yg/common/mysqlhelper.js" />
         <option value="$PROJECT_DIR$/server/yg/common/config.js" />
         <option value="$PROJECT_DIR$/server/yg/testclient/clientbrowser.js" />
+        <option value="$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-14-12.log" />
+        <option value="$PROJECT_DIR$/server/yg/controller/index/indexcontroller.js" />
+        <option value="$PROJECT_DIR$/server/yg/common/dbhelper.js" />
+        <option value="$PROJECT_DIR$/server/yg/common/mysqlhelper.js" />
       </list>
     </option>
   </component>
@@ -782,16 +793,16 @@
       <workItem from="1476233963451" duration="15469000" />
       <workItem from="1476320547796" duration="996000" />
       <workItem from="1476321721232" duration="20958000" />
-      <workItem from="1476406600232" duration="7877000" />
+      <workItem from="1476406600232" duration="10569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="377631000" />
+    <option name="totallyTimeSpent" value="380323000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -804,9 +815,9 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3027933" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38994414" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14972067" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23594132" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2383863" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -873,18 +884,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/srp/2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/srp/1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
@@ -1211,14 +1215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/common/dbhelper.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="1159">
-          <caret line="24" column="73" selection-start-line="24" selection-start-column="73" selection-end-line="24" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/common/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8007737" vertical-offset="61" max-vertical-offset="1254">
@@ -1227,29 +1223,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/testclient/clientbrowser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1036" max-vertical-offset="1596">
+          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/logs/log_date/date-2016-10-14-12.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2442" max-vertical-offset="3230">
+          <caret line="137" column="63" selection-start-line="137" selection-start-column="44" selection-end-line="137" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/common/dbhelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="1159">
+          <caret line="45" column="77" selection-start-line="45" selection-start-column="77" selection-end-line="45" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/controller/index/indexcontroller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="380">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/common/mysqlhelper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="1368">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.7978142" vertical-offset="708" max-vertical-offset="2109">
+          <caret line="68" column="27" selection-start-line="68" selection-start-column="27" selection-end-line="68" selection-end-column="27" />
           <folding>
-            <element signature="e#1678#3165#0" expanded="false" />
+            <element signature="e#3251#3633#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/testclient/clientbrowser.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29400387" vertical-offset="1064" max-vertical-offset="1596">
-          <caret line="64" column="19" selection-start-line="64" selection-start-column="19" selection-end-line="64" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>

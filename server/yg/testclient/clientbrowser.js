@@ -62,12 +62,12 @@ options={
 };
 
 setInterval(function(){
-    for(var i=0;i<5;i++){
+    for(var i=0;i<1;i++){
         process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
         //httphelper.reqSsl(options);
         httphelper.req(options);
     }
-},10);
+},1000);
 while(false){
 
     httphelper.req(options);

@@ -3,13 +3,13 @@ var mysql = require('mysql');
 
 var db={
     lapp:null,
-    getConn:function (sql,option){
+    execSql:function (sql,option){
         var lapp=this.lapp;
         this.connPool.getConnection(function(err, connection) {
            if(err){
                lapp.datelogger.info("GetConnectedMySqlError:");
                lapp.datelogger.trace(err);
-               v.error(option.res,err);
+               option.error(option.res,err);
            }else{
                connection.query(sql, function(err, rows) {
                    if(err){
@@ -25,7 +25,53 @@ var db={
                });
            }
         });
+    },
+    transaction:function(sqlarr,option){
+        var lapp=this.lapp;
+        this.connPool.getConnection(function(err, connection) {
+            if(err){
+                lapp.datelogger.info("GetConnectedMySqlError-transaction:");
+                lapp.datelogger.trace(err);
+                option.error(option.res,err);
+            }else{
+                connection.beginTransaction(function(err) {
+                    if (err) {
+                        lapp.datelogger.info("TransactionError:");
+                        lapp.datelogger.trace(err);
+                        option.error(option.res,err);
+                    }else{
+                       var flag= sqlarr.every(function(item, index, arr) {
+                           return connection.query(item, function(err, result) {
+                                if (err) {
+                                    connection.rollback(function () {
+                                        lapp.datelogger.info("TransactionError-rollback:");
+                                        lapp.datelogger.trace(err);
+                                        option.error(option.res,err);
+                                    });
+                                    return false;
+                                }else{
+                                    if(index==arr.length-1){
+                                        connection.commit(function(err) {
+                                            if (err) {
+                                                connection.rollback(function() {
+                                                    lapp.datelogger.info("LastTransactionError:");
+                                                    lapp.datelogger.trace(err);
+                                                });
+                                                return false;
+                                            }
+                                            return true;
+                                        });
+                                    }
+                                    return true;
+                                }
 
+                            });
+                        });
+                        flag?(option.success(option.res,'1')):( option.error(option.res,"-1"));
+                    }
+                });
+            }
+        });
     },
     connPool:null,
     ini:function(app){
@@ -54,44 +100,13 @@ var mysqlhelper={
         }
     },
     execSql:function(sql,option){
-        this.ldb.getConn(sql,option);
+        this.ldb.execSql(sql,option);
     },
 
-    transaction:function(sqlarr){
+    transaction:function(sqlarr,option){
         var mldb=this.ldb;
         var connection=this.ldb.getConn(dbtype);
-        connection.beginTransaction(function(err) {
-            if (err) {
-                mldb.datelogger.info("TransactionError:");
-                mldb.datelogger.trace(err);
-                return false;
-            }else{
-                return sqlarr.every(function(item, index, arr) {
-                    connection.query(item, function(err, result) {
-                        if (err) {
-                             connection.rollback(function () {
-                                mldb.datelogger.info("TransactionError:");
-                                mldb.datelogger.trace(err);
-                            });
-                            return false;
-                        }
-                        if(index==arr.length-1){
-                            connection.commit(function(err) {
-                                if (err) {
-                                     connection.rollback(function() {
-                                         mldb.datelogger.info("LastTransactionError:");
-                                         mldb.datelogger.trace(err);
-                                    });
-                                    return false;
-                                }
-                                 return true;
-                            });
-                        }
-                    });
-                    return true;
-                });
-            }
-        });
+
     },
     ini:function(app){
         this.lapp=app;
