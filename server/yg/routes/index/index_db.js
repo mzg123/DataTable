@@ -19,12 +19,9 @@ function getResult(lres,data){
   lres.end();
 }
 function error (lres,errMsg){
-
   lres.render(lapp.config.main.render, { what: 'best', who: 'me', muppets: [ 'errorerrorerrorerrorerrorerror', 'errorerrorerrorerrorerrorerrorerror', 'errorerrorerrorerrorerrorerrorerrorerror' ]  });
 }
-var success=function  (lapp,lres,jsonData){
-  lres.render(lapp.config.main.render, jsonData);
-}
+
 
 module.exports = startRoute;
 
