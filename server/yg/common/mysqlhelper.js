@@ -19,7 +19,7 @@ var db={
                    }
                    else{
                        connection.release();
-                       option.success(option.res,err,rows);
+                       option.success(option.res,rows);
                    }
 
                });
@@ -41,7 +41,7 @@ var db={
                         option.error(option.res,err);
                     }else{
                        var flag= sqlarr.every(function(item, index, arr) {
-                           return connection.query(item, function(err, result) {
+                          return  connection.query(item, function(err, result) {
                                 if (err) {
                                     connection.rollback(function () {
                                         lapp.datelogger.info("TransactionError-rollback:");
@@ -51,6 +51,7 @@ var db={
                                     return false;
                                 }else{
                                     if(index==arr.length-1){
+
                                         connection.commit(function(err) {
                                             if (err) {
                                                 connection.rollback(function() {
@@ -62,12 +63,11 @@ var db={
                                             return true;
                                         });
                                     }
-                                    return true;
+                                   return true;
                                 }
-
                             });
                         });
-                        flag?(option.success(option.res,'1')):( option.error(option.res,"-1"));
+                        flag?(option.success(option.res,{code:"1"})):( option.error(option.res,{code:"-1"}));
                     }
                 });
             }
@@ -104,9 +104,7 @@ var mysqlhelper={
     },
 
     transaction:function(sqlarr,option){
-        var mldb=this.ldb;
-        var connection=this.ldb.getConn(dbtype);
-
+        this.ldb.transaction(sqlarr,option);
     },
     ini:function(app){
         this.lapp=app;

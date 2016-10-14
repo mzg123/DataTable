@@ -35,7 +35,7 @@ var dbhelper={
 
     transaction:function(sqlarr,option){
 
-        switch(dbtype){
+        switch(this.dbtype){
             case 1 :
                 return mysql.ini(this.lapp,this.dbtype).transaction(sqlarr,option);
                 break;

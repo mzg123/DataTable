@@ -12,8 +12,8 @@ function startRoute(app){
   });
   return app.route;
 }
-function getResult(lres,err,data){
-  console.log(err);
+function getResult(lres,data){
+
   console.log(data);
   lres.write(JSON.stringify(data));
   lres.end();
