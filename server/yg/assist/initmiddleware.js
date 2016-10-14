@@ -21,6 +21,7 @@ function initmiddleware(app){
     app.use(bodyParser.urlencoded({ extended: false }));
     app.use(cookieParser());
     app.use(function(req, res, next){
+        res.setHeader('Content-Type','text/html;charset=UTF-8');
         next();
     });
     app.use(app.express.static(app.path.join(__dirname, 'public')));

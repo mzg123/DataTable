@@ -1,10 +1,15 @@
-var mysql = require('mysqlhelper');
-var mongo = require('mongohelper');
+var mysql = require('./mysqlhelper');
+var mongo = require('./mongohelper');
+var log4js = require("log4js");
+var lapp={
+    datelogger:log4js.getLogger('log_date')
+};
 
 var dbhelper={
     db:null,
     ldb:null,
-    lapp:null,
+    lapp:lapp,
+    dbtype:1,
     assist:{
         escape:function(sql){
             var conn=this.ldb.getConn(),result;
@@ -13,35 +18,38 @@ var dbhelper={
             return result;
         }
     },
-    execSql:function(sql,dbtype){
-        switch(dbtype){
+    execSql:function(sql,option){
+
+        switch(this.dbtype){
             case 1 :
-               return mysqlini(this.lapp,dbtype).execSql(sql,dbtype);
+               return mysql.ini(this.lapp,this.dbtype).execSql(sql,option);
                 break;
             case 2 :
-                return mongoini(this.lapp,dbtype).execSql(sql,dbtype);
+                return mysql.ini(this.lapp,this.dbtype).execSql(sql);
                 break;
             default:
-                return mysqlini(this.lapp,dbtype).execSql(sql,dbtype);
+                return mysql.ini(this.lapp,this.dbtype).execSql(sql,option);
                 break;
         }
     },
 
     transaction:function(sqlarr,dbtype){
+
         switch(dbtype){
             case 1 :
-                return mysql.ini(this.lapp,dbtype).transaction(sql,dbtype);
+                return mysql.ini(this.lapp,dbtype).transaction(sql,getResult);
                 break;
             case 2 :
-                return mongo.ini(this.lapp,dbtype).transaction(sql,dbtype);
+                return mongo.ini(this.lapp,dbtype).transaction(sql,getResult);
                 break;
             default:
-                return mysqlini(this.lapp,dbtype).transaction(sql,dbtype);
+                return mysql(this.lapp,dbtype).transaction(sql,getResult);
                 break;
         }
     },
-    ini:function(app,dbtype){
-        this.lapp=app;
+    ini:function(dbtype){
+        this.dbtype=dbtype;
     }
 }
+
 module.exports=dbhelper;

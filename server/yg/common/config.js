@@ -10,7 +10,8 @@ var config={
     main:{"path":"/test","render":"index/test"},//入口模板文件名称
     noAuthPath:[
         '/',
-        '/products'
+        '/products',
+        '/db'
     ],
     paths:{
         "user":{"path":"/user","render":""},
@@ -18,10 +19,10 @@ var config={
     },
     dbconfig:{
         mysql:{
-            host:"10.0.130.129",
-            user            : 'admin',
-            pw        : 'admin',
-            database        : 'test'
+            host:"localhost",
+            user: 'root',
+            pw: 'admin',
+            database: 'mzg'
         }
     },
     logger:{

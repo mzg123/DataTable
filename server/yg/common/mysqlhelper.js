@@ -1,27 +1,42 @@
-
+var config=require('./config');
 var mysql = require('mysql');
+
 var db={
     lapp:null,
-    getConn:function (){
-       return this.connPool.getConnection(function(err, connection) {
+    getConn:function (sql,option){
+        var lapp=this.lapp;
+        this.connPool.getConnection(function(err, connection) {
            if(err){
-               this.lapp.datelogger.info("ConnectedMySqlError:");
-               this.lapp.datelogger.trace(err);
-               return null;
+               lapp.datelogger.info("GetConnectedMySqlError:");
+               lapp.datelogger.trace(err);
+               v.error(option.res,err);
            }else{
-               return connection;
+               connection.query(sql, function(err, rows) {
+                   if(err){
+                       lapp.datelogger.info("ConnectedMySqlError:");
+                       lapp.datelogger.trace(err);
+                       option.error(option.res,err);
+                   }
+                   else{
+                       connection.release();
+                       option.success(option.res,err,rows);
+                   }
+
+               });
            }
         });
+
     },
     connPool:null,
     ini:function(app){
         this.lapp=app;
+
         this.connPool||(this.connPool  = mysql.createPool({
             connectionLimit : 10,
-            host            : app.config.dbconfig.host,
-            user            : app.config.dbconfig.user,
-            password        : app.config.dbconfig.pw,
-            database        : app.config.dbconfig.database
+            host: config.dbconfig.mysql.host,
+            user : config.dbconfig.mysql.user,
+            password: config.dbconfig.mysql.pw,
+            database: config.dbconfig.mysql.database
         }));
         return this;
     }
@@ -32,26 +47,14 @@ var mysqlhelper={
     lapp:null,
     assist:{
         escape:function(sql){
-            var conn=this.ldb.getConn(),result;
-            result= conn.escape(sql);
-            conn.release();
-            return result;
+            //var conn=this.ldb.getConn(),result;
+            //result= conn.escape(sql);
+            //conn.release();
+            //return result;
         }
     },
-    execSql:function(sql){
-        var relust=null;
-        var conn=this.ldb.getConn();
-        conn.query(sql, function(err, rows) {
-             if(err){
-                 this.lapp.datelogger.info("ConnectedMySqlError:");
-                 this.lapp.datelogger.trace(err);
-             }
-             else{
-                 relust=rows;
-             }
-            conn.release();
-         });
-        return relust;
+    execSql:function(sql,option){
+        this.ldb.getConn(sql,option);
     },
 
     transaction:function(sqlarr){
@@ -92,7 +95,7 @@ var mysqlhelper={
     },
     ini:function(app){
         this.lapp=app;
-        ldb=db.ini(app);
+        this.ldb=db.ini(app);
         return this;
     }
 }

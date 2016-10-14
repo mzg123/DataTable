@@ -7,10 +7,10 @@ function startRoute(app){
   });
   return app.route;
 }
-var success=function  (lapp,lres,jsonData){
+function success  (lapp,lres,jsonData){
   lres.render(lapp.config.main.render, jsonData);
 }
-var error=function (lapp,lres,errMsg){
+function error (lapp,lres,errMsg){
   lres.render(lapp.config.main.render, { what: 'best', who: 'me', muppets: [ 'Kermit444', 'Fozzie444', 'Gonzo44' ]  });
 }
 module.exports = startRoute;
