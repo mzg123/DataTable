@@ -51,11 +51,21 @@ var  options={
         method: 'GET'
 
 };
-for(var i=0;i<10000;i++){
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-    httphelper.reqSsl(options);
-    //httphelper.req(options);
-}
+options={
+    host: '10.0.130.129',
+    port: 3000,//4441   3000
+    path: '/db',
+    method: 'GET'
+
+};
+
+setInterval(function(){
+    for(var i=0;i<10000;i++){
+        process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+        //httphelper.reqSsl(options);
+        httphelper.req(options);
+    }
+},1000);
 while(false){
 
     httphelper.req(options);
