@@ -22,7 +22,8 @@ var config={
             host:"localhost",
             user: 'root',
             pw: 'admin',
-            database: 'mzg'
+            database: 'mzg',
+            poolcount:10
         }
     },
     logger:{

@@ -12,14 +12,15 @@ var httphelper={
                     console.log(data);
                 }
                 catch (e){
-                    console.log(909090909090909090909090);
+
                     console.log(e.message);
                 }
 
             });
         });
         lreq.on('error', function(e){
-            console.log(e.message);
+
+            console.trace(e);
         });
         lreq.end();
     },
@@ -61,12 +62,12 @@ options={
 };
 
 setInterval(function(){
-    for(var i=0;i<3000;i++){
+    for(var i=0;i<5;i++){
         process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
         //httphelper.reqSsl(options);
         httphelper.req(options);
     }
-},1000);
+},10);
 while(false){
 
     httphelper.req(options);

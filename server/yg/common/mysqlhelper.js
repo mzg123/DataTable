@@ -32,7 +32,7 @@ var db={
         this.lapp=app;
 
         this.connPool||(this.connPool  = mysql.createPool({
-            connectionLimit : 10,
+            connectionLimit : config.dbconfig.mysql.poolcount,
             host: config.dbconfig.mysql.host,
             user : config.dbconfig.mysql.user,
             password: config.dbconfig.mysql.pw,
