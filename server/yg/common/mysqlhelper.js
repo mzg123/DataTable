@@ -40,34 +40,34 @@ var db={
                         lapp.datelogger.trace(err);
                         option.error(option.res,err);
                     }else{
-                       var flag= sqlarr.every(function(item, index, arr) {
-                          return  connection.query(item, function(err, result) {
+                        var flag=true;
+                        sqlarr.forEach(function(item, index, arr) {
+                             connection.query(item, function(err, result) {
                                 if (err) {
-                                    connection.rollback(function () {
-                                        lapp.datelogger.info("TransactionError-rollback:");
+                                    //connection.rollback(function () {
+                                        lapp.datelogger.info("TransactionError-rollback---"+index+":");
                                         lapp.datelogger.trace(err);
-                                        option.error(option.res,err);
-                                    });
-                                    return false;
-                                }else{
-                                    if(index==arr.length-1){
-
-                                        connection.commit(function(err) {
-                                            if (err) {
-                                                connection.rollback(function() {
-                                                    lapp.datelogger.info("LastTransactionError:");
-                                                    lapp.datelogger.trace(err);
-                                                });
-                                                return false;
-                                            }
-                                            return true;
-                                        });
-                                    }
-                                   return true;
+                                        flag=false;
+                                    //});
                                 }
+                                 if(index==arr.length-1){
+
+                                     flag?connection.commit(function(err) {
+                                         if (err) {
+                                             connection.rollback(function() {
+                                                 lapp.datelogger.info("LastTransactionError:");
+                                                 option.error(option.res,{code:"-1"})
+                                             });
+                                         }
+                                         option.success(option.res,{code:"1"})
+                                     }):connection.rollback(function () {
+                                         lapp.datelogger.info("rollback--success!");
+                                         option.error(option.res,{code:"-1"})
+                                     });
+                                 }
                             });
                         });
-                        flag?(option.success(option.res,{code:"1"})):( option.error(option.res,{code:"-1"}));
+
                     }
                 });
             }
