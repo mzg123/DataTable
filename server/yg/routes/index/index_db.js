@@ -8,13 +8,21 @@ function startRoute(app){
      indexcontr.getData({app:app,res:res,success:getResult,error:error});
 
     //res.end();
-    //app.httpRep.req(app,req,res,options,success,error);
+
+    // var op={
+    //  app:app,
+    //  req:req,
+    //  options:options,
+    //  success:success,
+    //  error:error
+    //}
+    //app.httpRep.req(op);
   });
   return app.route;
 }
 function getResult(lres,data){
 
-  console.log(data);
+ // console.log(data);
   lres.write(JSON.stringify(data));
   lres.end();
 }

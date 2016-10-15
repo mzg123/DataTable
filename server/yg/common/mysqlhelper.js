@@ -19,6 +19,7 @@ var db={
                    }
                    else{
                        connection.release();
+
                        option.success(option.res,rows);
                    }
 
@@ -30,12 +31,14 @@ var db={
         var lapp=this.lapp;
         this.connPool.getConnection(function(err, connection) {
             if(err){
+
                 lapp.datelogger.info("GetConnectedMySqlError-transaction:");
                 lapp.datelogger.trace(err);
                 option.error(option.res,err);
             }else{
                 connection.beginTransaction(function(err) {
                     if (err) {
+                        connection.release();
                         lapp.datelogger.info("TransactionError:");
                         lapp.datelogger.trace(err);
                         option.error(option.res,err);
@@ -45,25 +48,32 @@ var db={
                              connection.query(item, function(err, result) {
                                 if (err) {
                                     //connection.rollback(function () {
+                                        connection.release();
                                         lapp.datelogger.info("TransactionError-rollback---"+index+":");
                                         lapp.datelogger.trace(err);
                                         flag=false;
                                     //});
                                 }
                                  if(index==arr.length-1){
-
+                                   console.log(lapp.index++);
                                      flag?connection.commit(function(err) {
                                          if (err) {
                                              connection.rollback(function() {
                                                  lapp.datelogger.info("LastTransactionError:");
-                                                 option.error(option.res,{code:"-1"})
+                                                 option.error(option.res,{code:"-1"});
+                                               connection.release();
                                              });
+                                         }else{
+                                           option.success(option.res,{code:"1"})
+                                           connection.release();
                                          }
-                                         option.success(option.res,{code:"1"})
+
                                      }):connection.rollback(function () {
                                          lapp.datelogger.info("rollback--success!");
                                          option.error(option.res,{code:"-1"})
+                                       connection.release();
                                      });
+
                                  }
                             });
                         });

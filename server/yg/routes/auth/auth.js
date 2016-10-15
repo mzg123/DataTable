@@ -7,7 +7,7 @@ function startRoute(app){
 }
 function handleAuth(app,req,res,next,cookie){
     var asessionid=app.base.getCookie(app,req,'SESSIONID');
-    console.log(asessionid);
+    //console.log(asessionid);
     app.config.noAuthPath.indexOf(req.path)!=-1?next():asessionid?auth(app,req,res,next,asessionid):res.redirect('/login');
 }
 function auth(app,req,res,next,asessionid){

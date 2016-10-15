@@ -9,7 +9,7 @@ var  indexcontroller={
            ,"update  user set name='123' where id='2'"
        ];
      dbhelper.transaction(sqls,option);
-       //dbhelper.execSql("select * from user",option);
+     //  dbhelper.execSql("select * from user",option);
 
    }
 }

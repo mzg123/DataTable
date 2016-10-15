@@ -31,7 +31,7 @@ app.listen(config.port,config.ip);
 
  require('./assist/initserver').init(app);
 //模拟服务器
-//require('./common/testServer')(app);
+require('./common/testServer')(app);
 
 
 

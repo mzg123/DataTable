@@ -44,6 +44,7 @@ var httphelper={
         //options.headers|| (options.headers= req.headers);
         //app,req,lres,options,success,error,data
         var htp=http;
+
         if(option.req.protocol == 'https'){
             htp=https;
             process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -53,17 +54,17 @@ var httphelper={
             res.setEncoding('utf8');
             res.on('data', function (data) {
                 try{
-                    option.success(option.app,option.lres,JSON.parse(data));
+                    option.success(option.app,option.res,JSON.parse(data));
                 }
                 catch (e){
-                    option.error(option.app,option.lres,e.message);
+                    option.error(option.app,option.res,e.message);
                     option.app.datelogger.info("原始返回数据："+data)
                     option.app.datelogger.trace(e);
                 }
             });
         });
         lreq.on('error', function(e){
-            option.error(option.app,option.lres,e.message);
+            option.error(option.app,option.res,e.message);
             option.app.datelogger.trace(e);
         });
         option.data&&lreq.write(querystring.stringify(option.data));
