@@ -4,7 +4,8 @@
   "description": "银谷在线",
   "main": "start.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib"
   },
   "author": "mzg",
   "license": "ISC",
@@ -18,6 +19,11 @@
     "morgan": "~1.7.0",
     "mysql": "^2.11.1",
     "pm2": "^2.0.18",
+    "babel-cli": "^6.16.0",
     "serve-favicon": "~2.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0"
   }
 }
