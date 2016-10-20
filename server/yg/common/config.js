@@ -3,8 +3,8 @@ var config={
     port:3000,
     ssl:4441,
     serverSsl:444,
-    ip:"192.168.1.101",//node 启动的ip
-    serverIp:"192.168.1.101",//node请求数据的ip
+    ip:"10.0.130.129",//node 启动的ip 10.0.130.129
+    serverIp:"10.0.130.129",//node请求数据的ip 10.0.130.129
     serverPort:30001,
     env:"production",//development  production
     main:{"path":"/test","render":"index/test"},//入口模板文件名称

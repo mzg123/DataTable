@@ -1,4 +1,4 @@
-(a,b)=>a+b;
+(a, b) => a + b;
 //import 'core-js/shim';
 //
 //export default class Person {
