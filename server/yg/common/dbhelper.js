@@ -1,5 +1,4 @@
 var mysql = require('./mysqlhelper');
-var mongo = require('./mongohelper');
 var log4js = require("log4js");
 var lapp={
   index:0,

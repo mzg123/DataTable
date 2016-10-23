@@ -46,3 +46,13 @@ html,body{
     height: 60px;/*脚部的高度*/
     clear:both;
 }
+
+.clear_b{
+    clear: both;
+}
+.position_r{
+    position: relative;
+}
+.float_l{
+    float: left;
+}
