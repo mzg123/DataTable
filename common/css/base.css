@@ -50,9 +50,15 @@ html,body{
 .clear_b{
     clear: both;
 }
+.align_c{
+    text-align: center;
+}
 .position_r{
     position: relative;
 }
 .float_l{
     float: left;
+}
+.display_ilb{
+    display: inline-block;
 }

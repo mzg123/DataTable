@@ -46,6 +46,7 @@ Network Trash Folder
 Temporary Items
 .apdisk
 /server/node_modules
+/server/server/node_modules
 /server/helloword
 /server/yg/logs
 /server/yg/node_modules

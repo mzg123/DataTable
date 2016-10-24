@@ -5,7 +5,9 @@
   "main": "start.js",
   "scripts": {
     "start": "babel-node src/src.js",
+    "build-webpack":"webpack --progress --colors ",
     "build": "babel src --out-dir lib"
+    , "start-webpack-dev-server": "webpack-dev-server --content-base "
   },
   "author": "mzg",
   "license": "ISC",
@@ -22,6 +24,8 @@
     "mysql": "^2.11.1",
     "pm2": "^2.0.18",
     "serve-favicon": "~2.3.0"
+    ,  "extract-text-webpack-plugin": "^1.0.1"
+    , "webpack-dev-server": "^1.16.2"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",
