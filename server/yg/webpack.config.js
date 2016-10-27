@@ -7,8 +7,8 @@ var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: {
-        bundle: "./src/entry.js",
-        list: "./src/entry.js"
+        bundle: "./webpackbuildjs/entry.js",
+        list: "./webpackbuildjs/entry.js"
     },
     devServer: {
         contentBase: "./",//本地服务器所加载的页面所在的目录
@@ -18,8 +18,8 @@ module.exports = {
     },
     devtool: 'cheap-module-source-map',//配置生成Source Maps，选择合适的选项  eval-source-map
     output: {
-        path: path.join(__dirname, 'out'),
-        publicPath: './out/',
+        path: path.join(__dirname, 'dist'),
+        publicPath: './dist/',
         filename: "[name].js"
     },
     externals: {
