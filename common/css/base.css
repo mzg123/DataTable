@@ -53,6 +53,10 @@ html,body{
 .align_c{
     text-align: center;
 }
+
+.align_l{
+    text-align: left;
+}
 .position_r{
     position: relative;
 }
