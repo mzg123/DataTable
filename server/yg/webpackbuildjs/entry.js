@@ -1,10 +1,9 @@
 var text=require('./text.js');
-
+require("./main.css");
+require("./main1.css");
 function readPage(){
-    alert("Hello");
+    alert("33");
 }
-console.log(document.getElementsByTagName("mzg"));
-//
 window.onload = function () {
     document.getElementById('mzg').onclick=text;
 

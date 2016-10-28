@@ -49,4 +49,6 @@ Temporary Items
 /server/server/node_modules
 /server/helloword
 /server/yg/logs
+/server/yg/dist
+/server/yg/dist
 /server/yg/node_modules
