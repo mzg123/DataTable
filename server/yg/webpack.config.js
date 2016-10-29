@@ -9,7 +9,8 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: {
         //index: ['./webpackbuildjs/entry.js', hotMiddlewareScript]
-        //index: "./webpackbuildjs/entry.js"
+        login: "./webpackbuildjs/mzg/login.js"
+        //,index: "./webpackbuildjs/entry.js"
         //,welcome: "./webpackbuildjs/welcome.js"
     }
     //,devServer:{

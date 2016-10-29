@@ -1,6 +1,6 @@
 var text=require('./text.js');
-require("./main.css");
-require("./main1.css");
+//require("./main.css");
+require("../static/module/login/login_1.css");
 function readPage(){
     alert("30330");
 }
