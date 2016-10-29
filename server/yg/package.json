@@ -7,7 +7,7 @@
     "start": "babel-node src/src.js",
     "build-webpack": "webpack --progress --colors ",
     "build": "babel src --out-dir lib",
-    "dev-webpack": "webpack-dev-server"
+    "dev-webpack": "webpack-dev-server --inline --hot --build"
   },
   "author": "mzg",
   "license": "ISC",

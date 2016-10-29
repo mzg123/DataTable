@@ -12,17 +12,12 @@ module.exports = {
         index: "./webpackbuildjs/entry.js"
         //,welcome: "./webpackbuildjs/welcome.js"
     },
-    devServer: {
-        contentBase: "./",//本地服务器所加载的页面所在的目录
-        colors: true,//终端中输出结果为彩色
-        historyApiFallback: true,//不跳转
-        inline: true//实时刷新
-    },
+
     devtool: 'cheap-module-source-map',//配置生成Source Maps，选择合适的选项  eval-source-map
     output: {
         path: path.join(__dirname, 'dist'),
         //publicPath: './dist',
-        publicPath: '../',
+        publicPath: '/dist/',
         filename: "js/[name].js"
     },
     externals: {
@@ -72,7 +67,7 @@ module.exports = {
             },
             except: ['$super', '$', 'exports', 'require']    //排除关键字
         })
-        ,new webpack.HotModuleReplacementPlugin() //热加载
+        //,new webpack.HotModuleReplacementPlugin() //热加载
 ]
     //,plugins: [
     //    new ExtractTextPlugin("main.css"),

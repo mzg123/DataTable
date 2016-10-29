@@ -1,27 +1,27 @@
 body{
     /*background: url("./headerbanner.jpg");*/
-    background:#000000;
-    font-size: inherit;
+    background:#0000ff;
     color:red;
     }
 .mzg{
     background: url("./scancode.png");
 }
 .t1{
-    background: url("./1/app.png"); width:1010px;
-    height: 100px;
+    background: url("./1/app.png");
+    width:100px;
+    height:200px;
 }
 .t2{
     background: url("./2/bg.png"); width:1010px;
-    height: 300px;
+    height: 100px;
 }
 .t3{
     background: url("./3/icon-bg.png"); width:1010px;
-    height: 500px;
+    height:100px;
 }
 .t4{
     background: url("./4/subscription.png"); width:1010px;
-    height:1000px;
-    border:solid #0000ff 2px;
+    height:100px;
+    border:solid orange 120px;
     font-size: 20px;
 }
