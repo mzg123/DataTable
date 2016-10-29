@@ -1,4 +1,9 @@
 body{
-    
-    font-size: 14px;
+    background: url("../../image/login/web_login_bg.jpg") no-repeat center;
+    background-size: cover;
+}
+.login{
+    width:380px;
+    height:250px;
+    background: #FFFFFF;
 }
