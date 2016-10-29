@@ -5,15 +5,22 @@
 var path = require('path');
 var webpack = require('webpack');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-
+//var hotMiddlewareScript = 'webpack-hot-middleware/client?reload=true';
 module.exports = {
     entry: {
-
-        index: "./webpackbuildjs/entry.js"
+        //index: ['./webpackbuildjs/entry.js', hotMiddlewareScript]
+        //index: "./webpackbuildjs/entry.js"
         //,welcome: "./webpackbuildjs/welcome.js"
-    },
-
-    devtool: 'cheap-module-source-map',//配置生成Source Maps，选择合适的选项  eval-source-map
+    }
+    //,devServer:{
+    //    historyApiFallback:true,
+    //    hot:true,
+    //    inline:true,
+    //    progress:true,
+    //
+    //    port:8080 //端口你可以自定义
+    //}
+    ,devtool: 'cheap-module-source-map',//配置生成Source Maps，选择合适的选项  eval-source-map
     output: {
         path: path.join(__dirname, 'dist'),
         //publicPath: './dist',

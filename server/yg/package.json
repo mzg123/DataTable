@@ -7,7 +7,7 @@
     "start": "babel-node src/src.js",
     "build-webpack": "webpack --progress --colors ",
     "build": "babel src --out-dir lib",
-    "dev-webpack": "webpack-dev-server --inline --hot --build"
+    "dev-webpack": "webpack-dev-server --hot --inline  "
   },
   "author": "mzg",
   "license": "ISC",
@@ -32,7 +32,8 @@
     "sass-loader": "^1.0.2",
     "serve-favicon": "~2.3.0",
     "style-loader": "^0.12.3",
-    "webpack-dev-server": "^1.16.2"
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.1"
   },
   "devDependencies": {
     "babel-cli": "^6.16.0",

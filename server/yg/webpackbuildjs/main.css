@@ -1,15 +1,14 @@
 body{
     /*background: url("./headerbanner.jpg");*/
-    background:#0000ff;
-    color:red;
+    background:red;
     }
 .mzg{
     background: url("./scancode.png");
 }
 .t1{
     background: url("./1/app.png");
-    width:100px;
-    height:200px;
+    width:300px;
+    height:440px;
 }
 .t2{
     background: url("./2/bg.png"); width:1010px;
@@ -17,11 +16,11 @@ body{
 }
 .t3{
     background: url("./3/icon-bg.png"); width:1010px;
-    height:100px;
+    height:600px;
 }
 .t4{
     background: url("./4/subscription.png"); width:1010px;
-    height:100px;
-    border:solid orange 120px;
+    height:500px;
+    border:solid orange 20px;
     font-size: 20px;
 }
