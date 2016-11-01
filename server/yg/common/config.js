@@ -6,6 +6,7 @@ var config={
     ip:"10.0.130.129",//node 启动的ip 10.0.130.129
     serverIp:"10.0.130.129",//node请求数据的ip 10.0.130.129
     serverPort:30001,
+    cdn:"http://localhost:8080",
     env:"production",//development  production
     main:{"path":"/test","render":"index/test"},//入口模板文件名称
     noAuthPath:[
@@ -16,6 +17,7 @@ var config={
     ],
     paths:{
         "user":{"path":"/user","render":""},
+        "login_1":{"path":"/login","render":"login/login_1"},
         "login":{"path":"/login","render":"login/login"}
     },
     dbconfig:{

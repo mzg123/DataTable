@@ -79,12 +79,23 @@ html,body{
     margin: auto;
 }
 /*居左右中 end*/
+/*长度和宽度 start*/
+.width_100_p{
+width:100%;
+}
+.height_100_p{
+    height:100%;
+}
+.all_100_p{
+    width:100%;
+    height:100%;
+}
+/*长度和宽度 end*/
 
 /*位置 start*/
 .position_r{
     position: relative;
 }
-
 /*位置 end*/
 
 /*display start*/
@@ -102,4 +113,16 @@ html,body{
 /*圆角 end*/
 
 
+/*字体 start*/
+.font_20{
+    font-size: 20px;
+}
+/*字体 end*/
 
+
+/*a 标签 start*/
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+/*a 标签 end*/
