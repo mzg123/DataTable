@@ -11,17 +11,23 @@
     <span class="small_ari_left"></span>
     <span class="font_20">品牌名称-管理登陆</span>
 </div>
-    <form class="position_r">
-        <div class="position_r margin_lr_c top_left_50_f20">
-            <input class="user  " type="text" placeholder="用户名" /><span><a class="miss_user" herf="">&nbsp;&nbsp;忘记用户名</a></span>
-        </div>
-        <div class="top_left_50_f20 margin_lr_c position_r margin_top_30">
-            <input class="pass_word " type="password" placeholder="密码" /><span><a class="miss_ps" herf="">&nbsp;&nbsp;忘记密码&nbsp;&nbsp;&nbsp;</a>
-        </div>
-        <div id="submit" class="submit position_r border_radius_5  margin_lr_c margin_top_90">
-            登录
-        </div>
-    </form>
+   <div class="margin_top_50"></div>
+       <div>
+           <form class="position_r ">
+               <div class="position_r margin_lr_c ">
+                   <input id="username" class="user" type="text" placeholder="用户名" /><span><a class="miss_user" herf="">&nbsp;&nbsp;忘记用户名</a></span>
+                   <br/><span class="position_r hidden  error">请输入用户名</span>
+               </div>
+               <div class=" margin_lr_c position_r ">
+                   <input id="password" class="pass_word " type="password" placeholder="密码" /><span><a class="miss_ps" herf="">&nbsp;&nbsp;忘记密码&nbsp;&nbsp;&nbsp;</a>
+                <br/><span class="position_r hidden error">请输入用户名</span>
+               </div>
+               <div id="submit" class="submit position_r border_radius_5 margin_top_20 margin_lr_c ">
+                   登录
+               </div>
+               <div class="position_r margin_top_10"><a herf="" class="register position_r padding_left_250 ">注册</a></div>
+           </form>
+       </div>
 </div>
 
 <script  type="text/javascript" src="<%=cdn%>/dist/js/login.js"></script>

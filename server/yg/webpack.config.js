@@ -35,7 +35,9 @@ module.exports = {
         loaders: [
             //{ test: /\.js$/, loader: "jsx?harmony!babel", include: /src/},
             //{ test: /\.css$/, loader: "style!css"},
+
             { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader")}
+
             , {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loaders: [
@@ -43,8 +45,9 @@ module.exports = {
                     'image-webpack'
                 ]
             }
+           // ,{ test: /\.(png|jpg|gif)$/, loader: "url?limit=6120"}
             //{ test: /\.scss$/, loader: "style!css!sass"},
-            //{ test: /\.(png|jpg|gif)$/, loader: "url?limit=1118192"},
+
             //{ test: /\.svg$/, loader: "url?limit=8192"}
         ]
     }

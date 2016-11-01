@@ -2,6 +2,15 @@ body{
     background: url("../../image/login/web_login_bg.jpg") no-repeat center;
     background-size: cover;
 }
+.error{
+    font-size: 12px;
+    background: url("../../image/login/login_icons.png") 0 -114px no-repeat #f7f7f7;
+    color: #ff6d58;
+    text-align: left;
+    padding-left: 20px;
+    line-height: 20px;
+    left: -90px;
+}
 .login{
     width:380px;
     height:350px;
@@ -34,6 +43,15 @@ body{
 .margin_top_30{
     margin-top:30px;
     }
+.margin_top_20{
+    margin-top:20px;
+}
+.margin_top_50{
+    margin-top:50px;
+}
+.margin_top_10{
+    margin-top:10px;
+}
 .margin_top_90{
     margin-top:90px;
 }
@@ -75,7 +93,13 @@ body{
     height: 40px;
     line-height: 40px;
     background: #00b3f7;
-
+}
+.register{
+    color:#ADA4A4;
+}
+.padding_left_250{
+    margin-top: 20px;
+    padding-left: 250px;
 }
 
 

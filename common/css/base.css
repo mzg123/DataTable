@@ -124,5 +124,23 @@ width:100%;
 a:hover{
     text-decoration: none;
     cursor: pointer;
+    color:#6fabf4;
 }
 /*a 标签 end*/
+/*错误提示 start*/
+/*.error{*/
+    /*font-size: 12px;*/
+    /*background: url("../server/yg/static/image/login/login_icons.png") 0 -114px no-repeat #f7f7f7;*/
+    /*color: #ff6d58;*/
+    /*text-align: left;*/
+    /*padding-left: 20px;*/
+    /*line-height: 20px;*/
+    /*left: -90px;*/
+/*}*/
+/*错误提示 end*/
+/*显隐 start*/
+.hidden{
+    /*display: none;*/
+    visibility: hidden;
+}
+/*显隐 end*/
