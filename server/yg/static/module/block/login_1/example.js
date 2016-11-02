@@ -1,3 +1,6 @@
+/**
+ *需要根据实际情况赋值
+ */
 
 var option= {
     parentCon: "login",
@@ -10,38 +13,9 @@ var option= {
     , registerHandle: function () {
         alert("注册");
     }
-    ,valityFormHandle:function(){
-
-    }
     //, missUserUrl:"http://www.baidu.com"
     // , missPSUrl:"http://www.baidu.com"
     // , registerUrl:"http://www.baidu.com"
 }
-require("../block/login_1/login_1.css");
-require("../block/login_1/login_1.js").init(option);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+require("./login_1.css");
+require("./login_1.js").init(option);
