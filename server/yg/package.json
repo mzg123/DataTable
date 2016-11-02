@@ -5,6 +5,7 @@
   "main": "start.js",
   "scripts": {
     "start": "babel-node src/src.js",
+    "server": "node server.js",
     "build-webpack": "webpack --progress --colors ",
     "build": "babel src --out-dir lib",
     "dev-webpack": "webpack-dev-server --hot --inline  "
