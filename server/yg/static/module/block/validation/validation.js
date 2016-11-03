@@ -68,7 +68,9 @@ function valid(focusField){
         isMinValue(validitem.validRule.minValue,val,validitem.output,validitem.errorMsg.minValue)?(
             isMaxValue(validitem.validRule.maxValue,val,validitem.output,validitem.errorMsg.maxValue)?(
                 isMinLength(validitem.validRule.minLength,val,validitem.output,validitem.errorMsg.minLength)?(
-                    isMaxLength(validitem.validRule.maxLength,val,validitem.output,validitem.errorMsg.maxLength)
+                    isMaxLength(validitem.validRule.maxLength,val,validitem.output,validitem.errorMsg.maxLength)?(
+                        isPattern(validitem.validRule.pattern,val,validitem.output,validitem.errorMsg.pattern)
+                    ):""
                 ):""
             ):""
           ):""

@@ -31,13 +31,15 @@ var d={
                 required: true,
             minLength: 1,
             maxLength: 3,
-            minValue: 200,
-                maxValue: 2000
+            pattern: /^[a-z]{1,20}/
+            //,minValue: 200
+            //, maxValue: 2000
             },
             errorMsg:{
                 required: "用户名不能为空",
                 minLength: "长度最小20",
                 maxLength: "长度最大20",
+                pattern: "正则表达式错误",
                 minValue: "请输入有效金额不能小于200",
                 maxValue: "请输入有效金额不能大于2000"
             },
