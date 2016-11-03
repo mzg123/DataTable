@@ -29,8 +29,8 @@ var d={
         {    name:"username"
             ,validRule:{
                 required: true,
-            minLength: 4,
-            maxLength: 9,
+            minLength: 1,
+            maxLength: 3,
             minValue: 200,
                 maxValue: 2000
             },

@@ -67,7 +67,9 @@ function valid(focusField){
     isRequired(validitem.validRule.required,val,validitem.output,validitem.errorMsg.required)? (
         isMinValue(validitem.validRule.minValue,val,validitem.output,validitem.errorMsg.minValue)?(
             isMaxValue(validitem.validRule.maxValue,val,validitem.output,validitem.errorMsg.maxValue)?(
-                isMinLength(validitem.validRule.minLength,val,validitem.output,validitem.errorMsg.minLength)
+                isMinLength(validitem.validRule.minLength,val,validitem.output,validitem.errorMsg.minLength)?(
+                    isMaxLength(validitem.validRule.maxLength,val,validitem.output,validitem.errorMsg.maxLength)
+                ):""
             ):""
           ):""
         ):"";
@@ -114,7 +116,14 @@ function isMaxLength(flag,value,output,errorMsg){
     showError(output,t,errorMsg);
     return t;
 }
-
+//true 表示通过验证
+function isPattern(flag,value,output,errorMsg){
+    var t=true;
+    if(!flag)return true;
+    t= flag.test(value) || ( new RegExp(flag)).test(value);
+    showError(output,t,errorMsg);
+    return t;
+}
 function showError(output,flag,errorMsg){
     flag?$("#"+output).text(""):$("#"+output).text(errorMsg);
     flag?$("#"+output)["addClass"]("hidden"):$("#"+output)["removeClass"]("hidden");
