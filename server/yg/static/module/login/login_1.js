@@ -28,14 +28,27 @@ var d={
     fields: [
         {    name:"username"
             ,validRule:{
-            required: true,
-            maxValue: 20000000
-        },
+                required: true,
+                maxValue: 20000000
+            },
             errorMsg:{
-                required: "投资金额为500的整数倍且不能为空",
+                required: "用户名不能为空",
                 maxValue: "请输入有效金额不能大于"
             },
             output: "usernameerror",
+            validator : function(){
+            }
+        }
+        , {    name:"password"
+            ,validRule:{
+                required: true,
+                maxValue: 20000000
+            },
+            errorMsg:{
+                required: "密码不能为空",
+                maxValue: "请输入有效金额不能大于"
+            },
+            output: "passworderror",
             validator : function(){
             }
         }
