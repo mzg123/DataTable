@@ -65,7 +65,9 @@ function valid(focusField){
     var val=$(focusField).val();
     var validitem=$(focusField).data(focusName);
     isRequired(validitem.validRule.required,val,validitem.output,validitem.errorMsg.required)? (
-        isMinLength(validitem.validRule.minLength,val,validitem.output,validitem.errorMsg.minLength)?"":""
+        isMinValue(validitem.validRule.minValue,val,validitem.output,validitem.errorMsg.minValue)?(
+            isMaxValue(validitem.validRule.maxValue,val,validitem.output,validitem.errorMsg.maxValue)?(""):""
+          ):""
         ):"";
 }
 
@@ -78,13 +80,39 @@ function isRequired(flag,value,output,errorMsg){
     return t;
 }
 //true 表示通过验证
-function isMinLength(flag,value,output,errorMsg){
+function isMinValue(flag,value,output,errorMsg){
      var t=true;
     if(!flag)return true;
-    t=flag<value;
+    t=flag<=value;
     showError(output,t,errorMsg);
     return t;
 }
+
+//true 表示通过验证
+function isMaxValue(flag,value,output,errorMsg){
+    var t=true;
+    if(!flag)return true;
+    t=flag>=value;
+    showError(output,t,errorMsg);
+    return t;
+}
+//true 表示通过验证
+function isMinLength(flag,value,output,errorMsg){
+    var t=true;
+    if(!flag)return true;
+    t=flag<=value.length;
+    showError(output,t,errorMsg);
+    return t;
+}
+//true 表示通过验证
+function isMaxLength(flag,value,output,errorMsg){
+    var t=true;
+    if(!flag)return true;
+    t=flag>=value.length;
+    showError(output,t,errorMsg);
+    return t;
+}
+
 function showError(output,flag,errorMsg){
     flag?$("#"+output).text(""):$("#"+output).text(errorMsg);
     flag?$("#"+output)["addClass"]("hidden"):$("#"+output)["removeClass"]("hidden");

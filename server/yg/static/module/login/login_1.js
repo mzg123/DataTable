@@ -30,12 +30,14 @@ var d={
             ,validRule:{
                 required: true,
             minLength: 20000000,
-                maxValue: 20000000
+            minValue: 200,
+                maxValue: 2000
             },
             errorMsg:{
                 required: "用户名不能为空",
                 minLength: "请输入有效金额不能小于20000000",
-                maxValue: "请输入有效金额不能大于"
+                minValue: "请输入有效金额不能小于200",
+                maxValue: "请输入有效金额不能大于2000"
             },
             output: "usernameerror",
             validator : function(){
