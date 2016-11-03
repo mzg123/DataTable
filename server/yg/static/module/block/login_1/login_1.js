@@ -11,9 +11,9 @@ var Login_1={
         valityFormHandle: $.noop,//验证表单处理函数
         submitHandle: $.noop//提交表达处理函数
     },
-    template:' <form class="position_r login_1">'+
+    template:' <form id="loginform" class="position_r login_1">'+
                   '<div class="position_r margin_lr_c ">'+
-                      '<input id="username" class="user" type="text" placeholder="用户名" /><span><a id="missuser" class="miss_user" herf="">&nbsp;&nbsp;忘记用户名</a></span>'+
+                      '<input id="username" name="username" class="user" type="text" placeholder="用户名" /><span><a id="missuser" class="miss_user" herf="">&nbsp;&nbsp;忘记用户名</a></span>'+
                       '<br/><span id="usernameerror" class="position_r hidden  error">请输入用户名</span>'+
                    '</div>'+
                     '<div class=" margin_lr_c position_r ">'+
