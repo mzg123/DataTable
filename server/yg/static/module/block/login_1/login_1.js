@@ -17,7 +17,7 @@ var Login_1={
                       '<br/><span id="usernameerror" class="position_r hidden  error">请输入用户名</span>'+
                    '</div>'+
                     '<div class=" margin_lr_c position_r ">'+
-                         '<input id="password" class="pass_word " type="password" placeholder="密码" /><span><a id="missps"  class="miss_ps" herf="">&nbsp;&nbsp;忘记密码&nbsp;&nbsp;&nbsp;</a>'+
+                         '<input id="password" name="password" class="pass_word " type="password" placeholder="密码" /><span><a id="missps"  class="miss_ps" herf="">&nbsp;&nbsp;忘记密码&nbsp;&nbsp;&nbsp;</a>'+
                         '<br/><span id="passworderror" class="position_r hidden error">请输入用户名</span>'+
                     '</div>'+
                     '<div id="submit" class="submit position_r border_radius_5 margin_top_20 margin_lr_c ">'+

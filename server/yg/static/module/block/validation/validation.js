@@ -13,10 +13,10 @@ var option={
                          required: true,
                         maxValue: 20000000
                         },
-                    errorMsg:[
-                    {   required: "<i class='icon_tips' ></i>投资金额为500的整数倍且不能为空"},
-                    {  maxValue: "<i class='icon_tips' ></i>请输入有效金额不能大于"}
-                  ],
+                    errorMsg:{
+                       required: "<i class='icon_tips' ></i>投资金额为500的整数倍且不能为空",
+                      maxValue: "<i class='icon_tips' ></i>请输入有效金额不能大于"
+                    },
                     output: "usernameerror",
                     validator : function(){
                   }
@@ -51,10 +51,7 @@ var FormValidation={
     ,blur:function(){
         var focusName=this.focusField.name;
         var validitem=$(this.focusField).data(focusName);
-        //validRule:[
-        //    { required: true},
-        //    {maxValue: 20000000}
-        //],
+
         valid(this.focusField);
     }
     ,change:function(){
@@ -66,19 +63,18 @@ function valid(focusField){
     var focusName=focusField.name;
     var val=$(focusField).val();
     var validitem=$(focusField).data(focusName);
-    isRequired(validitem.validRule.required,val,validitem.output);
-
+    isRequired(validitem.validRule.required,val,validitem.output,validitem.errorMsg.required);
 }
-function isRequired(flag,value,output){
+function isRequired(flag,value,output,errorMsg){
+
     var t=true;
     if(!flag)return true;
     value.trim()||(t=false);
-    showError(output,t);
+    showError(output,t,errorMsg);
     return t;
 }
-
-function showError(output,flag){
-    
+function showError(output,flag,errorMsg){
+    $("#"+output).text(errorMsg);
     flag?$("#"+output)["addClass"]("hidden"):$("#"+output)["removeClass"]("hidden");
 }
 module.exports=FormValidation;

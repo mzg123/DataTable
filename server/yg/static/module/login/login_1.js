@@ -31,20 +31,19 @@ var d={
             required: true,
             maxValue: 20000000
         },
-            errorMsg:[
-                {   required: "<i class='icon_tips' ></i>投资金额为500的整数倍且不能为空"},
-                {  maxValue: "<i class='icon_tips' ></i>请输入有效金额不能大于"}
-            ],
+            errorMsg:{
+                required: "投资金额为500的整数倍且不能为空",
+                maxValue: "请输入有效金额不能大于"
+            },
             output: "usernameerror",
             validator : function(){
             }
-
         }
     ],
     errorMessage: {
         money: {
-            required: "<i class='icon_tips' ></i>投资金额为500的整数倍且不能为空",
-            maxValue: "<i class='icon_tips' ></i>请输入有效金额不能大于"
+            required: "投资金额为500的整数倍且不能为空",
+            maxValue: "请输入有效金额不能大于"
             //pattern: "<i class='icon_tips' ></i>请输入有效金额"
         }
     }
