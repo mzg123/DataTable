@@ -29,13 +29,15 @@ var d={
         {    name:"username"
             ,validRule:{
                 required: true,
-            minLength: 20000000,
+            minLength: 4,
+            maxLength: 9,
             minValue: 200,
                 maxValue: 2000
             },
             errorMsg:{
                 required: "用户名不能为空",
-                minLength: "请输入有效金额不能小于20000000",
+                minLength: "长度最小20",
+                maxLength: "长度最大20",
                 minValue: "请输入有效金额不能小于200",
                 maxValue: "请输入有效金额不能大于2000"
             },

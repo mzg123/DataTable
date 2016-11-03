@@ -66,7 +66,9 @@ function valid(focusField){
     var validitem=$(focusField).data(focusName);
     isRequired(validitem.validRule.required,val,validitem.output,validitem.errorMsg.required)? (
         isMinValue(validitem.validRule.minValue,val,validitem.output,validitem.errorMsg.minValue)?(
-            isMaxValue(validitem.validRule.maxValue,val,validitem.output,validitem.errorMsg.maxValue)?(""):""
+            isMaxValue(validitem.validRule.maxValue,val,validitem.output,validitem.errorMsg.maxValue)?(
+                isMinLength(validitem.validRule.minLength,val,validitem.output,validitem.errorMsg.minLength)
+            ):""
           ):""
         ):"";
 }

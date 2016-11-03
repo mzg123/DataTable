@@ -71,9 +71,13 @@
       <file leaf-file-name="validation.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/validation/validation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.820996" vertical-offset="1461" max-vertical-offset="2375">
-              <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="0.4858681" vertical-offset="1045" max-vertical-offset="2071">
+              <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!block;n#isRequired#0" expanded="false" />
+                <element signature="n#!!block;n#isMinValue#0" expanded="false" />
+                <element signature="n#!!block;n#isMaxValue#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -81,8 +85,8 @@
       <file leaf-file-name="login_1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/login/login_1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="1938">
-              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="565" max-vertical-offset="1976">
+              <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -972,7 +976,7 @@
       <workItem from="1477874862932" duration="7527000" />
       <workItem from="1477962782659" duration="24583000" />
       <workItem from="1478053007283" duration="19956000" />
-      <workItem from="1478134012875" duration="30681000" />
+      <workItem from="1478134012875" duration="31169000" />
     </task>
     <task id="LOCAL-00001" summary="Default">
       <created>1476537969852</created>
@@ -984,7 +988,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="552378000" />
+    <option name="totallyTimeSpent" value="552866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
@@ -1442,17 +1446,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/static/module/login/login_1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="1938">
-          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="565" max-vertical-offset="1976">
+          <caret line="32" column="25" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/validation/validation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.820996" vertical-offset="1461" max-vertical-offset="2375">
-          <caret line="109" column="25" selection-start-line="109" selection-start-column="25" selection-end-line="109" selection-end-column="25" />
-          <folding />
+        <state vertical-scroll-proportion="0.4858681" vertical-offset="1045" max-vertical-offset="2071">
+          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#isRequired#0" expanded="false" />
+            <element signature="n#!!block;n#isMinValue#0" expanded="false" />
+            <element signature="n#!!block;n#isMaxValue#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
