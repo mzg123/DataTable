@@ -2,17 +2,22 @@
     font-size: 12px;
     background: url("login_icons.png") 0 -114px no-repeat #f7f7f7;
     color: #ff6d58;
-    text-align: left;
+    text-align: left !important;
     padding-left: 20px;
     line-height: 20px;
-    left: -90px;
+    /*left: -90px;*/
+}
+.margin_0_0_0_p20{
+    margin: 0 0 0 20%;
 }
 .login{
     width:380px;
     height:350px;
     background: #FFFFFF;
 }
-.align_c{
+
+
+.align_c_block{
     width:380px;
     height:350px;
     position:absolute;

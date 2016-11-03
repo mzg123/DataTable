@@ -11,16 +11,16 @@ var Login_1={
         valityFormHandle: $.noop,//验证表单处理函数
         submitHandle: $.noop//提交表达处理函数
     },
-    template:' <form id="loginform" class="position_r login_1">'+
-                  '<div class="position_r margin_lr_c ">'+
+    template:' <form id="loginform" class="position_r login_1 align_l">'+
+                  '<div class="position_r margin_0_0_0_p20 ">'+
                       '<input id="username" name="username" class="user" type="text" placeholder="用户名" /><span><a id="missuser" class="miss_user" herf="">&nbsp;&nbsp;忘记用户名</a></span>'+
                       '<br/><span id="usernameerror" class="position_r hidden  error">请输入用户名</span>'+
                    '</div>'+
-                    '<div class=" margin_lr_c position_r ">'+
+                    '<div class=" margin_0_0_0_p20 position_r ">'+
                          '<input id="password" name="password" class="pass_word " type="password" placeholder="密码" /><span><a id="missps"  class="miss_ps" herf="">&nbsp;&nbsp;忘记密码&nbsp;&nbsp;&nbsp;</a>'+
                         '<br/><span id="passworderror" class="position_r hidden error">请输入用户名</span>'+
                     '</div>'+
-                    '<div id="submit" class="submit position_r border_radius_5 margin_top_20 margin_lr_c ">'+
+                    '<div id="submit" class="submit position_r border_radius_5 margin_top_20 margin_lr_c align_c">'+
                             '登录'+
                     '</div>'+
                     '<div class="position_r margin_top_10"><a herf="" id="register" class="register position_r padding_left_250 ">注册</a></div>'+

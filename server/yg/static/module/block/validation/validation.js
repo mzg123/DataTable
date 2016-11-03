@@ -31,6 +31,7 @@ var option={
         }
     }
 }
+
 var FormValidation={
 
     focusField:null
@@ -57,7 +58,6 @@ var FormValidation={
     ,change:function(){
 
     }
-
 }
 function valid(focusField){
     var focusName=focusField.name;
