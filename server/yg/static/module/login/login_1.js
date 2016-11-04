@@ -1,40 +1,23 @@
-
-var option= {
-    parentCon: "login",
-    missUserHandle: function () {
-        alert("忘记用户名");
-    }
-    , missPSHandle: function () {
-        alert("忘记密码");
-    }
-    , registerHandle: function () {
-        alert("注册");
-    }
-    ,valityFormHandle:function(){
-
-    }
-    //, missUserUrl:"http://www.baidu.com"
-    // , missPSUrl:"http://www.baidu.com"
-    // , registerUrl:"http://www.baidu.com"
-}
-require("../block/login_1/login_1.css");
-require("../block/login_1/login_1.js").init(option);
-
+var  valid=require("../block/validation/validation.js");
 var d={
     formId:"loginform",
     submitHandler: function () {},
-    errorHandler: function (errs) {},
-    passedHandler: function () {},
+    errorHandler: function () {
+        console.log(valid.isValied)
+    },
+    passedHandler: function () {
+        console.log(valid.isValied)
+    },
     fields: [
         {    name:"username"
             ,validRule:{
-                required: true,
+            required: true,
             minLength: 1,
-            maxLength: 3,
-            pattern: /^[a-z]{1,20}/
+            maxLength: 3
+            //,pattern: /^[a-z]{1,20}/
             //,minValue: 200
             //, maxValue: 2000
-            },
+        },
             errorMsg:{
                 required: "用户名不能为空",
                 minLength: "长度最小20",
@@ -69,8 +52,33 @@ var d={
         }
     }
 };
+var option= {
+    parentCon: "login",
+    missUserHandle: function () {
+        alert("忘记用户名");
+    }
+    , missPSHandle: function () {
+        alert("忘记密码");
+    }
+    , registerHandle: function () {
+        alert("注册");
+    }
+    //,valityFormHandle:function(){
+    //
+    //}
+    ,submitHandle:function(){
+        alert("正在登录");
+    }
+    //, missUserUrl:"http://www.baidu.com"
+    // , missPSUrl:"http://www.baidu.com"
+    // , registerUrl:"http://www.baidu.com"
+}
+require("../block/login_1/login_1.css");
+require("../block/login_1/login_1.js").init(option);
 
-require("../block/validation/validation.js").init(d);
+
+//添加表单验证
+valid.init(d);
 
 
 

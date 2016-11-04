@@ -34,35 +34,51 @@ var option={
 }
 
 var FormValidation={
-
-    focusField:null
+     isValied:false
+    ,focusField:null
     ,option:null
-    ,supportedValidateTypes:['required','minLength','maxLength','maxValue','minValue',"minChecked","maxChecked",'pattern']
+    ,supportedValidateTypes:['required','minLength','maxLength','maxValue','minValue',"minChecked","macxChecked",'pattern']
     ,init:function(option){
      var self=this;
+         option.validCount=0;
         this.option=option;
-          $(option.fields).each(function(index,item){
 
+          $(option.fields).each(function(index,item){
               $("#"+option.formId+" input[name='"+item.name+"']").data(item.name,item);
-              $("#"+option.formId+" input[name='"+item.name+"']").on("blur",self.blur).on("focus",self.focus);
+
+              $("#"+option.formId+" input[name='"+item.name+"']").on("blur",selfblur).on("focus",self.focus);
           });
+
     }
     ,focus:function(evt){
         this.focusField=evt.target;
     }
-    ,blur:function(){
-        var focusName=this.focusField.name;
-        var validitem=$(this.focusField).data(focusName);
-
-        valid(this.focusField);
-    }
+    //,blur:function(evt){
+    //    var focusName=evt.target.name;
+    //    var validitem=$(evt.target).data(focusName);
+    //    var option=$(evt.target).data("option");
+    //    this.isValied=valid(evt.target);
+    //    this.isValied?option.validCount++:(option.validCount>0?option.validCount--:"");
+    //    option.validCount==option.fields.length?option.passedHandler():option.errorHandler();
+    //}
     ,change:function(){
-
     }
+}
+function selfblur(evt){
+    var focusName=evt.target.name;
+    var validitem=$(evt.target).data(focusName);
+    var option=FormValidation.option;
+    validitem.isValied=valid(evt.target);
+    FormValidation.isValied=true;
+    $(FormValidation.option.fields).each(function(index,item){
+        item.isValied?"":(FormValidation.isValied=false);
+    });
+    FormValidation.isValied?option.passedHandler():option.errorHandler();
 }
 function valid(focusField){
     var focusName=focusField.name;
     var val=$(focusField).val();
+    var t=true;
     var validitem=$(focusField).data(focusName);
     isRequired(validitem.validRule.required,val,validitem.output,validitem.errorMsg.required)? (
         isMinValue(validitem.validRule.minValue,val,validitem.output,validitem.errorMsg.minValue)?(
@@ -70,11 +86,12 @@ function valid(focusField){
                 isMinLength(validitem.validRule.minLength,val,validitem.output,validitem.errorMsg.minLength)?(
                     isMaxLength(validitem.validRule.maxLength,val,validitem.output,validitem.errorMsg.maxLength)?(
                         isPattern(validitem.validRule.pattern,val,validitem.output,validitem.errorMsg.pattern)
-                    ):""
-                ):""
-            ):""
-          ):""
-        ):"";
+                    ):(t=false)
+                ):(t=false)
+            ):(t=false)
+          ):(t=false)
+        ):(t=false);
+    return t;
 }
 
 //true 表示通过验证

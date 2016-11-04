@@ -50,7 +50,7 @@ var Login_1={
 function initClick(id,preFn,sucFn,failFn){
      $("#"+id).click(function(){
          var t=true;
-         preFn&&(t=preFn());
+         preFn&&(t=preFn());alert(t);
          t?sucFn():failFn();
      });
 }
