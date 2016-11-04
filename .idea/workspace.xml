@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/views/ejs/login/login_1.ejs" afterPath="$PROJECT_DIR$/server/yg/views/ejs/login/login_1.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/block/login_1/login_1.js" afterPath="$PROJECT_DIR$/server/yg/static/module/block/login_1/login_1.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/login/login_1.js" afterPath="$PROJECT_DIR$/server/yg/static/module/login/login_1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/block/validation/validation.js" afterPath="$PROJECT_DIR$/server/yg/static/module/block/validation/validation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mzg.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,8 +41,8 @@
       <file leaf-file-name="login_1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/login_1/login_1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.133333" vertical-offset="41" max-vertical-offset="1387">
-              <caret line="45" column="56" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="56" />
+            <state vertical-scroll-proportion="-9.5" vertical-offset="570" max-vertical-offset="1387">
+              <caret line="45" column="89" selection-start-line="45" selection-start-column="89" selection-end-line="45" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -80,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validation.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="validation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/validation/validation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82489145" vertical-offset="1007" max-vertical-offset="2489">
-              <caret line="83" column="76" selection-start-line="83" selection-start-column="76" selection-end-line="83" selection-end-column="76" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2489">
+              <caret line="36" column="13" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="13" />
               <folding>
                 <element signature="n#!!block;n#isMinValue#0" expanded="false" />
                 <element signature="n#!!block;n#isMaxValue#0" expanded="false" />
@@ -95,12 +92,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_1.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login_1.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/login/login_1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2166">
-              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-              <folding />
+            <state vertical-scroll-proportion="0.34739804" vertical-offset="0" max-vertical-offset="1178">
+              <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+              <folding>
+                <element signature="e#63#1446#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,8 +117,8 @@
       <file leaf-file-name="login_1.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/static/html/login/login_1.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.285715" vertical-offset="171" max-vertical-offset="798">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="87" />
+            <state vertical-scroll-proportion="-12.178572" vertical-offset="115" max-vertical-offset="798">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -188,9 +187,9 @@
         <option value="$PROJECT_DIR$/server/yg/static/html/login/login_1.html" />
         <option value="$PROJECT_DIR$/server/yg/static/module/block/validation/example.js" />
         <option value="$PROJECT_DIR$/server/yg/views/ejs/login/login_1.ejs" />
+        <option value="$PROJECT_DIR$/server/yg/static/module/block/validation/validation.js" />
         <option value="$PROJECT_DIR$/server/yg/static/module/block/login_1/login_1.js" />
         <option value="$PROJECT_DIR$/server/yg/static/module/login/login_1.js" />
-        <option value="$PROJECT_DIR$/server/yg/static/module/block/validation/validation.js" />
       </list>
     </option>
   </component>
@@ -874,7 +873,7 @@
       <workItem from="1477962782659" duration="24583000" />
       <workItem from="1478053007283" duration="19956000" />
       <workItem from="1478134012875" duration="33409000" />
-      <workItem from="1478239591821" duration="8773000" />
+      <workItem from="1478239591821" duration="9584000" />
     </task>
     <task id="LOCAL-00001" summary="Default">
       <created>1476537969852</created>
@@ -886,10 +885,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="563879000" />
+    <option name="totallyTimeSpent" value="564690000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="1" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -903,7 +902,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30245537" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19642857" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17410715" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2775061" sideWeight="0.49467275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1263,14 +1262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/static/html/login/login_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.285715" vertical-offset="171" max-vertical-offset="798">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/views/ejs/login/login_1.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-16.36" vertical-offset="218" max-vertical-offset="798">
@@ -1303,14 +1294,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/login_1/login_1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.133333" vertical-offset="41" max-vertical-offset="1387">
-          <caret line="45" column="56" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/routes/index/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6909091" vertical-offset="0" max-vertical-offset="627">
@@ -1336,23 +1319,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/static/module/login/login_1.js">
+    <entry file="file://$PROJECT_DIR$/server/yg/static/html/login/login_1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2166">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        <state vertical-scroll-proportion="-12.178572" vertical-offset="115" max-vertical-offset="798">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/login_1/login_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.5" vertical-offset="570" max-vertical-offset="1387">
+          <caret line="45" column="89" selection-start-line="45" selection-start-column="89" selection-end-line="45" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/validation/validation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82489145" vertical-offset="1007" max-vertical-offset="2489">
-          <caret line="83" column="76" selection-start-line="83" selection-start-column="76" selection-end-line="83" selection-end-column="76" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2489">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="13" />
           <folding>
             <element signature="n#!!block;n#isMinValue#0" expanded="false" />
             <element signature="n#!!block;n#isMaxValue#0" expanded="false" />
             <element signature="n#!!block;n#isMinLength#0" expanded="false" />
             <element signature="n#!!block;n#isMaxLength#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/static/module/login/login_1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34739804" vertical-offset="0" max-vertical-offset="1178">
+          <caret line="65" column="33" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+          <folding>
+            <element signature="e#63#1446#0" expanded="false" />
           </folding>
         </state>
       </provider>

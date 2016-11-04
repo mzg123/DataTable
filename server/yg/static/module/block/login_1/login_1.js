@@ -8,7 +8,7 @@ var Login_1={
         missPSHandle: $.noop,//忘记密码处理函数（missPSUrl）
         registerUrl: null,//如果设置此值，registerHandle
         registerHandle: $.noop,//忘记密码处理函数（registerUrl）
-        valityFormHandle: $.noop,//验证表单处理函数
+        valityFormHandle:null,//验证表单处理函数
         submitHandle: $.noop//提交表达处理函数
     },
     template:' <form id="loginform" class="position_r login_1 align_l">'+
@@ -43,14 +43,14 @@ var Login_1={
 
         self.options.missPSUrl?setHerf("register",self.options.missPSUrl):
             initClick("register",null,self.options.registerHandle,null);
-        initClick("submit",self.options.valityFormHandle,self.options.submitHandle,null);
+        initClick("submit",self.options.valityFormHandle,self.options.submitHandle,$.noop);
     }
 }
 
 function initClick(id,preFn,sucFn,failFn){
      $("#"+id).click(function(){
          var t=true;
-         preFn&&(t=preFn());alert(t);
+         preFn&&(t=preFn());
          t?sucFn():failFn();
      });
 }

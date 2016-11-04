@@ -6,7 +6,7 @@ var d={
         console.log(valid.isValied)
     },
     passedHandler: function () {
-        console.log(valid.isValied)
+        //$("#submit").click();
     },
     fields: [
         {    name:"username"
@@ -63,9 +63,9 @@ var option= {
     , registerHandle: function () {
         alert("注册");
     }
-    //,valityFormHandle:function(){
-    //
-    //}
+    ,valityFormHandle:function(){
+        return valid.isValied;
+    }
     ,submitHandle:function(){
         alert("正在登录");
     }
