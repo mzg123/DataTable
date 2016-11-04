@@ -79,9 +79,10 @@ var option= {
 require("../block/login_1/login_1.css");
 require("../block/login_1/login_1.js").init(option);
 
-
 //添加表单验证
 valid.init(d);
+
+
 
 
 
