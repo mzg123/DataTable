@@ -43,15 +43,15 @@ var Login_1={
 
         self.options.missPSUrl?setHerf("register",self.options.missPSUrl):
             initClick("register",null,self.options.registerHandle,null);
-        initClick("submit",self.options.valityFormHandle,self.options.submitHandle,$.noop);
+        initClick("submit",self.options.valityFormHandle,self.options.submitHandle,self.options.preFailFn);
     }
 }
 
-function initClick(id,preFn,sucFn,failFn){
+function initClick(id,preFn,sucFn,preFailFn){
      $("#"+id).click(function(){
          var t=true;
          preFn&&(t=preFn());
-         t?sucFn():failFn();
+         t?sucFn():preFailFn();
      });
 }
 function setHerf(id,url){

@@ -66,6 +66,9 @@ var option= {
     ,valityFormHandle:function(){
         return valid.isValied;
     }
+    ,preFailFn:function(){
+        alert("验证失败");
+    }
     ,submitHandle:function(){
         alert("正在登录");
     }

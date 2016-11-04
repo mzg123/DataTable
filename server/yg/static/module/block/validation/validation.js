@@ -53,14 +53,6 @@ var FormValidation={
     ,focus:function(evt){
         this.focusField=evt.target;
     }
-    //,blur:function(evt){
-    //    var focusName=evt.target.name;
-    //    var validitem=$(evt.target).data(focusName);
-    //    var option=$(evt.target).data("option");
-    //    this.isValied=valid(evt.target);
-    //    this.isValied?option.validCount++:(option.validCount>0?option.validCount--:"");
-    //    option.validCount==option.fields.length?option.passedHandler():option.errorHandler();
-    //}
     ,change:function(){
     }
 }
