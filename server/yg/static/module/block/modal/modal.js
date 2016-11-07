@@ -62,12 +62,14 @@ var Modal={
         this._initEvent();
         return this;
     }
+    ,alert:function(){
+
+    }
     ,_destoryModal:function(){
         $( this.modalArray).each(function(index,item){
               item.parent().remove();
         })
     }
-
     ,_initEvent:function(){
         var t=this.currentModal;
         var hide=this._hide;
