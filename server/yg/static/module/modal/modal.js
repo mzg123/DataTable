@@ -1,20 +1,54 @@
+var  valid=require("../block/modal/modal.js");
 var  option={
-    btns:[
+    width:200,
+
+    height:150
+    ,btns:[
     {
         tag:"确定"
         ,btnClass:null
-        ,click: $.noop
+        ,clickIsPre:true
+        ,click: function(){
+        location.href="http://www.baidu.com";
+    }
     }
     ,{
         tag:"取消"
         ,btnClass:null
-        ,click: $.noop
+        ,click: function(){
+                alert(4);
+            }
     }
 ]
 }
 
-var  valid=require("../block/modal/modal.js").init(option);
-valid.createOtherModal();
+var  option1={
+
+    btns:[
+        {
+            tag:"确定"
+            ,btnClass:null
+            ,click: function(){
+
+        }
+        }
+        ,{
+            tag:"取消"
+            ,btnClass:null
+            ,click: function(){
+                alert(4);
+            }
+        }
+    ]
+}
+
+
+$("#modal").on("click",function(){
+    valid.createModal(option);
+});
+function ceateothermodal(){
+    valid.createOtherModal(option1);
+}
 
 
 

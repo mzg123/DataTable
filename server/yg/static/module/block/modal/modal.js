@@ -8,19 +8,19 @@ var Modal={
             {
                tag:"确定"
                 ,btnClass:null
+                ,clickIsPre:true
                 ,click: $.noop
             }
-
         ]
+        ,content:'提示内容'
     }
-    ,template:'<div class="modal_con position_f">'+
+    ,template:'<div class="modal_con position_f ">'+
                     '<div class="modal position_f">'+
                         '<div class="modal_header position_r">'+
                           '<span class="title">我的标题</span>'+
                           '<span class="close position_a btn">关闭</span>'+
                         '</div>'+
                         '<div class="modal_body align_c position_r">'+
-                             '我的提示内容'+
                         '</div>'+
                         '<div class="modal_footer position_a align_c">'+
 
@@ -28,14 +28,13 @@ var Modal={
                      '</div>'+
                   '</div>'
     ,init:function(option){
-        var self=this;
-        self.options = $.extend({},self.tempConfig,option);
-        var unqueid=new Date().getTime();
-        $(document.body).append($(this.template).attr("id",unqueid));
-        this.modalArray.push( this.currentModal=$("#"+unqueid+" .modal"));
-        //this.currentModal=$("#"+unqueid+" .modal");
-        this._initConfig();
-        this._initEvent();
+        //var self=this;
+        //self.options = $.extend({},self.tempConfig,option);
+        //var unqueid=new Date().getTime();
+        //$(document.body).append($(this.template).attr("id",unqueid));
+        //this.modalArray.push( this.currentModal=$("#"+unqueid+" .modal"));
+        //this._initConfig();
+        //this._initEvent();
 
         return this;
     }
@@ -73,7 +72,7 @@ var Modal={
         var t=this.currentModal;
         var hide=this._hide;
         this.currentModal.find(".close").on("click",function(evt){
-            hide(t);
+            hide(t,null);
         });
 
         //footer下的按钮事件
@@ -84,25 +83,26 @@ var Modal={
 
             var $tb=$(tb);
             $tb.on("click",function(evt){
-                item.click();
-                hide(t);
+                if(item.clickIsPre){
+                    item.click();
+                    hide(t,null);
+                }
+                else{
+                    hide(t,item.click);
+                }
+
             });
             t.find(".modal_footer").append($tb);
         });
 
-        //this.currentModal.find(".btn_cancel").on("click",function(evt){
-        //    hide(t);
-        //});
-        //this.currentModal.find(".btn_sure").on("click",function(evt){
-        //    hide(t);
-        //});
 
     }
-    ,_hide:function(md){
+    ,_hide:function(md,cb){
 
         IsIE8()||md.animate({opacity:0});
         md.parent().animate({top:'-150%'},500,function(){
             md.parent().remove();
+            cb();
         })
 
         return this;
@@ -112,6 +112,7 @@ var Modal={
         this.currentModal.css("margin-left",-this.options.width/2+"px");
         this.options.showFooter?$(".modal_con .modal_footer").show():$(".modal_con .modal_footer").hide();
         this.options.showHeader?$(".modal_con .modal_header").show():$(".modal_con .modal_header").hide();
+        this.currentModal.find(".modal_body").append(this.options.content);
     }
 }
 
