@@ -57,13 +57,35 @@ var Modal={
         var unqueid=new Date().getTime();
         $(document.body).append($(this.template).attr("id",unqueid));
         this.modalArray.push( this.currentModal=$("#"+unqueid+" .modal"));
-        //this.currentModal=$("#"+unqueid+" .modal");
         this._initConfig();
         this._initEvent();
         return this;
     }
-    ,alert:function(){
-
+    ,alert:function(content){
+        var self=this;
+        var option={
+            showHeader:false,
+            showFooter:true,
+            width:200,
+            height:150
+            ,btns:[
+                {
+                    tag:"确定"
+                    ,btnClass:null
+                    ,clickIsPre:true
+                    ,click: $.noop
+                }
+            ]
+            ,content:content
+        }
+        self.options = $.extend({},self.tempConfig,option);
+        console.log( self.options);
+        var unqueid=new Date().getTime();
+        $(document.body).append($(this.template).attr("id",unqueid));
+        this.modalArray.push( this.currentModal=$("#"+unqueid+" .modal"));
+        this._initConfig();
+        this._initEvent();
+        return this;
     }
     ,_destoryModal:function(){
         $( this.modalArray).each(function(index,item){

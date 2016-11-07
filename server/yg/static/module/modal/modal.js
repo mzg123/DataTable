@@ -47,7 +47,8 @@ var  option1={
 
 
 $("#modal").on("click",function(){
-    valid.createModal(option);
+    //valid.createModal(option);
+    valid.alert("<p>1222222222222</p><p>222222222</p>");
 });
 function ceateothermodal(){
     valid.createOtherModal(option1);
