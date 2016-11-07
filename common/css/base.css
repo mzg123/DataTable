@@ -96,6 +96,12 @@ width:100%;
 .position_r{
     position: relative;
 }
+.position_f{
+    position: fixed;
+}
+.position_a{
+    position: absolute;
+}
 /*位置 end*/
 
 /*display start*/

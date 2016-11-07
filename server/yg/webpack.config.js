@@ -10,6 +10,7 @@ module.exports = {
     entry: {
         //index: ['./webpackbuildjs/entry.js', hotMiddlewareScript]
         login: "./webpackbuildjs/mzg/login.js"
+        ,modal: "./webpackbuildjs/mzg/modal.js"
         //,index: "./webpackbuildjs/entry.js"
         //,welcome: "./webpackbuildjs/welcome.js"
     }
