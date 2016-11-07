@@ -59,7 +59,9 @@
     color: white;
     border-width: 0;
 }
-
+.btn{
+    cursor: pointer;
+}
 .position_a{
     position: absolute;
 }

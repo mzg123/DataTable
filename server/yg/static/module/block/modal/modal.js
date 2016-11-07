@@ -1,22 +1,29 @@
 var Modal={
     tempConfig:{
-        width:600,
         showHeader:true,
         showFooter:true,
+        width:600,
         height:350
+        ,btns:[
+            {
+               tag:"确定"
+                ,btnClass:null
+                ,click: $.noop
+            }
+
+        ]
     }
     ,template:'<div class="modal_con position_f">'+
                     '<div class="modal position_f">'+
                         '<div class="modal_header position_r">'+
                           '<span class="title">我的标题</span>'+
-                          '<span class="close position_a">关闭</span>'+
+                          '<span class="close position_a btn">关闭</span>'+
                         '</div>'+
                         '<div class="modal_body align_c position_r">'+
                              '我的提示内容'+
                         '</div>'+
                         '<div class="modal_footer position_a align_c">'+
-                         '<span class="modal_btn btn_sure">确定</span>'+
-                         '<span class="modal_btn btn_cancel">取消</span>'+
+
                          '</div>'+
                      '</div>'+
                   '</div>'
@@ -68,6 +75,28 @@ var Modal={
         this.currentModal.find(".close").on("click",function(evt){
             hide(t);
         });
+
+        //footer下的按钮事件
+        $(this.options.btns).each(function(index,item){
+            var tb=  '<span class="modal_btn btn_sure btn">'+item.tag+'</span>';
+            item.btnClass&& (tb=  '<span class="modal_btn btn btn_sure '+item.btnClass+' ">'+item.tag+'</span>');
+                //'<span class="modal_btn btn_cancel">取消</span>'+
+
+            var $tb=$(tb);
+            $tb.on("click",function(evt){
+                item.click();
+                hide(t);
+            });
+            t.find(".modal_footer").append($tb);
+        });
+
+        //this.currentModal.find(".btn_cancel").on("click",function(evt){
+        //    hide(t);
+        //});
+        //this.currentModal.find(".btn_sure").on("click",function(evt){
+        //    hide(t);
+        //});
+
     }
     ,_hide:function(md){
 
