@@ -19,7 +19,6 @@ var db={
                    }
                    else{
                        connection.release();
-
                        option.success(option.res,rows);
                    }
 

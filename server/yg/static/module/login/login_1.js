@@ -3,10 +3,11 @@ var d={
     formId:"loginform",
     submitHandler: function () {},
     errorHandler: function () {
-        console.log(valid.isValied)
+        console.log(valid.isValied+" "+"123")
     },
     passedHandler: function () {
         //$("#submit").click();
+        console.log(valid.isValied+" "+"123")
     },
     fields: [
         {    name:"username"
@@ -70,7 +71,8 @@ var option= {
         alert("验证失败");
     }
     ,submitHandle:function(){
-        alert("正在登录");
+        console.log("正在登录");
+        login();
     }
     //, missUserUrl:"http://www.baidu.com"
     // , missPSUrl:"http://www.baidu.com"
@@ -83,6 +85,28 @@ require("../block/login_1/login_1.js").init(option);
 valid.init(d);
 
 
+function login(){
+
+    $.ajax({
+        type: "post",
+        url: "http://10.0.130.129:3000/login",
+        data: {
+            username:"admin",
+            password:"123"
+        },
+        dataType: "json",
+        success: function (data) {
+             alert(1);
+               location.href="/";
+        },
+        exception: function (data) {
+                alert(4);
+            console.log(data);
+            return true;
+        }
+    });
+
+}
 
 
 
