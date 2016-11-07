@@ -1,3 +1,4 @@
+require("../block/modal/modal.css");
 var  valid=require("../block/modal/modal.js");
 var  option={
     width:200,
@@ -19,7 +20,8 @@ var  option={
                 alert(4);
             }
     }
-]
+   ]
+    ,content:'qwertyuiodfghjk'
 }
 
 var  option1={
@@ -40,6 +42,7 @@ var  option1={
             }
         }
     ]
+    ,content:'qwertyuiodfghjk'
 }
 
 
