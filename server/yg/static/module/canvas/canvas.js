@@ -35,6 +35,22 @@ $("#Pline").on("click",function(){
     }
     mycanvas.drawPLine(option);
 });
+$("#Ploy").on("click",function(){
+    var option= {
+        points:[
+            {x:20,y:20}
+            ,{x:20,y:100}
+            ,{x:70,y:100}
+
+        ]
+        ,fillStyle:"red"
+        ,strokeStyle:"red"
+        ,lineWidth:1
+        ,isClosed:true
+        ,id:"mycanvas"
+    }
+    mycanvas.drawPloy(option);
+});
 $("#doshline").on("click",function(){
     var option= {
         from:{x:110,y:130}

@@ -113,10 +113,40 @@ var canvaltool={
         }
     }
     ,drawRect:function(option){
-
+        var option={
+            point:{x:0,y:0}
+            ,width:100
+            ,height:100
+            ,id:"mycanvas"
+        }
+        var ctx=this._get2d(option.id);
+        ctx.rect(option.point.x,option.point.y,option.width,option.height);
+        ctx.stroke();
+    }
+    ,drawFillRect:function(option){
+        var option={
+            point:{x:0,y:0}
+            ,width:100
+            ,height:100
+            ,id:"mycanvas"
+        }
+        var ctx=this._get2d(option.id);
+        ctx.fillRect(option.point.x,option.point.y,option.width,option.height);
     }
     ,drawPloy:function(option){
-
+        var ctx=this._get2d(option.id);
+        ctx.beginPath();
+        option.lineWidth?ctx.lineWidth=option.lineWidth:ctx.lineWidth=1;
+        option.strokeStyle?ctx.strokeStyle=option.strokeStyle:ctx.strokeStyle="black";
+        option.fillStyle&&(ctx.fillStyle=option.fillStyle);
+        ctx.lineJoin="miter";//bevel round miter
+        for(var i=0;i<option.points.length;i++){
+            i==0&& ctx.moveTo(option.points[0].x,option.points[0].y);
+            ctx.lineTo(option.points[i].x,option.points[i].y);
+        }
+        ctx.closePath();
+        ctx.stroke(); // 进行绘制
+        ctx.fill();//填充
     }
     ,clearRect:function(option){
         //var option={
