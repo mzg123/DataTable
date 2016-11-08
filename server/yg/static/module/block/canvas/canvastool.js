@@ -183,19 +183,6 @@ var canvaltool={
         //}
         var ctx=this._get2d(option.id);
         option.font&&(ctx.font=option.font);
-
-
-        ctx.font="30px Verdana";
-// 创建渐变
-        var gradient=ctx.createLinearGradient(0,0,document.getElementById("mycanvas").width/2,1000);
-        gradient.addColorStop("0","magenta");
-        gradient.addColorStop("0.5","blue");
-        gradient.addColorStop("1.0","black");
-
-// 用渐变填色
-        ctx.fillStyle=gradient;
-        //ctx.fillText("w3school.com.cn",10,90);
-
         ctx.fillText(option.text,option.point.x,option.point.y);
     }
 }
