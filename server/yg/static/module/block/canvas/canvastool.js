@@ -121,14 +121,25 @@ var canvaltool={
     ,clearRect:function(option){
 
     }
-    ,moveTo:function(option){
 
-    }
-    ,lineTo:function(option){
-
-    }
-    ,_createLinearGradient:function(option){
-
+    ,createLinearGradient:function(option){
+           var option={
+               from:{x:0,y:0}
+               ,to:{x:0,y:170}
+               ,colorStop:[
+                  {key:0,value:"red"}
+                  ,{key:0.5,value:"green"}
+                  ,{key:1,value:"blue"}
+              ]
+               ,id:"mycanvas"
+           }
+        var ctx=this._get2d(option.id);
+        var gradient=ctx.createLinearGradient(option.from.x,option.from.y,option.to.x,option.to.y);
+        var length=option.colorStop.length;
+        for(var i=0;i<length;i++){
+            gradient.addColorStop(option.colorStop[i].key,option.colorStop[i].value);
+        }
+       return gradient;
     }
     ,createRadialGradient:function(option){
 
