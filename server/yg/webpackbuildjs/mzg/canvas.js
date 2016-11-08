@@ -1,0 +1,1 @@
+require("../../static/module/canvas/canvas.js");
