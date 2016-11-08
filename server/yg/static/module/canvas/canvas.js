@@ -61,6 +61,24 @@ $("#arc").on("click",function(){
         ,id:"mycanvas"
     }
     mycanvas.drawArc(option);
+
+
+});
+
+$("#arcdosh").on("click",function(){
+    var option= {
+        point:{x:100,y:175}
+        ,radis:50
+        ,sAngle:0
+        ,eAngle:1.2
+        ,counterclockwise:false
+        ,fillStyle:"red"
+        ,strokeStyle:"blue"
+        ,lineWidth:1
+        ,dashLength:0.05
+        ,id:"mycanvas"
+    }
+    mycanvas.drawDoshArc(option);
 });
 
 
