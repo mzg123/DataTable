@@ -119,7 +119,13 @@ var canvaltool={
 
     }
     ,clearRect:function(option){
-
+        //var option={
+        //    point:{x:0,y:0}
+        //    ,width:w
+        //    ,height:h
+        //}
+        var ctx=this._get2d(option.id);
+        ctx.clearRect(option.point.x,option.point.h,option.width,option.height);
     }
    ,createPattern:function(option){
         var option={
@@ -168,7 +174,30 @@ var canvaltool={
         }
         return gradient;
     }
+    ,drawText:function(option){
+        //var option={
+        //   point:{x:30,y:40}
+        //    ,font:"20px Georgia"
+        //    ,text:"text"
+        //    ,id:"mycanvas"
+        //}
+        var ctx=this._get2d(option.id);
+        option.font&&(ctx.font=option.font);
 
+
+        ctx.font="30px Verdana";
+// 创建渐变
+        var gradient=ctx.createLinearGradient(0,0,document.getElementById("mycanvas").width/2,1000);
+        gradient.addColorStop("0","magenta");
+        gradient.addColorStop("0.5","blue");
+        gradient.addColorStop("1.0","black");
+
+// 用渐变填色
+        ctx.fillStyle=gradient;
+        //ctx.fillText("w3school.com.cn",10,90);
+
+        ctx.fillText(option.text,option.point.x,option.point.y);
+    }
 }
 
 module.exports=canvaltool;

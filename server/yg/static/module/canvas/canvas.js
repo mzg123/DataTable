@@ -80,6 +80,15 @@ $("#arcdosh").on("click",function(){
     }
     mycanvas.drawDoshArc(option);
 });
+$("#text").on("click",function(){
+    var option={
+        point:{x:30,y:40}
+        ,font:"20px Georgia"
+        ,text:"text"
+        ,id:"mycanvas"
+    }
+    mycanvas.drawText(option);
+});
 
 
 
