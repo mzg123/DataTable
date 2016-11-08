@@ -121,18 +121,25 @@ var canvaltool={
     ,clearRect:function(option){
 
     }
-
+   ,createPattern:function(option){
+        var option={
+            img:img
+            ,pattern:repeat//repeat|repeat-x|repeat-y|no-repeat
+        }
+        var ctx=this._get2d(option.id);
+        return ctx.createPattern(option.img,option.pattern);
+    }
     ,createLinearGradient:function(option){
-           var option={
-               from:{x:0,y:0}
-               ,to:{x:0,y:170}
-               ,colorStop:[
-                  {key:0,value:"red"}
-                  ,{key:0.5,value:"green"}
-                  ,{key:1,value:"blue"}
-              ]
-               ,id:"mycanvas"
-           }
+           //var option={
+           //    from:{x:0,y:0}
+           //    ,to:{x:0,y:170}
+           //    ,colorStop:[
+           //       {key:0,value:"red"}
+           //       ,{key:0.5,value:"green"}
+           //       ,{key:1,value:"blue"}
+           //   ]
+           //    ,id:"mycanvas"
+           //}
         var ctx=this._get2d(option.id);
         var gradient=ctx.createLinearGradient(option.from.x,option.from.y,option.to.x,option.to.y);
         var length=option.colorStop.length;
@@ -142,7 +149,24 @@ var canvaltool={
        return gradient;
     }
     ,createRadialGradient:function(option){
-
+        var option={
+            sPoint:{x:0,y:0}
+            ,sRadis:r1
+            ,ePoint:{x:0,y:170}
+            ,eRadis:r2
+            ,colorStop:[
+               {key:0,value:"red"}
+               ,{key:1,value:"blue"}
+           ]
+            ,id:"mycanvas"
+        }
+        var ctx=this._get2d(option.id);
+        var gradient=ctx.createRadialGradient(option.sPoint.x,option.sPoint.y,option.sRadis,option.ePoint.x,option.ePoint.y,option.eRadis);
+        var length=option.colorStop.length;
+        for(var i=0;i<length;i++){
+            gradient.addColorStop(option.colorStop[i].key,option.colorStop[i].value);
+        }
+        return gradient;
     }
 
 }
