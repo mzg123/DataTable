@@ -151,3 +151,18 @@ a:hover{
 }
 /*显隐 end*/
 
+/*背景透明字体不透明 start*/
+div{
+    background:rgba(0,0,0,0.5) none repeat scroll !important; /*实现FF背景透明，文字不透明  <div><p>不透明</p></div>  */
+    background:#000;
+    filter:Alpha(opacity=20);/*实现IE背景透明*/
+    width:500px;
+    height:500px;
+    color:#FFF;
+    font-size:32px;
+    font-weight:bold;
+}
+div p{ position:relative;}/*实现IE文字不透明*/
+/*背景透明字体不透明 end*/
+
+
