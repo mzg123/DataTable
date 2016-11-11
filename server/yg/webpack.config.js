@@ -11,8 +11,9 @@ module.exports = {
         //index: ['./webpackbuildjs/entry.js', hotMiddlewareScript]
         login: "./webpackbuildjs/mzg/login.js"
         ,modal: "./webpackbuildjs/mzg/modal.js"
+        //,roller: "./webpackbuildjs/mzg/roller.js"
         ,canvas: "./webpackbuildjs/mzg/canvas.js"
-        //,index: "./webpackbuildjs/entry.js"
+        ,es6: "./webpackbuildjs/mzg/es6.js"
         //,welcome: "./webpackbuildjs/welcome.js"
     }
     //,devServer:{
@@ -24,6 +25,15 @@ module.exports = {
     //    port:8080 //端口你可以自定义
     //}
     ,devtool: 'cheap-module-source-map',//配置生成Source Maps，选择合适的选项  eval-source-map
+
+    //resolve: {
+    //    modulesDirectories: ["./node_modules", "./node_modules/babel"]
+    //},
+    //
+    //resolveLoader: {
+    //    root: path.resolve(__dirname, 'node_modules')
+    //},
+
     output: {
         path: path.join(__dirname, 'dist'),
         //publicPath: './dist',
@@ -35,6 +45,10 @@ module.exports = {
     },
     module: {
         loaders: [
+            { test: /\.js$/, loader: "jsx?harmony!babel", exclude: /node_modules/, include: '/src',query:{
+                presets:['es2015']
+            }},
+
             //{ test: /\.js$/, loader: "jsx?harmony!babel", include: /src/},
             //{ test: /\.css$/, loader: "style!css"},
 
@@ -74,12 +88,12 @@ module.exports = {
         }
     ,plugins: [
         new ExtractTextPlugin("css/[name].css"),//分离css样式
-        new webpack.optimize.UglifyJsPlugin({    //压缩代码
-            compress: {
-                warnings: false
-            },
-            except: ['$super', '$', 'exports', 'require']    //排除关键字
-        })
+        //new webpack.optimize.UglifyJsPlugin({    //压缩代码
+        //    compress: {
+        //        warnings: false
+        //    },
+        //    except: ['$super', '$', 'exports', 'require']    //排除关键字
+        //})
         //,new webpack.HotModuleReplacementPlugin() //热加载
 ]
     //,plugins: [

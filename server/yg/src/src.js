@@ -1,18 +1,19 @@
-(a,b)=>a+b;
-//import 'core-js/shim';
-//
-//export default class Person {
-//
-//  constructor( name ) {
-//    this.name = name;
-//  }
-//
-//  sayHello() {
-//    return 'Hello ${ this.name }';
-//  }
-//
-//  sayHelloThreeTimes() {
-//    let hello = this.sayHello();
-//    return '${ hello } '.repeat(3);
-//  }
-//}
+
+"use strict";
+class App{
+    constructor (ob){
+
+    }
+
+    hello(){
+        alert(33333);
+    }
+}
+export * from "App";
+//var a={
+//    t:function(){
+//        let dd=90;
+//        alert(dd);
+//    }
+//};
+//module.exports=a;
