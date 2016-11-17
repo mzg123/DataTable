@@ -13,7 +13,8 @@ module.exports = {
         ,modal: "./webpackbuildjs/mzg/modal.js"
         //,roller: "./webpackbuildjs/mzg/roller.js"
         ,canvas: "./webpackbuildjs/mzg/canvas.js"
-        ,es6: "./webpackbuildjs/mzg/es6.js"
+        ,formselect: "./webpackbuildjs/mzg/formselect.js"
+        //,es6: "./webpackbuildjs/mzg/es6.js"
         //,welcome: "./webpackbuildjs/welcome.js"
     }
     //,devServer:{
@@ -45,9 +46,9 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.js$/, loader: "jsx?harmony!babel", exclude: /node_modules/, include: '/src',query:{
-                presets:['es2015']
-            }},
+            //{ test: /\.js$/, loader: "jsx?harmony!babel", exclude: /node_modules/, include: '/src',query:{
+            //    presets:['es2015']
+            //}},
 
             //{ test: /\.js$/, loader: "jsx?harmony!babel", include: /src/},
             //{ test: /\.css$/, loader: "style!css"},
