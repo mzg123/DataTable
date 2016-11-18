@@ -107,6 +107,9 @@ width:100%;
 .display_ilb{
     display: inline-block;
 }
+.display_n{
+    display:none;
+}
 /*display end*/
 /*圆角 start*/
 .border_radius_5{
@@ -148,6 +151,7 @@ a:hover{
     /*display: none;*/
     visibility: hidden;
 }
+
 /*显隐 end*/
 
 /*背景透明字体不透明 start*/

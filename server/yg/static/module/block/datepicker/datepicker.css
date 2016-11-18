@@ -5,6 +5,9 @@
     width:212px;
     border: 1px #c0c0c0 solid;
 }
+.date_picker_text{
+    width:112px;
+}
 .date_picker .date_picker_week{
     font-size: 14px;
 }

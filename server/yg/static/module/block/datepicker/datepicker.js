@@ -7,8 +7,10 @@ var datepicker={
     tempConfig:{
         parentCon:"date_pic_con"
         ,type:"1"//1直接展示 2 input点击选择 3起始-结束时间
+        ,sName:"sname"//起始时间name值
+        ,eName:"ename"//结束时间name值
     }
-    ,template:'<div class="date_picker">'+
+    ,template:'<input type="text" class="date_picker_text display_n"/><div class="date_picker hidden">'+
                     '<div class="date_picker_header align_c">'+
                         '<span class="pre_year"><<</span><span class="pre_mouth"><</span><span class="year_mouth"></span ><span class="next_mouth">></span><span class="next_year">>></span>'+
                    '</div>'+
@@ -23,16 +25,19 @@ var datepicker={
         var self=this;
         self.options = $.extend({},self.tempConfig,option);
         $("#"+self.options.parentCon).append($(this.template));
-        //this._initConfig();
-
-        self.options.type=="1"&&this._initDate();
+        this._initDate()
         return this;
 
     }
     ,selectDT:{}
-
+    ,showDatePicker:true
     ,_initDate:function(selectDT){
+
         var self=this;
+        $("#"+self.options.parentCon).addClass("position_r");
+        self.options.type=="1"&&($("#"+self.options.parentCon+" .date_picker").removeClass("hidden"));
+        self.options.type=="2"&&($("#"+self.options.parentCon+" .date_picker_text").removeClass("display_n").attr("name",self.options.sName)&&$("#"+self.options.parentCon+" .date_picker").addClass("position_a"));
+
         var currentDT=this.getCurrentDateTime();
         if(selectDT){
             currentDT.currentYear=selectDT.selectYear;
@@ -91,7 +96,8 @@ var datepicker={
                 datebody=datebody+daterow;
             }
             $("#"+self.options.parentCon+" .date_picker_body").html(datebody);
-        }else {
+        }
+        else {
             var rows = $("#" + self.options.parentCon + " .date_picker_body>div");
             $(rows).each(function (index, item) {
                 $($(item).children()).each(function(indexchr,itemchr){
@@ -120,28 +126,38 @@ var datepicker={
                 })
             })
         }
-
-
-
         selectDT||this._initEvent();
+
     }
     ,_initEvent:function(){
         var self=this;
+        self.options.type=="2"&&($("#"+self.options.parentCon+" .date_picker_text").on("focus",function(){
+            $("#"+self.options.parentCon+" .date_picker").removeClass("position_a hidden");
+        }).on("blur",function(){
+           setTimeout(function(){
+               self.showDatePicker||$("#"+self.options.parentCon+" .date_picker").addClass("position_a hidden");
+           },150);
+        }));
         $("#"+self.options.parentCon+" .pre_year").on("click",function(evt){
             self.selectDT.selectYear--;
             $("#"+self.options.parentCon+" .year_mouth").html(self.selectDT.selectYear+"年"+self.selectDT.selectMouth+"月");
             self._initDate(self.selectDT);
+            self.options.type=="2"&&(self.showDatePicker=true);
+
         });
         $("#"+self.options.parentCon+" .next_year").on("click",function(evt){
             self.selectDT.selectYear++;
             $("#"+self.options.parentCon+" .year_mouth").html(self.selectDT.selectYear+"年"+self.selectDT.selectMouth+"月");
             self._initDate(self.selectDT);
+            self.options.type=="2"&&(self.showDatePicker=true);
         });
         $("#"+self.options.parentCon+" .pre_mouth").on("click",function(evt){
             self._preMouth(self);
+            self.options.type=="2"&&(self.showDatePicker=true);
         });
         $("#"+self.options.parentCon+" .next_mouth").on("click",function(evt){
             self._nextMouth(self);
+            self.options.type=="2"&&(self.showDatePicker=true);
         });
         $("#"+self.options.parentCon+" .date_item").on("click",function(evt){
             var currentday=$(evt.target).html();
@@ -152,14 +168,15 @@ var datepicker={
                  }else{
                      self._nextMouth(self);
                  }
-               ;
                 $( self.getDomByDay(self,currentday)).addClass("current_day");
             }
             else{
-
+                $("#"+self.options.parentCon+" .current_day").removeClass("current_day");
                 $(evt.target).addClass("current_day");
                 self.selectDT.selectDay=currentday;
             }
+            self.options.type=="2"&&(self.showDatePicker=false&$("#"+self.options.parentCon+" .date_picker_text").trigger("blur"));
+            //self.options.type=="2"&&($("#"+self.options.parentCon+" .date_picker_text").trigger("blur"));
         })
     }
     ,getDomByDay:function(self,day){
