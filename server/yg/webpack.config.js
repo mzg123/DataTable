@@ -13,6 +13,7 @@ module.exports = {
         ,modal: "./webpackbuildjs/mzg/modal.js"
         //,roller: "./webpackbuildjs/mzg/roller.js"
         ,canvas: "./webpackbuildjs/mzg/canvas.js"
+        ,datepicker: "./webpackbuildjs/mzg/datepicker.js"
         ,formselect: "./webpackbuildjs/mzg/formselect.js"
         //,es6: "./webpackbuildjs/mzg/es6.js"
         //,welcome: "./webpackbuildjs/welcome.js"
