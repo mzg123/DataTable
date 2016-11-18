@@ -136,6 +136,8 @@ var datepicker={
         }).on("blur",function(){
            setTimeout(function(){
                self.showDatePicker||$("#"+self.options.parentCon+" .date_picker").addClass("position_a hidden");
+               console.log();
+               $("#"+self.options.parentCon+" .date_picker_text").val(self.selectDT.selectYear+"-"+self.selectDT.selectMouth+"-"+self.selectDT.selectDay);
            },150);
         }));
         $("#"+self.options.parentCon+" .pre_year").on("click",function(evt){

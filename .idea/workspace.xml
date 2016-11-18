@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/base.css" afterPath="$PROJECT_DIR$/common/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/block/datepicker/datepicker.css" afterPath="$PROJECT_DIR$/server/yg/static/module/block/datepicker/datepicker.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/html/datepicker/datepicker.html" afterPath="$PROJECT_DIR$/server/yg/static/html/datepicker/datepicker.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/block/datepicker/datepicker.js" afterPath="$PROJECT_DIR$/server/yg/static/module/block/datepicker/datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/datapicker/datepicker.js" afterPath="$PROJECT_DIR$/server/yg/static/module/datapicker/datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mzg.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,8 +30,8 @@
       <file leaf-file-name="datepicker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/datepicker/datepicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7337931" vertical-offset="1710" max-vertical-offset="3306">
-              <caret line="179" column="10" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
+            <state vertical-scroll-proportion="0.28827587" vertical-offset="1273" max-vertical-offset="3344">
+              <caret line="139" column="154" selection-start-line="139" selection-start-column="154" selection-end-line="139" selection-end-column="154" />
               <folding>
                 <element signature="e#3507#5447#0" expanded="false" />
                 <element signature="e#5461#6895#0" expanded="false" />
@@ -1037,7 +1032,7 @@
       <workItem from="1479170826753" duration="3022000" />
       <workItem from="1479257111173" duration="1847000" />
       <workItem from="1479343721577" duration="4223000" />
-      <workItem from="1479430695975" duration="25297000" />
+      <workItem from="1479430695975" duration="26217000" />
     </task>
     <task id="LOCAL-00001" summary="Default">
       <created>1476537969852</created>
@@ -1049,11 +1044,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="690373000" />
+    <option name="totallyTimeSpent" value="691293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924107" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1066,7 +1061,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30245537" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14301676" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14301676" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2304401" sideWeight="0.49467275" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1518,8 +1513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/datepicker/datepicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7337931" vertical-offset="1710" max-vertical-offset="3306">
-          <caret line="179" column="10" selection-start-line="179" selection-start-column="10" selection-end-line="179" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.28827587" vertical-offset="1273" max-vertical-offset="3344">
+          <caret line="139" column="154" selection-start-line="139" selection-start-column="154" selection-end-line="139" selection-end-column="154" />
           <folding>
             <element signature="e#3507#5447#0" expanded="false" />
             <element signature="e#5461#6895#0" expanded="false" />
