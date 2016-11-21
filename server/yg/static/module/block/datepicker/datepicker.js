@@ -7,8 +7,8 @@ var datepicker={
     tempConfig:{
         parentCon:"date_pic_con"
         ,type:"1"//1直接展示 2 input点击选择 3起始-结束时间
-        ,sName:"sname"//起始时间name值
-        ,eName:"ename"//结束时间name值
+        ,sName:"sname"//时间name值
+        ,selectCallBack:$.noop
     }
     ,template:'<input type="text" class="date_picker_text display_n"/><div class="date_picker hidden">'+
                     '<div class="date_picker_header align_c">'+
@@ -176,6 +176,7 @@ var datepicker={
                      self._nextMouth(self);
                  }
                 $( self.getDomByDay(self,currentday)).addClass("current_day");
+                self.selectDT.selectDay=currentday;
             }
             else{
                 if(!$(evt.target).parent().hasClass("date_picker_week")){
@@ -185,6 +186,7 @@ var datepicker={
                 }
             }
             self.options.type=="2"&&(self.showDatePicker=false&$("#"+parentCom+" .date_picker_text").trigger("blur"));
+            self.options.selectCallBack({selectDT:self.selectDT,id:self.options.parentCon});
             //self.options.type=="2"&&($("#"+self.options.parentCon+" .date_picker_text").trigger("blur"));
         })
     }
