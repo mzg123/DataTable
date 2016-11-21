@@ -8,10 +8,39 @@
 }
 
 label,select{
-    height:30px;
+    /*height:30px;*/
+    /*line-height: 30px;*/
+}
+.margin_left_30{
+    margin-left:30px;
+}
+.margin_left_20{
+    margin-left:20px;
+}
+.margin_left_20{
+    left:1320px;
+}
+.left_300_top_f4,.submitBtn{
+    left:850px;
+    top:8px;
+}
+.position_1{
+    left:1280px;
+    top:107px;
+}
+.line_h_50{
+    height:50px;
     line-height: 30px;
 }
 
+.echartSubmitBtn{
+    left:1050px ;
+    top:8px;
+}
+
+.form_min_width{
+    min-width:1200px;
+}
 
 
 

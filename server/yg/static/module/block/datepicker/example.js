@@ -9,7 +9,6 @@ var option={
 }
 datepicker().init(option);
 
-
 var option1={
     parentCon:"date_pic_con1"
     ,type:"2"

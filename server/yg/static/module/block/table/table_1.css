@@ -1,0 +1,50 @@
+.mtable{
+    color: #000000;
+
+}
+.mtable .col_1 {
+    width:30px;
+}
+.mtable .col_2,.mtable .col_9,.mtable .col_10 {
+    width:60px;
+}
+.mtable .col_3,.mtable .col_4,.mtable .col_5,.mtable .col_7 {
+    width:80px;
+}
+.mtable .col_6,.mtable .col_8 {
+    width:140px;
+}
+.mtable .fields{
+    height:50px;
+    border-top:solid 1px #000000;
+}
+.mtable .datarow{
+
+}
+.mtable .fields,.mtable .datarow{
+    margin: 0 auto;
+    display: table;
+    border-bottom: solid 1px #000000;
+    border-right: solid 1px #000000;
+}
+.mtable .fields >div,.mtable .datarow >div{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-left: solid 1px #000000;
+}
+.mtable .datarow >div{
+    background: #ffffff;
+}
+.mtable .datarow .col_1,.mtable .datarow .col_2{
+    background: #0088cc;
+}
+.mtable .header{
+    height: 50px;
+    line-height: 50px;
+    background: #ffffff;
+    text-align: center;
+}
+.table_1_min_width{
+    min-width:1200px;
+}

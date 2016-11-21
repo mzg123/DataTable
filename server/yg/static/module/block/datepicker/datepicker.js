@@ -7,7 +7,7 @@ var datepicker={
     tempConfig:{
         parentCon:"date_pic_con"
         ,type:"1"//1直接展示 2 input点击选择 3起始-结束时间
-        ,sName:"sname"//时间name值
+        ,name:"sname"//时间name值
         ,selectCallBack:$.noop
     }
     ,template:'<input type="text" class="date_picker_text display_n"/><div class="date_picker hidden">'+
@@ -36,7 +36,7 @@ var datepicker={
         var self=this;
         $("#"+self.options.parentCon).addClass("position_r");
         self.options.type=="1"&&($("#"+self.options.parentCon+" .date_picker").removeClass("hidden"));
-        self.options.type=="2"&&($("#"+self.options.parentCon+" .date_picker_text").removeClass("display_n").attr("name",self.options.sName)&&$("#"+self.options.parentCon+" .date_picker").addClass("position_a"));
+        self.options.type=="2"&&($("#"+self.options.parentCon+" .date_picker_text").removeClass("display_n").attr("name",self.options.name)&&$("#"+self.options.parentCon+" .date_picker").addClass("position_a"));
 
         var currentDT=this.getCurrentDateTime();
         if(selectDT){

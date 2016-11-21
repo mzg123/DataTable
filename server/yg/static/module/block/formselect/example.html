@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <!--<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" type="text/css" href="../dist/css/formselect.css">
+</head>
+<body>
+<div class="margin_t_50_b_50 backgroud_blue_1 padding_b_30" >
+    <div class=" border_radius_5">
+        <h1 class="text-center margin_10 ">区域总统计</h1>
+    </div>
+    <div id="query" class="  line_h_50 border_radius_5 backgroud_blue_2"></div>
+</div>
+
+<div class="margin_t_50_b_50 backgroud_blue_1 padding_b_30">
+    <div class=" border_radius_5">
+        <h1 class="text-center margin_10 ">区域总统计</h1>
+    </div>
+    <div id="query2" class="  line_h_50 border_radius_5 backgroud_blue_2"></div>
+</div>
+
+<div id="table1" class=" backgroud_blue_1 margin_t_50_b_50 padding_b_30">
+</div>
+
+<div id="query4" class="   border_radius_5 backgroud_blue_2"></div>
+
+<div class="m_min_width  backgroud_blue_1 padding_b_30">
+    <div id="query3" class="  line_h_50 border_radius_5 backgroud_blue_2"></div>
+
+    <div class="">
+        <div class="col-md-12">
+            <div id="echart8"  style="height:400px;width:1000px" class="row   border_radius_5 backgroud_blue_2"></div>
+        </div>
+
+    </div>
+    <div class="position_r">
+        <div class="display_ilb">
+            <div id="echart1"  style="height:400px;width:450px" class="   border_radius_5 backgroud_blue_2"></div>
+        </div>
+        <div class="display_ilb position_r vs" >vs</div>
+        <div class="display_ilb">
+            <div id="echart2"  style="height:400px;width:450px" class="   border_radius_5 backgroud_blue_2"></div>
+        </div>
+    </div>
+    <div class="position_r">
+        <div class="display_ilb">
+            <div id="echart3"  style="height:400px;width:450px" class="   border_radius_5 backgroud_blue_2"></div>
+        </div>
+        <div class="display_ilb position_r vs" >vs</div>
+        <div class="display_ilb">
+            <div id="echart4"  style="height:400px;width:450px" class="   border_radius_5 backgroud_blue_2"></div>
+        </div>
+    </div>
+    <div class="position_r">
+        <div class="display_ilb">
+            <div id="echart5"  style="height:400px;width:450px" class="   border_radius_5 backgroud_blue_2"></div>
+        </div>
+        <div class="display_ilb position_r vs" >vs</div>
+        <div class="display_ilb">
+            <div id="echart6"  style="height:400px;width:450px" class="   border_radius_5 backgroud_blue_2"></div>
+        </div>
+    </div>
+    <div class="position_r">
+        <div class="display_ilb">
+            <div id="echart7"  style="height:400px;width:450px" class="   border_radius_5 backgroud_blue_2"></div>
+        </div>
+
+    </div>
+</div>
+
+<!---->
+<!--<script  type="text/javascript" src="http://ob4uot9cp.bkt.clouddn.com/lib.js"></script>-->
+<!--<script  type="text/javascript" src="http://localhost:8080/dist/js/formselect.js"></script>-->
+<script  type="text/javascript" src="../dist/js/jquery.min.js"></script>
+<script  type="text/javascript" src="../dist/js/formselect.js"></script>
+</body>
+
+<script>
+
+    var tableOption={
+        parentCon:"table1",//容器id
+        scrollX:false,
+        fieldsHeight:40,
+        header:{text:"123",css:"background:red;color:blue;"},
+        fields:[
+            {
+                name:"pm",
+                text:"排名",
+                click:{c:"click",fn:null},
+                width:30,
+                backgroud:"white",
+                color:null,
+                type:"tag",
+                fontsize:"16px"
+            },
+            {
+                name:"dq",
+                text:"大区",
+                click:{c:"delete",fn:null},
+                width:60,
+                backgroud:"white",
+                color:null,
+                type:"tag",
+                fontsize:"16px"
+            },
+            {
+                name:"dqjl",
+                text:"大区总经理",
+                click:{c:"detail",fn:null},
+                width:80,
+                backgroud:"white",
+                color:null,
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"cjds",
+                text:"成交单数",
+                click:{c:"detail",fn:null},
+                width:80,
+                backgroud:"white",
+                color:null,
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"cjje",
+                text:"职出借金额业",
+                click:{c:"detail",fn:null},
+                width:80,
+                backgroud:"white",
+                color:null,
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"xzkhs",
+                text:"新增客户数（人）/客户总量（人）",
+                click:{c:"detail",fn:null},
+                width:140,
+                backgroud:"white",
+                color:null,
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"zcshze",
+                text:"正常赎回总额（万元）",
+                click:{c:"detail",fn:null},
+                width:80,
+                backgroud:"white",
+                color:null,
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"cbgm",
+                text:"折标规模（万元）",
+                click:{c:"detail",fn:null},
+                width:140,
+                backgroud:"white",
+                color:null,
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"yjgm",
+                text:"业绩规模（万元）",
+                click:{c:"detail",fn:null},
+                width:60,
+                backgroud:"white",
+                color:null,
+                type:"tag",
+                fontsize:"16px"
+            }
+            ,
+            {
+                name:"wcl",
+                text:"完成率",
+                click:{c:"detail",fn:null},
+                width:60,
+                backgroud:"white",
+                color:null,
+                type:"tag",
+                fontsize:"16px"
+            }
+
+        ],
+        dataSource:null,
+        dataSource1:[{name:"121"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"},{name:"123"}
+            ,{name:"123"},{name:"123"},{name:"123"},{name:"122"},{name:"123"},{name:"122"},{name:"123"},{name:"123"},{name:"123"}],
+        headerShow:true,
+        footerShow:true,
+        currentPage:1,
+        totalPages:3,
+        totalRecoreds:0,
+        prePage:0,
+        nextPage:0,
+        scroll:false,
+        width:"auto",
+        pageCount:10,
+        table:{},
+        cache:{}
+    }
+    window.treasure.table_1.init(tableOption);
+
+    var d={
+        "data":[
+            {"pm":"1","dq":"中区","dqjl":"xxx","cjds":"66665","cjje":"254564","xzkhs":"1245000","zcshze":"4511200","cbgm":"400000","yjgm":"10000","wcl":"23%"}
+            ,{"pm":"2","dq":"东区","dqjl":"yyy","cjds":"66665","cjje":"254564","xzkhs":"1245000","zcshze":"4511200","cbgm":"400000","yjgm":"10000","wcl":"23%"}
+            ,{"pm":"3","dq":"西区","dqjl":"zzz","cjds":"66665","cjje":"254564","xzkhs":"1245000","zcshze":"4511200","cbgm":"400000","yjgm":"10000","wcl":"23%"}
+
+        ]
+    };
+    window.treasure.table_1.fillData("table1", d.data);
+
+    var formselect=window.treasure.formselect();
+    var formselect2=window.treasure.formselect();
+
+    var option={
+        parentCon:"query"
+        ,submitHandle:subquery
+        ,fields:[
+            [
+                {
+                    id:"year",name:"year",label:"选择年份",type:"select",data:{"1":"1","11":"2","111":"3","1111":"4"},selectedHandle:$.getMouthByQuarter,isStaticData:true,width:100,pre:3,class:"margin_left_30"
+                },
+                {
+                    id:"quarter",name:"quarter",label:"选择季度",type:"select",data:{"第一季度":"1","第二季度":"2","第三季度":"3","第四季度":"4"},isStaticData:true,selectedHandle:$.getMouthByQuarter,linkAgeIds:["mouth"],width:100,class:"margin_left_30"
+                }
+                ,{
+                id:"mouth",name:"mouth",label:"选择月份",type:"select",data:{"1月":"1","2月":"2","3月":"3"},selectedHandle:$.getDayByMouth,linkAgeIds:["day"],isStaticData:true,width:100,class:"margin_left_30"
+            },
+                {
+                    id:"day",name:"day",label:"选择日期",type:"select",data:{"1日":"1","2日":"2","3日":"3","4日":"4","5日":"5","6日":"6","7日":"7","8日":"8","9日":"9","10日":"10"
+                    ,"11日":"11","12日":"12","13日":"13","14日":"14","15日":"15","16日":"16","17日":"17","18日":"18","19日":"19","20日":"20","21日":"21","22日":"22","23日":"23","24日":"24","25日":"25","26日":"26","27日":"27"
+                    ,"28日":"28","29日":"29","30日":"30","31日":"31"},isStaticData:true,width:100,class:"margin_left_30"
+                }
+            ]
+            , [
+                {
+                    id:"dqau",name:"dqau",label:"选择大区",type:"select",data:{},selectedHandle:text1,linkAgeIds:["zhongxin"],ajaxDataKey:"yj",width:100,class:"margin_left_30"
+                },
+                {
+                    id:"zhongxin",name:"zhongxin",label:"选择中心",type:"select",data:{},selectedHandle:text1,linkAgeIds:["quyu"],ajaxDataKey:null,width:100,class:"margin_left_30"
+                },
+                {
+                    id:"quyu",name:"quyu",label:"选择区域",type:"select",data:{},selectedHandle:text1,linkAgeIds:["yingyebu"],ajaxDataKey:null,width:100,class:"margin_left_30"
+                },
+                {
+                    id:"yingyebu",name:"yingyebu",label:"选择营业部",type:"select",data:{},selectedHandle:text1,linkAgeIds:["tuandui"],ajaxDataKey:null,width:130,class:"margin_left_30"
+                },
+                {
+                    id:"tuandui",name:"tuandui",label:"选择团队",type:"select",data:{},selectedHandle:text1,linkAgeIds:["day"],ajaxDataKey:null,width:130,class:"margin_left_30"
+                },
+            ]
+            , [
+                {
+                    id:"dqau1",name:"dqau1",label:"选择大区",type:"select",data:{},selectedHandle:text1,linkAgeIds:["zhongxin1"],ajaxDataKey:"yj",width:100,class:"margin_left_30"
+                },
+                {
+                    id:"zhongxin1",name:"zhongxin1",label:"选择中心",type:"select",data:{},selectedHandle:text1,linkAgeIds:["quyu1"],ajaxDataKey:null,width:100,class:"margin_left_30"
+                },
+                {
+                    id:"quyu1",name:"quyu1",label:"选择区域",type:"select",data:{},selectedHandle:text1,linkAgeIds:["yingyebu1"],ajaxDataKey:null,width:100,class:"margin_left_30"
+                },
+                {
+                    id:"yingyebu1",name:"yingyebu1",label:"选择营业部",type:"select",data:{},selectedHandle:text1,linkAgeIds:["tuandui1"],ajaxDataKey:null,width:130,class:"margin_left_30"
+                },
+                {
+                    id:"tuandui1",name:"tuandui1",label:"选择团队",type:"select",data:{},selectedHandle:text1,linkAgeIds:["day1"],ajaxDataKey:null,width:130,class:"margin_left_30"
+                },
+            ]
+        ]
+        ,submitBtnCls:"submitBtn"
+        ,submitBtnId:"submitBtn"
+        ,submitBtn:'<button type="button" id="submitBtn" class="btn btn-primary submitBtn position_a">搜索</button>'
+        ,formId:"queryForm"
+    }
+    formselect.init(option);
+
+    var option1={
+        parentCon:"query2"
+        ,submitHandle:subquery
+        ,fields:[
+            [
+                {
+                    id:"year2",name:"year2",label:"选择年份",type:"select",data:{"1":"1","11":"2","111":"3","1111":"4"},selectedHandle:$.getMouthByQuarter,isStaticData:true,width:100,pre:3,class:"margin_left_30"
+                },
+                {
+                    id:"quarter2",name:"quarter2",label:"选择季度",type:"select",data:{"第一季度":"1","第二季度":"2","第三季度":"3","第四季度":"4"},isStaticData:true,selectedHandle:$.getMouthByQuarter,linkAgeIds:["mouth2"],width:100,class:"margin_left_30"
+                }
+                ,{
+                id:"mouth2",name:"mouth2",label:"选择月份",type:"select",data:{"1月":"1","2月":"2","3月":"3"},selectedHandle:$.getDayByMouth,linkAgeIds:["day2"],isStaticData:true,width:100,class:"margin_left_30"
+            },
+                {
+                    id:"day2",name:"day2",label:"选择日期",type:"select",data:{"1日":"1","2日":"2","3日":"3","4日":"4","5日":"5","6日":"6","7日":"7","8日":"8","9日":"9","10日":"10"
+                    ,"11日":"11","12日":"12","13日":"13","14日":"14","15日":"15","16日":"16","17日":"17","18日":"18","19日":"19","20日":"20","21日":"21","22日":"22","23日":"23","24日":"24","25日":"25","26日":"26","27日":"27"
+                    ,"28日":"28","29日":"29","30日":"30","31日":"31"},isStaticData:true,width:100,class:"margin_left_30"
+                }
+            ]
+            , [
+                {
+                    id:"dqau2",name:"dqau2",label:"选择大区",type:"select",data:{},selectedHandle:text1,linkAgeIds:["zhongxin2"],ajaxDataKey:"yj",width:100,class:"margin_left_30"
+                },
+                {
+                    id:"zhongxin2",name:"zhongxin2",label:"选择中心",type:"select",data:{},selectedHandle:text1,linkAgeIds:["quyu2"],ajaxDataKey:null,width:100,class:"margin_left_30"
+                },
+                {
+                    id:"quyu2",name:"quyu2",label:"选择区域",type:"select",data:{},selectedHandle:text1,linkAgeIds:["yingyebu2"],ajaxDataKey:null,width:100,class:"margin_left_30"
+                },
+                {
+                    id:"yingyebu2",name:"yingyebu2",label:"选择营业部",type:"select",data:{},selectedHandle:text1,linkAgeIds:["tuandui2"],ajaxDataKey:null,width:130,class:"margin_left_30"
+                },
+                {
+                    id:"tuandui2",name:"tuandui2",label:"选择团队",type:"select",data:{},selectedHandle:text1,linkAgeIds:["day"],ajaxDataKey:null,width:130,class:"margin_left_30"
+                },
+            ]
+            , [
+                {
+                    id:"dqau12",name:"dqau12",label:"选择大区",type:"select",data:{},selectedHandle:text1,linkAgeIds:["zhongxin12"],ajaxDataKey:"yj",width:100,class:"margin_left_30"
+                },
+                {
+                    id:"zhongxin12",name:"zhongxin12",label:"选择中心",type:"select",data:{},selectedHandle:text1,linkAgeIds:["quyu12"],ajaxDataKey:null,width:100,class:"margin_left_30"
+                },
+                {
+                    id:"quyu12",name:"quyu12",label:"选择区域",type:"select",data:{},selectedHandle:text1,linkAgeIds:["yingyebu12"],ajaxDataKey:null,width:100,class:"margin_left_30"
+                },
+                {
+                    id:"yingyebu12",name:"yingyebu12",label:"选择营业部",type:"select",data:{},selectedHandle:text1,linkAgeIds:["tuandui12"],ajaxDataKey:null,width:130,class:"margin_left_30"
+                },
+                {
+                    id:"tuandui12",name:"tuandui12",label:"选择团队",type:"select",data:{},selectedHandle:text1,linkAgeIds:["day"],ajaxDataKey:null,width:130,class:"margin_left_30"
+                },
+            ]
+        ]
+        ,submitBtnCls:"submitBtn"
+        ,submitBtnId:"submitBtn2"
+        ,submitBtn:'<button type="button" id="submitBtn2" class="btn btn-primary submitBtn position_a">搜索</button>'
+        ,formId:"queryForm2"
+    }
+    //  formselect2.init(option1);
+
+    function subquery(formid){
+        console.log($("#"+formid).serialize());
+
+
+    }
+
+    function text1(option){
+        setValue(option);
+    }
+    function setValue(option){
+        var r="",rr="";
+        var d=JSON.parse($("#" +option.id).attr("child").replace(/'/g, "\""));
+        $(d).each(function(index,item){
+            var childid= $.newGuid(),
+                option= '<option child="'+(item.children&&JSON.stringify(item.children).replace(/"/g, "'"))+'" value="'+item.code+'">'+item.name+'</option>';
+            r=r+option;
+        })
+        $("#" +option.id).html()||$("#" +option.id).html(r).get(0);
+        var t=$("#" +option.id).find("option:selected").attr("child");
+        if(t&&"undefined"!=t){
+            var children=JSON.parse(t.replace(/'/g, "\"") );
+            $(children).each(function(indexchr,itemchr){
+                rr=rr+'<option child="'+(itemchr.children&&JSON.stringify(itemchr.children).replace(/"/g, "'"))+'" value="'+itemchr.code+'">'+itemchr.name+'</option>';
+            })
+            $("#" +option.linkAge[0]).html(rr).trigger("change").get(0);
+        }
+
+    }
+    function getdata(){
+        var data={
+            "yj":[
+                {
+                    "code":"1_1"
+                    ,"name":"a_1"
+                    ,"type":"1"
+                    ,"children":[
+                    {
+                        "code":"1_1_2"
+                        ,"name":"a_1_2"
+                        ,"type":"1"
+                        ,"children":[
+                        {
+                            "code":"1_1_2_3"
+                            ,"name":"a_1_2_3"
+                            ,"type":"1"
+                            ,"children":[
+                            {
+                                "code":"1_1_2_3_4"
+                                ,"name":"a_1_2_3_4"
+                                ,"type":"1"
+                                ,"children":[
+                                {
+                                    "code":"1_1_2_3_4_5"
+                                    ,"name":"a_1_2_3_4_5"
+                                }
+                                , {
+                                    "code":"1_1_2_3_4_52"
+                                    ,"name":"a_1_2_3_4_52"
+                                }
+                            ]
+                            }
+                            ,{
+                                "code":"1_1_2_3_42"
+                                ,"name":"a_1_2_3_42"
+                                ,"children":[
+                                    {
+                                        "code":"1_1_2_3_42_5"
+                                        ,"name":"a_1_2_3_42_5"
+                                    }
+                                    , {
+                                        "code":"1_1_2_3_42_52"
+                                        ,"name":"a_1_2_3_42_52"
+                                    }
+                                ]
+                            }
+                        ]
+                        }
+                        ,{
+                            "code":"1_1_2_32"
+                            ,"name":"a_1_2_32"
+                            ,"children":[
+                                {
+                                    "code":"1_1_2_32_4"
+                                    ,"name":"a_1_2_32_4"
+                                    ,"children":[
+                                    {
+                                        "code":"1_1_2_32_4_5"
+                                        ,"name":"a_1_2_32_4_5"
+                                    }
+                                    , {
+                                        "code":"1_1_2_32_4_52"
+                                        ,"name":"a_1_2_32_4_52"
+                                    }
+                                ]
+                                }
+                                ,{
+                                    "code":"1_1_2_32_42"
+                                    ,"name":"a_1_2_32_42"
+                                    ,"children":[
+                                        {
+                                            "code":"1_1_2_32_42_5"
+                                            ,"name":"a_1_2_32_42_5"
+                                        }
+                                        , {
+                                            "code":"1_1_2_32_42_52"
+                                            ,"name":"a_1_2_32_42_52"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                    }
+                    ,{
+                        "code":"1_1_22"
+                        ,"name":"a_1_22"
+                        ,"children":[
+                            {
+                                "code":"1_1_22_3"
+                                ,"name":"a_1_22_3"
+                                ,"children":[
+                                {
+                                    "code":"1_1_22_3_4"
+                                    ,"name":"a_1_22_3_4"
+                                    ,"children":[
+                                    {
+                                        "code":"1_1_22_3_4_5"
+                                        ,"name":"a_1_22_3_4_5"
+                                    }
+                                    , {
+                                        "code":"1_1_22_3_4_52"
+                                        ,"name":"a_1_22_3_4_52"
+                                    }
+                                ]
+                                }
+                                ,{
+                                    "code":"1_1_22_3_42"
+                                    ,"name":"a_1_22_3_42"
+                                    ,"children":[
+                                        {
+                                            "code":"1_1_22_3_42_5"
+                                            ,"name":"a_1_22_3_42_5"
+                                        }
+                                        , {
+                                            "code":"1_1_22_3_42_52"
+                                            ,"name":"a_1_22_3_42_52"
+                                        }
+                                    ]
+                                }
+                            ]
+                            }
+                            ,{
+                                "code":"1_1_22_32"
+                                ,"name":"a_1_22_32"
+                                ,"children":[
+                                    {
+                                        "code":"1_1_22_32_4"
+                                        ,"name":"a_1_22_32_4"
+                                        ,"children":[
+                                        {
+                                            "code":"1_1_22_32_4_5"
+                                            ,"name":"a_1_22_32_4_5"
+                                        }
+                                        , {
+                                            "code":"1_1_22_32_4_52"
+                                            ,"name":"a_1_22_32_4_52"
+                                        }
+                                    ]
+                                    }
+                                    ,{
+                                        "code":"1_1_22_32_42"
+                                        ,"name":"a_1_22_32_42"
+                                        ,"children":[
+                                            {
+                                                "code":"1_1_22_32_42_5"
+                                                ,"name":"a_1_22_32_42_5"
+                                            }
+                                            , {
+                                                "code":"1_1_22_32_42_52"
+                                                ,"name":"a_1_22_32_42_52"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+                }
+                , {
+                    "code":"1_12"
+                    ,"name":"a_12"
+                    ,"children":[
+                        {
+                            "code":"1_12_2"
+                            ,"name":"a_12_2"
+                            ,"children":[
+                            {
+                                "code":"1_12_2_3"
+                                ,"name":"a_12_2_3"
+                                ,"children":[
+                                {
+                                    "code":"1_12_2_3_4"
+                                    ,"name":"a_12_2_3_4"
+                                    ,"children":[
+                                    {
+                                        "code":"1_12_2_3_4_5"
+                                        ,"name":"a_12_2_3_4_5"
+                                    }
+                                    , {
+                                        "code":"1_12_2_3_4_52"
+                                        ,"name":"a_12_2_3_4_52"
+                                    }
+                                ]
+                                }
+                                ,{
+                                    "code":"1_12_2_3_42"
+                                    ,"name":"a_12_2_3_42"
+                                    ,"children":[
+                                        {
+                                            "code":"1_12_2_3_42_5"
+                                            ,"name":"a_12_2_3_42_5"
+                                        }
+                                        , {
+                                            "code":"1_12_2_3_42_52"
+                                            ,"name":"a_12_2_3_42_52"
+                                        }
+                                    ]
+                                }
+                            ]
+                            }
+                            ,{
+                                "code":"1_12_2_32"
+                                ,"name":"a_12_2_32"
+                                ,"children":[
+                                    {
+                                        "code":"1_12_2_32_4"
+                                        ,"name":"a_12_2_32_4"
+                                        ,"children":[
+                                        {
+                                            "code":"1_12_2_32_4_5"
+                                            ,"name":"a_12_2_32_4_5"
+                                        }
+                                        , {
+                                            "code":"1_12_2_32_4_52"
+                                            ,"name":"a_12_2_32_4_52"
+                                        }
+                                    ]
+                                    }
+                                    ,{
+                                        "code":"1_12_2_32_42"
+                                        ,"name":"a_12_2_32_42"
+                                        ,"children":[
+                                            {
+                                                "code":"1_12_2_32_42_5"
+                                                ,"name":"a_12_2_32_42_5"
+                                            }
+                                            , {
+                                                "code":"1_12_2_32_42_52"
+                                                ,"name":"a_12_2_32_42_52"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                        }
+                        ,{
+                            "code":"1_12_22"
+                            ,"name":"a_12_22"
+                            ,"children":[
+                                {
+                                    "code":"1_12_22_3"
+                                    ,"name":"a_12_22_3"
+                                    ,"children":[
+                                    {
+                                        "code":"1_12_22_3_4"
+                                        ,"name":"a_12_22_3_4"
+                                        ,"children":[
+                                        {
+                                            "code":"1_12_22_3_4_5"
+                                            ,"name":"a_12_22_3_4_5"
+                                        }
+                                        , {
+                                            "code":"1_12_22_3_4_52"
+                                            ,"name":"a_12_22_3_4_52"
+                                        }
+                                    ]
+                                    }
+                                    ,{
+                                        "code":"1_12_22_3_42"
+                                        ,"name":"a_12_22_3_42"
+                                        ,"children":[
+                                            {
+                                                "code":"1_12_22_3_42_5"
+                                                ,"name":"a_12_22_3_42_5"
+                                            }
+                                            , {
+                                                "code":"1_12_22_3_42_52"
+                                                ,"name":"a_12_22_3_42_52"
+                                            }
+                                        ]
+                                    }
+                                ]
+                                }
+                                ,{
+                                    "code":"1_12_22_32"
+                                    ,"name":"a_12_22_32"
+                                    ,"children":[
+                                        {
+                                            "code":"1_12_22_32_4"
+                                            ,"name":"a_12_22_32_4"
+                                            ,"children":[
+                                            {
+                                                "code":"1_12_22_32_4_5"
+                                                ,"name":"a_12_22_32_4_5"
+                                            }
+                                            , {
+                                                "code":"1_12_22_32_4_52"
+                                                ,"name":"a_12_22_32_4_52"
+                                            }
+                                        ]
+                                        }
+                                        ,{
+                                            "code":"1_12_22_32_42"
+                                            ,"name":"a_12_22_32_42"
+                                            ,"children":[
+                                                {
+                                                    "code":"1_12_22_32_42_5"
+                                                    ,"name":"a_12_22_32_42_5"
+                                                }
+                                                , {
+                                                    "code":"1_12_22_32_42_52"
+                                                    ,"name":"a_12_22_32_42_52"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        };
+        formselect.initAjaxData(data);
+        formselect2.initAjaxData(data);
+    }
+    getdata();
+
+</script>
+</html>
