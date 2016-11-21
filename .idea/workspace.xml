@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/block/datepicker/datepicker.js" afterPath="$PROJECT_DIR$/server/yg/static/module/block/datepicker/datepicker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/datapicker/datepicker.js" afterPath="$PROJECT_DIR$/server/yg/static/module/datapicker/datepicker.js" />
-    </list>
+    <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="" />
     <ignored path="mzg.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -28,10 +25,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="datepicker.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="datepicker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/datepicker/datepicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.66091955" vertical-offset="1953" max-vertical-offset="3591">
+            <state vertical-scroll-proportion="-15.333333" vertical-offset="1953" max-vertical-offset="3591">
               <caret line="188" column="79" selection-start-line="188" selection-start-column="79" selection-end-line="188" selection-end-column="79" />
               <folding>
                 <element signature="e#3502#5442#0" expanded="false" />
@@ -61,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="datepicker.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="datepicker.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/datapicker/datepicker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.4333334" vertical-offset="0" max-vertical-offset="684">
-              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.50916785" vertical-offset="0" max-vertical-offset="709">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -998,7 +995,7 @@
       <workItem from="1479257111173" duration="1847000" />
       <workItem from="1479343721577" duration="4223000" />
       <workItem from="1479430695975" duration="26580000" />
-      <workItem from="1479690298401" duration="3287000" />
+      <workItem from="1479690298401" duration="3796000" />
     </task>
     <task id="LOCAL-00001" summary="Default">
       <created>1476537969852</created>
@@ -1010,7 +1007,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="694943000" />
+    <option name="totallyTimeSpent" value="695452000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
@@ -1468,22 +1465,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/static/module/datapicker/datepicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4333334" vertical-offset="0" max-vertical-offset="684">
-          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/datepicker/datepicker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66091955" vertical-offset="1953" max-vertical-offset="3591">
+        <state vertical-scroll-proportion="-15.333333" vertical-offset="1953" max-vertical-offset="3591">
           <caret line="188" column="79" selection-start-line="188" selection-start-column="79" selection-end-line="188" selection-end-column="79" />
           <folding>
             <element signature="e#3502#5442#0" expanded="false" />
             <element signature="e#5456#6890#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/static/module/datapicker/datepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.50916785" vertical-offset="0" max-vertical-offset="709">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
