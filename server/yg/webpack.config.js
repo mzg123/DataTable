@@ -15,7 +15,7 @@ module.exports = {
         ,canvas: "./webpackbuildjs/mzg/canvas.js"
         ,datepicker: "./webpackbuildjs/mzg/datepicker.js"
         ,formselect: "./webpackbuildjs/mzg/formselect.js"
-        //,es6: "./webpackbuildjs/mzg/es6.js"
+        ,es6: ['babel-polyfill',"./webpackbuildjs/mzg/es6.js"]
         //,welcome: "./webpackbuildjs/welcome.js"
     }
     //,devServer:{
@@ -50,6 +50,14 @@ module.exports = {
             //{ test: /\.js$/, loader: "jsx?harmony!babel", exclude: /node_modules/, include: '/src',query:{
             //    presets:['es2015']
             //}},
+
+            {
+                loader: 'babel-loader',
+                test: path.join(__dirname, 'src'),
+                query: {
+                    presets: 'es2015'
+                }
+            },
 
             //{ test: /\.js$/, loader: "jsx?harmony!babel", include: /src/},
             //{ test: /\.css$/, loader: "style!css"},

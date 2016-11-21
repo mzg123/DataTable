@@ -1,5 +1,4 @@
 
-"use strict";
 class App{
     constructor (ob){
 
@@ -10,10 +9,3 @@ class App{
     }
 }
 export * from "App";
-//var a={
-//    t:function(){
-//        let dd=90;
-//        alert(dd);
-//    }
-//};
-//module.exports=a;
