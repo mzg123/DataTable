@@ -131,24 +131,29 @@ var datepicker={
     }
     ,_initEvent:function(){
         var self=this;
+
         self.options.type=="2"&&($("#"+self.options.parentCon+" .date_picker_text").on("focus",function(){
-            $("#"+self.options.parentCon+" .date_picker").removeClass("position_a hidden");
+            var parentCom=self.options.parentCon;
+            $("#"+parentCom+" .date_picker").removeClass(" hidden");
         }).on("blur",function(){
+            var parentCom=self.options.parentCon;
            setTimeout(function(){
-               self.showDatePicker||$("#"+self.options.parentCon+" .date_picker").addClass("position_a hidden");
-               self.showDatePicker||$("#"+self.options.parentCon+" .date_picker_text").val(self.selectDT.selectYear+"-"+self.selectDT.selectMouth+"-"+self.selectDT.selectDay);
+               self.showDatePicker||$("#"+parentCom+" .date_picker").addClass("position_a hidden");
+               self.showDatePicker||$("#"+parentCom+" .date_picker_text").val(self.selectDT.selectYear+"-"+self.selectDT.selectMouth+"-"+self.selectDT.selectDay);
            },150);
         }));
         $("#"+self.options.parentCon+" .pre_year").on("click",function(evt){
             self.selectDT.selectYear--;
-            $("#"+self.options.parentCon+" .year_mouth").html(self.selectDT.selectYear+"年"+self.selectDT.selectMouth+"月");
+            var parentCom=self.options.parentCon
+            $("#"+parentCom+" .year_mouth").html(self.selectDT.selectYear+"年"+self.selectDT.selectMouth+"月");
             self._initDate(self.selectDT);
             self.options.type=="2"&&(self.showDatePicker=true);
 
         });
         $("#"+self.options.parentCon+" .next_year").on("click",function(evt){
             self.selectDT.selectYear++;
-            $("#"+self.options.parentCon+" .year_mouth").html(self.selectDT.selectYear+"年"+self.selectDT.selectMouth+"月");
+            var parentCom=self.options.parentCon
+            $("#"+parentCom+" .year_mouth").html(self.selectDT.selectYear+"年"+self.selectDT.selectMouth+"月");
             self._initDate(self.selectDT);
             self.options.type=="2"&&(self.showDatePicker=true);
         });
@@ -162,8 +167,9 @@ var datepicker={
         });
         $("#"+self.options.parentCon+" .date_item").on("click",function(evt){
             var currentday=$(evt.target).html();
+            var parentCom=self.options.parentCon;
             if($(evt.target).hasClass("non_current_mouth_day")){
-                $("#"+self.options.parentCon+" .current_day").removeClass("current_day");
+                $("#"+parentCom+" .current_day").removeClass("current_day");
                  if(currentday>20){
                      self._preMouth(self);
                  }else{
@@ -172,11 +178,13 @@ var datepicker={
                 $( self.getDomByDay(self,currentday)).addClass("current_day");
             }
             else{
-                $("#"+self.options.parentCon+" .current_day").removeClass("current_day");
-                $(evt.target).addClass("current_day");
-                self.selectDT.selectDay=currentday;
+                if(!$(evt.target).parent().hasClass("date_picker_week")){
+                    $("#"+parentCom+" .current_day").removeClass("current_day");
+                    $(evt.target).addClass("current_day");
+                    self.selectDT.selectDay=currentday;
+                }
             }
-            self.options.type=="2"&&(self.showDatePicker=false&$("#"+self.options.parentCon+" .date_picker_text").trigger("blur"));
+            self.options.type=="2"&&(self.showDatePicker=false&$("#"+parentCom+" .date_picker_text").trigger("blur"));
             //self.options.type=="2"&&($("#"+self.options.parentCon+" .date_picker_text").trigger("blur"));
         })
     }
@@ -227,5 +235,8 @@ var datepicker={
         }
     }
 }
-
-module.exports=datepicker;
+function getNewOb(){
+    var newObject = $.extend(true, {}, datepicker);
+    return  newObject;
+}
+module.exports=getNewOb;
