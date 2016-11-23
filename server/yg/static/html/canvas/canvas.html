@@ -165,124 +165,170 @@ function initCanvas(r){
         ,id:"mycanvas"
     }
     window.mycanvas.drawPloy(option);
+    drawyhq(0,0);
+    drawyhq(243,0);
 
-    //绘制小图标
-    option= {
-        points:[
-            {x:153,y:210}
-            ,{x:209,y:211}
-            ,{x:223,y:195}
-            ,{x:351,y:195}
-            ,{x:351,y:128}
-            ,{x:152,y:127}
+    drawyhq(-91,104);
+    drawyhq(120,104);
+    drawyhq(334,104);
 
+    drawyhq(-91,222);
+    drawyhq(120,222);
+    drawyhq(334,222);
 
-        ]
-
-        ,lineJoin:"miter"
-        ,fillStyle:"#2fa49c"
-        ,strokeStyle:"#2fa49c"
-        ,lineWidth:1
-        ,isClosed:true
-        ,id:"mycanvas"
-    }
-    window.mycanvas.drawPloy(option);
-    option= {
-        points:[
-
-            {x:209,y:211}
-            ,{x:223,y:195}
-            ,{x:351,y:195}
-            ,{x:351,y:210}
-
-
-        ]
-
-        ,lineJoin:"miter"
-        ,fillStyle:"#f4ad25"
-        ,strokeStyle:"#f4ad25"
-        ,lineWidth:1
-        ,isClosed:true
-        ,id:"mycanvas"
-    }
-    window.mycanvas.drawPloy(option);
-
-     option={
-        point:{x:226,y:206}
-        ,font:"12px Georgia "
-        ,text:"有效期：12/1-12/31"
-         ,fillStyle:"#fefefe"
-        ,id:"mycanvas"
-    }
-    window.mycanvas.drawText(option);
-    option={
-        point:{x:160,y:190}
-        ,font:"12px Georgia "
-        ,text:"最低使用金额（元）：10000"
-        ,fillStyle:"#fefefe"
-        ,id:"mycanvas"
-    }
-    window.mycanvas.drawText(option);
-    option={
-        point:{x:160,y:162}
-        ,font:"18px Georgia "
-        ,text:"￥"
-        ,fillStyle:"#fefefe"
-        ,id:"mycanvas"
-    }
-    window.mycanvas.drawText(option);
-    option={
-        point:{x:181,y:162}
-        ,font:"24px Georgia "
-        ,text:"288"
-        ,fillStyle:"#fefefe"
-        ,id:"mycanvas"
-    }
-    window.mycanvas.drawText(option);
-    option={
-        point:{x:239,y:160}
-        ,font:"12px Georgia "
-        ,text:"抵扣券"
-        ,fillStyle:"#fefefe"
-        ,id:"mycanvas"
-    }
-    window.mycanvas.drawText(option);
-
-     option= {
-        point:{x:322,y:153}
-        ,radis:23
-        ,sAngle:0
-        ,eAngle:2
-         ,isFill:true
-        ,counterclockwise:true
-        ,fillStyle:"#f4ad25"
-        ,strokeStyle:"#f4ad25"
-        ,lineWidth:1
-
-        ,id:"mycanvas"
-    }
-    mycanvas.drawArc(option);
-
-    option={
-        point:{x:302,y:151}
-        ,font:"10px Georgia "
-        ,text:"出借期限"
-        ,fillStyle:"#fefefe"
-        ,id:"mycanvas"
-    }
-    window.mycanvas.drawText(option);
-    option={
-        point:{x:308,y:167}
-        ,font:"14px Georgia "
-        ,text:"12月"
-        ,fillStyle:"#fefefe"
-        ,id:"mycanvas"
-    }
-    window.mycanvas.drawText(option);
+    drawyhq(-91,329);
+    drawyhq(120,329);
+    drawyhq(334,329);
 }
+        //绘制优惠券x:153,y:210
 
-    function drawyhq(){
-        
+        function drawDoshLine(from,to){
+            var option= {
+                from:from
+                ,to:to//{x:130,y:760}
+                ,fillStyle:"red"
+                ,strokeStyle:"blue"
+                ,lineWidth:2
+                ,dashLength:8
+                ,id:"mycanvas"
+            }
+            mycanvas.drawDoshLine(option);
+        }
+
+        function offset(points,offx,offy){
+            if(points.length)
+                for(var i=0;i<points.length;i++){
+                points[i].x= points[i].x+offx;
+                points[i].y= points[i].y+offy;
+            }
+            else{
+                points.x= points.x+offx;
+                points.y= points.y+offy;
+            }
+
+        }
+    function drawyhq(offx,offy){
+        //绘制优惠券
+        option= {
+            points:[
+                {x:153,y:210}
+                ,{x:209,y:211}
+                ,{x:223,y:195}
+                ,{x:351,y:195}
+                ,{x:351,y:128}
+                ,{x:152,y:127}
+            ]
+
+            ,lineJoin:"miter"
+            ,fillStyle:"#2fa49c"
+            ,strokeStyle:"#2fa49c"
+            ,lineWidth:1
+            ,isClosed:true
+            ,id:"mycanvas"
+        }
+        offset(option.points,offx,offy);
+
+        window.mycanvas.drawPloy(option);
+
+        option= {
+            points:[
+                {x:209,y:211}
+                ,{x:223,y:195}
+                ,{x:351,y:195}
+                ,{x:351,y:210}
+
+            ]
+
+            ,lineJoin:"miter"
+            ,fillStyle:"#f4ad25"
+            ,strokeStyle:"#f4ad25"
+            ,lineWidth:1
+            ,isClosed:true
+            ,id:"mycanvas"
+        }
+        offset(option.points,offx,offy);
+        window.mycanvas.drawPloy(option);
+
+        option={
+            point:{x:226,y:206}
+            ,font:"12px Georgia "
+            ,text:"有效期：12/1-12/31"
+            ,fillStyle:"#fefefe"
+            ,id:"mycanvas"
+        }
+        offset(option.point,offx,offy);
+        window.mycanvas.drawText(option);
+        option={
+            point:{x:160,y:190}
+            ,font:"12px Georgia "
+            ,text:"最低使用金额（元）：10000"
+            ,fillStyle:"#fefefe"
+            ,id:"mycanvas"
+        }
+        offset(option.point,offx,offy);
+        window.mycanvas.drawText(option);
+        option={
+            point:{x:160,y:162}
+            ,font:"18px Georgia "
+            ,text:"￥"
+            ,fillStyle:"#fefefe"
+            ,id:"mycanvas"
+        }
+        offset(option.point,offx,offy);
+        window.mycanvas.drawText(option);
+        option={
+            point:{x:181,y:162}
+            ,font:"24px Georgia "
+            ,text:"288"
+            ,fillStyle:"#fefefe"
+            ,id:"mycanvas"
+        }
+        offset(option.point,offx,offy);
+        window.mycanvas.drawText(option);
+        option={
+            point:{x:239,y:160}
+            ,font:"12px Georgia "
+            ,text:"抵扣券"
+            ,fillStyle:"#fefefe"
+            ,id:"mycanvas"
+        }
+        offset(option.point,offx,offy);
+        window.mycanvas.drawText(option);
+
+        option= {
+            point:{x:322,y:153}
+            ,radis:23
+            ,sAngle:0
+            ,eAngle:2
+            ,isFill:true
+            ,counterclockwise:true
+            ,fillStyle:"#f4ad25"
+            ,strokeStyle:"#f4ad25"
+            ,lineWidth:1
+
+            ,id:"mycanvas"
+        }
+        offset(option.point,offx,offy);
+        window.mycanvas.drawArc(option);
+
+        option={
+            point:{x:302,y:151}
+            ,font:"10px Georgia "
+            ,text:"出借期限"
+            ,fillStyle:"#fefefe"
+            ,id:"mycanvas"
+        }
+        offset(option.point,offx,offy);
+        window.mycanvas.drawText(option);
+        option={
+            point:{x:308,y:167}
+            ,font:"14px Georgia "
+            ,text:"12月"
+            ,fillStyle:"#fefefe"
+            ,id:"mycanvas"
+        }
+        offset(option.point,offx,offy);
+        window.mycanvas.drawText(option);
     }
 </script>
 

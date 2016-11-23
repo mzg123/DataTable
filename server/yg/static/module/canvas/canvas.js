@@ -93,8 +93,8 @@ document.getElementById("doshline").onclick=function(){
         ,to:{x:130,y:760}
         ,fillStyle:"red"
         ,strokeStyle:"blue"
-        ,lineWidth:1
-        ,dashLength:5
+        ,lineWidth:2
+        ,dashLength:8
         ,id:"mycanvas"
     }
     mycanvas.drawDoshLine(option);
