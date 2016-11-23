@@ -8186,6 +8186,8 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	var _marked = [foo, bar].map(regeneratorRuntime.mark);
+	
 	__webpack_require__(1);
 	
 	var body = document.querySelector('body');
@@ -8200,9 +8202,9 @@
 	
 	try {
 	    for (var _iterator = uni[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-	        var item = _step.value;
+	        // console.log(item);
 	
-	        console.log(item);
+	        var item = _step.value;
 	    }
 	} catch (err) {
 	    _didIteratorError = true;
@@ -8220,6 +8222,89 @@
 	}
 	
 	body.textContent = 'Good point: ' + new _point2.default(1, 23) + result;
+	
+	//function *foo() {
+	//    try {
+	//        var x = yield 3;
+	//        console.log( "x: " + x ); // may never get here!
+	//    }
+	//    catch (err) {
+	//        console.log( "Error: " + err );
+	//    }
+	//}
+	
+	
+	function foo() {
+	    return regeneratorRuntime.wrap(function foo$(_context) {
+	        while (1) {
+	            switch (_context.prev = _context.next) {
+	                case 0:
+	                    _context.next = 2;
+	                    return 3;
+	
+	                case 2:
+	                    _context.next = 4;
+	                    return 4;
+	
+	                case 4:
+	                case 'end':
+	                    return _context.stop();
+	            }
+	        }
+	    }, _marked[0], this);
+	}
+	
+	function bar() {
+	    return regeneratorRuntime.wrap(function bar$(_context2) {
+	        while (1) {
+	            switch (_context2.prev = _context2.next) {
+	                case 0:
+	                    _context2.next = 2;
+	                    return 1;
+	
+	                case 2:
+	                    _context2.next = 4;
+	                    return 2;
+	
+	                case 4:
+	                    return _context2.delegateYield(foo(), 't0', 5);
+	
+	                case 5:
+	                    _context2.next = 7;
+	                    return 5;
+	
+	                case 7:
+	                case 'end':
+	                    return _context2.stop();
+	            }
+	        }
+	    }, _marked[1], this);
+	}
+	
+	var _iteratorNormalCompletion2 = true;
+	var _didIteratorError2 = false;
+	var _iteratorError2 = undefined;
+	
+	try {
+	    for (var _iterator2 = bar()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+	        var v = _step2.value;
+	
+	        console.log(v);
+	    }
+	} catch (err) {
+	    _didIteratorError2 = true;
+	    _iteratorError2 = err;
+	} finally {
+	    try {
+	        if (!_iteratorNormalCompletion2 && _iterator2.return) {
+	            _iterator2.return();
+	        }
+	    } finally {
+	        if (_didIteratorError2) {
+	            throw _iteratorError2;
+	        }
+	    }
+	}
 
 /***/ },
 /* 299 */

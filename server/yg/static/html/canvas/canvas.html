@@ -2,23 +2,289 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <title></title>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        overflow-x: hidden;
+        background: #ff9000;
+    }
     div{
-        font-size: 60px;
+        font-size:60px;
+    }
+    .headerbanner{
+      height: 200px;
+        background: red;
+    }
+    .part_1{
+        height: 700px;
+padding: 64px;
+        z-index: 10;
+        position: relative;
+    }
+    .content{
+        position: relative;
+    }
+    .title{
+        color:#ff9000;
+        font-size: 28px;
+z-index: 10;
+    }
+    .tips{
+       color:#996d0b;
+        font-size: 24px;
+
+        position: relative;
+        margin-top: 500px;
+        position: relative;
+        text-align: center;
     }
 </style>
 </head>
 <body>
-<div id="Pline">Pline</div>
-<div id="Ploy">Ploy</div>
-<div id="line">line</div>
-<div id="doshline">doshline</div>
-<div id="arc">arc</div>
-<div id="arcdosh">arcdosh</div>
-<div id="text">text</div>
-<canvas id="mycanvas" height="300" width="200"></canvas>
-<script  type="text/javascript" src="http://ob4uot9cp.bkt.clouddn.com/lib.js"></script>
-<script  type="text/javascript" src="http://10.0.130.129/dist/js/canvas.js"></script>
+<div id="pageContain" class="page-wrap">
+    <div class="page current">
+        <div class="container">
+            <div class="headerbanner"></div>
+            <div class="content" >
+                <canvas id="mycanvas" height="700" width="300"  style="border:1px blue solid; position: absolute;z-index: -1;"></canvas>
+                <div class="part_1">
+                   <div class="title">
+                       活动规则：
+                   </div>
+                    <div class="tips">
+                        出借产品：银多利，月盈利
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div id="Pline">Pline</div>
+                <div id="Ploy">Ploy</div>
+                <div id="line">line</div>
+                <div id="doshline">doshline</div>
+                <div id="arc">arc</div>
+                <div id="arcdosh">arcdosh</div>
+                <div id="text">text</div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+<!--<script  type="text/javascript" src="http://ob4uot9cp.bkt.clouddn.com/lib.js"></script>-->
+<!--<script  type="text/javascript" src="http://localhost:8080/dist/js/canvas.js"></script>-->
+
 </body>
+<script  type="text/javascript" src="http://10.0.130.129/dist/js/canvas.js"></script>
+<script type="text/javascript">
+
+        window.onload = window.onresize = function(){
+        pageResponse({
+            selectors : '.container',     //模块选择器，使用querySelectorAll的方法
+            mode : 'auto',     // auto || contain || cover ，默认模式为auto
+            width : '750'      //输入页面的宽度，只支持输入数值，默认宽度为320px
+//            height : '150'      //输入页面的高度，只支持输入数值，默认高度为504px
+        })
+
+
+        }
+
+   function pageResponse(d){var c=navigator.userAgent,o=c.match(/Windows Phone ([\d.]+)/),e=c.match(/(Android);?[\s\/]+([\d.]+)?/),b=document.documentElement.clientWidth,n=document.documentElement.clientHeight,g=b/n,q=d.width||320,l=d.height||504,a=q/l,m=document.querySelectorAll(d.selectors),k=m.length,h=d.mode||"auto",j=d.origin||"left top 0",f=(h=="contain")?(g>a?n/l:b/q):(h=="cover")?(g<a?n/l:b/q):b/q;function p(t,s,r){var i=s.style;i.width=q+"px";i.height=l+"px";i.webkitTransformOrigin=j;i.transformOrigin=j;i.webkitTransform="scale("+r+")";i.transform="scale("+r+")";if(t=="auto"&&e){document.body.style.height=l*r+"px"}else{if(t=="contain"||t=="cover"){i.position="absolute";i.left=(b-q)/2+"px";i.top=(n-l)/2+"px";i.webkitTransformOrigin="center center 0";i.transformOrigin="center center 0";if(o){document.body.style.msTouchAction="none"}else{document.ontouchmove=function(u){u.preventDefault()}}}}}while(--k>=0){p(h,m[k],f);initCanvas(f)}};
+    agentTest("huaweimt7-tl10")&&(document.getElementsByTagName("html")[0].style.fontSize="11.5px");
+    agentTest("p308l build/ktu84p")&&(document.getElementsByTagName("html")[0].style.fontSize="8.5px");
+    function agentTest(agent){
+        var ua = window.navigator.userAgent.toLowerCase();
+
+        if(agent=="huaweimt7-tl10"){
+            if(ua.match(/huaweimt7-tl10/i)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        else if(agent=="p308l build/ktu84p"){
+            if(ua.match(/p308l build\/ktu84p/i)){
+                return true;
+            }else{
+                return false;
+            }
+        }
+    }
+
+function initCanvas(r){
+    var option= {
+        id:"mycanvas"
+        ,pageResponse:r
+        ,widthFull:true
+        ,designCanvasRect:{w:750,h:700}
+    }
+    window. mycanvas.init(option);
+     option= {
+        points:[
+            {x:23,y:41}
+            ,{x:107,y:49}
+            ,{x:196,y:34}
+            ,{x:257,y:53}
+            ,{x:300,y:21}
+            ,{x:361,y:15}
+            ,{x:400,y:46}
+            ,{x:454,y:26}
+            ,{x:532,y:7}
+            ,{x:612,y:35}
+            ,{x:696,y:25}
+            ,{x:719,y:98}
+            ,{x:698,y:228}
+            ,{x:726,y:394}
+            ,{x:716,y:540}
+            ,{x:728,y:659}
+            ,{x:652,y:653}
+            ,{x:437,y:653}
+            ,{x:325,y:671}
+            ,{x:170,y:660}
+            ,{x:51,y:682}
+            ,{x:7,y:659}
+            ,{x:31,y:466}
+            ,{x:14,y:341}
+            ,{x:42,y:141}
+
+        ]
+
+        ,lineJoin:"miter"
+        ,fillStyle:"#fef9e0"
+        ,strokeStyle:"#ffde94"
+        ,lineWidth:10
+        ,isClosed:true
+        ,id:"mycanvas"
+    }
+    window.mycanvas.drawPloy(option);
+
+    //绘制小图标
+    option= {
+        points:[
+            {x:153,y:210}
+            ,{x:209,y:211}
+            ,{x:223,y:195}
+            ,{x:351,y:195}
+            ,{x:351,y:128}
+            ,{x:152,y:127}
+
+
+        ]
+
+        ,lineJoin:"miter"
+        ,fillStyle:"#2fa49c"
+        ,strokeStyle:"#2fa49c"
+        ,lineWidth:1
+        ,isClosed:true
+        ,id:"mycanvas"
+    }
+    window.mycanvas.drawPloy(option);
+    option= {
+        points:[
+
+            {x:209,y:211}
+            ,{x:223,y:195}
+            ,{x:351,y:195}
+            ,{x:351,y:210}
+
+
+        ]
+
+        ,lineJoin:"miter"
+        ,fillStyle:"#f4ad25"
+        ,strokeStyle:"#f4ad25"
+        ,lineWidth:1
+        ,isClosed:true
+        ,id:"mycanvas"
+    }
+    window.mycanvas.drawPloy(option);
+
+     option={
+        point:{x:226,y:206}
+        ,font:"12px Georgia "
+        ,text:"有效期：12/1-12/31"
+         ,fillStyle:"#fefefe"
+        ,id:"mycanvas"
+    }
+    window.mycanvas.drawText(option);
+    option={
+        point:{x:160,y:190}
+        ,font:"12px Georgia "
+        ,text:"最低使用金额（元）：10000"
+        ,fillStyle:"#fefefe"
+        ,id:"mycanvas"
+    }
+    window.mycanvas.drawText(option);
+    option={
+        point:{x:160,y:162}
+        ,font:"18px Georgia "
+        ,text:"￥"
+        ,fillStyle:"#fefefe"
+        ,id:"mycanvas"
+    }
+    window.mycanvas.drawText(option);
+    option={
+        point:{x:181,y:162}
+        ,font:"24px Georgia "
+        ,text:"288"
+        ,fillStyle:"#fefefe"
+        ,id:"mycanvas"
+    }
+    window.mycanvas.drawText(option);
+    option={
+        point:{x:239,y:160}
+        ,font:"12px Georgia "
+        ,text:"抵扣券"
+        ,fillStyle:"#fefefe"
+        ,id:"mycanvas"
+    }
+    window.mycanvas.drawText(option);
+
+     option= {
+        point:{x:322,y:153}
+        ,radis:23
+        ,sAngle:0
+        ,eAngle:2
+         ,isFill:true
+        ,counterclockwise:true
+        ,fillStyle:"#f4ad25"
+        ,strokeStyle:"#f4ad25"
+        ,lineWidth:1
+
+        ,id:"mycanvas"
+    }
+    mycanvas.drawArc(option);
+
+    option={
+        point:{x:302,y:151}
+        ,font:"10px Georgia "
+        ,text:"出借期限"
+        ,fillStyle:"#fefefe"
+        ,id:"mycanvas"
+    }
+    window.mycanvas.drawText(option);
+    option={
+        point:{x:308,y:167}
+        ,font:"14px Georgia "
+        ,text:"12月"
+        ,fillStyle:"#fefefe"
+        ,id:"mycanvas"
+    }
+    window.mycanvas.drawText(option);
+}
+
+    function drawyhq(){
+        
+    }
+</script>
+
+
 </html>

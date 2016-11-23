@@ -15,7 +15,7 @@ module.exports = {
         ,canvas: "./webpackbuildjs/mzg/canvas.js"
         ,datepicker: "./webpackbuildjs/mzg/datepicker.js"
         ,formselect: "./webpackbuildjs/mzg/formselect.js"
-        ,es6: ['babel-polyfill',"./webpackbuildjs/mzg/es6.js"]
+        //,es6: ['babel-polyfill',"./webpackbuildjs/mzg/es6.js"]
         //,welcome: "./webpackbuildjs/welcome.js"
     }
     //,devServer:{
@@ -98,12 +98,12 @@ module.exports = {
         }
     ,plugins: [
         new ExtractTextPlugin("css/[name].css"),//分离css样式
-        //new webpack.optimize.UglifyJsPlugin({    //压缩代码
-        //    compress: {
-        //        warnings: false
-        //    },
-        //    except: ['$super', '$', 'exports', 'require']    //排除关键字
-        //})
+        new webpack.optimize.UglifyJsPlugin({    //压缩代码
+            compress: {
+                warnings: false
+            },
+            except: ['$super', '$', 'exports', 'require']    //排除关键字
+        })
         //,new webpack.HotModuleReplacementPlugin() //热加载
 ]
     //,plugins: [

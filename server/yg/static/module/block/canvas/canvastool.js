@@ -2,6 +2,8 @@ var canvaltool={
 
     canvas2d:null
     ,fillStyle:null
+    ,scaleXRatio:1
+    ,scaleYRatio:1
     ,_init:function(id){
         var c=document.getElementById(id);
         c&&(this.canvas2d=c.getContext("2d"));
@@ -11,18 +13,26 @@ var canvaltool={
             return this.canvas2d
         }
         else{
-            return this.canvas2d=document.getElementById(id).getContext("2d")
+            var canvas=document.getElementById(id);
+            return this.canvas2d=canvas.getContext("2d")
         }
     }
+    ,init:function(option){
+        if( option.widthFull){
+            var pageResponse=1;
+            option.pageResponse&&(pageResponse=option.pageResponse);
+            var canvas=document.getElementById(option.id);
+            var iw=parseInt(window.innerWidth )/pageResponse;
+            canvas.width = iw;
+            this.scaleXRatio=iw/option.designCanvasRect.w;
+            canvas.height = iw*option.designCanvasRect.h/option.designCanvasRect.w;
+            this.scaleYRatio=(iw)/(option.designCanvasRect.w);
+
+        }
+
+    }
     ,drawLine:function(option){
-       //var option= {
-       //     from:{x:10,y:30}
-       //     ,to:{x:30,y:60}
-       //     ,fillStyle:"red"
-       //    ,strokeStyle:"red"
-       //    ,lineWidth:1
-       //    ,id:"mycanvas"
-       // }
+
         var ctx=this._get2d(option.id);
         ctx.beginPath();
         option.lineWidth?ctx.lineWidth=option.lineWidth:ctx.lineWidth=1;
@@ -55,29 +65,33 @@ var canvaltool={
     }
     ,drawPLine:function(option){
         var ctx=this._get2d(option.id);
+
         ctx.beginPath();
+        option.lineJoin&&(ctx.lineJoin=option.lineJoin);
         option.lineWidth?ctx.lineWidth=option.lineWidth:ctx.lineWidth=1;
         option.strokeStyle?ctx.strokeStyle=option.strokeStyle:ctx.strokeStyle="black";
         option.fillStyle&&(ctx.fillStyle=option.fillStyle);
         for(var i=0;i<option.points.length;i++){
-             i==0&& ctx.moveTo(option.points[0].x,option.points[0].y);
-            ctx.lineTo(option.points[i].x,option.points[i].y);
+             i==0&& ctx.moveTo(option.points[0].x*this.scaleXRatio,option.points[0].y*this.scaleYRatio);
+            ctx.lineTo(option.points[i].x*this.scaleXRatio,option.points[i].y*this.scaleYRatio);
         }
         option.isClosed&&ctx.closePath();
+
         ctx.stroke(); // 进行绘制
     }
     ,drawArc:function(option){
         //x,y,r,sAngle,eAngle,counterclockwise
         var ctx=this._get2d(option.id);
         ctx.beginPath();
+
         option.lineWidth?ctx.lineWidth=option.lineWidth:ctx.lineWidth=1;
         option.strokeStyle?ctx.strokeStyle=option.strokeStyle:ctx.strokeStyle="black";
         option.fillStyle&&(ctx.fillStyle=option.fillStyle);
         ctx.arc(option.point.x,option.point.y,option.radis,option.sAngle,option.eAngle*Math.PI);
+        option.isClosed&&ctx.closePath();
+        option.isFill&&ctx.fill();
 
         ctx.stroke();
-
-
     }
     ,drawDoshArc:function(option){
         //var option= {
@@ -136,6 +150,7 @@ var canvaltool={
     ,drawPloy:function(option){
         var ctx=this._get2d(option.id);
         ctx.beginPath();
+        option.lineJoin&&(ctx.lineJoin=option.lineJoin);
         option.lineWidth?ctx.lineWidth=option.lineWidth:ctx.lineWidth=1;
         option.strokeStyle?ctx.strokeStyle=option.strokeStyle:ctx.strokeStyle="black";
         option.fillStyle&&(ctx.fillStyle=option.fillStyle);
@@ -213,6 +228,7 @@ var canvaltool={
         //}
         var ctx=this._get2d(option.id);
         option.font&&(ctx.font=option.font);
+        option.fillStyle&&(ctx.fillStyle=option.fillStyle);
         ctx.fillText(option.text,option.point.x,option.point.y);
     }
 }
