@@ -4,6 +4,7 @@ var canvaltool={
     ,fillStyle:null
     ,scaleXRatio:1
     ,scaleYRatio:1
+    ,canvas:null
     ,_init:function(id){
         var c=document.getElementById(id);
         c&&(this.canvas2d=c.getContext("2d"));
@@ -13,7 +14,7 @@ var canvaltool={
             return this.canvas2d
         }
         else{
-            var canvas=document.getElementById(id);
+            var canvas= this.canvas=document.getElementById(id);
             return this.canvas2d=canvas.getContext("2d")
         }
     }
@@ -21,7 +22,7 @@ var canvaltool={
         if( option.widthFull){
             var pageResponse=1;
             option.pageResponse&&(pageResponse=option.pageResponse);
-            var canvas=document.getElementById(option.id);
+            var canvas=this.canvas=document.getElementById(option.id);
             var iw=parseInt(window.innerWidth )/pageResponse;
             canvas.width = iw;
             this.scaleXRatio=iw/option.designCanvasRect.w;
@@ -30,6 +31,10 @@ var canvaltool={
 
         }
 
+    }
+    ,setCurrentCtx:function(option){
+        var self=this;
+        self.init(option);
     }
     ,drawLine:function(option){
 
@@ -171,6 +176,126 @@ var canvaltool={
         //}
         var ctx=this._get2d(option.id);
         ctx.clearRect(option.point.x,option.point.h,option.width,option.height);
+    }
+    ,scale:function(option){
+        //var option={
+        //    id:"mycanvas"
+        //    ,scalewidth:scalewidth
+        //    ,scaleheight:scaleheight
+        //}
+        var ctx=this._get2d(option.id);
+        ctx.scale(option.scalewidth,option.scaleheight);
+    }
+    ,translate:function(option){
+        //var option={
+        //    id:"mycanvas"
+        //    ,x:x
+        //    ,y:y
+        //}
+        var ctx=this._get2d(option.id);
+        ctx.translate(option.x,option.y);
+    }
+    ,rotate:function(option){
+        //var option={
+        //    id:"mycanvas"
+        //    ,angle:angle
+        //}
+        var ctx=this._get2d(option.id);
+        ctx.rotate(option.angle);
+    }
+    //以canvas上指定的坐标点开始，按照图像的原始尺寸大小绘制整个图像。这里的image可以是Image对象，也可以是Canvas对象(下同)。
+    ,drawImage:function( option){
+        //var option={
+        //    canvas:canvas
+        //    ,x:x
+        //    ,y:y
+       // ,id:"mycanvas"
+        //imageUrl:imageUrl
+        //}
+        var ctx=this._get2d(option.id);
+        //创建新的图片对象
+        var img = new Image();
+        //指定图片的URL
+        img.src = option.imageUrl;
+        //浏览器加载图片完毕后再绘制图片
+        img.onload = function(){
+            //以Canvas画布上的坐标(10,10)为起始点，绘制图像
+            ctx.drawImage(img, option.x, option.y);
+        };
+    }
+    //以canvas上指定的坐标点开始，以指定的大小(width和height)绘制整个图像，图像将根据指定的尺寸自动进行相应的缩放。
+    ,drawImageScale:function(option){
+        //var option={
+        //    canvas:canvas
+        //    ,x:x
+        //    ,y:y
+        //    ,width:width
+        //    ,height:height
+        // ,id:"mycanvas"
+        //,isFull:false
+        //imageUrl:imageUrl
+        //}
+        var self=this;
+        var ctx=this._get2d(option.id);
+        //创建新的图片对象
+        var img = new Image();
+        //指定图片的URL
+        img.src = option.imageUrl;
+        //浏览器加载图片完毕后再绘制图片
+        img.onload = function(){
+            //以Canvas画布上的坐标(10,10)为起始点，绘制图像
+            if(option.isFull){
+                option.width=self.canvas.width;
+                option.height=self.canvas.height;
+
+            }
+            ctx.drawImage(img, option.x, option.y, option.width, option.height);
+        };
+    }
+    //将指定图像的局部图像(以(imageX, imageY)为左上角、宽度为imageWidth、高度为imageHeight的矩形部分)绘制到canvas中以(canvasX,canvasY)为左上角坐标、宽度为canvasWidth、高度为canvasHeight的矩形区域中
+    ,drawImagePart:function(option){
+        //var option={
+        //    canvas:canvas
+        //    ,imageX:imageX
+        //    ,imageY:imageY
+        //    ,imageWidth:imageWidth
+        //    ,imageHeight:imageHeight
+        //    ,canvasX:canvasX
+        //    ,canvasY:canvasY
+        //    ,canvasWidth:canvasWidth
+        //    ,canvasHeight:canvasHeight
+        // ,id:"mycanvas"
+        //imageUrl:imageUrl
+        //}
+        var ctx=this._get2d(option.id);
+        //创建新的图片对象
+        var img = new Image();
+        //指定图片的URL
+        img.src = option.imageUrl;
+        //浏览器加载图片完毕后再绘制图片
+        img.onload = function(){
+            //以Canvas画布上的坐标(10,10)为起始点，绘制图像
+            ctx.drawImage(img, option.imageX, option.imageY, option.imageWidth, option.imageHeight, option.canvasX, option.canvasY, option.canvasWidth, option.canvasHeight);
+        };
+    }
+    ,getImageData:function(option){
+        //var option={
+        //    canvas:canvas
+        //    ,x:x
+        //    ,y:y
+        //    ,width:width
+        //    ,height:height
+        //,isFull:false
+        // ,id:"mycanvas"
+        //}
+        var self=this;
+        var ctx=this._get2d(option.id);
+        if(option.isFull){
+            option.width=self.canvas.width;
+            option.height=self.canvas.height;
+        }
+
+       return ctx.getImageData(option.x,option.y,option.width,option.height);
     }
    ,createPattern:function(option){
         var option={

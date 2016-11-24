@@ -165,9 +165,11 @@ function initCanvas(r){
         ,id:"mycanvas"
     }
     window.mycanvas.drawPloy(option);
-    drawyhq(0,0);
-    drawyhq(243,0);
 
+    drawyhq(0,0);
+   // scale(1.2,1.5);
+    drawyhq(243,0);
+   // scale(0.86,0.66);
     drawyhq(-91,104);
     drawyhq(120,104);
     drawyhq(334,104);
@@ -178,10 +180,51 @@ function initCanvas(r){
 
     drawyhq(-91,329);
     drawyhq(120,329);
+
     drawyhq(334,329);
 
-    drawDoshLine({x:130,y:760},{x:130,y:760});
+    drawDoshLine({x:48,y:341},{x:48,y:550});
+    drawDoshLine({x:48,y:341},{x:704,y:341});
+    drawDoshLine({x:697,y:550},{x:697,y:341});
+    drawDoshLine({x:48,y:550},{x:704,y:550});
+    drawImage();
+    console.log(getDate());
 }
+
+
+        function getDate(){
+            var option={
+                canvas:null
+                ,x:0
+                ,y:0
+                ,width:500
+                ,height:500
+                ,id:"mycanvas"
+                ,isFull:true
+            }
+          return  window.mycanvas.getImageData(option);
+        }
+        function drawImage(){
+            var option={
+                canvas:null
+                ,x:0
+                ,y:0
+                    ,width:500
+                    ,height:500
+            ,id:"mycanvas"
+                ,isFull:true
+            ,imageUrl:"../../image/about/culture.jpg"
+            }
+            window.mycanvas.drawImageScale(option);
+        }
+        function scale(x,y){
+            var option={
+                id:"mycanvas"
+                ,scalewidth:x
+                ,scaleheight:y
+            }
+            window.mycanvas.scale(option);
+        }
         //绘制优惠券x:153,y:210
 
         function drawDoshLine(from,to){
@@ -189,12 +232,12 @@ function initCanvas(r){
                 from:from
                 ,to:to//{x:130,y:760}
                 ,fillStyle:"red"
-                ,strokeStyle:"blue"
+                ,strokeStyle:"#54a19c"
                 ,lineWidth:2
                 ,dashLength:8
                 ,id:"mycanvas"
             }
-            mycanvas.drawDoshLine(option);
+            window.mycanvas.drawDoshLine(option);
         }
 
         function offset(points,offx,offy){
