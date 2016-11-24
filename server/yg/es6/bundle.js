@@ -776,8 +776,7 @@
 /***/ function(module, exports) {
 
 	module.exports = function(it){
-	  if(typeof it != 'function')throw TypeError(it + ' is not a function!');
-	  return it;
+		return it;
 	};
 
 /***/ },
@@ -8180,22 +8179,78 @@
 
 	'use strict';
 	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
 	var _point = __webpack_require__(299);
 	
 	var _point2 = _interopRequireDefault(_point);
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 	
 	var _marked = [foo, bar].map(regeneratorRuntime.mark);
 	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
 	__webpack_require__(1);
+	__webpack_require__(300);
+	__webpack_require__(301);
+	
+	//class
 	
 	var body = document.querySelector('body');
 	var result = 909;
-	var array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+	var array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 19];
 	var d = 909;
+	//类扩展
+	
+	var basec = function () {
+	    function basec(x, y) {
+	        _classCallCheck(this, basec);
+	
+	        this.x = x;
+	        this.y = y;
+	    }
+	
+	    _createClass(basec, [{
+	        key: 'toString',
+	        value: function toString() {
+	            return '(' + this.x + ', ' + this.y + ')';
+	        }
+	    }]);
+	
+	    return basec;
+	}();
+	
+	var Programmer = function (_basec) {
+	    _inherits(Programmer, _basec);
+	
+	    function Programmer(x, y) {
+	        _classCallCheck(this, Programmer);
+	
+	        return _possibleConstructorReturn(this, (Programmer.__proto__ || Object.getPrototypeOf(Programmer)).call(this, x, y));
+	    }
+	
+	    _createClass(Programmer, [{
+	        key: 'text',
+	        value: function text() {
+	            return '123456';
+	        }
+	    }]);
+	
+	    return Programmer;
+	}(basec);
+	//console.log(new Programmer(5,9).text() )
+	//箭头函数
+	//array1.forEach(v =>console.log(v));
+	//set
+	
+	
 	var uni = new Set(array1);
-	console.log(uni);
+	//console.log(uni);
 	var _iteratorNormalCompletion = true;
 	var _didIteratorError = false;
 	var _iteratorError = undefined;
@@ -8211,8 +8266,8 @@
 	    _iteratorError = err;
 	} finally {
 	    try {
-	        if (!_iteratorNormalCompletion && _iterator.return) {
-	            _iterator.return();
+	        if (!_iteratorNormalCompletion && _iterator["return"]) {
+	            _iterator["return"]();
 	        }
 	    } finally {
 	        if (_didIteratorError) {
@@ -8221,7 +8276,7 @@
 	    }
 	}
 	
-	body.textContent = 'Good point: ' + new _point2.default(1, 23) + result;
+	body.textContent = 'Good point: ' + new _point2["default"](1, 23) + result;
 	
 	//function *foo() {
 	//    try {
@@ -8233,7 +8288,7 @@
 	//    }
 	//}
 	
-	
+	//生成器
 	function foo() {
 	    return regeneratorRuntime.wrap(function foo$(_context) {
 	        while (1) {
@@ -8296,8 +8351,8 @@
 	    _iteratorError2 = err;
 	} finally {
 	    try {
-	        if (!_iteratorNormalCompletion2 && _iterator2.return) {
-	            _iterator2.return();
+	        if (!_iteratorNormalCompletion2 && _iterator2["return"]) {
+	            _iterator2["return"]();
 	        }
 	    } finally {
 	        if (_didIteratorError2) {
@@ -8338,7 +8393,68 @@
 	    return Point;
 	}();
 	
-	exports.default = Point;
+	exports["default"] = Point;
+
+/***/ },
+/* 300 */
+/***/ function(module, exports) {
+
+	/*istanbul ignore next*/"use strict";
+	
+	exports.__esModule = true;
+	
+	exports["default"] = function ( /*istanbul ignore next*/_ref) {
+	  /*istanbul ignore next*/var t = _ref.types;
+	
+	  return {
+	    visitor: {
+	      MemberExpression: { /*istanbul ignore next*/
+	        exit: function exit(_ref2) {
+	          /*istanbul ignore next*/var node = _ref2.node;
+	
+	          var prop = node.property;
+	          if (!node.computed && t.isIdentifier(prop) && !t.isValidIdentifier(prop.name)) {
+	            // foo.default -> foo["default"]
+	            node.property = t.stringLiteral(prop.name);
+	            node.computed = true;
+	          }
+	        }
+	      }
+	    }
+	  };
+	};
+	
+	/*istanbul ignore next*/module.exports = exports["default"];
+
+/***/ },
+/* 301 */
+/***/ function(module, exports) {
+
+	/*istanbul ignore next*/"use strict";
+	
+	exports.__esModule = true;
+	
+	exports["default"] = function ( /*istanbul ignore next*/_ref) {
+	  /*istanbul ignore next*/var t = _ref.types;
+	
+	  return {
+	    visitor: {
+	      ObjectProperty: { /*istanbul ignore next*/
+	        exit: function exit(_ref2) {
+	          /*istanbul ignore next*/var node = _ref2.node;
+	
+	          var key = node.key;
+	          if (!node.computed && t.isIdentifier(key) && !t.isValidIdentifier(key.name)) {
+	            // default: "bar" -> "default": "bar"
+	            node.key = t.stringLiteral(key.name);
+	          }
+	        }
+	      }
+	    }
+	  };
+	};
+	
+	/*istanbul ignore next*/module.exports = exports["default"];
 
 /***/ }
 /******/ ]);

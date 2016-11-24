@@ -1,6 +1,5 @@
 var path = require('path');
 var webpack = require('webpack');
-
 module.exports = {
     entry: ['babel-polyfill','./es6/main.js'],
     output: {
@@ -10,12 +9,22 @@ module.exports = {
     module: {
         loaders: [
             {
+                test: /\.js$/,
+                loaders: ['es3ify-loader']
+            }
+            ,{
                 loader: 'babel-loader',
                 test: path.join(__dirname, 'es6'),
                 query: {
                     presets: 'es2015',
-                },
+                    //plugins : [
+                    //    'transform-es3-member-expression-literals',
+                    //    'transform-es3-property-literals',
+                    //]
+                }
+
             }
+
         ]
     },
     plugins: [
