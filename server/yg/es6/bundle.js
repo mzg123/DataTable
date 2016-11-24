@@ -776,7 +776,8 @@
 /***/ function(module, exports) {
 
 	module.exports = function(it){
-		return it;
+	  //if(typeof it != 'function')throw TypeError(it + ' is not a function!');
+	  return it;
 	};
 
 /***/ },
@@ -8179,6 +8180,8 @@
 
 	'use strict';
 	
+	var _slicedToArray = function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"]) _i["return"](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError("Invalid attempt to destructure non-iterable instance"); } }; }();
+	
 	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 	
 	var _point = __webpack_require__(299);
@@ -8343,9 +8346,11 @@
 	try {
 	    for (var _iterator2 = bar()[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
 	        var v = _step2.value;
-	
-	        console.log(v);
 	    }
+	    //console.log( v );
+	
+	
+	    //增强字面量
 	} catch (err) {
 	    _didIteratorError2 = true;
 	    _iteratorError2 = err;
@@ -8360,6 +8365,162 @@
 	        }
 	    }
 	}
+	
+	var human = {
+	    breathe: function breathe() {
+	        console.log('breathing...');
+	    }
+	};
+	var worker = {
+	    __proto__: human, //设置此对象的原型为human,相当于继承human
+	    company: 'freelancer',
+	    work: function work() {
+	        console.log('working...');
+	    }
+	};
+	human.breathe(); //输出 ‘breathing...’
+	//调用继承来的breathe方法
+	//worker.breathe();//输出 ‘breathing...’
+	
+	////////////////////////字符串模板
+	var num = Math.random();
+	//将这个数字输出到console
+	console.log('your num is ' + num);
+	
+	//////////////////////解构
+	
+	var _getVal = getVal(),
+	    _getVal2 = _slicedToArray(_getVal, 2),
+	    x = _getVal2[0],
+	    y = _getVal2[1],
+	    _ref = ['wayou', 'male', 'secrect'],
+	    name = _ref[0],
+	    age = _ref[2]; //数组解构
+	
+	function getVal() {
+	    return [1, 2];
+	}
+	
+	console.log('x:' + x + ', y:' + y); //输出：x:1, y:2
+	console.log('name:' + name + ', age:' + age); //输出： name:wayou, age:secrect
+	
+	/////////////参数默认值，
+	function sayHello(name) {
+	    //传统的指定默认参数的方式
+	    var name = name || 'dude';
+	    console.log('Hello ' + name);
+	}
+	//运用ES6的默认参数
+	function sayHello2() {
+	    var name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'dude';
+	
+	    console.log('Hello ' + name);
+	}
+	sayHello(); //输出：Hello dude
+	sayHello('Wayou'); //输出：Hello Wayou
+	sayHello2(); //输出：Hello dude
+	sayHello2('Wayou'); //输出：Hello Wayou
+	
+	//////////////////////不定参数，
+	function add() {
+	    for (var _len = arguments.length, x = Array(_len), _key = 0; _key < _len; _key++) {
+	        x[_key] = arguments[_key];
+	    }
+	
+	    return x.reduce(function (m, n) {
+	        return m + n;
+	    });
+	}
+	//传递任意个数的参数
+	console.log(add(1, 2, 3)); //输出：6
+	console.log(add(1, 2, 3, 4, 5)); //输出：15
+	
+	
+	//////////////////拓展参数
+	var people = ['Wayou', 'John', 'Sherlock'];
+	//sayHello函数本来接收三个单独的参数人妖，人二和人三
+	function sayHello(people1, people2, people3) {
+	    console.log('Hello ' + people1 + ',' + people2 + ',' + people3);
+	}
+	//但是我们将一个数组以拓展参数的形式传递，它能很好地映射到每个单独的参数
+	sayHello.apply(undefined, people); //输出：Hello Wayou,John,Sherlock
+	
+	//而在以前，如果需要传递数组当参数，我们需要使用函数的apply方法
+	sayHello.apply(null, people); //输出：Hello Wayou,John,Sherlock
+	
+	
+	// Sets
+	var s = new Set();
+	s.add("hello").add("goodbye").add("hello");
+	s.size === 2;
+	s.has("hello") === true;
+	
+	// Maps
+	var m = new Map();
+	m.set("hello", 42);
+	m.set(s, 34);
+	m.get(s) == 34;
+	
+	console.log(s, m);
+	
+	//////////Symbols
+	var key = Symbol("key");
+	function MyClass(privateData) {
+	    this[key] = privateData;
+	}
+	var c = new MyClass("hello");
+	c[key] == "33344444"; //无法访问该属性，因为是私有的
+	console.log(c[key]);
+	
+	///////////////////Math，Number，String，Object 的新API
+	Number.EPSILON;
+	Number.isInteger(Infinity); // false
+	Number.isNaN("NaN"); // false
+	
+	Math.acosh(3); // 1.762747174039086
+	Math.hypot(3, 4); // 5
+	Math.imul(Math.pow(2, 32) - 1, Math.pow(2, 32) - 2); // 2
+	
+	//"abcde".contains("cd") // true
+	//"abc".repeat(3) // "abcabcabc"
+	
+	//Array.from(document.querySelectorAll('*')) // Returns a real Array
+	//Array.of(1, 2, 3) // Similar to new Array(...), but without special one-arg behavior
+	//    [0, 0, 0].fill(7, 1) // [0,7,7]
+	//    [1,2,3].findIndex(x => x == 2) // 1
+	//    ["a", "b", "c"].entries() // iterator [0, "a"], [1,"b"], [2,"c"]
+	//    ["a", "b", "c"].keys() // iterator 0, 1, 2
+	//    ["a", "b", "c"].values() // iterator "a", "b", "c"
+	//
+	//Object.assign(Point, { origin: new Point(0,0) })
+	//
+	
+	
+	//////////////////////  Promise
+	//创建promise
+	var promise = new Promise(function (resolve, reject) {
+	    // 进行一些异步或耗时操作
+	    console.log(111111111111111);
+	    if (true) {
+	        resolve("Stuff worked!");
+	    } else {
+	        reject(Error("It broke"));
+	    }
+	});
+	//绑定处理程序
+	promise.then(function (result) {
+	    //promise成功的话会执行这里
+	    console.log(result); // "Stuff worked!"
+	}, function (err) {
+	    //promise失败会执行这里
+	    console.log(err); // Error: "It broke"
+	}).then(function (result) {
+	    //promise成功的话会执行这里
+	    console.log(result); // "Stuff worked!"
+	}, function (err) {
+	    //promise失败会执行这里
+	    console.log(-2222222); // Error: "It broke"
+	});
 
 /***/ },
 /* 299 */
