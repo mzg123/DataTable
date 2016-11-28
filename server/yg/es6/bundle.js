@@ -776,7 +776,7 @@
 /***/ function(module, exports) {
 
 	module.exports = function(it){
-	  //if(typeof it != 'function')throw TypeError(it + ' is not a function!');
+	  if(typeof it != 'function')throw TypeError(it + ' is not a function!');
 	  return it;
 	};
 
@@ -8281,6 +8281,8 @@
 	
 	body.textContent = 'Good point: ' + new _point2["default"](1, 23) + result;
 	
+	console.log(3399999999999);
+	console.log(body.textContent);
 	//function *foo() {
 	//    try {
 	//        var x = yield 3;

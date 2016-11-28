@@ -37,6 +37,8 @@
     "node-libs-browser": "^1.0.0",
     "node-sass": "^3.2.0",
     "pm2": "^2.0.18",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
     "sass-loader": "^1.0.2",
     "serve-favicon": "~2.3.0",
     "style-loader": "^0.12.3",

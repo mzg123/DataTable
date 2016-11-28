@@ -1,11 +1,15 @@
+var React = require('react');
 
 
-export default class App{
-    constructor (ob){
-
+var ProductBox = React.createClass({
+    render: function () {
+        return (
+            <div className="productBox">
+                Hello World!
+            </div>
+        );
     }
+});
 
-    hello(){
-        alert(3);
-    }
-}
+module.exports = ProductBox;
+

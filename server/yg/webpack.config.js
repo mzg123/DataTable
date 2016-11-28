@@ -9,12 +9,12 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     entry: {
         //index: ['./webpackbuildjs/entry.js', hotMiddlewareScript]
-        login: "./webpackbuildjs/mzg/login.js"
-        ,modal: "./webpackbuildjs/mzg/modal.js"
-        //,roller: "./webpackbuildjs/mzg/roller.js"
-        ,canvas: "./webpackbuildjs/mzg/canvas.js"
-        ,datepicker: "./webpackbuildjs/mzg/datepicker.js"
-        ,formselect: "./webpackbuildjs/mzg/formselect.js"
+        //login: "./webpackbuildjs/mzg/login.js"
+        //,modal: "./webpackbuildjs/mzg/modal.js"
+        roller: "./webpackbuildjs/mzg/roller.js"
+        //,canvas: "./webpackbuildjs/mzg/canvas.js"
+        //,datepicker: "./webpackbuildjs/mzg/datepicker.js"
+        //,formselect: "./webpackbuildjs/mzg/formselect.js"
         //,es6: ['babel-polyfill',"./webpackbuildjs/mzg/es6.js"]
         //,welcome: "./webpackbuildjs/welcome.js"
     }
@@ -50,27 +50,29 @@ module.exports = {
             //{ test: /\.js$/, loader: "jsx?harmony!babel", exclude: /node_modules/, include: '/src',query:{
             //    presets:['es2015']
             //}},
+            { test: /\.js$/, loader: "jsx"},
 
-            {
-                loader: 'babel-loader',
-                test: path.join(__dirname, 'src'),
-                query: {
-                    presets: 'es2015'
-                }
-            },
+
+            //{
+            //    loader: 'babel-loader',
+            //    test: path.join(__dirname, 'src'),
+            //    query: {
+            //        presets: 'es2015'
+            //    }
+            //},
 
             //{ test: /\.js$/, loader: "jsx?harmony!babel", include: /src/},
             //{ test: /\.css$/, loader: "style!css"},
 
             { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader")}
-
-            , {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'file?hash=sha512&digest=hex&name=image/[hash].[ext]',
-                    'image-webpack'
-                ]
-            }
+            //
+            //, {
+            //    test: /\.(jpe?g|png|gif|svg)$/i,
+            //    loaders: [
+            //        'file?hash=sha512&digest=hex&name=image/[hash].[ext]',
+            //        'image-webpack'
+            //    ]
+            //}
            // ,{ test: /\.(png|jpg|gif)$/, loader: "url?limit=6120"}
             //{ test: /\.scss$/, loader: "style!css!sass"},
 
@@ -98,12 +100,12 @@ module.exports = {
         }
     ,plugins: [
         new ExtractTextPlugin("css/[name].css"),//分离css样式
-        new webpack.optimize.UglifyJsPlugin({    //压缩代码
-            compress: {
-                warnings: false
-            },
-            except: ['$super', '$', 'exports', 'require']    //排除关键字
-        })
+        //new webpack.optimize.UglifyJsPlugin({    //压缩代码
+        //    compress: {
+        //        warnings: false
+        //    },
+        //    except: ['$super', '$', 'exports', 'require']    //排除关键字
+        //})
         //,new webpack.HotModuleReplacementPlugin() //热加载
 ]
     //,plugins: [

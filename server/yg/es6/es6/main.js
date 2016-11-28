@@ -37,7 +37,8 @@ for(var item of uni){
 }
 body.textContent = 'Good point: ' + new Point(1, 23)+result;
 
-
+console.log(3399999999999);
+console.log(body.textContent);
 //function *foo() {
 //    try {
 //        var x = yield 3;
