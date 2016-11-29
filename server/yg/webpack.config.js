@@ -47,17 +47,19 @@ module.exports = {
     },
     module: {
         loaders: [
-            //{ test: /\.js$/, loader: "jsx?harmony!babel", exclude: /node_modules/, include: '/src',query:{
-            //    presets:['es2015']
-            //}},
+            //{ test: /\.js$/, loader: "jsx?harmony!babel"
+            //    //, exclude: /node_modules/
+            //   // query:{
+            //   // presets:['react']
+            //   //}
+            //},
             { test: /\.js$/, loader: "jsx"},
-
 
             //{
             //    loader: 'babel-loader',
             //    test: path.join(__dirname, 'src'),
             //    query: {
-            //        presets: 'es2015'
+            //        presets:[ 'es2015' , "react"]
             //    }
             //},
 
@@ -65,14 +67,14 @@ module.exports = {
             //{ test: /\.css$/, loader: "style!css"},
 
             { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader")}
-            //
-            //, {
-            //    test: /\.(jpe?g|png|gif|svg)$/i,
-            //    loaders: [
-            //        'file?hash=sha512&digest=hex&name=image/[hash].[ext]',
-            //        'image-webpack'
-            //    ]
-            //}
+
+            , {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loaders: [
+                    'file?hash=sha512&digest=hex&name=image/[hash].[ext]',
+                    'image-webpack'
+                ]
+            }
            // ,{ test: /\.(png|jpg|gif)$/, loader: "url?limit=6120"}
             //{ test: /\.scss$/, loader: "style!css!sass"},
 
@@ -100,12 +102,20 @@ module.exports = {
         }
     ,plugins: [
         new ExtractTextPlugin("css/[name].css"),//分离css样式
-        //new webpack.optimize.UglifyJsPlugin({    //压缩代码
-        //    compress: {
-        //        warnings: false
-        //    },
-        //    except: ['$super', '$', 'exports', 'require']    //排除关键字
-        //})
+        new webpack.optimize.UglifyJsPlugin({    //压缩代码
+            compress: {
+                warnings: false
+            },
+            output: {
+                comments: false // remove all comments
+            },
+            except: ['$super', '$', 'exports', 'require']    //排除关键字
+        })
+        ,new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: JSON.stringify("production")
+            }
+        })
         //,new webpack.HotModuleReplacementPlugin() //热加载
 ]
     //,plugins: [

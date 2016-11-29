@@ -1,7 +1,6 @@
 var React = require('react');
-
-
-var ProductBox = React.createClass({
+require("./roller.css");
+var Logo = React.createClass({
     render: function () {
         return (
             <div className="productBox">
@@ -11,5 +10,6 @@ var ProductBox = React.createClass({
     }
 });
 
-module.exports = ProductBox;
+module.exports = Logo;
+
 

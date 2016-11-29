@@ -1,0 +1,172 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td,th,caption { font-size:14px; }
+h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
+a { color:#555; text-decoration:none; }
+a:hover { text-decoration:underline; }
+img { border:none; }
+ol,ul,li { list-style:none; }
+input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
+table { border-collapse:collapse; }
+html {overflow-y: scroll;}
+/* css common */
+.clearfix:after {content: "."; display: block; height:0; clear:both; visibility: hidden;}
+.clearfix { *zoom:1; }
+
+
+.redborder{
+    border:red solid 1px;
+}
+html,body{
+    height: 100%;
+}
+.none,.mpage>.col-md-2{
+    /*display: none;*/
+}
+.my_class{
+    font-size:14px;
+}
+.mcontainer
+{
+    min-height:100%;
+    height: auto !important;
+    height: 100%;
+    /*IE6不识别min-height*/
+    position: relative;
+}
+.mpage{
+    padding-bottom: 70px;
+}
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;/*脚部的高度*/
+    clear:both;
+}
+
+/*浮动 start*/
+.float_l{
+    float: left;
+}
+.float_r{
+    float: right;
+}
+.clear_b{
+    clear: both;
+}
+
+/*浮动 end*/
+/*居左右中 start*/
+.align_c{
+    text-align: center;
+}
+.align_l{
+    text-align: left;
+}
+.align_r{
+    text-align: right;
+}
+.margin_lr_c{
+    margin: 0 auto;
+}
+.margin_tb_c{
+    margin: auto 0;
+}
+.margin_c{
+    margin: auto;
+}
+/*居左右中 end*/
+/*长度和宽度 start*/
+.width_100_p{
+    width:100%;
+}
+.height_100_p{
+    height:100%;
+}
+.all_100_p{
+    width:100%;
+    height:100%;
+}
+/*长度和宽度 end*/
+
+/*位置 start*/
+.position_r{
+    position: relative;
+}
+.position_f{
+    position: fixed;
+}
+.position_a{
+    position: absolute;
+}
+/*位置 end*/
+
+/*display start*/
+.display_ilb{
+    display: inline-block;
+}
+.display_n{
+    display:none;
+}
+/*display end*/
+/*圆角 start*/
+.border_radius_5{
+    border-radius:5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius:5px;
+}
+/*圆角 end*/
+
+
+/*字体 start*/
+.font_20{
+    font-size: 20px;
+}
+/*字体 end*/
+
+
+/*a 标签 start*/
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color:#6fabf4;
+}
+/*a 标签 end*/
+/*错误提示 start*/
+/*.error{*/
+/*font-size: 12px;*/
+/*background: url("../server/yg/static/image/login/login_icons.png") 0 -114px no-repeat #f7f7f7;*/
+/*color: #ff6d58;*/
+/*text-align: left;*/
+/*padding-left: 20px;*/
+/*line-height: 20px;*/
+/*left: -90px;*/
+/*}*/
+/*错误提示 end*/
+/*显隐 start*/
+.hidden{
+    /*display: none;*/
+    visibility: hidden;
+}
+
+/*显隐 end*/
+
+/*背景透明字体不透明 start*/
+/*div{*/
+/*background:rgba(0,0,0,0.5) none repeat scroll !important; *//*实现FF背景透明，文字不透明  <div><p>不透明</p></div>  */
+/*background:#000;*/
+/*filter:Alpha(opacity=20);*//*实现IE背景透明*/
+/*width:500px;*/
+/*height:500px;*/
+/*color:#FFF;*/
+/*font-size:32px;*/
+/*font-weight:bold;*/
+/*}*/
+/*div p{ position:relative;}*/
+/*实现IE文字不透明*/
+/*背景透明字体不透明 end*/
+
+
