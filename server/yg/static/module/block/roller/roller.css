@@ -1,5 +1,5 @@
 .roller{
-    width:400px;
+    width:1204px;
     overflow-x: hidden;
 }
 .roller .comtent{
@@ -8,19 +8,24 @@
 .roller .comtent>div,.roller .roller_footer>div{
     display: inline-block;
 }
+.roller .comtent>div{
+    border:2px solid transparent;
+}
 .roller .roller_footer>div{
     border-radius: 100%;
     width:10px;
     height:10px;
     border:1px red solid;
-
+    margin-left:5px;
 }
-.roller .roller_footer>div:hover{
+
+.roller .roller_footer>div:hover,.roller .leftClick:hover,.roller .rightClick:hover{
     cursor: pointer;
 }
 .roller .roller_footer{
     bottom: 20px;
 }
+
 
 
 

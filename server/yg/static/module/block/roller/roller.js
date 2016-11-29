@@ -15,50 +15,113 @@ require("./roller.css");
 //componentDidUpdate(object prevProps, object prevState)
 //componentWillUnmount()
 //component.forceUpdate()
+
+var RollerClick=React.createClass({
+    getInitialState:function(){
+        return {
+            rollerClick:""
+        }
+    }
+    ,render:function(){
+        var className=this.props.rollerClick+" position_a ";
+        return (
+            <div className={className} >left</div>
+        );
+    }
+})
+
+var RollerFooter=React.createClass({
+    render:function(){
+        return (
+            <div className="roller_footer align_c position_a " >
+            {
+                this.props.footerItem.map(function(item,i){
+                    return (
+                        <div></div>
+                    );
+                })
+            }
+            </div>
+        );
+    }
+});
+
+var RollerConment=React.createClass({
+
+    render:function(){
+
+        var totalWidth=0;
+        var borderWidth=this.props.borderWidth;
+       var items=  this.props.items.map(function(item,index){
+          totalWidth=totalWidth+item.width+borderWidth;
+            return (
+                <div className="display_ilb">
+                    <a target="_blank" href={item.href}>
+                        <img src={item.imgUrl}/>
+                    </a>
+                </div>
+            );
+        });
+        return  (<div className="comtent position_r" style={{"width":totalWidth}}>
+                    {items}
+        </div>);
+    }
+});
+
 var roller = React.createClass({
-    setFooterStyle:function(){
+    getInitialState:function(){
+        return {
+            currentIndex:0
+        }
+    },
+    setCurrentIndex:function(index){
+        console.log(index);
+        var borderWidth=this.props.borderWidth;
+        var leftWidth=0;
+        var items=this.props.items.length
+        for(var i=0;i<index;i++){
+            (i!=items-1)&&(leftWidth=leftWidth+this.props.items[i].width+borderWidth);
+        }
+        $(".roller .comtent").css({"left":-leftWidth})
 
     },
     componentDidMount:function(){
         var w=$(".roller .roller_footer").width();
         var pw=$(".roller .roller_footer").parent().width();
-        console.log(pw);
-         console.log($(".roller .roller_footer").css({"left":(pw-w)/2}));
+        var ph=$(".roller .roller_footer").parent().height();
+        var cmh=$(".roller .leftClick").height(),items=this.props.items.length;
+
+        $(".roller .roller_footer").css({"left":(pw-w)/2});
+        var state=this.state;
+        var setCurrentIndex=this.setCurrentIndex;
+        $(".roller .leftClick").css({"top":"50%","z-index":9}).on("click",function(evt){
+            var currentIndex=state.currentIndex;
+            if(currentIndex<items){
+                currentIndex=++state.currentIndex;
+                setCurrentIndex(currentIndex);
+            }
+
+        });
+        $(".roller .rightRight").css({"top":"50%","right":"0","z-index":9}).on("click",function(){
+            var currentIndex=state.currentIndex;
+            if(currentIndex>=0){
+                currentIndex=--state.currentIndex;
+                setCurrentIndex(currentIndex);
+            }
+
+        });
+
     },
+
     render: function () {
+
+        var footerItem=this.props.items;
         return (
             <div className="roller position_r">
-                <div className="leftClick position_a">left</div>
-                <div className="leftRight position_a">right</div>
-                <div className="roller_footer align_c position_a " >
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div className="comtent">
-                    <div className="display_ilb">
-                        <a href="http://www.baidu.com">
-                            <img src="http://cdn.yingu.com/upload/image/20160928/2b94e8d8f4d702d5331fccbd387169dc.jpg" />
-                        </a>
-                    </div>
-                    <div>
-                        <a href="http://www.baidu.com">
-                            <img src="http://cdn.yingu.com/upload/image/20161125/2548b11109bbe48a442c3b8a0f023bc.jpg" />
-                        </a>
-                    </div>
-                    <div>
-                        <a href="http://www.baidu.com">
-                            <img src="http://cdn.yingu.com/upload/image/20161029/ed9cd9aa1a6895560932461d8de834fa.jpg" />
-                        </a>
-                    </div>
-                    <div>
-                        <a href="http://www.baidu.com">
-                            <img src="http://cdn.yingu.com/upload/image/20160928/2b94e8d8f4d702d5331fccbd387169dc.jpg" />
-                        </a>
-                    </div>
-                </div>
-
+                <RollerClick rollerClick="leftClick"></RollerClick>
+                <RollerClick rollerClick="rightRight"></RollerClick>
+                <RollerFooter footerItem={footerItem}></RollerFooter>
+                <RollerConment borderWidth={this.props.borderWidth} currentIndex={this.state.currentIndex} items={footerItem}></RollerConment>
             </div>
         );
     }
