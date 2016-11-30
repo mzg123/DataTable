@@ -19,11 +19,14 @@
 .roller .comtent .current_item{
     border:2px solid red;
 }
+.roller .roller_footer .current_item_footer{
+    border-color:red;
+}
 .roller .roller_footer>div{
     border-radius: 100%;
     width:10px;
     height:10px;
-    border:1px red solid;
+    border:1px #000000 solid;
     margin-left:5px;
 }
 

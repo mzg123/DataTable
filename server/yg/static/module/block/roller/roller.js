@@ -37,7 +37,7 @@ var RollerFooter=React.createClass({
             {
                 this.props.footerItem.map(function(item,i){
                     return (
-                        <div></div>
+                        <div data-index={i}></div>
                     );
                 })
             }
@@ -90,13 +90,16 @@ var roller = React.createClass({
         if(clickflag==1){
             last=index;
             current=index+1;
-
         }else{
             last=index+1;
             current=index;
         }
         $(".roller .comtent>div").eq(current).addClass("current_item");
         $(".roller .comtent>div").eq(last).removeClass("current_item");
+
+        $(".roller .roller_footer>div").eq(current).addClass("current_item_footer");
+        $(".roller .roller_footer>div").eq(last).removeClass("current_item_footer");
+
 
     },
     componentDidMount:function(){
@@ -105,31 +108,58 @@ var roller = React.createClass({
         var ph=$(".roller .roller_footer").parent().height();
         var cmh=$(".roller .leftClick").height(),items=this.props.items.length;
         $(".roller .comtent>div").eq(0).addClass("current_item");
+        $(".roller .roller_footer>div").eq(0).addClass("current_item_footer");
         var imgw=this.props.items[0].width;
         var conCount=parseInt(pw/imgw);
-        $(".roller .roller_footer").css({"left":(pw-w)/2});
+        $(".roller .roller_footer").css({"left":(pw-w)/2,"z-index":9});
         var state=this.state;
-        var setCurrentIndex=this.setCurrentIndex,setCurrentFlag=this.setCurrentFlag;
+        var footerTipClick=this.footerTipClick, change=this.change, setCurrentIndex=this.setCurrentIndex,setCurrentFlag=this.setCurrentFlag;
+
         $(".roller .leftClick").css({"top":"50%","z-index":9}).on("click",function(evt){
-            var currentIndex=state.currentIndex;
-            setCurrentFlag(1,currentIndex);
-            if(currentIndex<items-conCount){
+            change(1,items-conCount);
+        });
+        $(".roller .rightRight").css({"top":"50%","right":"0","z-index":9}).on("click",function(){
+            change(-1,1);
+        });
+
+        $(".roller .roller_footer>div").on("click",function(evt){
+            var last=state.currentIndex;
+            var current=parseInt($(evt.target).attr("data-index"));
+            footerTipClick(last,current);
+
+        });
+    },
+    footerTipClick:function(last,current){
+        $(".roller .comtent>div").eq(current).addClass("current_item");
+        $(".roller .comtent>div").eq(last).removeClass("current_item");
+
+        $(".roller .roller_footer>div").eq(current).addClass("current_item_footer");
+        $(".roller .roller_footer>div").eq(last).removeClass("current_item_footer");
+        this.state.currentIndex=current;
+        this.setCurrentIndex(current);
+    },
+    change:function(flag,count){
+        var setCurrentIndex=this.setCurrentIndex,setCurrentFlag=this.setCurrentFlag,state=this.state;
+        var currentIndex=state.currentIndex;
+        if(flag==1){
+            setCurrentFlag(flag,currentIndex);
+            if(currentIndex<count){
                 currentIndex=++state.currentIndex;
                 setCurrentIndex(currentIndex);
             }
-
-        });
-        $(".roller .rightRight").css({"top":"50%","right":"0","z-index":9}).on("click",function(){
-            var currentIndex=state.currentIndex;
-            setCurrentFlag(-1,currentIndex);
-            if(currentIndex>=1){
+        }
+        else if(flag==-1){
+            setCurrentFlag(flag,currentIndex);
+            if(currentIndex>=count){
                 currentIndex=--state.currentIndex;
                 setCurrentIndex(currentIndex);
             }
-        });
+        }
+        else if(flag==0){
+
+        }
 
     },
-
     render: function () {
 
         var footerItem=this.props.items;
