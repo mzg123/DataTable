@@ -88,15 +88,15 @@ var roller = React.createClass({
             for(var i=0;i<index;i++){
                 (leftWidth=leftWidth+this.props.items[i].width+borderWidth);
             }
-            (this.props.option.rollerType==1)&&$(".roller .comtent").css({"left":-leftWidth})
+
         }else{
             index=items-lcount;
             for(var i=0;i<index;i++){
                 (leftWidth=leftWidth+this.props.items[i].width+borderWidth);
             }
-            (this.props.option.rollerType==1)&&$(".roller .comtent").css({"left":-leftWidth})
-        }
 
+        }
+        $(".roller .comtent").css({"left":-leftWidth})
 
     },
     setCurrentFlag:function(clickflag,index){

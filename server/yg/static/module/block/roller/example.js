@@ -49,15 +49,15 @@ var rollerItem=[
     }
 ]
 var option={
-    showFooter:true
-    ,showClick:true
-    ,rollerType:1
-    ,borderWidth:4
-    ,autoPlay:true
-    ,playInterver:3000
-    ,itemCount:1
-    ,conWidth:1200
-    ,hasCurrentClass:true
+    showFooter:true//是否显示底部小圆圈
+    ,showClick:true//是否显示点击按钮
+    ,rollerType:1//备用
+    ,borderWidth:4//每个item左右边框的总宽度
+    ,autoPlay:true//是否自动播放
+    ,playInterver:3000//自动播放间隔
+    ,itemCount:1//conWidth宽度下显示几个item 和数据的width配合
+    ,conWidth:1200//容器宽度
+    ,hasCurrentClass:true//是否添加当前item的当前类用于区别其它item
 }
 
 ReactDOM.render(<Roller items={rollerItem} option={option}  ></Roller>, document.getElementById('rollerCon'));
