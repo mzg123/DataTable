@@ -21,11 +21,18 @@ var RollerClick=React.createClass({
         return {
             rollerClick:""
         }
+    },
+    componentDidMount:function() {
+        var w = $(".roller .roller_footer").width();
+        var pw = $(".roller .roller_footer").parent().width();
+        var ph = $(".roller").height();
+        var cmh = $(".roller .leftClick").height();
+
     }
-    ,render:function(){
+        ,render:function(){
         var className=this.props.rollerClick+" position_a ";
         return (
-            <div className={className} >left</div>
+            <div className={className} ></div>
         );
     }
 })
@@ -47,7 +54,6 @@ var RollerFooter=React.createClass({
 });
 
 var RollerConment=React.createClass({
-
     render:function(){
 
         var totalWidth=0;
@@ -78,7 +84,6 @@ var roller = React.createClass({
         var borderWidth=this.props.borderWidth;
         var leftWidth=0;
         var items=this.props.items.length;
-        console.log(index,lcount);
         if(items-lcount>=index){
             for(var i=0;i<index;i++){
                 (leftWidth=leftWidth+this.props.items[i].width+borderWidth);
@@ -115,8 +120,9 @@ var roller = React.createClass({
     componentDidMount:function(){
         var w=$(".roller .roller_footer").width();
         var pw=$(".roller .roller_footer").parent().width();
-        var ph=$(".roller .roller_footer").parent().height();
+        var ph=$(".roller").height();
         var cmh=$(".roller .leftClick").height(),items=this.props.items.length;
+
         $(".roller .comtent>div").eq(0).addClass("current_item");
         $(".roller .roller_footer>div").eq(0).addClass("current_item_footer");
         var imgw=this.props.items[0].width;
@@ -125,10 +131,10 @@ var roller = React.createClass({
         var state=this.state;
         var footerTipClick=this.footerTipClick, change=this.change,setCurrentFlag=this.setCurrentFlag;
 
-        $(".roller .leftClick").css({"top":"50%","z-index":9}).on("click",function(evt){
+        $(".roller .leftClick").css({"top":"30%","z-index":9}).on("click",function(evt){
             change(1,items,conCount);
         });
-        $(".roller .rightRight").css({"top":"50%","right":"0","z-index":9}).on("click",function(){
+        $(".roller .rightClick").css({"top":"30%","right":"0","z-index":9}).on("click",function(){
             change(-1,1,conCount);
         });
 
@@ -177,10 +183,11 @@ var roller = React.createClass({
         var footerItem=this.props.items;
         return (
             <div className="roller position_r">
-                <RollerClick rollerClick="leftClick"></RollerClick>
-                <RollerClick rollerClick="rightRight"></RollerClick>
-                <RollerFooter footerItem={footerItem}></RollerFooter>
                 <RollerConment borderWidth={this.props.borderWidth} currentIndex={this.state.currentIndex} items={footerItem}></RollerConment>
+                <RollerClick rollerClick="leftClick"></RollerClick>
+                <RollerClick rollerClick="rightClick"></RollerClick>
+                <RollerFooter footerItem={footerItem}></RollerFooter>
+
             </div>
         );
     }

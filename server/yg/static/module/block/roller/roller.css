@@ -36,6 +36,16 @@
 .roller .roller_footer{
     bottom: 20px;
 }
+.roller .leftClick{
+background-image: url("http://img6.yingu.com/image/ui_click_scroll_big_left.png");
+    width: 30px;
+    height: 50px;
+}
+.roller .rightClick{
+    background-image: url("http://img6.yingu.com/image/ui_click_scroll_big_right.png");
+    width: 30px;
+    height: 50px;
+}
 .roller .comtent img{
     max-width: 100%;
     /*width: 600px;*/
