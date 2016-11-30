@@ -81,20 +81,20 @@ var roller = React.createClass({
         }
     },
     setOff:function(index,lcount){
-        var borderWidth=this.props.borderWidth;
+        var borderWidth=this.props.option.borderWidth;
         var leftWidth=0;
         var items=this.props.items.length;
         if(items-lcount>=index){
             for(var i=0;i<index;i++){
                 (leftWidth=leftWidth+this.props.items[i].width+borderWidth);
             }
-            (this.props.rollerType==1)&&$(".roller .comtent").css({"left":-leftWidth})
+            (this.props.option.rollerType==1)&&$(".roller .comtent").css({"left":-leftWidth})
         }else{
             index=items-lcount;
             for(var i=0;i<index;i++){
                 (leftWidth=leftWidth+this.props.items[i].width+borderWidth);
             }
-            (this.props.rollerType==1)&&$(".roller .comtent").css({"left":-leftWidth})
+            (this.props.option.rollerType==1)&&$(".roller .comtent").css({"left":-leftWidth})
         }
 
 
@@ -144,6 +144,25 @@ var roller = React.createClass({
             (last!=current)&&footerTipClick(last,current,conCount);
 
         });
+        this.props.option.autoPlay&&this.autoPlay();
+    },
+    autoPlay:function(){
+        var state=this.state,props=this.props;
+        var count=props.items.length-1;
+        var flag=true;
+        setInterval(function(){
+              if(flag){
+                  $(".roller .leftClick").trigger("click");
+                  state.currentIndex==count&& (flag=false);
+
+              }else{
+                  $(".roller .rightClick").trigger("click");
+                  state.currentIndex==0&& (flag=true);
+              }
+
+
+        },props.playInterver);
+
     },
     footerTipClick:function(last,current,lcount){
         $(".roller .comtent>div").eq(current).addClass("current_item");
@@ -166,7 +185,6 @@ var roller = React.createClass({
                 setCurrentFlag(flag,currentIndex);
                 setOff(currentIndex,lcount);
             }
-            console.log(state.currentIndex);
         }
         else if(flag==-1){
            // currentIndex==this.props.items.length-1&&(currentIndex=state.currentIndex-1&&(--state.currentIndex));
@@ -183,10 +201,12 @@ var roller = React.createClass({
         var footerItem=this.props.items;
         return (
             <div className="roller position_r">
-                <RollerConment borderWidth={this.props.borderWidth} currentIndex={this.state.currentIndex} items={footerItem}></RollerConment>
-                <RollerClick rollerClick="leftClick"></RollerClick>
-                <RollerClick rollerClick="rightClick"></RollerClick>
-                <RollerFooter footerItem={footerItem}></RollerFooter>
+                <RollerConment borderWidth={this.props.option.borderWidth} currentIndex={this.state.currentIndex} items={footerItem}></RollerConment>
+
+                {this.props.option.showClick && <RollerClick rollerClick="leftClick"></RollerClick>}
+                {this.props.option.showClick && <RollerClick rollerClick="rightClick"></RollerClick>}
+                {this.props.option.showFooter && <RollerFooter footerItem={footerItem}></RollerFooter>}
+
 
             </div>
         );

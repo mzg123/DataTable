@@ -48,9 +48,16 @@ var rollerItem=[
         ,href:"http://www.baidu.com"
     }
 ]
+var option={
+    showFooter:true
+    ,showClick:true
+    ,rollerType:1
+    ,borderWidth:4
+    ,autoPlay:true
+    ,playInterver:3000
+}
 
-
-ReactDOM.render(<Roller items={rollerItem} rollerType={1} currentIndex={0} borderWidth={4}></Roller>, document.getElementById('rollerCon'));
+ReactDOM.render(<Roller items={rollerItem} option={option}  ></Roller>, document.getElementById('rollerCon'));
 
 
 
