@@ -1,9 +1,14 @@
 .roller{
-    width:1204px;
+    width:1208px;
     overflow-x: hidden;
 }
 .roller .comtent{
     width:100%;
+    left:0;
+    transition: left 2s;
+    -moz-transition: left 2s; /* Firefox 4 */
+    -webkit-transition: left 2s; /* Safari 和 Chrome */
+    -o-transition: left 2s; /* Opera */
 }
 .roller .comtent>div,.roller .roller_footer>div{
     display: inline-block;

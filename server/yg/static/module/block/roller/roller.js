@@ -75,14 +75,14 @@ var roller = React.createClass({
         }
     },
     setCurrentIndex:function(index){
-        console.log(index);
         var borderWidth=this.props.borderWidth;
         var leftWidth=0;
         var items=this.props.items.length
         for(var i=0;i<index;i++){
             (i!=items-1)&&(leftWidth=leftWidth+this.props.items[i].width+borderWidth);
         }
-        $(".roller .comtent").css({"left":-leftWidth})
+
+        (this.props.rollerType==1)&&$(".roller .comtent").css({"left":-leftWidth})
 
     },
     setCurrentFlag:function(clickflag,index){
