@@ -77,7 +77,8 @@ var roller = React.createClass({
     setCurrentIndex:function(index){
         var borderWidth=this.props.borderWidth;
         var leftWidth=0;
-        var items=this.props.items.length
+        var items=this.props.items.length;
+        index==items-1&&(index--);
         for(var i=0;i<index;i++){
             (i!=items-1)&&(leftWidth=leftWidth+this.props.items[i].width+borderWidth);
         }
@@ -88,8 +89,9 @@ var roller = React.createClass({
     setCurrentFlag:function(clickflag,index){
         var last=index,current=index;
         if(clickflag==1){
-            last=index;
-            current=index+1;
+            last=index-1;
+            current=index;
+
         }else{
             last=index+1;
             current=index;
@@ -125,7 +127,7 @@ var roller = React.createClass({
         $(".roller .roller_footer>div").on("click",function(evt){
             var last=state.currentIndex;
             var current=parseInt($(evt.target).attr("data-index"));
-            footerTipClick(last,current);
+            (last!=current)&&footerTipClick(last,current);
 
         });
     },
@@ -135,28 +137,30 @@ var roller = React.createClass({
 
         $(".roller .roller_footer>div").eq(current).addClass("current_item_footer");
         $(".roller .roller_footer>div").eq(last).removeClass("current_item_footer");
+       // console.log( current,this.state.currentIndex);
         this.state.currentIndex=current;
+        current==this.props.items.length-1&&(current=current-1);
         this.setCurrentIndex(current);
     },
     change:function(flag,count){
         var setCurrentIndex=this.setCurrentIndex,setCurrentFlag=this.setCurrentFlag,state=this.state;
         var currentIndex=state.currentIndex;
         if(flag==1){
-            setCurrentFlag(flag,currentIndex);
-            if(currentIndex<count){
+
+            if(currentIndex<=count){
                 currentIndex=++state.currentIndex;
+                setCurrentFlag(flag,currentIndex);
                 setCurrentIndex(currentIndex);
             }
+            console.log(state.currentIndex);
         }
         else if(flag==-1){
-            setCurrentFlag(flag,currentIndex);
+           // currentIndex==this.props.items.length-1&&(currentIndex=state.currentIndex-1&&(--state.currentIndex));
             if(currentIndex>=count){
                 currentIndex=--state.currentIndex;
+                setCurrentFlag(flag,currentIndex);
                 setCurrentIndex(currentIndex);
             }
-        }
-        else if(flag==0){
-
         }
 
     },
