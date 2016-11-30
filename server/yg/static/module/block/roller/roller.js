@@ -74,16 +74,24 @@ var roller = React.createClass({
             currentIndex:0
         }
     },
-    setCurrentIndex:function(index){
+    setOff:function(index,lcount){
         var borderWidth=this.props.borderWidth;
         var leftWidth=0;
         var items=this.props.items.length;
-        index==items-1&&(index--);
-        for(var i=0;i<index;i++){
-            (i!=items-1)&&(leftWidth=leftWidth+this.props.items[i].width+borderWidth);
+        console.log(index,lcount);
+        if(items-lcount>=index){
+            for(var i=0;i<index;i++){
+                (leftWidth=leftWidth+this.props.items[i].width+borderWidth);
+            }
+            (this.props.rollerType==1)&&$(".roller .comtent").css({"left":-leftWidth})
+        }else{
+            index=items-lcount;
+            for(var i=0;i<index;i++){
+                (leftWidth=leftWidth+this.props.items[i].width+borderWidth);
+            }
+            (this.props.rollerType==1)&&$(".roller .comtent").css({"left":-leftWidth})
         }
 
-        (this.props.rollerType==1)&&$(".roller .comtent").css({"left":-leftWidth})
 
     },
     setCurrentFlag:function(clickflag,index){
@@ -115,42 +123,42 @@ var roller = React.createClass({
         var conCount=parseInt(pw/imgw);
         $(".roller .roller_footer").css({"left":(pw-w)/2,"z-index":9});
         var state=this.state;
-        var footerTipClick=this.footerTipClick, change=this.change, setCurrentIndex=this.setCurrentIndex,setCurrentFlag=this.setCurrentFlag;
+        var footerTipClick=this.footerTipClick, change=this.change,setCurrentFlag=this.setCurrentFlag;
 
         $(".roller .leftClick").css({"top":"50%","z-index":9}).on("click",function(evt){
-            change(1,items-conCount);
+            change(1,items,conCount);
         });
         $(".roller .rightRight").css({"top":"50%","right":"0","z-index":9}).on("click",function(){
-            change(-1,1);
+            change(-1,1,conCount);
         });
 
         $(".roller .roller_footer>div").on("click",function(evt){
             var last=state.currentIndex;
             var current=parseInt($(evt.target).attr("data-index"));
-            (last!=current)&&footerTipClick(last,current);
+            (last!=current)&&footerTipClick(last,current,conCount);
 
         });
     },
-    footerTipClick:function(last,current){
+    footerTipClick:function(last,current,lcount){
         $(".roller .comtent>div").eq(current).addClass("current_item");
         $(".roller .comtent>div").eq(last).removeClass("current_item");
 
         $(".roller .roller_footer>div").eq(current).addClass("current_item_footer");
         $(".roller .roller_footer>div").eq(last).removeClass("current_item_footer");
-       // console.log( current,this.state.currentIndex);
+
         this.state.currentIndex=current;
-        current==this.props.items.length-1&&(current=current-1);
-        this.setCurrentIndex(current);
+        //lcount>1&&current==this.props.items.length-1&&(current=current-1);
+        this.setOff(current,lcount);
     },
-    change:function(flag,count){
-        var setCurrentIndex=this.setCurrentIndex,setCurrentFlag=this.setCurrentFlag,state=this.state;
+    change:function(flag,count,lcount){
+        var setOff=this.setOff,setCurrentFlag=this.setCurrentFlag,state=this.state;
         var currentIndex=state.currentIndex;
         if(flag==1){
 
-            if(currentIndex<=count){
+            if(currentIndex<count-1){
                 currentIndex=++state.currentIndex;
                 setCurrentFlag(flag,currentIndex);
-                setCurrentIndex(currentIndex);
+                setOff(currentIndex,lcount);
             }
             console.log(state.currentIndex);
         }
@@ -159,7 +167,7 @@ var roller = React.createClass({
             if(currentIndex>=count){
                 currentIndex=--state.currentIndex;
                 setCurrentFlag(flag,currentIndex);
-                setCurrentIndex(currentIndex);
+                setOff(currentIndex,lcount);
             }
         }
 
