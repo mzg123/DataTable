@@ -109,8 +109,7 @@ var roller = React.createClass({
             last=index+1;
             current=index;
         }
-        $(".roller .comtent>div").eq(current).addClass("current_item");
-        $(".roller .comtent>div").eq(last).removeClass("current_item");
+        this.addCurrentClass(current,last);
 
         $(".roller .roller_footer>div").eq(current).addClass("current_item_footer");
         $(".roller .roller_footer>div").eq(last).removeClass("current_item_footer");
@@ -118,16 +117,18 @@ var roller = React.createClass({
 
     },
     componentDidMount:function(){
+        $(".roller").css({"width":this.props.option.itemCount*this.props.option.borderWidth+this.props.option.conWidth});
         var w=$(".roller .roller_footer").width();
         var pw=$(".roller .roller_footer").parent().width();
         var ph=$(".roller").height();
         var cmh=$(".roller .leftClick").height(),items=this.props.items.length;
 
-        $(".roller .comtent>div").eq(0).addClass("current_item");
+        this.props.option.hasCurrentClass&&$(".roller .comtent>div").eq(0).addClass("current_item");
         $(".roller .roller_footer>div").eq(0).addClass("current_item_footer");
         var imgw=this.props.items[0].width;
         var conCount=parseInt(pw/imgw);
         $(".roller .roller_footer").css({"left":(pw-w)/2,"z-index":9});
+
         var state=this.state;
         var footerTipClick=this.footerTipClick, change=this.change,setCurrentFlag=this.setCurrentFlag;
 
@@ -150,7 +151,8 @@ var roller = React.createClass({
         var state=this.state,props=this.props;
         var count=props.items.length-1;
         var flag=true;
-        setInterval(function(){
+       var t= setInterval(function(){
+
               if(flag){
                   $(".roller .leftClick").trigger("click");
                   state.currentIndex==count&& (flag=false);
@@ -161,12 +163,11 @@ var roller = React.createClass({
               }
 
 
-        },props.playInterver);
+        },props.option.playInterver);
 
     },
     footerTipClick:function(last,current,lcount){
-        $(".roller .comtent>div").eq(current).addClass("current_item");
-        $(".roller .comtent>div").eq(last).removeClass("current_item");
+        this.addCurrentClass(current,last);
 
         $(".roller .roller_footer>div").eq(current).addClass("current_item_footer");
         $(".roller .roller_footer>div").eq(last).removeClass("current_item_footer");
@@ -174,6 +175,10 @@ var roller = React.createClass({
         this.state.currentIndex=current;
         //lcount>1&&current==this.props.items.length-1&&(current=current-1);
         this.setOff(current,lcount);
+    },
+    addCurrentClass:function(current,last){
+        this.props.option.hasCurrentClass&&$(".roller .comtent>div").eq(current).addClass("current_item");
+        this.props.option.hasCurrentClass&&$(".roller .comtent>div").eq(last).removeClass("current_item");
     },
     change:function(flag,count,lcount){
         var setOff=this.setOff,setCurrentFlag=this.setCurrentFlag,state=this.state;

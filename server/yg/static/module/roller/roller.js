@@ -55,6 +55,9 @@ var option={
     ,borderWidth:4
     ,autoPlay:true
     ,playInterver:3000
+    ,itemCount:1
+    ,conWidth:1200
+    ,hasCurrentClass:true
 }
 
 ReactDOM.render(<Roller items={rollerItem} option={option}  ></Roller>, document.getElementById('rollerCon'));
