@@ -57,7 +57,7 @@ var RollerConment=React.createClass({
             return (
                 <div className="display_ilb">
                     <a target="_blank" href={item.href}>
-                        <img src={item.imgUrl}/>
+                        <img  src={item.imgUrl}/>
                     </a>
                 </div>
             );
@@ -90,13 +90,16 @@ var roller = React.createClass({
         var pw=$(".roller .roller_footer").parent().width();
         var ph=$(".roller .roller_footer").parent().height();
         var cmh=$(".roller .leftClick").height(),items=this.props.items.length;
-
+        var imgw=this.props.items[0].width;
+        var conCount=parseInt(pw/imgw);
+        var lCount=items-conCount;
         $(".roller .roller_footer").css({"left":(pw-w)/2});
         var state=this.state;
         var setCurrentIndex=this.setCurrentIndex;
         $(".roller .leftClick").css({"top":"50%","z-index":9}).on("click",function(evt){
             var currentIndex=state.currentIndex;
-            if(currentIndex<items){
+
+            if(currentIndex<items-lCount){
                 currentIndex=++state.currentIndex;
                 setCurrentIndex(currentIndex);
             }
@@ -104,11 +107,10 @@ var roller = React.createClass({
         });
         $(".roller .rightRight").css({"top":"50%","right":"0","z-index":9}).on("click",function(){
             var currentIndex=state.currentIndex;
-            if(currentIndex>=0){
+            if(currentIndex>=1){
                 currentIndex=--state.currentIndex;
                 setCurrentIndex(currentIndex);
             }
-
         });
 
     },

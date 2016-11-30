@@ -25,7 +25,11 @@
 .roller .roller_footer{
     bottom: 20px;
 }
-
+.roller .comtent img{
+    max-width: 100%;
+    /*width: 600px;*/
+    width: 1200px;
+}
 
 
 

@@ -25,7 +25,6 @@ var rollerItem=[
 ]
 
 
-
 ReactDOM.render(<Roller items={rollerItem} currentIndex={0} borderWidth={4}></Roller>, document.getElementById('rollerCon'));
 
 
