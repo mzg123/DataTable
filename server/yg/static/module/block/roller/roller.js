@@ -85,21 +85,35 @@ var roller = React.createClass({
         $(".roller .comtent").css({"left":-leftWidth})
 
     },
+    setCurrentFlag:function(clickflag,index){
+        var last=index,current=index;
+        if(clickflag==1){
+            last=index;
+            current=index+1;
+
+        }else{
+            last=index+1;
+            current=index;
+        }
+        $(".roller .comtent>div").eq(current).addClass("current_item");
+        $(".roller .comtent>div").eq(last).removeClass("current_item");
+
+    },
     componentDidMount:function(){
         var w=$(".roller .roller_footer").width();
         var pw=$(".roller .roller_footer").parent().width();
         var ph=$(".roller .roller_footer").parent().height();
         var cmh=$(".roller .leftClick").height(),items=this.props.items.length;
+        $(".roller .comtent>div").eq(0).addClass("current_item");
         var imgw=this.props.items[0].width;
         var conCount=parseInt(pw/imgw);
-        var lCount=items-conCount;
         $(".roller .roller_footer").css({"left":(pw-w)/2});
         var state=this.state;
-        var setCurrentIndex=this.setCurrentIndex;
+        var setCurrentIndex=this.setCurrentIndex,setCurrentFlag=this.setCurrentFlag;
         $(".roller .leftClick").css({"top":"50%","z-index":9}).on("click",function(evt){
             var currentIndex=state.currentIndex;
-
-            if(currentIndex<items-lCount){
+            setCurrentFlag(1,currentIndex);
+            if(currentIndex<items-conCount){
                 currentIndex=++state.currentIndex;
                 setCurrentIndex(currentIndex);
             }
@@ -107,6 +121,7 @@ var roller = React.createClass({
         });
         $(".roller .rightRight").css({"top":"50%","right":"0","z-index":9}).on("click",function(){
             var currentIndex=state.currentIndex;
+            setCurrentFlag(-1,currentIndex);
             if(currentIndex>=1){
                 currentIndex=--state.currentIndex;
                 setCurrentIndex(currentIndex);

@@ -11,6 +11,9 @@
 .roller .comtent>div{
     border:2px solid transparent;
 }
+.roller .comtent .current_item{
+    border:2px solid red;
+}
 .roller .roller_footer>div{
     border-radius: 100%;
     width:10px;
@@ -28,7 +31,7 @@
 .roller .comtent img{
     max-width: 100%;
     /*width: 600px;*/
-    width: 1200px;
+    width: 600px;
 }
 
 
