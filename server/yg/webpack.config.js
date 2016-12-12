@@ -11,7 +11,8 @@ module.exports = {
         //index: ['./webpackbuildjs/entry.js', hotMiddlewareScript]
         //login: "./webpackbuildjs/mzg/login.js"
         //,modal: "./webpackbuildjs/mzg/modal.js"
-        roller: "./webpackbuildjs/mzg/roller.js"
+        //roller: "./webpackbuildjs/mzg/roller.js"
+        tree: "./webpackbuildjs/mzg/tree_react.js"
         //,canvas: "./webpackbuildjs/mzg/canvas.js"
         //,datepicker: "./webpackbuildjs/mzg/datepicker.js"
         //,formselect: "./webpackbuildjs/mzg/formselect.js"
@@ -26,7 +27,8 @@ module.exports = {
     //
     //    port:8080 //端口你可以自定义
     //}
-    ,devtool: 'cheap-module-source-map',//配置生成Source Maps，选择合适的选项  eval-source-map
+    //,devtool: 'cheap-module-source-map',//配置生成Source Maps，选择合适的选项  eval-source-map
+    ,devtool: false,//配置生成Source Maps，选择合适的选项  eval-source-map
 
     //resolve: {
     //    modulesDirectories: ["./node_modules", "./node_modules/babel"]
@@ -44,6 +46,7 @@ module.exports = {
     },
     externals: {
         'react': 'React'
+        ,'ReactDOM':'react-dom'
     },
     module: {
         loaders: [
@@ -110,8 +113,8 @@ module.exports = {
                 comments: false // remove all comments
             },
             except: ['$super', '$', 'exports', 'require']    //排除关键字
-        })
-        ,new webpack.DefinePlugin({
+        }) ,
+       new webpack.DefinePlugin({
             "process.env": {
                 NODE_ENV: JSON.stringify("production")
             }

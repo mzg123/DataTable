@@ -1,4 +1,4 @@
-var React = require('react');
+//var React = require('react');
 require("./roller.css");
 
 
@@ -211,8 +211,6 @@ var roller = React.createClass({
                 {this.props.option.showClick && <RollerClick rollerClick="leftClick"></RollerClick>}
                 {this.props.option.showClick && <RollerClick rollerClick="rightClick"></RollerClick>}
                 {this.props.option.showFooter && <RollerFooter footerItem={footerItem}></RollerFooter>}
-
-
             </div>
         );
     }
