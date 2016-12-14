@@ -44,10 +44,27 @@ var TreeItem=React.createClass({
 
 
 var Tree = React.createClass({
-    treeHtml:"",
-    createTree:function(data){
-        data.map(function(item,index){
+    treeEntity:{
+        html:""
+        ,temp:""
+    },
 
+    createTree:function(data,itemClick){
+        var treeEntity=this.treeEntity,r='', self=this.createTree;
+       return data.map(function(item,index){
+            if(item.child){
+               return(<li className="position_r item">
+                <a  onClick= {itemClick} >{item.text}</a>
+                 <ul  className="items position_r">
+                 {self(item.child,itemClick)}
+                 </ul>
+                </li>)
+            }
+            else{
+               return (<li className="position_r item">
+                <a onClick= {itemClick}>{item.text}</a>
+                </li>)
+            }
         })
     },
     itemClick:function(e){
@@ -55,30 +72,13 @@ var Tree = React.createClass({
     },
     render: function () {
         var d=this.props.itemData;
-        var items= d.map(function(item,index){
-            return (
-                <TreeItem itemData={item} className="position_r item">{item.text}</TreeItem>
-            );
-        });
+
         var itemClick=this.itemClick;
+        var treehtml=this.createTree(d,itemClick);
         return (
-            <div className="tree position_r">
+            <div className="tree position_r"   >
                 <ul className="items position_r">
-                {
-                    d.map(function(item,index){
-                      return(
-                        <li class="position_r item">
-                            <a onClick={itemClick}>{item.text}</a>
-                            <ul  class="items position_r">
-                             {
-                                 item.child.map(function(itemc,indexc){
-                                     return (<TreeItem  itemClick={itemClick} itemData={itemc} className="position_r item">{itemc.text}</TreeItem>);
-                                 })
-                                 }
-                            </ul>
-                        </li>)
-                    })
-                 }
+                {treehtml}
                 </ul>
             </div>
         );

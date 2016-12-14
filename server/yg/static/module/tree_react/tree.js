@@ -6,12 +6,17 @@ var Tree=require("../block/tree_react/tree.js");
 var treeItems=[
     {
         text:"1第一级"
+
         ,child:[
           {
               text:"1-1第二级"
               ,child:[
                  {
                      text:"1-1-1第三级"
+                     ,child:[
+                     {text:"1-1-1-1第四级"}
+                     ,{text:"1-1-1-2第四级"}
+                 ]
                  },
                   {
                       text:"1-1-2第三级"
@@ -32,14 +37,15 @@ var treeItems=[
         ]
     }
 ]
+
 var options={
     itemClick:function(e){
         alert(909);
         $.ajax({
             type: "post",
-            url: "http://172.24.132.49/get_data",
+            url: "http://172.24.132.49:10280/get_data",
             data: {
-                name:"pay-withdraw/pay-withdraw-2016-12-11.86.log"
+                name:"/data/logs/tomcat/tomcat-web.log"
                 ,Remode:""
                 ,Rows_count:"1"
                 ,search_conditions:""
@@ -57,11 +63,13 @@ var options={
     }
 }
 
+
+
 function iniTree(){
 
     $.ajax({
         type: "get",
-        url: "http://qa01-logs.yingu.com/get_list",
+        url: "http://172.24.132.49:10280/get_list",
 
         dataType: "json",
         success: function (data) {
@@ -72,7 +80,7 @@ function iniTree(){
         }
     });
 };
-iniTree();
+//iniTree();
 ReactDOM.render(<Tree itemData={treeItems} options={options} ></Tree>, document.getElementById('tree'));
 
 
