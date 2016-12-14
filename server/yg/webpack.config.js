@@ -51,10 +51,10 @@ module.exports = {
     module: {
         loaders: [
             //{ test: /\.js$/, loader: "jsx?harmony!babel"
-            //    //, exclude: /node_modules/
-            //   // query:{
-            //   // presets:['react']
-            //   //}
+            //    , exclude: /node_modules/
+            //   ,query:{
+            //   presets:['es2015','react']
+            //   }
             //},
             { test: /\.js$/, loader: "jsx"},
 
@@ -105,15 +105,15 @@ module.exports = {
         }
     ,plugins: [
         new ExtractTextPlugin("css/[name].css"),//分离css样式
-        new webpack.optimize.UglifyJsPlugin({    //压缩代码
-            compress: {
-                warnings: false
-            },
-            output: {
-                comments: false // remove all comments
-            },
-            except: ['$super', '$', 'exports', 'require']    //排除关键字
-        }) ,
+        //new webpack.optimize.UglifyJsPlugin({    //压缩代码
+        //    compress: {
+        //        warnings: false
+        //    },
+        //    output: {
+        //        comments: false // remove all comments
+        //    },
+        //    except: ['$super', '$', 'exports', 'require']    //排除关键字
+        //}) ,
        new webpack.DefinePlugin({
             "process.env": {
                 NODE_ENV: JSON.stringify("production")

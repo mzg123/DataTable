@@ -1,5 +1,9 @@
-var ReactDOM = require('react-dom');
-var Tree=require("../block/tree_react/tree.js");
+//var ReactDOM = require('react-dom');
+//var reactRedux = require('react-redux');
+//var Provider =reactRedux.Provider ;
+//var reduxStore=require('../block/redux/store.js');
+//var Tree=require("../block/tree_react/tree.js");
+var  App=require("../block/tree_react/reactredux.js");
 
 
 
@@ -81,7 +85,17 @@ function iniTree(){
     });
 };
 //iniTree();
-ReactDOM.render(<Tree itemData={treeItems} options={options} ></Tree>, document.getElementById('tree'));
+//ReactDOM.render(<Tree itemData={treeItems} options={options} ></Tree>, document.getElementById('tree'));
+//ReactDOM.render(<Tree itemData={treeItems} store={reduxStore} options={options} ></Tree>, document.getElementById('tree'));
+
+//ReactDOM.render(
+//    <App />,
+//    document.getElementById('tree')
+//);
+
+//ReactDOM.render( <Provider store={reduxStore}>
+//    <Tree itemData={treeItems}  options={options} ></Tree>
+//</Provider>, document.getElementById('tree'));
 
 
 

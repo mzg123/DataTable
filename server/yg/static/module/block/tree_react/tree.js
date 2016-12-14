@@ -1,5 +1,9 @@
 var React = require('react');
+var reactRedux = require('react-redux');
 require("./tree.css");
+
+var connect=reactRedux.connect,provider =reactRedux.Provider ;
+
 
 
 //getInitialState()
@@ -68,6 +72,7 @@ var Tree = React.createClass({
         })
     },
     itemClick:function(e){
+        this.props.store.dispatch({ type: 1 })
         var ul=$(e.target).parent().find("ul");
         if( ul.children().length>0){
             ul.toggle(100);
@@ -78,11 +83,13 @@ var Tree = React.createClass({
     },
     render: function () {
         var d=this.props.itemData;
-
+console.log(this.props,222)
         var itemClick=this.itemClick;
         var treehtml=this.createTree(d,itemClick);
         return (
+
             <div className="tree position_r"   >
+                <span>{this.props.store.getState().cc1}</span>
                 <ul className="items position_r">
                 {treehtml}
                 </ul>
@@ -91,7 +98,25 @@ var Tree = React.createClass({
     }
 });
 
-module.exports = Tree;
+
+const mapStateToProps =function (state) {
+    return {
+        todos:"ddddddd"
+    }
+}
+
+const mapDispatchToProps = function(dispatch) {
+    return {
+        onTodoClick: function(){
+            alert(2);
+        }
+    }
+}
+//connect(
+//    mapStateToProps,
+//    mapDispatchToProps
+//)(Tree);
+module.exports =Tree;
 
 
 
