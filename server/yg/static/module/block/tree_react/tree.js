@@ -53,7 +53,7 @@ var Tree = React.createClass({
         var treeEntity=this.treeEntity,r='', self=this.createTree;
        return data.map(function(item,index){
             if(item.child){
-               return(<li className="position_r item">
+               return(<li className="position_r item expand">
                 <a  onClick= {itemClick} >{item.text}</a>
                  <ul  className="items position_r">
                  {self(item.child,itemClick)}
@@ -61,13 +61,19 @@ var Tree = React.createClass({
                 </li>)
             }
             else{
-               return (<li className="position_r item">
+               return (<li className="position_r item ">
                 <a onClick= {itemClick}>{item.text}</a>
                 </li>)
             }
         })
     },
     itemClick:function(e){
+        var ul=$(e.target).parent().find("ul");
+        if( ul.children().length>0){
+            ul.toggle(100);
+            var t=ul.parent();
+            t.hasClass("closed")?t.removeClass("closed").addClass("expand"):t.removeClass("expand").addClass("closed");
+        }
           this.props.options.itemClick(e);
     },
     render: function () {
