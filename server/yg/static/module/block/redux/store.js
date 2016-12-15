@@ -25,13 +25,14 @@ function counter(state,action) {
     }
 }
 function todoApp(state , action) {
-    state||(state={mzg:"mzg"});
+    state||(state={mzg:"mzg",cc1:4});
     switch (action.type) {
         case 1:
             //return Object.assign({}, state, {
             //    visibilityFilter: action.filter
-            //})
-            return  $.extend({},state,{cc1:Math.random()}) ;
+            //}) $.extend({},state,{cc1:Math.random()})
+            state.cc1=Math.random()
+            return  state;
         case 2:
             //return Object.assign({}, state, {
             //    todos: [
@@ -53,15 +54,18 @@ var reducer = combineReducers({counter,todoApp })
 var store = createStore(todoApp)
 
 // 可以手动订阅更新，也可以事件绑定到视图层。
-store.subscribe(function(a,b,c,d,e){
-        console.log(store.getState().cc1,1111)
-        var newState = store.getState();
-        console.log(a,b,c,d,e);
-        //store.setState(newState);
-    }
-
-);
-
+//store.subscribe(function(comptent){
+//
+//        var newState = store.getState();
+//        comptent.setState({
+//            items: store.getState()
+//        });
+//    }
+//
+//);
+store.sub=function(fn){
+    store.subscribe(fn);
+}
 // 改变内部 state 惟一方法是 dispatch 一个 action。
 // action 可以被序列化，用日记记录和储存下来，后期还可以以回放的方式执行
 // store.dispatch({ type: 'INCREMENT' });

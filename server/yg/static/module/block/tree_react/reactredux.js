@@ -14,22 +14,24 @@ var addTodoActions = function(text){
 var todoReducer = function(state, action){
 
     if(typeof state === 'undefined'){
-        return [1,1,1];
+        return {mzg:1};
+        //return [1,1,1];
     }
 
     switch(action.type){
         case 'add_todo':
-            return state.slice(0).concat({
-                text: action.text,
-                completed: false
-            });
+            //return state.slice(0).concat({
+            //    text: action.text,
+            //    completed: false
+            //});
+            state.mzg=Math.random();
+            return state
             break;
         default:
             return state;
     }
 };
 var store = Redux.createStore(todoReducer);
-console.log( store.getState());
 var App = React.createClass({
     getInitialState: function(){
         return {
@@ -59,10 +61,9 @@ var App = React.createClass({
                 <input  type="text" placeholder="输入todo项" style={{marginRight:'10px'}}   />
                 <button onClick={this.handleAdd}>点击添加</button>
                 <ul>
-					{this.state.items.map(function(item){
-                        return <li>{item.text}</li>;
-                    })}
-                </ul>
+                { this.state.items.mzg}
+</ul>
+
             </div>
         );
     }
@@ -72,3 +73,6 @@ ReactDOM.render(
     document.getElementById('tree')
 );
 //module.exports =App;
+//{this.state.items.map(function(item){
+//        return <li>{item.text}</li>;
+//    })}

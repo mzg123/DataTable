@@ -57,7 +57,8 @@ var Tree = React.createClass({
         var treeEntity=this.treeEntity,r='', self=this.createTree;
        return data.map(function(item,index){
             if(item.child){
-               return(<li className="position_r item expand">
+                var lic="position_r item expand "+item.text;
+               return(<li className={lic} >
                 <a  onClick= {itemClick} >{item.text}</a>
                  <ul  className="items position_r">
                  {self(item.child,itemClick)}
@@ -65,7 +66,7 @@ var Tree = React.createClass({
                 </li>)
             }
             else{
-               return (<li className="position_r item ">
+               return (<li className={lic}  >
                 <a onClick= {itemClick}>{item.text}</a>
                 </li>)
             }
@@ -81,15 +82,30 @@ var Tree = React.createClass({
         }
           this.props.options.itemClick(e);
     },
+    getInitialState: function(){
+        return {
+            states: this.props.store.getState()
+        };
+    },
+    componentDidMount: function(){
+        var stor= this.props.store;
+        var self=this;
+        this.props.store.sub(function(){
+            var newState =  stor.getState();
+            self.setState({
+                states:stor.getState()
+            });
+        });
+    },
     render: function () {
         var d=this.props.itemData;
-console.log(this.props,222)
+
         var itemClick=this.itemClick;
         var treehtml=this.createTree(d,itemClick);
         return (
 
             <div className="tree position_r"   >
-                <span>{this.props.store.getState().cc1}</span>
+                <span>{this.state.states.cc1}</span>
                 <ul className="items position_r">
                 {treehtml}
                 </ul>
