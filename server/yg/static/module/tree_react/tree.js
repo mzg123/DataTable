@@ -94,7 +94,7 @@ function iniTree(){
 //);
 
 ReactDOM.render( <Provider store={reduxStore}>
-    <Tree itemData={treeItems} store={reduxStore}  options={options} ></Tree>
+    <Tree itemData={treeItems}  store={reduxStore}   options={options} ></Tree>
 </Provider>, document.getElementById('tree'));
 
 

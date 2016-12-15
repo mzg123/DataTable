@@ -26,13 +26,18 @@ function counter(state,action) {
 }
 function todoApp(state , action) {
     state||(state={mzg:"mzg",cc1:4});
+    //if (typeof state === 'undefined') {
+    //    return 0
+    //}
     switch (action.type) {
         case 1:
             //return Object.assign({}, state, {
             //    visibilityFilter: action.filter
             //}) $.extend({},state,{cc1:Math.random()})
-            state.cc1=Math.random()
-            return  state;
+            state.cc1=Math.random();
+            //return state;
+          var d=$.extend({},state);
+            return d;
         case 2:
             //return Object.assign({}, state, {
             //    todos: [
@@ -43,15 +48,17 @@ function todoApp(state , action) {
             //        }
             //    ]
             //})
-            return {cc2:"dd2"}
+            state.cc1=Math.random();
+            return  state;
         default:
-            return state
+            state.cc1=Math.random();
+            return  state;
     }
 }
 // 创建 Redux store 来存放应用的状态。
 // API 是 { subscribe, dispatch, getState }。
-var reducer = combineReducers({counter,todoApp })
-var store = createStore(todoApp)
+var reducer = combineReducers({counter,todoApp });
+var store = createStore(todoApp);
 
 // 可以手动订阅更新，也可以事件绑定到视图层。
 //store.subscribe(function(comptent){
