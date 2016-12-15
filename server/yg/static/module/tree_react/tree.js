@@ -86,16 +86,16 @@ function iniTree(){
 };
 //iniTree();
 //ReactDOM.render(<Tree itemData={treeItems} options={options} ></Tree>, document.getElementById('tree'));
-ReactDOM.render(<Tree itemData={treeItems} store={reduxStore} options={options} ></Tree>, document.getElementById('tree'));
+//ReactDOM.render(<Tree itemData={treeItems} store={reduxStore} options={options} ></Tree>, document.getElementById('tree'));
 
 //ReactDOM.render(
 //    <App />,
 //    document.getElementById('tree')
 //);
 
-//ReactDOM.render( <Provider store={reduxStore}>
-//    <Tree itemData={treeItems}  options={options} ></Tree>
-//</Provider>, document.getElementById('tree'));
+ReactDOM.render( <Provider store={reduxStore}>
+    <Tree itemData={treeItems} store={reduxStore}  options={options} ></Tree>
+</Provider>, document.getElementById('tree'));
 
 
 

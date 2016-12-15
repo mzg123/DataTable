@@ -99,13 +99,12 @@ var Tree = React.createClass({
     },
     render: function () {
         var d=this.props.itemData;
-
+        console.log(this.props,9990)
         var itemClick=this.itemClick;
         var treehtml=this.createTree(d,itemClick);
         return (
-
             <div className="tree position_r"   >
-                <span>{this.state.states.cc1}</span>
+                <span onClick={this.props.onTodoClick}>{ this.props.todos.cc1}</span>
                 <ul className="items position_r">
                 {treehtml}
                 </ul>
@@ -114,25 +113,25 @@ var Tree = React.createClass({
     }
 });
 
-
 const mapStateToProps =function (state) {
+
     return {
-        todos:"ddddddd"
+        todos:state
     }
 }
 
 const mapDispatchToProps = function(dispatch) {
     return {
         onTodoClick: function(){
-            alert(2);
+            dispatch({ type: 1 })
         }
     }
 }
-//connect(
-//    mapStateToProps,
-//    mapDispatchToProps
-//)(Tree);
-module.exports =Tree;
+var conn=connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Tree);
+module.exports =conn;
 
 
 

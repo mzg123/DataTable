@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cd5e2eb-582b-484b-9d55-9cf6297ffa0c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/block/tree_react/reactredux.js" afterPath="$PROJECT_DIR$/server/yg/static/module/block/tree_react/reactredux.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/block/redux/store.js" afterPath="$PROJECT_DIR$/server/yg/static/module/block/redux/store.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.js" afterPath="$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/yg/static/module/tree_react/tree.js" afterPath="$PROJECT_DIR$/server/yg/static/module/tree_react/tree.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="mzg.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,8 +51,8 @@
       <file leaf-file-name="tree.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46626687" vertical-offset="1912" max-vertical-offset="2755">
-              <caret line="117" column="21" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.14542729" vertical-offset="1917" max-vertical-offset="2736">
+              <caret line="106" column="77" selection-start-line="106" selection-start-column="77" selection-end-line="106" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -74,8 +71,8 @@
       <file leaf-file-name="tree.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/tree_react/tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.933333" vertical-offset="1235" max-vertical-offset="2128">
-              <caret line="87" column="106" selection-start-line="87" selection-start-column="106" selection-end-line="87" selection-end-column="106" />
+            <state vertical-scroll-proportion="-17.733334" vertical-offset="1292" max-vertical-offset="2128">
+              <caret line="96" column="49" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -164,8 +161,8 @@
         <option value="$PROJECT_DIR$/server/yg/static/module/tree_react/react-redux.js" />
         <option value="$PROJECT_DIR$/server/yg/static/module/tree_react/reactredux.js" />
         <option value="$PROJECT_DIR$/server/yg/static/module/block/tree_react/reactredux.js" />
-        <option value="$PROJECT_DIR$/server/yg/static/module/tree_react/tree.js" />
         <option value="$PROJECT_DIR$/server/yg/static/module/block/redux/store.js" />
+        <option value="$PROJECT_DIR$/server/yg/static/module/tree_react/tree.js" />
         <option value="$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.js" />
       </list>
     </option>
@@ -1025,7 +1022,7 @@
       <workItem from="1481604571921" duration="1210000" />
       <workItem from="1481616845679" duration="16000" />
       <workItem from="1481621090887" duration="14485000" />
-      <workItem from="1481690666398" duration="25363000" />
+      <workItem from="1481690666398" duration="27304000" />
     </task>
     <task id="LOCAL-00001" summary="Default">
       <created>1476537969852</created>
@@ -1037,7 +1034,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="892660000" />
+    <option name="totallyTimeSpent" value="894601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1692" height="1026" extended-state="0" />
@@ -1475,14 +1472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/static/module/tree_react/tree.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.933333" vertical-offset="1235" max-vertical-offset="2128">
-          <caret line="87" column="106" selection-start-line="87" selection-start-column="106" selection-end-line="87" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/static/html/tree_react/tree.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.535714" vertical-offset="361" max-vertical-offset="2033">
@@ -1491,10 +1480,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/yg/static/module/tree_react/tree.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.733334" vertical-offset="1292" max-vertical-offset="2128">
+          <caret line="96" column="49" selection-start-line="96" selection-start-column="49" selection-end-line="96" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46626687" vertical-offset="1912" max-vertical-offset="2755">
-          <caret line="117" column="21" selection-start-line="117" selection-start-column="6" selection-end-line="117" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.14542729" vertical-offset="1917" max-vertical-offset="2736">
+          <caret line="106" column="77" selection-start-line="106" selection-start-column="77" selection-end-line="106" selection-end-column="77" />
           <folding />
         </state>
       </provider>
