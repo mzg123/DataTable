@@ -51,7 +51,8 @@ var Content=React.createClass({
     render:function(){
         return(
             <div id="content">
-                <textarea>
+                <textarea value={this.props.content}>
+
                 </textarea>
             </div>
         );
@@ -59,10 +60,6 @@ var Content=React.createClass({
 })
 
 var Tree = React.createClass({
-    treeEntity:{
-        html:""
-        ,temp:""
-    },
 
     createTree:function(data,itemClick){
         var treeEntity=this.treeEntity,r='', self=this.createTree;
@@ -77,8 +74,8 @@ var Tree = React.createClass({
                 </li>)
             }
             else{
-                return (<li className={lic}  >
-                    <a onClick= {itemClick.bind(this)}>{item.text}</a>
+                return (<li className={lic}>
+                    <a id={item.text} onClick= {itemClick.bind(this)}>{item.text}</a>
                 </li>)
             }
         })
@@ -90,7 +87,7 @@ var Tree = React.createClass({
             var t=ul.parent();
             t.hasClass("closed")?t.removeClass("closed").addClass("expand"):t.removeClass("expand").addClass("closed");
         }else{
-            this.props.onItemClick();
+            this.props.onItemClick($(e.target).attr("id"));
         }
 
     },
@@ -109,7 +106,7 @@ var Tree = React.createClass({
                         </ul>
                     </div>
                 </div>
-                <Content></Content>
+                <Content content={this.props.currentcontent}></Content>
             </div>
 
 
@@ -124,13 +121,15 @@ const mapStateToProps =function (state) {
         itemData:state.treeCounter.treeItems
         ,options:state.treeCounter.options
         ,state:state.treeCounter.state
+        ,content:state.treeCounter.content
+        ,currentcontent:state.treeCounter.currenttxt
     }
 }
 
 const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
-        onItemClick: function(){
-            dispatch(actions.getAjaxLog(null));
+        onItemClick: function(id){
+            dispatch(actions.getAjaxLog(id));
         }
     }
 }

@@ -26,24 +26,34 @@ function counter(state,action) {
     }
 }
 function treeCounter(state , action) {
-    state||(state=_initState());
+    state||(state=initState());
 
     switch (action.type) {
         case "loadding":
             state.state=0;
             return $.extend({},state);
-        case 2:
-
-            state.cc1=Math.random();
-            return  state;
+        case "getdata":
+            state.content[action.param]? state.content[action.param]= action.data+"\n\n"+state.content[action.param]: state.content[action.param]=action.data;
+            state.content.currentcontent=state.content[action.param];
+           state.currenttxt=state.content[action.param];
+            return $.extend({},state);
         default:
 
             return  state;
     }
 }
-function _initState(){
+// 创建 Redux store 来存放应用的状态。
+// API 是 { subscribe, dispatch, getState }。
+var reducer = combineReducers({counter,treeCounter });
+var store = createStore(reducer,applyMiddleware(thunkMiddleware));
+
+store.initState=initState;
+function initState(){
+
     return {
         state:1,
+        content:{},
+        currenttxt:"",
         treeItems:[
             {
                 text:"1第一级"
@@ -82,10 +92,6 @@ function _initState(){
         }
     }
 }
-// 创建 Redux store 来存放应用的状态。
-// API 是 { subscribe, dispatch, getState }。
-var reducer = combineReducers({counter,treeCounter });
-var store = createStore(reducer,applyMiddleware(thunkMiddleware));
 
 // 可以手动订阅更新，也可以事件绑定到视图层。
 //store.subscribe(function(comptent){

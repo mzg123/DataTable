@@ -92,7 +92,7 @@ function iniTree(){
 //    <App />,
 //    document.getElementById('tree')
 //);
-
+reduxStore.initState();
 ReactDOM.render( <Provider store={reduxStore}>
     <Tree></Tree>
 </Provider>, document.body);

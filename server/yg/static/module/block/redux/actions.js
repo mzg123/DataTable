@@ -3,7 +3,15 @@
 module.exports={
     getAjaxLog:function(subreddit) {
         return function (dispatch) {
-            dispatch({ type: "loadding" })
+            dispatch({ type: "getdata"
+                       ,param:subreddit
+            })
+            setInterval(function(){
+                dispatch({ type: "getdata"
+                    ,param:subreddit
+                    ,data:new Date().getSeconds()
+                })
+            },1000);
             $.ajax({
                 type: "post",
                 url: "http://172.24.132.49:10280/get_data",

@@ -600,6 +600,7 @@ Array.prototype.max = function () {
                     }
                     else {
                         var tmp = _exception.apply(this, arguments);
+
                         if (tmp !== false) {
                             ajaxException.apply(this, arguments);
                         }
