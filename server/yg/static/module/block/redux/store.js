@@ -1,7 +1,9 @@
 //import {combineReducers,createStore} from "redux";
 var redux=require("redux");
 var thunkMiddleware=require("redux-thunk").default;
-var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMiddleware=redux.applyMiddleware;
+var reducer=require("./reducer");
+var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMiddleware=redux.applyMiddleware,
+    counter=reducer.counter,treeCounter=reducer.treeCounter,initState=reducer.initState;
 /**
  * 这是一个 reducer，形式为 (state, action) => state 的纯函数。
  * 描述了 action 如何把 state 转变成下一个 state。
@@ -14,84 +16,14 @@ var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMid
  * 根据不同的约定（如方法映射）来判断，只要适用你的项目即可。
  */
 
-function counter(state,action) {
-    state||(state={mzg:"mzg"});
-    switch (action.type) {
-        case 'INCREMENT':
-            return state;
-        case 'DECREMENT':
-            return state;
-        default:
-            return state;
-    }
-}
-function treeCounter(state , action) {
-    state||(state=initState());
 
-    switch (action.type) {
-        case "loadding":
-            state.state=0;
-            return $.extend({},state);
-        case "getdata":
-            state.content[action.param]? state.content[action.param]= action.data+"\n\n"+state.content[action.param]: state.content[action.param]=action.data;
-            state.content.currentcontent=state.content[action.param];
-           state.currenttxt=state.content[action.param];
-            return $.extend({},state);
-        default:
-
-            return  state;
-    }
-}
 // 创建 Redux store 来存放应用的状态。
 // API 是 { subscribe, dispatch, getState }。
-var reducer = combineReducers({counter,treeCounter });
+var reducer = combineReducers({ counter,treeCounter});
 var store = createStore(reducer,applyMiddleware(thunkMiddleware));
 
 store.initState=initState;
-function initState(){
 
-    return {
-        state:1,
-        content:{},
-        currenttxt:"",
-        treeItems:[
-            {
-                text:"1第一级"
-
-                ,child:[
-                {
-                    text:"1-1第二级"
-                    ,child:[
-                    {
-                        text:"1-1-1第三级"
-                        ,child:[
-                        {text:"1-1-1-1第四级"}
-                        ,{text:"1-1-1-2第四级"}
-                    ]
-                    },
-                    {
-                        text:"1-1-2第三级"
-                    }
-                ]
-                },
-                {
-                    text:"1-2第二级",
-                    child:[
-                        {
-                            text:"1-2-1第三级"
-                        }
-                        ,{
-                            text:"1-2-2第三级"
-                        }
-                    ]
-                }
-            ]
-            }
-        ]
-        ,options:{
-        }
-    }
-}
 
 // 可以手动订阅更新，也可以事件绑定到视图层。
 //store.subscribe(function(comptent){
