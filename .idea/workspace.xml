@@ -50,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tree.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tree.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-65.23333" vertical-offset="0" max-vertical-offset="2812">
-              <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.34660032" vertical-offset="779" max-vertical-offset="2812">
+              <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -102,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="store.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="store.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/redux/store.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.06301824" vertical-offset="0" max-vertical-offset="2242">
+            <state vertical-scroll-proportion="-1.2666667" vertical-offset="0" max-vertical-offset="2242">
               <caret line="2" column="40" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="40" />
               <folding />
             </state>
@@ -185,9 +185,9 @@
         <option value="$PROJECT_DIR$/server/yg/static/module/block/redux/actions.js" />
         <option value="$PROJECT_DIR$/server/yg/static/module/block/redux/store.js" />
         <option value="$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.css" />
-        <option value="$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.js" />
         <option value="$PROJECT_DIR$/server/yg/static/html/tree_react/tree.html" />
         <option value="$PROJECT_DIR$/server/yg/static/module/tree_react/tree.js" />
+        <option value="$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.js" />
       </list>
     </option>
   </component>
@@ -1046,7 +1046,7 @@
       <workItem from="1481604571921" duration="1210000" />
       <workItem from="1481616845679" duration="16000" />
       <workItem from="1481621090887" duration="14485000" />
-      <workItem from="1481690666398" duration="57096000" />
+      <workItem from="1481690666398" duration="57232000" />
     </task>
     <task id="LOCAL-00001" summary="Default">
       <created>1476537969852</created>
@@ -1058,7 +1058,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="924393000" />
+    <option name="totallyTimeSpent" value="924529000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1692" height="1026" extended-state="0" />
@@ -1514,18 +1514,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.js">
+    <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/redux/store.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-65.23333" vertical-offset="0" max-vertical-offset="2812">
-          <caret line="103" column="31" selection-start-line="103" selection-start-column="31" selection-end-line="103" selection-end-column="31" />
+        <state vertical-scroll-proportion="-1.2666667" vertical-offset="0" max-vertical-offset="2242">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/redux/store.js">
+    <entry file="file://$PROJECT_DIR$/server/yg/static/module/block/tree_react/tree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.06301824" vertical-offset="0" max-vertical-offset="2242">
-          <caret line="2" column="40" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.34660032" vertical-offset="779" max-vertical-offset="2812">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
           <folding />
         </state>
       </provider>

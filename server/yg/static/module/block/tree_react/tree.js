@@ -47,10 +47,10 @@ var TreeItem=React.createClass({
 })
 
 
-var content=React.createClass({
+var Content=React.createClass({
     render:function(){
         return(
-            <div style="" id="content">
+            <div id="content">
                 <textarea>
                 </textarea>
             </div>
@@ -109,7 +109,7 @@ var Tree = React.createClass({
                         </ul>
                     </div>
                 </div>
-                <content></content>
+                <Content></Content>
             </div>
 
 
