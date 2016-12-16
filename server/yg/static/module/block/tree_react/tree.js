@@ -1,21 +1,8 @@
 var React = require('react');
 var reactRedux = require('react-redux');
 require("./tree.css");
-var ReactDOM = require('react-dom');
 var Redux=require("redux");
-var connect=reactRedux.connect,provider =reactRedux.Provider ;
-
-var React = require('react');
-var reactRedux = require('react-redux');
-require("./tree.css");
-
-var connect=reactRedux.connect,provider =reactRedux.Provider ;
-
-
-
-var React = require('react');
-var reactRedux = require('react-redux');
-require("./tree.css");
+var actions=require("../redux/actions.js");
 
 var connect=reactRedux.connect,provider =reactRedux.Provider ;
 
@@ -60,7 +47,16 @@ var TreeItem=React.createClass({
 })
 
 
-
+var content=React.createClass({
+    render:function(){
+        return(
+            <div style="" id="content">
+                <textarea>
+                </textarea>
+            </div>
+        );
+    }
+})
 
 var Tree = React.createClass({
     treeEntity:{
@@ -87,64 +83,54 @@ var Tree = React.createClass({
             }
         })
     },
-    //itemClick:function(e){
-    //    this.props.store.dispatch({ type: 1 })
-    //    var ul=$(e.target).parent().find("ul");
-    //    if( ul.children().length>0){
-    //        ul.toggle(100);
-    //        var t=ul.parent();
-    //        t.hasClass("closed")?t.removeClass("closed").addClass("expand"):t.removeClass("expand").addClass("closed");
-    //    }
-    //      this.props.options.itemClick(e);
-    //},
-    //getInitialState: function(){
-    //    return {
-    //        states: this.props.store.getState()
-    //    };
-    //},
-    componentDidMount: function(){
-        //var stor= this.props.store;
-        //var self=this;
-        //this.props.store.sub(function(){
-        //    var newState =  stor.getState();
-        //    self.setState({
-        //        states:stor.getState()
-        //    });
-        //});
+    itemClick:function(e){
+        var ul=$(e.target).parent().find("ul");
+        if( ul.children().length>0){
+            ul.toggle(100);
+            var t=ul.parent();
+            t.hasClass("closed")?t.removeClass("closed").addClass("expand"):t.removeClass("expand").addClass("closed");
+        }else{
+            this.props.onItemClick();
+        }
+
     },
+
     render: function () {
         var d=this.props.itemData;
 
-        var itemClick=this.props.onItemClick;
+        var itemClick=this.itemClick;
         var treehtml=this.createTree(d,itemClick);
         return (
-            <div className="tree position_r"   >
-                <span >{ this.props.todos.cc1}</span>
-                <ul className="items position_r">
-                {treehtml}
-                </ul>
+            <div  id="treeCon" >
+                <div  id="tree">
+                    <div className="tree position_r" >
+                        <ul className="items position_r">
+                    {treehtml}
+                        </ul>
+                    </div>
+                </div>
+                <content></content>
             </div>
+
+
         );
     }
 });
-const mapStateToProps =function (state) {
 
+
+
+const mapStateToProps =function (state) {
     return {
-        todos:state
+        itemData:state.treeCounter.treeItems
+        ,options:state.treeCounter.options
+        ,state:state.treeCounter.state
     }
 }
 
 const mapDispatchToProps = function(dispatch ,ownProps) {
     return {
-        onItemClick: function(e){
-            dispatch({ type: 1 })
-            var ul=$(e.target).parent().find("ul");
-            if( ul.children().length>0){
-                ul.toggle(100);
-                var t=ul.parent();
-                t.hasClass("closed")?t.removeClass("closed").addClass("expand"):t.removeClass("expand").addClass("closed");
-            }
-            ownProps.options.itemClick(e);
+        onItemClick: function(){
+            dispatch(actions.getAjaxLog(null));
         }
     }
 }

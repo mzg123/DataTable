@@ -1,6 +1,7 @@
 //import {combineReducers,createStore} from "redux";
 var redux=require("redux");
-var combineReducers=redux.combineReducers,createStore=redux.createStore;
+var thunkMiddleware=require("redux-thunk").default;
+var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMiddleware=redux.applyMiddleware;
 /**
  * 这是一个 reducer，形式为 (state, action) => state 的纯函数。
  * 描述了 action 如何把 state 转变成下一个 state。
@@ -24,41 +25,67 @@ function counter(state,action) {
             return state;
     }
 }
-function todoApp(state , action) {
-    state||(state={mzg:"mzg",cc1:4});
-    //if (typeof state === 'undefined') {
-    //    return 0
-    //}
+function treeCounter(state , action) {
+    state||(state=_initState());
+
     switch (action.type) {
-        case 1:
-            //return Object.assign({}, state, {
-            //    visibilityFilter: action.filter
-            //}) $.extend({},state,{cc1:Math.random()})
-            state.cc1=Math.random();
-            //return state;
-          var d=$.extend({},state);
-            return d;
+        case "loadding":
+            state.state=0;
+            return $.extend({},state);
         case 2:
-            //return Object.assign({}, state, {
-            //    todos: [
-            //        state.todos,
-            //        {
-            //            text: action.text,
-            //            completed: false
-            //        }
-            //    ]
-            //})
+
             state.cc1=Math.random();
             return  state;
         default:
-            state.cc1=Math.random();
+
             return  state;
+    }
+}
+function _initState(){
+    return {
+        state:1,
+        treeItems:[
+            {
+                text:"1第一级"
+
+                ,child:[
+                {
+                    text:"1-1第二级"
+                    ,child:[
+                    {
+                        text:"1-1-1第三级"
+                        ,child:[
+                        {text:"1-1-1-1第四级"}
+                        ,{text:"1-1-1-2第四级"}
+                    ]
+                    },
+                    {
+                        text:"1-1-2第三级"
+                    }
+                ]
+                },
+                {
+                    text:"1-2第二级",
+                    child:[
+                        {
+                            text:"1-2-1第三级"
+                        }
+                        ,{
+                            text:"1-2-2第三级"
+                        }
+                    ]
+                }
+            ]
+            }
+        ]
+        ,options:{
+        }
     }
 }
 // 创建 Redux store 来存放应用的状态。
 // API 是 { subscribe, dispatch, getState }。
-var reducer = combineReducers({counter,todoApp });
-var store = createStore(todoApp);
+var reducer = combineReducers({counter,treeCounter });
+var store = createStore(reducer,applyMiddleware(thunkMiddleware));
 
 // 可以手动订阅更新，也可以事件绑定到视图层。
 //store.subscribe(function(comptent){
