@@ -1,10 +1,11 @@
 var ReactDOM = require('react-dom');
 var reactRedux = require('react-redux');
+var reactRouter=require('react-router');
 var Provider =reactRedux.Provider ;
 var reduxStore=require('../block/redux/store.js');
 var Tree=require("../block/tree_react/tree.js");
 //var  App=require("../block/tree_react/reactredux.js");
-
+var Router=reactRouter.Router, Route=reactRouter.Route, browserHistory=reactRouter.browserHistory;
 
 
 var treeItems=[
@@ -91,11 +92,23 @@ function iniTree(){
 //ReactDOM.render(
 //    <App />,
 //    document.getElementById('tree')
-//);
+//);  <Tree></Tree>
+
 reduxStore.initState();
-ReactDOM.render( <Provider store={reduxStore}>
-    <Tree></Tree>
-</Provider>, document.body);
+//ReactDOM.render(
+//    <Provider store={reduxStore}>
+//        <Tree></Tree>
+//    </Provider>
+//    , document.body);
+
+ReactDOM.render(
+    <Provider store={reduxStore}>
+        <Router history={browserHistory}>
+            <Route path="/m"/>
+            <Route path="/home" component={Tree} />
+        </Router>
+    </Provider>
+    , document.body);
 
 
 

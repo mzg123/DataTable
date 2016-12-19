@@ -19,14 +19,14 @@ module.exports = {
         //,es6: ['babel-polyfill',"./webpackbuildjs/mzg/es6.js"]
         //,welcome: "./webpackbuildjs/welcome.js"
     }
-    //,devServer:{
-    //    historyApiFallback:true,
-    //    hot:true,
-    //    inline:true,
-    //    progress:true,
-    //
-    //    port:8080 //端口你可以自定义
-    //}
+    ,devServer:{
+        historyApiFallback:true,
+        hot:true,
+        //inline:true,
+        //progress:true,
+
+        port:8080 //端口你可以自定义
+    }
     //,devtool: 'cheap-module-source-map',//配置生成Source Maps，选择合适的选项  eval-source-map
     ,devtool: false,//配置生成Source Maps，选择合适的选项  eval-source-map
 

@@ -19,11 +19,10 @@ var combineReducers=redux.combineReducers,createStore=redux.createStore,applyMid
 
 // 创建 Redux store 来存放应用的状态。
 // API 是 { subscribe, dispatch, getState }。
-var reducer = combineReducers({ counter,treeCounter});
+var reducer = combineReducers({ counter:counter,treeCounter:treeCounter});
 var store = createStore(reducer,applyMiddleware(thunkMiddleware));
 
 store.initState=initState;
-
 
 // 可以手动订阅更新，也可以事件绑定到视图层。
 //store.subscribe(function(comptent){

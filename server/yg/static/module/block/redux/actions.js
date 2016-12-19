@@ -11,7 +11,7 @@ module.exports={
                     ,param:subreddit
                     ,data:new Date().getSeconds()
                 })
-            },1000);
+            },10000);
             $.ajax({
                 type: "post",
                 url: "http://172.24.132.49:10280/get_data",
