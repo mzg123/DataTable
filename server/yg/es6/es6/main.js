@@ -2,6 +2,25 @@ require('babel-polyfill');
 require('babel-plugin-transform-es3-member-expression-literals');
     require('babel-plugin-transform-es3-property-literals');
 
+import React from'react';
+import ReactDOM from'react-dom';
+
+var Content=React.createClass({
+    render:function(){
+        return(
+            <div id="content">
+                <textarea value="3333333333">
+                </textarea>
+            </div>
+        );
+    }
+})
+
+ReactDOM.render(
+    <Content></Content>,
+    document.getElementById("react")
+);
+
 //class
 import Point from './point.js';
 var body = document.querySelector('body');
@@ -35,7 +54,7 @@ var uni=new Set(array1);
 for(var item of uni){
    // console.log(item);
 }
-body.textContent = 'Good point: ' + new Point(1, 23)+result;
+//body.textContent = 'Good point: ' + new Point(1, 23)+result;
 
 console.log(3399999999999);
 console.log(body.textContent);

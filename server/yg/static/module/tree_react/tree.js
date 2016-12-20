@@ -4,6 +4,7 @@ var reactRouter=require('react-router');
 var Provider =reactRedux.Provider ;
 var reduxStore=require('../block/redux/store.js');
 var Tree=require("../block/tree_react/tree.js");
+var Test=require("../block/tree_react/Test.js");
 //var  App=require("../block/tree_react/reactredux.js");
 var Router=reactRouter.Router, Route=reactRouter.Route, browserHistory=reactRouter.browserHistory;
 
@@ -101,11 +102,12 @@ reduxStore.initState();
 //    </Provider>
 //    , document.body);
 
+function d(){console.log(3);}
 ReactDOM.render(
     <Provider store={reduxStore}>
         <Router history={browserHistory}>
-            <Route path="/m"/>
-            <Route path="/home" component={Tree} />
+            <Route path="/m"  onLeave={d} component={Test}/>
+            <Route path="/home"  onLeave={d} onEnter={d} component={Tree} />
         </Router>
     </Provider>
     , document.body);

@@ -1,10 +1,12 @@
 var React = require('react');
-var reactRedux = require('react-redux');
+var reactRedux = require('react-redux')
 require("./tree.css");
 var Redux=require("redux");
 var actions=require("../redux/actions.js");
-
-var connect=reactRedux.connect,provider =reactRedux.Provider ;
+var reactRouter=require('react-router');
+//import reactRouter from 'react-router';
+//import { Link } from 'react-router';
+var connect=reactRedux.connect,provider =reactRedux.Provider,Link=reactRouter.Link;
 
 
 
@@ -91,15 +93,27 @@ var Tree = React.createClass({
         }
 
     },
-
+    componentDidMount() {
+        this.props.router.setRouteLeaveHook(
+            this.props.route,
+            this.routerWillLeave
+        )
+    },
+    routerWillLeave(nextLocation) {
+        // 返回 false 会继续停留当前页面，
+        // 否则，返回一个字符串，会显示给用户，让其自己决定
+        if (true)
+            return '确认要离开？';
+    },
     render: function () {
         var d=this.props.itemData;
 
         var itemClick=this.itemClick;
         var treehtml=this.createTree(d,itemClick);
         return (
-            <div  id="treeCon" >
-                <div  id="tree">
+            <div  id="treeCon">
+
+                <div  id="tree"> <Link to="/m">333</Link>
                     <div className="tree position_r" >
                         <ul className="items position_r">
                     {treehtml}

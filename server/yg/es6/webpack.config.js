@@ -8,15 +8,16 @@ module.exports = {
     },
     module: {
         loaders: [
+            //{
+            //    test: /\.js$/,
+            //    loaders: ['es3ify-loader']
+            //},
             {
-                test: /\.js$/,
-                loaders: ['es3ify-loader']
-            }
-            ,{
                 loader: 'babel-loader',
-                test: path.join(__dirname, 'es6'),
+                test: /\.js$/,
+                //test: path.join(__dirname, 'es6'),
                 query: {
-                    presets: 'es2015',
+                    presets: ['es2015',"react"]
                     //plugins : [
                     //    'transform-es3-member-expression-literals',
                     //    'transform-es3-property-literals',
@@ -36,5 +37,5 @@ module.exports = {
         colors: true
     },
     // Create Sourcemaps for the bundle
-    devtool: 'source-map',
+    devtool: 'source-map'
 };

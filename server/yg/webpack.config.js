@@ -18,6 +18,7 @@ module.exports = {
         //,formselect: "./webpackbuildjs/mzg/formselect.js"
         //,es6: ['babel-polyfill',"./webpackbuildjs/mzg/es6.js"]
         //,welcome: "./webpackbuildjs/welcome.js"
+        ,react: ['react', 'react-dom']
     }
     ,devServer:{
         historyApiFallback:true,
@@ -57,27 +58,41 @@ module.exports = {
             //   }
             //},
             { test: /\.js$/, loader: "jsx"},
+            ,{
+                loader: 'babel-loader',
+                test: /\.js$/,
+                exclude: /node_modules/,
+                //test: path.join(__dirname, 'es6'),
+                query: {
+                    presets: ['es2015',"react"]
+                    //plugins : [
+                    //    'transform-es3-member-expression-literals',
+                    //    'transform-es3-property-literals',
+                    //]
+                }
 
+            },
             //{
             //    loader: 'babel-loader',
-            //    test: path.join(__dirname, 'src'),
+            //    test: /\.js$/,
+            //    exclude: /node_modules/,
             //    query: {
-            //        presets:[ 'es2015' , "react"]
+            //        presets: 'es2015'
             //    }
             //},
 
-            //{ test: /\.js$/, loader: "jsx?harmony!babel", include: /src/},
+
             //{ test: /\.css$/, loader: "style!css"},
 
             { test: /\.css$/, loader:  ExtractTextPlugin.extract("style-loader", "css-loader")}
-
-            , {
-                test: /\.(jpe?g|png|gif|svg)$/i,
-                loaders: [
-                    'file?hash=sha512&digest=hex&name=image/[hash].[ext]',
-                    'image-webpack'
-                ]
-            }
+            //,{ test: /\.js$/, loader: "babel",exclude: /node_modules/}
+            //, {
+            //    test: /\.(jpe?g|png|gif|svg)$/i,
+            //    loaders: [
+            //        'file?hash=sha512&digest=hex&name=image/[hash].[ext]',
+            //        'image-webpack'
+            //    ]
+            //}
            // ,{ test: /\.(png|jpg|gif)$/, loader: "url?limit=6120"}
             //{ test: /\.scss$/, loader: "style!css!sass"},
 
@@ -104,21 +119,33 @@ module.exports = {
             }
         }
     ,plugins: [
+        //new webpack.HtmlWebpackPlugin({
+        //    filename: __dirname+'/1.html',
+        //    inject:'body',
+        //    hash:true
+        //}),
         new ExtractTextPlugin("css/[name].css"),//分离css样式
-        //new webpack.optimize.UglifyJsPlugin({    //压缩代码
-        //    compress: {
-        //        warnings: false
-        //    },
-        //    output: {
-        //        comments: false // remove all comments
-        //    },
-        //    except: ['$super', '$', 'exports', 'require']    //排除关键字
-        //}) ,
+        new webpack.optimize.UglifyJsPlugin({    //压缩代码
+            compress: {
+                warnings: false
+            },
+            output: {
+                comments: false // remove all comments
+            },
+            except: ['$super', '$', 'exports', 'require']    //排除关键字
+        }) ,
        new webpack.DefinePlugin({
             "process.env": {
                 NODE_ENV: JSON.stringify("production")
             }
         })
+        //,new webpack.ProvidePlugin({
+        //    'Moment': 'moment',
+        //    "$": "jquery",
+        //    "jQuery": "jquery",
+        //    "window.jQuery": "jquery",
+        //    "React": "react"
+        //})
         //,new webpack.HotModuleReplacementPlugin() //热加载
 ]
     //,plugins: [
@@ -126,13 +153,12 @@ module.exports = {
     //    new webpack.optimize.CommonsChunkPlugin("init.js")
     //]
 
-    //plugins:[
+    //,plugins:[
     //    new HtmlWebpackPlugin({
-    //        filename: __dirname+'/build/html/login-build.html',
-    //        template:__dirname+'/src/tpl/login.html',
+    //        filename: __dirname+'/1.html',
     //        inject:'body',
     //        hash:true
-    //    }),
+    //    })
     //
     //    new HtmlWebpackPlugin({
     //        filename: __dirname+'/build/html/index-build.html',
