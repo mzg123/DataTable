@@ -10,9 +10,9 @@ module.exports = {
     entry: {
         //index: ['./webpackbuildjs/entry.js', hotMiddlewareScript]
         //login: "./webpackbuildjs/mzg/login.js"
-        //,modal: "./webpackbuildjs/mzg/modal.js"
+        modal: "./webpackbuildjs/mzg/modal.js"
         //roller: "./webpackbuildjs/mzg/roller.js"
-        tree: "./webpackbuildjs/mzg/tree_react.js"
+        //,tree: "./webpackbuildjs/mzg/tree_react.js"
         //,canvas: "./webpackbuildjs/mzg/canvas.js"
         //,datepicker: "./webpackbuildjs/mzg/datepicker.js"
         //,formselect: "./webpackbuildjs/mzg/formselect.js"
@@ -57,8 +57,8 @@ module.exports = {
             //   presets:['es2015','react']
             //   }
             //},
-            { test: /\.js$/, loader: "jsx"},
-            ,{
+            //{ test: /\.js$/, loader: "jsx"},
+            {
                 loader: 'babel-loader',
                 test: /\.js$/,
                 exclude: /node_modules/,

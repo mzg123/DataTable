@@ -124,7 +124,7 @@ var Modal={
     ,_hide:function(md,cb){
 
         IsIE8()||md.animate({opacity:0});
-        md.parent().animate({top:'-150%'},500,function(){
+        md.parent().animate({top:'-150%'},0,function(){
             md.parent().remove();
             cb();
         })
